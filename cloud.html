@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雲朵測試</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: skyblue;
+            position: relative;
+            overflow: hidden;
+        }
+        .cloud {
+            width: 100%;
+            position: absolute;
+            top: 20%;
+            opacity: 0.6;
+            -webkit-backdrop-filter: blur(80px);
+            animation: move 20s ease-out infinite;
+        }
+        @keyframes move {
+            from {
+                transform: translateX(-50%);
+                
+            }
+            to {
+                transform: translateX(100%);
+                
+            }
+        }
+        .wind {
+            width: 100%;
+            position: absolute;
+            top: 35%;
+            opacity: .4;
+            animation: weee 40s ease-out infinite;
+        }
+        @keyframes weee {
+            from {
+                transform: translateX(-50%);
+            }
+            to {
+                transform: translateX(100%);
+            }
+        }
+        .bgc{
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="bgc" src="./img/image-from-rawpixel-id-7012444-original.png" alt="">
+        <div class="cloud">
+            <img src="./img/image-from-rawpixel-id-6117915-original.png" alt="">
+        </div>
+        <div class="wind">
+            <img src="./img/image-from-rawpixel-id-6117639-original.png" alt="">
+        </div>
+        <div class="cloud">
+            <img src="./img/image-from-rawpixel-id-6117915-original.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
