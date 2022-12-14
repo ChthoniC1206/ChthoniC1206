@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/wavecss.css">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="wave-container">
+        <img class="plane" src="./img/plane.png" alt="">
+        <div class="sun-box">
+            <div class="sun"></div>
+            <div class="sun"></div>
+            <div class="sun"></div>
+        </div>
+        <div class="wave a"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+
+    </div>
+
+    <script>
+        const waves = document.querySelector('#wave-container');
+        const wave = document.querySelector('.a');
+
+        waves.addEventListener('wheel',function(){
+                console.log(wave);
+
+                wave.style = 'background-color: sky-blue; top:0px; z-index: 4; opacity: 1; transition: 5s;';                
+        });
+        
+
+       
+
+
+    </script>
+</body>
+</html>
