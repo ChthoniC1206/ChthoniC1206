@@ -4,26 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
     <title>高美濕地旅遊網</title>
 </head>
 <body>
+    <!-- Loading畫面 -->
     <div class="loading">
-        <!-- Loading畫面 -->
-        <img src="./img/loading.jpg" alt="">
-    </div>
-    <nav>
-        
-    </nav>
-    <main>
-        <div id="banner">
-            <!-- 縮時攝影 -->
-            <video src="./video/Pexels Videos 1250091.mp4" autoplay muted loop>
-            </video>    
+        <div class="progress">
+        <img src="./img/loading-bgc.jpg" alt="" style="display: block;">
+        <img class="windmill1" src="./img/loading_windmill 120x120.png" alt="">
+        <img class="bird" src="./img/loading_bird 100x100.png" alt="">
+        <img class="crab" src="./img/loading_crab 80x80.png" alt="">
+        <img class="crab2" src="./img/loading_crab2 80x80.png" alt="">
+        <img class="plant" src="./img/loading_plant 80x80.png" alt="">
+        <img class="windmill2" src="./img/loading_windmill 120x120.png" alt="">
+        <div class="myProgress">
+            <div class="text">
+                <div  class="l">
+                    Lo
+                </div>
+                <div class="o">
+                    adi
+                </div>
+                <div class="a">
+                    ng
+                </div>
+                <div class="d">
+                    ...
+                </div>
+            </div>
+            <div class="myBar">
+                <div class="label"></div>
+            </div>
         </div>
+        </div>
+    </div>
+    <!-- Nav選單列 -->
+    <nav class="navbar">
+        <div class="button"></div>
+    </nav>
+
+    <main>
+        <!-- 縮時攝影 -->
+        <section id="video" class="section">
+            <div id="banner">
+                <video src="./video/Pexels Videos 1250091.mp4" style="display: block;" autoplay muted loop>
+                </video>    
+            </div>
+        </section>
+        <!-- 濕地、生態、潮汐 -->
+        <section id="container" class="section">
+            <!-- 關於濕地 -->
+            <div id="" style="width: 100vw; height:100vh;"></div>
+            <!-- 潮間帶生態 -->
+            <div id="" style="width: 100vw; height:100vh;"></div>
+            <!-- 潮間帶區 -->
+            <div id="wave-container">
+                <div class="bubbles" num="50" duration="10"></div>
+                <!-- <img class="plane" src="./img/plane.png" alt=""> -->
+                <div class="sun-box">
+                    <div class="sun"></div>
+                    <div class="sun"></div>
+                    <div class="sun"></div>
+                </div>  
+                <div class="wave a"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>   
+            </div>
+
+             <!-- 最新消息、旅遊資訊 -->
+            <div style="width: 100%; height: 100vh;">
+            </div>   
+        </section>  
     </main>
+    <!-- 結尾 -->
     <footer>
 
     </footer>
+
+    <script>
+        // 進度條
+        function move() {
+            var elem = document.querySelector(".myBar");   
+            var width = 0;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++; 
+                    elem.style.width = width + '%'; 
+                }
+            }
+        }   
+        move()
+
+        // Nav 選單
+
+
+        // 波浪動畫、配上泡泡
+        const waves = document.querySelector('#wave-container');
+        const wave = document.querySelector('.a');
+
+        waves.addEventListener('wheel',function(e){
+
+            if(parseInt(e.deltaY) > 0 ){
+                console.log('up');
+                wave.style = 'background-color: sky-blue; top: 0px; z-index: 4; opacity: 1; transition: 3s;';   
+                
+                (function(w, d) {
+                    var bubbles = d.querySelector('.bubbles');
+                    var bubblesWidth = bubbles.clientWidth;
+                    var num = bubbles.getAttribute('num');
+                    var duration = bubbles.getAttribute('duration');
+
+                bubbleUp();
+                    setInterval(bubbleUp, duration * 1000);
+
+                    function bubbleUp() {
+                        bubbles.innerHTML = '';
+                        for(var i = 0; i < num; i++) {
+                            var bubbleDiv = d.createElement('div');
+                            bubbleDiv.classList.add('bubble');
+                            bubbleDiv.style.cssText = `
+                            transform: translate(${bubblesWidth * Math.random()}px, 0) scale(${5 * Math.random()});
+                            animation: up ${duration * Math.random() + 1}s ease-in-out;
+                            `
+                            bubbles.appendChild(bubbleDiv);
+                        };
+                    };
+
+                })(window, document);      
+            }else{
+                const bubbles = document.querySelector('.bubbles');
+                wave.style = 'background-color: sky-blue; top:1000px; z-index: 4; opacity: 1; transition: 3s;';
+                bubbles.remove;
+            }            
+        });
+    </script>
 </body>
 </html>
