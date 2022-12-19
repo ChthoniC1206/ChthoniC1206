@@ -199,7 +199,7 @@
                 <div class="wave"></div>   
             </div>
 
-             <!-- 最新消息、旅遊資訊 -->
+             <!-- 最新消息、旅遊資 訊 -->
             <div class="news" style="width: 100%; height: 40vh;">
                 <h1>
                     | 最新消息 |
@@ -212,7 +212,7 @@
         </section>  
     </main>
     <!-- 結尾 -->
-    <footer class="foot" style="height: 200vh;">
+    <footer class="foot" style="height: 330vh;">
         <!--旅遊資訊  -->
         <div class="travel">
             <h1>| 旅遊資訊 |</h1>
@@ -348,151 +348,33 @@
                 </div>  
                 </div>
             </div>
-
-            <div class="mid"></div>
-            <div class="right"></div>
         </div>
 
+        <div class="bottom">
+            <img src="./img/Frame.png" alt="">
+        </div>
+        <div class="text-word">
+            <p>Copyright © 高美濕地旅遊網. All Rights Reserved.</p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- loading 、 進度條 -->
+    <script src="./js/loading.js"></script>
+    <!-- 波浪、泡泡過場 -->
+    <script src="./js/wave.js"></script>
+    <!-- 高美景觀輪播圖片 -->
+    <script src="./js/pic.js"></script>
+
     <script>
-        // loading畫面 
-        
-        function loading () {
-            const loading = document.querySelector('.loading')
-        };
-        loading();
-        
         window.addEventListener('scroll', function(){
             const scrollY = window.scrollY
             console.log(window.scrollY);
         });
-        // 進度條
-        function move() {
-            var elem = document.querySelector(".myBar");   
-            var width = 0;
-            var id = setInterval(frame, 10);
-            function frame() {
-                if (width >= 100) {
-                    clearInterval(id);
-                } else {
-                    width++; 
-                    elem.style.width = width + '%'; 
-                }
-            }
-        }   
-        move()
 
         // Nav 選單
-
-
-        // 波浪動畫、配上泡泡
-        const waves = document.querySelector('#wave-container');
-        const wave = document.querySelector('.a');
-
-        waves.addEventListener('wheel',function(e){
-
-            if(parseInt(e.deltaY) > 0 ){
-                console.log('up');
-                wave.style = 'background-color: sky-blue; top: 0px; z-index: 4; opacity: 1; transition: 3s;';   
-                
-                (function(w, d) {
-                    var bubbles = d.querySelector('.bubbles');
-                    var bubblesWidth = bubbles.clientWidth;
-                    var num = bubbles.getAttribute('num');
-                    var duration = bubbles.getAttribute('duration');
-
-                bubbleUp();
-                    setInterval(bubbleUp, duration * 1000);
-
-                    function bubbleUp() {
-                        bubbles.innerHTML = '';
-                        for(var i = 0; i < num; i++) {
-                            var bubbleDiv = d.createElement('div');
-                            bubbleDiv.classList.add('bubble');
-                            bubbleDiv.style.cssText = `
-                            transform: translate(${bubblesWidth * Math.random()}px, 0) scale(${5 * Math.random()});
-                            animation: up ${duration * Math.random() + 1}s ease-in-out;
-                            `
-                            bubbles.appendChild(bubbleDiv);
-                        };
-                    };
-
-                })(window, document);      
-            }else{
-                const bubbles = document.querySelector('.bubbles');
-                wave.style = 'background-color: sky-blue; top:1000px; z-index: 4; opacity: 1; transition: 3s;';
-                bubbles.remove;
-            }            
-        });
+   
         // 最新消息 
-
-        // 高美景觀
-        var swiper1 = new Swiper("#ture", {
-            speed: 10000,
-            autoplay: {
-                delay: 0,
-            },
-            loop: true,
-            loopAdditionalSlides: 7,
-            slidesPerView: 6,
-        });   
-        var swiper2 = new Swiper("#reverse", {
-            speed: 10000,
-            roundLengths: false,
-            autoplay: {
-                delay: 0,
-                reverseDirection: true,
-            },
-            loop: true,
-            loopAdditionalSlides: 7,
-            slidesPerView: 6,
-        }); 
-        var swiper3 = new Swiper("#ture2", {
-            speed: 10000,
-            autoplay: {
-                delay: 0,
-            },
-            loop: true,
-            loopAdditionalSlides: 7,
-            slidesPerView: 6,
-        });
-
-        swiper1.el.onmouseenter = function () {
-            var swiper1_translate = swiper1.getTranslate();
-            swiper1.setTranslate(swiper1_translate);
-
-        }
-
-        swiper1.el.onmouseleave = function () {
-            var Now_translate1 = swiper1.getTranslate();
-            Now_translate1 = Now_translate1 - 300;
-            swiper1.setTransition(10000);
-            swiper1.setTranslate(Now_translate1);
-        }
-        swiper2.el.onmouseenter = function () {
-            var swiper2_translate = swiper2.getTranslate();
-            swiper2.setTranslate(swiper2_translate);
-
-        }
-        swiper2.el.onmouseleave = function () {
-            var Now_translate2 = swiper2.getTranslate();
-            Now_translate2 = Now_translate2 + 300;
-            swiper2.setTransition(10000);
-            swiper2.setTranslate(Now_translate2);
-        }
-        swiper3.el.onmouseenter = function () {
-            var swiper3_translate = swiper1.getTranslate();
-            swiper3.setTranslate(swiper3_translate);
-
-        }
-
-        swiper3.el.onmouseleave = function () {
-            var Now_translate3 = swiper3.getTranslate();
-            Now_translate3 = Now_translate3 - 300;
-            swiper3.setTransition(10000);
-            swiper3.setTranslate(Now_translate3);
-        }
+        
     </script>
 </body>
 </html>
