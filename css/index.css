@@ -1,8 +1,8 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -260,143 +260,611 @@ nav .button {
   border: 3px solid white;
 }
 
+main {
+  width: 100%;
+  height: 100%;
+}
 main #banner {
-  width: 100vw;
+  width: 100%;
+  height: 100vh;
+}
+main #banner video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main #container {
   background-image: url("../img/backfround.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
+main .wetlands::-webkit-scrollbar {
+  display: none;
+}
 main .wetlands {
-  height: 100vh;
   position: relative;
 }
-main .wetlands .a {
-  width: 380px;
-  height: 380px;
-  background-color: white;
-  position: relative;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-main .wetlands .a h2 {
-  position: absolute;
-  top: 30%;
-  left: 30%;
-}
-main .wetlands .a p {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-}
-main .wetlands .a a {
-  line-height: 50px;
-  padding-left: 10px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: skyblue;
-  position: absolute;
-  left: 40%;
-  bottom: 20%;
+main .wetlands a.introduce {
+  z-index: 1;
+  text-decoration: none;
   color: black;
 }
-main .wetlands .b {
-  width: 280px;
-  height: 280px;
+main .wetlands a.introduce .a {
+  width: 395px;
+  height: 395px;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  border-radius: 50%;
   background-color: white;
-  position: relative;
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
-main .wetlands .b h2 {
-  position: absolute;
-  top: 30%;
-  left: 30%;
-}
-main .wetlands .b p {
+main .wetlands a.introduce .a hr {
   width: 150px;
-  position: absolute;
-  top: 50%;
 }
-main .wetlands .b a {
-  line-height: 50px;
-  padding-left: 10px;
-  width: 50px;
-  height: 50px;
+main .wetlands a.introduce .a .more {
+  line-height: 59px;
+  text-align: center;
+  width: 59px;
+  height: 59px;
   border-radius: 50%;
   background-color: skyblue;
-  position: absolute;
-  left: 40%;
-  bottom: 20%;
-  color: black;
 }
-main .wetlands .c {
-  width: 250px;
-  height: 250px;
+main .wetlands a.introduce .b {
+  width: 315px;
+  height: 318px;
+  position: absolute;
+  top: 45%;
+  left: 38%;
+  border-radius: 50%;
   background-color: white;
-  position: relative;
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
-main .wetlands .c h2 {
+main .wetlands a.introduce .b hr {
+  width: 150px;
+}
+main .wetlands a.introduce .b .more {
+  line-height: 59px;
+  text-align: center;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background-color: skyblue;
+}
+main .wetlands a.introduce .c {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
   position: absolute;
-  top: 30%;
+  top: 70%;
+  left: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .wetlands a.introduce .c hr {
+  width: 150px;
+}
+main .wetlands a.introduce .c .more {
+  line-height: 59px;
+  text-align: center;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background-color: skyblue;
+}
+main .wetlands a.introduce .d {
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 65%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .wetlands a.introduce .d hr {
+  width: 150px;
+}
+main .wetlands a.introduce .d .more {
+  line-height: 59px;
+  text-align: center;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background-color: skyblue;
+}
+main .wetlands a.introduce .a:hover {
+  background-color: #fde86e;
+}
+main .wetlands .page-a {
+  overflow: hidden;
+  width: 158px;
+  height: 158px;
+  border-radius: 50%;
+  position: absolute;
+  top: 70%;
   left: 30%;
 }
-main .wetlands .c p {
-  position: absolute;
-  top: 50%;
+main .wetlands .page-a img {
+  width: 100%;
+  height: 100%;
 }
-main .wetlands .c a {
-  line-height: 50px;
-  padding-left: 10px;
-  width: 50px;
-  height: 50px;
+main .wetlands .page-b {
+  overflow: hidden;
+  width: 93px;
+  height: 93px;
   border-radius: 50%;
-  background-color: skyblue;
   position: absolute;
-  left: 40%;
-  bottom: 20%;
-  color: black;
-}
-main .wetlands .d {
-  width: 280px;
-  height: 280px;
-  background-color: white;
-  position: relative;
-  position: absolute;
-  top: 30%;
+  top: 40%;
   left: 60%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-main .wetlands .d h2 {
+main .wetlands .page-b img {
+  width: 100%;
+  height: 100%;
+}
+main .wetlands h1 {
+  position: absolute;
+  top: 20%;
+  left: 43%;
+  font-size: 50px;
+  color: white;
+  z-index: 1;
+}
+main .wetlands .circle-a {
+  position: absolute;
+  top: 90%;
+  left: 44%;
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border-radius: 50%;
+}
+main .wetlands .circle-b {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border-radius: 50%;
+}
+main .wetlands .cloud {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  background-color: transparent;
+}
+main .wetlands .cloud img {
+  width: 100%;
+  height: 100%;
+}
+main .wetlands .cloud.a {
+  filter: blur(20px) brightness(200%);
+  width: 700px;
+  height: 700px;
+  top: 50%;
+  -webkit-animation: num1 20s ease-in-out infinite;
+          animation: num1 20s ease-in-out infinite;
+}
+main .wetlands .cloud.b {
+  filter: blur(10px) brightness(200%);
+  width: 400px;
+  height: 400px;
+  top: 55%;
+  -webkit-animation: num2 25s ease-in-out infinite;
+          animation: num2 25s ease-in-out infinite;
+}
+main .wetlands .cloud.c {
+  filter: blur(15px) brightness(200%);
+  width: 500px;
+  height: 500px;
+  top: 20%;
+  -webkit-animation: num3 15s ease-in-out infinite;
+          animation: num3 15s ease-in-out infinite;
+}
+@-webkit-keyframes num1 {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes num1 {
+  from {
+    left: -30%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes num2 {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes num2 {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes num3 {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes num3 {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+main .wetlands .back-cloud {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0%;
+  opacity: 0.9;
+  filter: blur(10px);
+  overflow: hidden;
+}
+main .wetlands .back-cloud img {
+  width: 100%;
+  height: 100%;
+}
+main .ecology::-webkit-scrollbar {
+  display: none;
+}
+main .ecology {
+  position: relative;
+}
+main .ecology h1 {
+  top: 5%;
+  left: 43%;
+  font-size: 50px;
+  position: absolute;
+  color: white;
+}
+main .ecology .bird {
+  color: black;
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 400px;
+  height: 490px;
+  position: relative;
+}
+main .ecology .bird .icon {
+  position: absolute;
+  overflow: hidden;
+  top: 0%;
+  left: 40%;
+  width: 80px;
+  height: 80px;
+}
+main .ecology .bird .icon img {
+  width: 100%;
+  height: 100%;
+}
+main .ecology .bird .image {
+  position: absolute;
+  top: 15%;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+main .ecology .bird .image img {
+  width: 100%;
+  height: 100%;
+}
+main .ecology .bird .text {
+  font-size: 20px;
+  text-align: center;
+  line-height: 125px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  z-index: 2;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: #ffcc99;
+}
+main .ecology .plant {
+  color: black;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  width: 385px;
+  height: 455px;
+  position: relative;
+}
+main .ecology .plant .icon {
+  position: absolute;
+  overflow: hidden;
+  top: 0%;
+  left: 40%;
+  width: 80px;
+  height: 80px;
+}
+main .ecology .plant .icon img {
+  width: 100%;
+  height: 100%;
+}
+main .ecology .plant .image {
+  position: absolute;
+  top: 15%;
+  overflow: hidden;
+  width: 385px;
+  height: 385px;
+  border-radius: 50%;
+}
+main .ecology .plant .image img {
+  width: 100%;
+  height: 100%;
+}
+main .ecology .plant .text {
+  font-size: 20px;
+  text-align: center;
+  line-height: 125px;
+  position: absolute;
+  bottom: 0%;
+  right: 10%;
+  z-index: 2;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: #ffcc99;
+}
+main .ecology .crab {
+  color: black;
+  display: block;
+  position: absolute;
+  top: -20%;
+  left: 33%;
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+main .ecology .crab .icon {
+  position: absolute;
+  overflow: hidden;
+  top: 3%;
+  left: 40%;
+  width: 80px;
+  height: 80px;
+}
+main .ecology .crab .icon img {
+  width: 100%;
+  height: 100%;
+}
+main .ecology .crab .image {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  overflow: hidden;
+  width: 422px;
+  height: 420px;
+  border-radius: 50%;
+}
+main .ecology .crab .image img {
+  width: 100%;
+  height: 100%;
+}
+main .ecology .crab .text {
+  font-size: 20px;
+  text-align: center;
+  line-height: 125px;
+  position: absolute;
+  bottom: 0%;
+  right: 10%;
+  z-index: 2;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: #ffcc99;
+}
+main .ecology .pic-bird {
   position: absolute;
   top: 30%;
-  left: 30%;
-}
-main .wetlands .d p {
-  position: absolute;
-  top: 50%;
-}
-main .wetlands .d a {
-  line-height: 50px;
-  padding-left: 10px;
-  width: 50px;
-  height: 50px;
+  left: 50%;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
-  background-color: skyblue;
-  position: absolute;
-  left: 40%;
-  bottom: 20%;
-  color: black;
+  overflow: hidden;
 }
-main .wetlands .introduce {
+main .ecology .pic-bird img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .ecology .pic-fish {
+  position: absolute;
+  top: 67%;
+  left: 60%;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  overflow: hidden;
+}
+main .ecology .pic-fish img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .ecology .circle-pink {
+  position: absolute;
+  top: 45%;
+  left: 28%;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  background-color: #fbbd9f;
+}
+main .ecology .circle-orange {
+  position: absolute;
+  top: 73%;
+  left: 53%;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #ff925b;
+}
+main .ecology .circle-orange-top {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ff925b;
+}
+main .ecology .circle-orange-down {
+  position: absolute;
+  top: 85%;
+  left: 55%;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #ff925b;
+}
+main .ecology .bgc-cloud-top {
+  position: absolute;
+  top: 5%;
+  left: -10%;
+  width: 800px;
+  height: 800px;
+  overflow: hidden;
+  filter: blur(15px) brightness(200%);
+  -webkit-animation: top 10s ease-in-out infinite;
+          animation: top 10s ease-in-out infinite;
+}
+main .ecology .bgc-cloud-right {
+  position: absolute;
+  top: 10%;
+  left: 82%;
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+  filter: blur(20px) brightness(300%);
+  -webkit-animation: right 40s ease-in-out infinite;
+          animation: right 40s ease-in-out infinite;
+}
+main .ecology .bgc-cloud-left {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 800px;
+  height: 800px;
+  overflow: hidden;
+  filter: blur(14px) brightness(400%);
+  -webkit-animation: left 36s ease-in-out infinite;
+          animation: left 36s ease-in-out infinite;
+}
+main .ecology .bgc-cloud-down {
+  position: absolute;
+  bottom: 3%;
+  left: 60%;
+  width: 800px;
+  height: 800px;
+  overflow: hidden;
+  filter: blur(10px) brightness(400%);
+  -webkit-animation: down 50s ease-in-out infinite;
+          animation: down 50s ease-in-out infinite;
+}
+@-webkit-keyframes top {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes top {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes right {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes right {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes left {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes left {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes down {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes down {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 100%;
+  }
 }
 main #wave-container {
   width: 100%;
@@ -493,6 +961,82 @@ main #wave-container .bubbles .bubble {
   bottom: -10%;
   -webkit-animation: up 8s ease-in-out;
           animation: up 8s ease-in-out;
+}
+main .news {
+  background-color: #2a2f41;
+  position: relative;
+}
+main .news h1 {
+  position: absolute;
+  top: 5%;
+  left: 45%;
+  font-size: 50px;
+  color: white;
+}
+main .news .card-left {
+  top: 30%;
+  left: 15%;
+  position: absolute;
+  width: 450px;
+  height: 250px;
+  background-color: #ccc5c5;
+}
+main .news .card-mid {
+  top: 30%;
+  left: 40%;
+  position: absolute;
+  width: 450px;
+  height: 250px;
+  background-color: #ccc5c5;
+}
+main .news .card-right {
+  top: 30%;
+  left: 65%;
+  position: absolute;
+  width: 450px;
+  height: 250px;
+  background-color: #ccc5c5;
+}
+
+footer {
+  background-size: cover;
+  background-image: url("../img/星空魚.jpg");
+}
+footer .travel {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+footer .travel h1 {
+  position: absolute;
+  left: 45%;
+  font-size: 50px;
+  color: white;
+}
+footer .travel .buttons {
+  width: 600px;
+  position: absolute;
+  bottom: 2%;
+  left: 37%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+footer .travel .buttons .button {
+  font-size: 36px;
+  color: white;
+}
+footer .picture {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+footer .picture h1 {
+  top: 10%;
+  position: absolute;
+  left: 45%;
+  font-size: 50px;
+  color: white;
 }
 
 @-webkit-keyframes up {
