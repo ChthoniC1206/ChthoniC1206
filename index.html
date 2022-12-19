@@ -228,7 +228,127 @@
         <!-- 高美景觀 -->
         <div class="picture">
             <h1>| 高美景觀 |</h1>
-            <div class="top"></div>
+            <div class="pic-charge">
+                <div class="swiper">
+                    <div id="ture" class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide line1pic1">
+                                <img src="./img/image-from-rawpixel-id-6117639-original.png" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic2">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic3">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic4">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic5">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic6">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic7">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic8">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic9">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic10">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic11">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="swiper">
+                    <div id="reverse" class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide line1pic1">
+                                <img src="./img/image-from-rawpixel-id-6117639-original.png" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic2">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic3">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic4">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic5">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic6">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic7">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic8">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic9">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic10">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic11">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper">
+                    <div id="ture2" class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide line1pic1">
+                                <img src="./img/image-from-rawpixel-id-6117639-original.png" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic2">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic3">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic4">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic5">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic6">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic7">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic8">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic9">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic10">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide line1pic11">
+                                <img src="./img/wind/1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                </div>
+            </div>
+
             <div class="mid"></div>
             <div class="right"></div>
         </div>
@@ -307,6 +427,72 @@
         });
         // 最新消息 
 
+        // 高美景觀
+        var swiper1 = new Swiper("#ture", {
+            speed: 10000,
+            autoplay: {
+                delay: 0,
+            },
+            loop: true,
+            loopAdditionalSlides: 7,
+            slidesPerView: 6,
+        });   
+        var swiper2 = new Swiper("#reverse", {
+            speed: 10000,
+            roundLengths: false,
+            autoplay: {
+                delay: 0,
+                reverseDirection: true,
+            },
+            loop: true,
+            loopAdditionalSlides: 7,
+            slidesPerView: 6,
+        }); 
+        var swiper3 = new Swiper("#ture2", {
+            speed: 10000,
+            autoplay: {
+                delay: 0,
+            },
+            loop: true,
+            loopAdditionalSlides: 7,
+            slidesPerView: 6,
+        });
+
+        swiper1.el.onmouseenter = function () {
+            var swiper1_translate = swiper1.getTranslate();
+            swiper1.setTranslate(swiper1_translate);
+
+        }
+
+        swiper1.el.onmouseleave = function () {
+            var Now_translate1 = swiper1.getTranslate();
+            Now_translate1 = Now_translate1 - 300;
+            swiper1.setTransition(10000);
+            swiper1.setTranslate(Now_translate1);
+        }
+        swiper2.el.onmouseenter = function () {
+            var swiper2_translate = swiper2.getTranslate();
+            swiper2.setTranslate(swiper2_translate);
+
+        }
+        swiper2.el.onmouseleave = function () {
+            var Now_translate2 = swiper2.getTranslate();
+            Now_translate2 = Now_translate2 + 300;
+            swiper2.setTransition(10000);
+            swiper2.setTranslate(Now_translate2);
+        }
+        swiper3.el.onmouseenter = function () {
+            var swiper3_translate = swiper1.getTranslate();
+            swiper3.setTranslate(swiper3_translate);
+
+        }
+
+        swiper3.el.onmouseleave = function () {
+            var Now_translate3 = swiper3.getTranslate();
+            Now_translate3 = Now_translate3 - 300;
+            swiper3.setTransition(10000);
+            swiper3.setTranslate(Now_translate3);
+        }
     </script>
 </body>
 </html>

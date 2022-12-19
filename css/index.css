@@ -1018,6 +1018,56 @@ footer .picture h1 {
   font-size: 50px;
   color: white;
 }
+footer .picture .pic-charge {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+footer .picture .pic-charge #ture {
+  width: 100%;
+  height: 200px;
+}
+footer .picture .pic-charge #ture .swiper-wrapper {
+  transition-timing-function: linear;
+}
+footer .picture .pic-charge #ture .swiper-wrapper .swiper-slide {
+  width: 200px;
+  height: 200px;
+}
+footer .picture .pic-charge #ture img {
+  width: 100%;
+  height: 100%;
+}
+footer .picture .pic-charge #reverse {
+  width: 100%;
+  height: 200px;
+}
+footer .picture .pic-charge #reverse .swiper-wrapper {
+  transition-timing-function: linear;
+}
+footer .picture .pic-charge #reverse .swiper-wrapper .swiper-slide {
+  width: 200px;
+  height: 200px;
+}
+footer .picture .pic-charge #reverse img {
+  width: 100%;
+  height: 100%;
+}
+footer .picture .pic-charge #ture2 {
+  width: 100%;
+  height: 200px;
+}
+footer .picture .pic-charge #ture2 .swiper-wrapper {
+  transition-timing-function: linear;
+}
+footer .picture .pic-charge #ture2 .swiper-wrapper .swiper-slide {
+  width: 200px;
+  height: 200px;
+}
+footer .picture .pic-charge #ture2 img {
+  width: 100%;
+  height: 100%;
+}
 
 @-webkit-keyframes up {
   from {
