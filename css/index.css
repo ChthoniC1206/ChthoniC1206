@@ -268,6 +268,136 @@ main #container {
   background-size: cover;
   background-repeat: no-repeat;
 }
+main .wetlands {
+  height: 100vh;
+  position: relative;
+}
+main .wetlands .a {
+  width: 380px;
+  height: 380px;
+  background-color: white;
+  position: relative;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+main .wetlands .a h2 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+main .wetlands .a p {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+main .wetlands .a a {
+  line-height: 50px;
+  padding-left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: skyblue;
+  position: absolute;
+  left: 40%;
+  bottom: 20%;
+  color: black;
+}
+main .wetlands .b {
+  width: 280px;
+  height: 280px;
+  background-color: white;
+  position: relative;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+main .wetlands .b h2 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+main .wetlands .b p {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+}
+main .wetlands .b a {
+  line-height: 50px;
+  padding-left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: skyblue;
+  position: absolute;
+  left: 40%;
+  bottom: 20%;
+  color: black;
+}
+main .wetlands .c {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  position: relative;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+main .wetlands .c h2 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+main .wetlands .c p {
+  position: absolute;
+  top: 50%;
+}
+main .wetlands .c a {
+  line-height: 50px;
+  padding-left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: skyblue;
+  position: absolute;
+  left: 40%;
+  bottom: 20%;
+  color: black;
+}
+main .wetlands .d {
+  width: 280px;
+  height: 280px;
+  background-color: white;
+  position: relative;
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+main .wetlands .d h2 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+main .wetlands .d p {
+  position: absolute;
+  top: 50%;
+}
+main .wetlands .d a {
+  line-height: 50px;
+  padding-left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: skyblue;
+  position: absolute;
+  left: 40%;
+  bottom: 20%;
+  color: black;
+}
+main .wetlands .introduce {
+  border-radius: 50%;
+}
 main #wave-container {
   width: 100%;
   height: 100vh;
@@ -364,6 +494,7 @@ main #wave-container .bubbles .bubble {
   -webkit-animation: up 8s ease-in-out;
           animation: up 8s ease-in-out;
 }
+
 @-webkit-keyframes up {
   from {
     bottom: -10%;
@@ -374,6 +505,7 @@ main #wave-container .bubbles .bubble {
     opacity: 0.5;
   }
 }
+
 @keyframes up {
   from {
     bottom: -10%;
