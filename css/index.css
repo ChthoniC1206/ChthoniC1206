@@ -297,26 +297,6 @@ main .wetlands a.introduce .a {
   top: 30%;
   left: 15%;
   border-radius: 50%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-main .wetlands a.introduce .a hr {
-  width: 150px;
-}
-main .wetlands a.introduce .a .more {
-  line-height: 59px;
-  text-align: center;
-  width: 59px;
-  height: 59px;
-  border-radius: 50%;
-  background-color: skyblue;
-}
-main .wetlands a.introduce .b {
-  width: 315px;
-  height: 318px;
   position: absolute;
   top: 45%;
   left: 38%;
@@ -327,10 +307,10 @@ main .wetlands a.introduce .b {
   justify-content: space-evenly;
   align-items: center;
 }
-main .wetlands a.introduce .b hr {
+main .wetlands a.introduce .a hr {
   width: 150px;
 }
-main .wetlands a.introduce .b .more {
+main .wetlands a.introduce .a .more {
   line-height: 59px;
   text-align: center;
   width: 59px;
