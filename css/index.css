@@ -1036,6 +1036,34 @@ main .news .card-right {
   height: 250px;
   background-color: #ccc5c5;
 }
+main .news {
+  position: relative;
+}
+main .news .news-box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 25vh;
+  border: 1px solid snow;
+}
+main .news .news-box .swiper {
+  width: 100%;
+  height: 25vh;
+  background-color: red;
+}
+main .news .news-box .swiper .swiper-slide {
+  width: 100%;
+  height: 300px;
+  background-color: red;
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 footer {
   background-size: cover;
@@ -1048,22 +1076,155 @@ footer .travel {
 }
 footer .travel h1 {
   position: absolute;
-  left: 45%;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 50px;
   color: white;
 }
-footer .travel .buttons {
+footer .travel .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  border: 1px solid sandybrown;
+}
+footer .travel .box .map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+footer .travel .box .mini-box1 {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+  overflow: hidden;
+}
+footer .travel .box .mini-box1 .swiper {
+  width: 100%;
+  height: 100%;
+}
+footer .travel .box .mini-box1 .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: transparent;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .travel .box .mini-box1 .swiper .swiper-slide img {
+  position: absolute;
+  left: 10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 40px;
+  background-color: #fbbd9f;
+}
+footer .travel .box .mini-box1 .swiper .swiper-slide .text {
+  position: absolute;
+  right: 3%;
   width: 600px;
+  height: 700px;
+  border-radius: 40px;
+  background-color: #fbbd9f;
+}
+footer .travel .box .mini-box1 .swiper .swiper-slide .circle {
+  position: absolute;
+  top: 10%;
+  right: 42.4%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: purple;
+}
+footer .travel .box .mini-box1 .swiper .swiper-slide .progress {
+  position: absolute;
+  right: 45%;
+  width: 10px;
+  height: 100%;
+  background-color: green;
+}
+footer .travel .box .mini-box2 {
+  width: 100%;
+  height: 100%;
+  background-color: #9ffbdc;
+  overflow: hidden;
+  display: none;
+}
+footer .travel .box .mini-box2 .swiper {
+  width: 100%;
+  height: 100%;
+}
+footer .travel .box .mini-box2 .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: transparent;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .travel .box .mini-box2 .swiper .swiper-slide img {
+  position: absolute;
+  left: 10%;
+  width: 500px;
+  height: 500px;
+  border-radius: 40px;
+  background-color: #fbbd9f;
+}
+footer .travel .box .mini-box2 .swiper .swiper-slide .text {
+  position: absolute;
+  right: 3%;
+  width: 600px;
+  height: 700px;
+  border-radius: 40px;
+  background-color: #fbbd9f;
+}
+footer .travel .box .mini-box2 .swiper .swiper-slide .circle {
+  position: absolute;
+  top: 10%;
+  right: 42.4%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: purple;
+}
+footer .travel .box .mini-box2 .swiper .swiper-slide .progress {
+  position: absolute;
+  right: 45%;
+  width: 10px;
+  height: 100%;
+  background-color: green;
+}
+footer .travel .buttons {
+  width: 800px;
   position: absolute;
   bottom: 2%;
-  left: 37%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: space-evenly;
-  gap: 10px;
+  gap: 40px;
+  cursor: pointer;
 }
 footer .travel .buttons .button {
   font-size: 36px;
   color: white;
+}
+footer .travel .buttons .button span {
+  top: 14%;
+  position: absolute;
+}
+footer .travel .buttons :hover span {
+  transition: 0.5s;
+  position: absolute;
+  transform: translateX(15%);
 }
 footer .picture {
   width: 100%;
@@ -1155,6 +1316,9 @@ footer .text-word {
   height: 100vh;
   z-index: -1;
 }
+.text-seca .word::-webkit-scrollbar {
+  display: none;
+}
 .text-seca .word {
   position: fixed;
   top: 10%;
@@ -1162,13 +1326,14 @@ footer .text-word {
   color: white;
   transform: translate(20%, 0%);
   width: 30%;
-  height: 100%;
+  height: 70vh;
   line-height: 200%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 200%;
+  overflow: auto;
 }
 .text-seca .btna {
   cursor: pointer;
@@ -1185,13 +1350,24 @@ footer .text-word {
   position: fixed;
   top: 50%;
   left: 50%;
+  background-color: #fff;
   transform: translate(-50%, -50%);
   display: none;
   z-index: 2;
 }
-.text-secb img {
-  width: 100%;
-  height: 100%;
+.text-secb .left {
+  height: 80vh;
+  position: absolute;
+  -webkit-clip-path: polygon(0 0%, 45% 0, 60% 100%, 0% 100%);
+          clip-path: polygon(0 0%, 45% 0, 60% 100%, 0% 100%);
+  opacity: 0.7;
+}
+.text-secb .right {
+  height: 80vh;
+  position: absolute;
+  -webkit-clip-path: polygon(45% 0, 100% 0, 100% 100%, 60% 100%);
+          clip-path: polygon(45% 0, 100% 0, 100% 100%, 60% 100%);
+  opacity: 0.7;
 }
 .text-secb .bgcb {
   position: fixed;
@@ -1204,20 +1380,37 @@ footer .text-word {
   height: 100vh;
   z-index: -1;
 }
-.text-secb .word {
+.text-secb .word-right {
   position: fixed;
-  top: 10%;
+  top: 20%;
   left: 60%;
   color: white;
   transform: translate(20%, 0%);
   width: 30%;
-  height: 100%;
+  height: 60vh;
   line-height: 200%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 200%;
+  border: 1px solid black;
+}
+.text-secb .word-left {
+  position: fixed;
+  top: 20%;
+  left: 0%;
+  color: white;
+  transform: translate(20%, 0%);
+  width: 30%;
+  height: 60vh;
+  line-height: 200%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  border: 1px solid black;
 }
 .text-secb .btnb {
   cursor: pointer;
@@ -1237,10 +1430,11 @@ footer .text-word {
   transform: translate(-50%, -50%);
   display: none;
   z-index: 2;
+  background-color: #4598b1;
 }
 .text-secc img {
-  width: 100%;
-  height: 100%;
+  width: 665px;
+  height: 690px;
 }
 .text-secc .bgcc {
   position: fixed;
