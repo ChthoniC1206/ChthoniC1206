@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <!-- swiper -->
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.css">
+
     <link rel="stylesheet" href="./css/index.css">
     <title>高美濕地旅遊網</title>
 </head>
 <body>
+    <!-- 22121321 -->
     <!-- Loading畫面 -->
     <div class="loading">
         <div class="progress">
@@ -44,59 +53,100 @@
         </div>
         </div>
     </div>
-    <!-- Nav選單列 -->
-    <nav class="navbar">
-        <div class="button"></div>
-    </nav>
+    
 
+
+        <!-- Nav選單列 -->
+    <nav>
+        <div class="navbar">
+                <a href="#banner">
+                    <span>縮時攝影</span>
+                </a>
+            <a href="#wetland">
+                <span>
+                    關於濕地
+                </span>
+            </a>
+            <a href="#ecologys">
+                <span>
+                    潮間帶生態
+                </span>
+            </a>
+            <a href="#wave-container">
+                <span>
+                    潮汐時間
+                </span>
+            </a>
+            <a href="#new">
+                <span>
+                    最新消息
+                </span>
+            </a>
+            <a href="#trave">
+                <span>
+                    旅遊資訊
+                </span>
+            </a>
+            <a href="#pictures">
+                <span>
+                    高美景觀
+                </span>
+            </a>
+            <a href="#end">
+                <span>
+                    聯絡我們
+                </span>
+            </a>
+        </div> 
+    </nav>
 
     <main>
         <!-- 縮時攝影 -->
-        <section id="video" class="section">
+        <section id="video" class="section swiper-slide">
             <div id="banner">
-                <video src="./video/Pexels Videos 1250091.mp4" style="display: block;" autoplay muted loop>
+                <video src="" style="display: block;" autoplay muted loop>
                 </video>    
             </div>
         </section>
         <!-- 濕地、生態、潮汐 -->
         <section id="container" class="section">
             <!-- 關於濕地 -->
-            <div style="width: 100%; height: 120vh;" class="wetlands">
+            <div style="width: 100%; height: 120vh;" class="wetlands" id="wetland">
                 <h1>
                 | 關於濕地 |
                 </h1>
-                <a href="" class="introduce">
+                <div class="introduce" data-intro="a">
                     <div class="a" >
                         <h2>高美濕地簡介</h2>
                         <hr>
                         <p>一探究竟高美濕地之美</p>
                         <p class="more">more</p>
                     </div>
-                </a>
-                <a href="" class="introduce">
+                </div>
+                <div class="introduce" data-intro="b">
                     <div class="b" >
                         <h2>生態現狀</h2>
                         <hr>
                         <p>發達的人類文明卻造成生態污染危機</p>
                         <p class="more">more</p>
                     </div>
-                </a>
-                <a href="" class="introduce">
+                </div>
+                <div class="introduce" data-intro="c">
                     <div class="c" >
                         <h2>人文歷史</h2>
                         <hr>
                         <p>從清朝、日治到現今高美濕地</p>
                         <p class="more">more</p>
                     </div>
-                </a>
-                <a href="" class="introduce">
+                </div>
+                <div class="introduce" data-intro="d">
                     <div class="d" >
                         <h2>濕地的功能</h2>
                         <hr>
                         <p>有著大地之腎的美譽孕育豐富的生物</p>
                         <p class="more">more</p>
                     </div>
-                </a>
+                </div>
                 <div class="page-a">
                     <img src="./img/木棧道.webp" alt="">
                 </div>
@@ -123,9 +173,9 @@
                 
             </div>
             <!-- 生態區 -->
-            <div style="width: 100%; height: 150vh;" class="ecology">
+            <div id="ecologys" style="width: 100%; height: 150vh;" class="ecology">
                 <h1>| 潮間帶生態 |</h1>
-                <a href="" class="bird">
+                <a href="./bird.html" class="bird">
                     <div class="icon">
                         <img src="./img/angry-birds.png" alt="">
                     </div>
@@ -199,8 +249,8 @@
                 <div class="wave"></div>   
             </div>
 
-             <!-- 最新消息、旅遊資 訊 -->
-            <div class="news" style="width: 100%; height: 40vh;">
+             <!-- 最新消息、旅遊資訊 -->
+            <div id="new" class="news" style="width: 100%; height: 40vh;">
                 <h1>
                     | 最新消息 |
                 </h1>
@@ -212,9 +262,9 @@
         </section>  
     </main>
     <!-- 結尾 -->
-    <footer class="foot" style="height: 330vh;">
+    <footer class="foot" style="height: 305vh;">
         <!--旅遊資訊  -->
-        <div class="travel">
+        <div id="trave" class="travel" >
             <h1>| 旅遊資訊 |</h1>
             <div class="buttons">
                 <div>
@@ -226,7 +276,7 @@
             </div>  
         </div>  
         <!-- 高美景觀 -->
-        <div class="picture">
+        <div id="pictures" class="picture">
             <h1>| 高美景觀 |</h1>
             <div class="pic-charge">
                 <div class="swiper">
@@ -306,57 +356,72 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper">
-                    <div id="ture2" class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide line1pic1">
-                                <img src="./img/image-from-rawpixel-id-6117639-original.png" alt="">
-                            </div>
-                            <div class="swiper-slide line1pic2">
-                                <img src="./img/wind/1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide line1pic3">
-                                <img src="./img/wind/1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide line1pic4">
-                                <img src="./img/wind/1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide line1pic5">
-                                <img src="./img/wind/1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide line1pic6">
-                                <img src="./img/wind/1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide line1pic7">
-                                <img src="./img/wind/1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide line1pic8">
-                                <img src="./img/wind/1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide line1pic9">
-                                <img src="./img/wind/1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide line1pic10">
-                                <img src="./img/wind/1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide line1pic11">
-                                <img src="./img/wind/1.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>  
+                </div> 
                 </div>
             </div>
         </div>
 
-        <div class="bottom">
+        <div id="end" class="bottom swiper-slide">
             <img src="./img/Frame.png" alt="">
         </div>
         <div class="text-word">
             <p>Copyright © 高美濕地旅遊網. All Rights Reserved.</p>
-        </div>
+        </div>     
     </footer>
+
+        <div class="text-seca"> 
+            <img src="./img/世界馳名最美夕陽-安心遊高美濕地療癒身心靈.jpg" alt="">  
+            <div class="bgca"></div>
+            <div class="word">
+                <span>
+                    高美野生動物保護區是臺灣西海岸 一處生態保護區，位於臺中市清水區西側，包括大甲溪出海口，綜合淡水注水與潮汐交替所構成的海岸溼地。
+                </span>
+                <br>
+                <span>
+                    前身原為海水浴場，自從臺中港北岸 沙堤築起後，大甲溪挾帶泥沙於此，逐漸淤積成漂飛砂地帶，成為現今所見「高美濕地」。
+                    在保護區南北兩處有清水大排與大甲溪注入淡水，並以雲林莞草、大安水蓑衣兩種瀕危植物生長最受關注。
+                </span>
+                <span>
+                    美濕地雖然面積不大，但是由於泥質及沙質灘地兼具，加上與河口沼澤地帶鑲嵌在一起，所以孕育了豐富又複雜的濕地生態，以及目前所知全臺灣最大族群的雲林莞草區，形成乾濕相間伴有植物生長的複雜地形，因為地形多變，生態種類亦相當複雜，主要種類為鳥類、魚類、蟹類及其他無脊椎類等生物；每年秋冬之際，都會有大批的候鳥前往作客，不管是短暫的休息，或是駐足過冬，都為高美濕地增添了不同的生態風貌，更成為賞鳥人士的新據點。
+                </span>
+                <span>
+                    「高美濕地」在中央研究院動物研究所、東海大學生物系、前臺中縣政府農業局、高美地區民眾及民間保育團體的努力之下，
+                    於民國93年9月29日正式由前臺中縣政府公告劃設，所劃設面積約為701.3公頃，「高美濕地」的生態特色終於得到了定位，未來將依野生動物保育法規定，進行相關的經營管理與保育研究等計劃，期待可為高美地區帶來無限的生態旅遊與觀光產業之商機。  
+                </span>          
+            </div>
+            <div class="btna">
+                 <i class="fa-solid fa-x fa-2xl"></i>
+            </div>      
+        </div>
+        <div class="text-secb"> 
+            <img class="left" src="./img/世界馳名最美夕陽-安心遊高美濕地療癒身心靈.jpg" alt="">
+            <img class="right" src="./img/pexels-catherine-sheila-2409022 (1).jpg" alt="">  
+            <div class="bgcb"></div>
+            <div class="word">
+                <span>
+                    高美野生動物保護區是臺灣西海岸 一處生態保護區，位於臺中市清水區西側，包括大甲溪出海口，綜合淡水注水與潮汐交替所構成的海岸溼地。
+                </span>
+                <br>
+                <span>
+                    前身原為海水浴場，自從臺中港北岸 沙堤築起後，大甲溪挾帶泥沙於此，逐漸淤積成漂飛砂地帶，成為現今所見「高美濕地」。
+                    在保護區南北兩處有清水大排與大甲溪注入淡水，並以雲林莞草、大安水蓑衣兩種瀕危植物生長最受關注。
+                </span>
+                <span>
+                    美濕地雖然面積不大，但是由於泥質及沙質灘地兼具，加上與河口沼澤地帶鑲嵌在一起，所以孕育了豐富又複雜的濕地生態，以及目前所知全臺灣最大族群的雲林莞草區，形成乾濕相間伴有植物生長的複雜地形，因為地形多變，生態種類亦相當複雜，主要種類為鳥類、魚類、蟹類及其他無脊椎類等生物；每年秋冬之際，都會有大批的候鳥前往作客，不管是短暫的休息，或是駐足過冬，都為高美濕地增添了不同的生態風貌，更成為賞鳥人士的新據點。
+                </span>
+                <span>
+                    「高美濕地」在中央研究院動物研究所、東海大學生物系、前臺中縣政府農業局、高美地區民眾及民間保育團體的努力之下，
+                    於民國93年9月29日正式由前臺中縣政府公告劃設，所劃設面積約為701.3公頃，「高美濕地」的生態特色終於得到了定位，未來將依野生動物保育法規定，進行相關的經營管理與保育研究等計劃，期待可為高美地區帶來無限的生態旅遊與觀光產業之商機。  
+                </span>          
+            </div>
+            <div class="btnb">
+                 <i class="fa-solid fa-x fa-2xl"></i>
+            </div>      
+        </div>
+
+    
+
+    <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- loading 、 進度條 -->
     <script src="./js/loading.js"></script>
@@ -364,15 +429,17 @@
     <script src="./js/wave.js"></script>
     <!-- 高美景觀輪播圖片 -->
     <script src="./js/pic.js"></script>
+    <!-- 彈跳視窗 : 濕地介紹部分 -->
+    <script src="./js/text.js"></script>
 
     <script>
         window.addEventListener('scroll', function(){
             const scrollY = window.scrollY
             console.log(window.scrollY);
         });
-
-        // Nav 選單
-   
+        
+        
+ 
         // 最新消息 
         
     </script>

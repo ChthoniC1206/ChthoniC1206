@@ -1,7 +1,5 @@
-function loading () {
-    const loading = document.querySelector('.loading')
-};
-loading();
+
+const loading = document.querySelector('.loading')
 function move() {
     var elem = document.querySelector(".myBar");   
     var width = 0;
@@ -9,6 +7,8 @@ function move() {
     function frame() {
         if (width >= 100) {
             clearInterval(id);
+            loading.style.opacity = '0'
+            loading.style.transition = '1s'
         } else {
             width++; 
             elem.style.width = width + '%'; 
@@ -16,3 +16,9 @@ function move() {
     }
 }   
 move()
+loading.addEventListener('transitionend',function(e){
+    console.log(e.propertyName);
+    if(e.propertyName == 'opacity'){
+        loading.style.display = 'none'
+    }
+});

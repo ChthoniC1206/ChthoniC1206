@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -14,6 +15,11 @@ img {
   height: 100vh;
 }
 
+.loading {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
 .loading .bird {
   position: absolute;
   width: 8%;
@@ -245,19 +251,45 @@ img {
 nav {
   position: fixed;
   top: 20%;
-  right: 10%;
-  height: 200px;
+  right: 37px;
+  height: 50%;
   width: 30px;
-  border: 1px solid black;
+  z-index: 2;
+}
+nav .navbar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  color: black;
+  position: relative;
 }
-nav .button {
+nav .navbar a {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+nav .navbar a span {
+  color: wheat;
+  font-size: 20px;
+  opacity: 0;
+  width: 100px;
+  position: absolute;
+  right: 20%;
+  font-family: "Rubik 80s Fade", cursive;
+}
+nav .navbar a:hover {
+  justify-content: space-evenly;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  color: transparent;
-  border: 3px solid white;
+  transition: 0.5s;
+}
+nav .navbar a:hover span {
+  transition: 1.5s;
+  opacity: 1;
 }
 
 main {
@@ -285,12 +317,13 @@ main .wetlands::-webkit-scrollbar {
 main .wetlands {
   position: relative;
 }
-main .wetlands a.introduce {
+main .wetlands div.introduce {
+  cursor: pointer;
   z-index: 1;
   text-decoration: none;
   color: black;
 }
-main .wetlands a.introduce .a {
+main .wetlands div.introduce .a {
   width: 395px;
   height: 395px;
   position: absolute;
@@ -307,10 +340,10 @@ main .wetlands a.introduce .a {
   justify-content: space-evenly;
   align-items: center;
 }
-main .wetlands a.introduce .a hr {
+main .wetlands div.introduce .a hr {
   width: 150px;
 }
-main .wetlands a.introduce .a .more {
+main .wetlands div.introduce .a .more {
   line-height: 59px;
   text-align: center;
   width: 59px;
@@ -318,7 +351,32 @@ main .wetlands a.introduce .a .more {
   border-radius: 50%;
   background-color: skyblue;
 }
-main .wetlands a.introduce .c {
+main .wetlands div.introduce .b {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .wetlands div.introduce .b hr {
+  width: 150px;
+}
+main .wetlands div.introduce .b .more {
+  line-height: 59px;
+  text-align: center;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background-color: skyblue;
+}
+main .wetlands div.introduce .c {
   width: 320px;
   height: 320px;
   border-radius: 50%;
@@ -331,10 +389,10 @@ main .wetlands a.introduce .c {
   justify-content: space-evenly;
   align-items: center;
 }
-main .wetlands a.introduce .c hr {
+main .wetlands div.introduce .c hr {
   width: 150px;
 }
-main .wetlands a.introduce .c .more {
+main .wetlands div.introduce .c .more {
   line-height: 59px;
   text-align: center;
   width: 59px;
@@ -342,7 +400,7 @@ main .wetlands a.introduce .c .more {
   border-radius: 50%;
   background-color: skyblue;
 }
-main .wetlands a.introduce .d {
+main .wetlands div.introduce .d {
   width: 370px;
   height: 370px;
   border-radius: 50%;
@@ -355,10 +413,10 @@ main .wetlands a.introduce .d {
   justify-content: space-evenly;
   align-items: center;
 }
-main .wetlands a.introduce .d hr {
+main .wetlands div.introduce .d hr {
   width: 150px;
 }
-main .wetlands a.introduce .d .more {
+main .wetlands div.introduce .d .more {
   line-height: 59px;
   text-align: center;
   width: 59px;
@@ -366,7 +424,7 @@ main .wetlands a.introduce .d .more {
   border-radius: 50%;
   background-color: skyblue;
 }
-main .wetlands a.introduce .a:hover {
+main .wetlands div.introduce .a:hover {
   background-color: #fde86e;
 }
 main .wetlands .page-a {
@@ -850,6 +908,7 @@ main #wave-container {
   width: 100%;
   height: 100vh;
   position: relative;
+  z-index: 1;
   overflow: hidden;
 }
 main #wave-container .sun-box {
@@ -1031,7 +1090,7 @@ footer .picture .pic-charge #ture .swiper-wrapper {
   transition-timing-function: linear;
 }
 footer .picture .pic-charge #ture .swiper-wrapper .swiper-slide {
-  width: 200px;
+  width: 350px;
   height: 200px;
 }
 footer .picture .pic-charge #ture img {
@@ -1046,27 +1105,174 @@ footer .picture .pic-charge #reverse .swiper-wrapper {
   transition-timing-function: linear;
 }
 footer .picture .pic-charge #reverse .swiper-wrapper .swiper-slide {
-  width: 200px;
+  width: 350px;
   height: 200px;
 }
 footer .picture .pic-charge #reverse img {
   width: 100%;
   height: 100%;
 }
-footer .picture .pic-charge #ture2 {
+footer .bottom {
   width: 100%;
-  height: 200px;
+  height: 100vh;
 }
-footer .picture .pic-charge #ture2 .swiper-wrapper {
-  transition-timing-function: linear;
-}
-footer .picture .pic-charge #ture2 .swiper-wrapper .swiper-slide {
-  width: 200px;
-  height: 200px;
-}
-footer .picture .pic-charge #ture2 img {
+footer .bottom img {
   width: 100%;
   height: 100%;
+}
+footer .text-word {
+  font-size: 20px;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+}
+
+.text-sec {
+  width: 100%;
+  height: 80vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 2;
+}
+.text-sec img {
+  width: 100%;
+  height: 100%;
+}
+.text-sec .bgca {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(0, 0, 0);
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.text-sec .word {
+  position: fixed;
+  top: 10%;
+  left: 60%;
+  color: white;
+  transform: translate(20%, 0%);
+  width: 30%;
+  height: 100%;
+  line-height: 200%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+}
+.text-sec .btna {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.text-seca {
+  width: 100%;
+  height: 80vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.text-seca img {
+  width: 100%;
+  height: 100%;
+}
+.text-seca .bgca {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(0, 0, 0);
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.text-seca .word {
+  position: fixed;
+  top: 10%;
+  left: 60%;
+  color: white;
+  transform: translate(20%, 0%);
+  width: 30%;
+  height: 100%;
+  line-height: 200%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+}
+.text-seca .btna {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+
+.text-secb {
+  width: 100%;
+  height: 80vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.text-secb img {
+  width: 100%;
+  height: 100%;
+}
+.text-secb .bgcb {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(0, 0, 0);
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.text-secb .word {
+  position: fixed;
+  top: 10%;
+  left: 60%;
+  color: white;
+  transform: translate(20%, 0%);
+  width: 30%;
+  height: 100%;
+  line-height: 200%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+}
+.text-secb .btnb {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
 }
 
 @-webkit-keyframes up {
