@@ -1039,7 +1039,7 @@ footer .background-dowm .news {
 }
 footer .background-dowm .news h1 {
   padding-top: 100px;
-  color: white;
+  color: #FFF;
   font-size: 50px;
   padding-top: 10px;
   display: flex;
@@ -1052,7 +1052,7 @@ footer .background-dowm .news .news-box {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 85%;
-  height: 300px;
+  height: 60%;
 }
 footer .background-dowm .news .news-box .swiper {
   width: 100%;
@@ -1073,12 +1073,14 @@ footer .background-dowm .news .news-box .swiper .swiper-slide .text-word {
   opacity: 0.5;
   display: flex;
   flex-wrap: wrap;
+  padding: 5%;
 }
 footer .background-dowm .news .news-box .swiper .swiper-slide .text-word h2 {
   width: 100%;
 }
 footer .background-dowm .news .news-box .swiper .swiper-slide .text-word p {
   width: 100%;
+  word-break: break-all;
 }
 footer .background-dowm .news .news-box .swiper .btn {
   color: black;
