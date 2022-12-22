@@ -1544,7 +1544,14 @@ footer {
     }
 }
 // 鳥類
-
+.bird-sec {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
     @keyframes up {
         from {
             bottom: -10%;
