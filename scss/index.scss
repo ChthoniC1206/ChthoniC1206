@@ -979,7 +979,9 @@ footer {
         // 最新消息
         .news {
             position: relative;
+            padding-top: 50px;
             h1 {
+                padding-top: 100px;
                 color: white;
                 font-size: 50px;
                 padding-top: 10px;
@@ -988,12 +990,13 @@ footer {
             }
             .news-box {
                 position: absolute;
+                margin-top: 70px;
                 top: 60%;
                 left: 50%;
                 transform: translate(-50%,-50%);
-                width: 90%;
+                width: 85%;
                 height: 300px;
-                border: 1px solid snow;
+                // border: 1px solid snow;
                 .swiper {
                     width: 100%;
                     height: 100%;
@@ -1016,8 +1019,8 @@ footer {
                         .text-word {
                             width: 85%;
                             height: 100%;
-                            background-color: purple;
-                            opacity: .8;
+                            background-color: #292929;
+                            opacity: 0.5;
                             display: flex;
                             flex-wrap: wrap;
                             h2 {
@@ -1039,6 +1042,7 @@ footer {
         .travel {
             width: 100%;
             height: 100vh;
+            margin-top: 120px;
             position: relative;
             h1 {
                 position: absolute;
@@ -1094,8 +1098,9 @@ footer {
                             img {
                                 position: absolute;
                                 left: 10%;
-                                width: 500px;
-                                height: 500px;
+                                top:25%;
+                                width: 35%;
+                                height: 65%;
                                 border-radius: 40px;
                                 background-color: #fbbd9f;
                             }
