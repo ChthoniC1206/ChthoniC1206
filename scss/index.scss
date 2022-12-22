@@ -12,6 +12,9 @@ img {
     width: 100%;
     height: 100vh;
 }
+.padding {
+    
+}
 // loading畫面
 .loading {
     position: fixed;
@@ -226,6 +229,7 @@ nav {
 main {
     width: 100%;
     height: 100%;
+    // 縮時影片
     #banner {
         width: 100%;
         height: 100vh;
@@ -493,722 +497,763 @@ main {
         }
 
     } 
-    // 生態區
-    .ecology::-webkit-scrollbar {
-        display: none;
-    }
-    .ecology {
-        position: relative;
-        h1 {
-            top: 5%;
-            left: 43%;
-            font-size: 50px;
-            position: absolute;
-            color: white;
-        }
-        .bird {
-            color: black;
-            display: block;
-            position: absolute;
-            top: 10%;
-            left: 25%;
-            width: 400px;
-            height: 490px;
-            position: relative;
-            .icon {
-                position: absolute;
-                overflow: hidden;
-                top: 0%;
-                left: 40%;
-                width: 80px;
-                height: 80px;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .image {
-                position: absolute;
-                top: 15%;
-                overflow: hidden;
-                width: 400px;
-                height: 400px;
-                border-radius: 50%;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .text {
-                font-size: 20px;
-                text-align: center;
-                line-height: 125px;
-                position: absolute;
-                bottom: 0%;
-                right: 0%;
-                z-index: 2;
-                width: 125px;
-                height: 125px;
-                border-radius: 50%;
-                background-color: #ffcc99;
-            }
-        }
-        .plant {
-            color: black;
-            display: block;
-            position: absolute;
-            top: 0%;
-            left: 60%;
-            width: 385px;
-            height: 455px;
-            position: relative;
-            .icon {
-                position: absolute;
-                overflow: hidden;
-                top: 0%;
-                left: 40%;
-                width: 80px;
-                height: 80px;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .image {
-                position: absolute;
-                top: 15%;
-                overflow: hidden;
-                width: 385px;
-                height: 385px;
-                border-radius: 50%;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .text {
-                font-size: 20px;
-                text-align: center;
-                line-height: 125px;
-                position: absolute;
-                bottom: 0%;
-                right: 10%;
-                z-index: 2;
-                width: 125px;
-                height: 125px;
-                border-radius: 50%;
-                background-color: #ffcc99;
-            }
-        }
-        .crab {
-            color: black;
-            display: block;
-            position: absolute;
-            top: -20%;
-            left: 33%;
-            width: 500px;
-            height: 500px;
-            position: relative;
-            .icon {
-                position: absolute;
-                overflow: hidden;
-                top: 3%;
-                left: 40%;
-                width: 80px;
-                height: 80px;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .image {
-                position: absolute;
-                top: 15%;
-                left: 5%;
-                overflow: hidden;
-                width: 422px;
-                height: 420px;
-                border-radius: 50%;
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .text {
-                font-size: 20px;
-                text-align: center;
-                line-height: 125px;
-                position: absolute;
-                bottom: 0%;
-                right: 10%;
-                z-index: 2;
-                width: 125px;
-                height: 125px;
-                border-radius: 50%;
-                background-color: #ffcc99;
-            }
-        }
-        .pic-bird {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            width: 170px;
-            height: 170px;
-            border-radius: 50%;
-            overflow: hidden;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-        .pic-fish {
-            position: absolute;
-            top: 67%;
-            left: 60%;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            overflow: hidden;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-        .circle-pink {
-            position: absolute;
-            top: 45%;
-            left: 28%;
-            width: 95px;
-            height: 95px;
-            border-radius: 50%;
-            background-color: #fbbd9f;
-        }
-        .circle-orange {
-            position: absolute;
-            top: 73%;
-            left: 53%;
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            background-color: #ff925b;
-        }
-        .circle-orange-top {
-            position: absolute;
-            top: 80%;
-            left: 50%;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background-color: #ff925b;
-        }
-        .circle-orange-down {
-            position: absolute;
-            top: 85%;
-            left: 55%;
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            background-color: #ff925b;
-        }
-        .bgc-cloud-top {
-            position: absolute;
-            top: 5%;
-            left: -10%;
-            width: 800px;
-            height: 800px;
-            overflow: hidden;
-            filter: 
-            blur(15px)
-            brightness(200%);
-            animation: top 10s ease-in-out infinite;
-        }
-        .bgc-cloud-right {
-            position: absolute;
-            top: 10%;
-            left: 82%;
-            width: 700px;
-            height: 700px;
-            overflow: hidden;
-            filter: 
-            blur(20px)
-            brightness(300%);
-            animation: right 40s ease-in-out infinite;
-        }
-        .bgc-cloud-left {
-            position: absolute;
-            top: 30%;
-            left: 10%;
-            width: 800px;
-            height: 800px;
-            overflow: hidden;
-            filter: 
-            blur(14px)
-            brightness(400%);
-            animation: left 36s ease-in-out infinite;
-        }
-        .bgc-cloud-down {
-            position: absolute;
-            bottom: 3%;
-            left: 60%;
-            width: 800px;
-            height: 800px;
-            overflow: hidden;
-            filter: 
-            blur(10px)
-            brightness(400%);
-            animation: down 50s ease-in-out infinite;
-        }
-        @keyframes top {
-            from {
-                left: -50%;
-            }
-            to {
-                left: 100%;
-            }
-        }
-        @keyframes right {
-            from {
-                left: -50%;
-            }
-            to {
-                left: 100%;
-            }
-        }
-        @keyframes left {
-            from {
-                left: -50%;
-            }
-            to {
-                left: 100%;
-            }
-        }
-        @keyframes down {
-            from {
-                left: -50%;
-            }
-            to {
-                left: 100%;
-            }
-        }
-    }
-    // 潮汐區
-    #wave-container{
+    .backgruond-mid {
         width: 100%;
-        height: 100vh;
-        // background-image: url('../img/backfround.png');
-        // background-size: cover;
-        // background-position: center;
-        // background-color: #f3ada7;
-        // background: linear-gradient(#88badfa8, #fbb3a3, #ff9e0cad);
+        height: 100%;
         position: relative;
-        z-index: 1;
-        overflow: hidden;
-
-        // .plane{
-        //     position: absolute;
-        //     width: 100px;
-        //     animation: fly 20000ms infinite linear;
-        //     cursor: pointer;
-        //     z-index: 1;
-        // }
-        .sun-box{
+        img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+        // 生態區
+        .ecology::-webkit-scrollbar {
+            display: none;
+        }
+        .ecology {
             position: relative;
-            left: 10%;
-            top: 10%;
-            width: 500px;
-            height: 500px;
-            // animation: sunmove 20000ms infinite linear;
-            .sun{
+            h1 {
+                top: 5%;
+                left: 43%;
+                font-size: 50px;
                 position: absolute;
+                color: white;
+            }
+            .bird {
+                color: black;
+                display: block;
+                position: absolute;
+                top: 10%;
+                left: 25%;
+                width: 400px;
+                height: 490px;
+                position: relative;
+                .icon {
+                    position: absolute;
+                    overflow: hidden;
+                    top: 0%;
+                    left: 40%;
+                    width: 80px;
+                    height: 80px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .image {
+                    position: absolute;
+                    top: 15%;
+                    overflow: hidden;
+                    width: 400px;
+                    height: 400px;
+                    border-radius: 50%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .text {
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 125px;
+                    position: absolute;
+                    bottom: 0%;
+                    right: 0%;
+                    z-index: 2;
+                    width: 125px;
+                    height: 125px;
+                    border-radius: 50%;
+                    background-color: #ffcc99;
+                }
+            }
+            .plant {
+                color: black;
+                display: block;
+                position: absolute;
+                top: 0%;
+                left: 60%;
+                width: 385px;
+                height: 455px;
+                position: relative;
+                .icon {
+                    position: absolute;
+                    overflow: hidden;
+                    top: 0%;
+                    left: 40%;
+                    width: 80px;
+                    height: 80px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .image {
+                    position: absolute;
+                    top: 15%;
+                    overflow: hidden;
+                    width: 385px;
+                    height: 385px;
+                    border-radius: 50%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .text {
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 125px;
+                    position: absolute;
+                    bottom: 0%;
+                    right: 10%;
+                    z-index: 2;
+                    width: 125px;
+                    height: 125px;
+                    border-radius: 50%;
+                    background-color: #ffcc99;
+                }
+            }
+            .crab {
+                color: black;
+                display: block;
+                position: absolute;
+                top: -20%;
+                left: 33%;
                 width: 500px;
                 height: 500px;
-                background-color:#fde86e;
+                position: relative;
+                .icon {
+                    position: absolute;
+                    overflow: hidden;
+                    top: 3%;
+                    left: 40%;
+                    width: 80px;
+                    height: 80px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .image {
+                    position: absolute;
+                    top: 15%;
+                    left: 5%;
+                    overflow: hidden;
+                    width: 422px;
+                    height: 420px;
+                    border-radius: 50%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .text {
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 125px;
+                    position: absolute;
+                    bottom: 0%;
+                    right: 10%;
+                    z-index: 2;
+                    width: 125px;
+                    height: 125px;
+                    border-radius: 50%;
+                    background-color: #ffcc99;
+                }
+            }
+            .pic-bird {
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                width: 170px;
+                height: 170px;
                 border-radius: 50%;
-                opacity: 0;
-                box-shadow: 0 0 50px 10px #fde86e;
-                animation: sunshadow 4s 1s infinite linear;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .pic-fish {
+                position: absolute;
+                top: 67%;
+                left: 60%;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .circle-pink {
+                position: absolute;
+                top: 45%;
+                left: 28%;
+                width: 95px;
+                height: 95px;
+                border-radius: 50%;
+                background-color: #fbbd9f;
+            }
+            .circle-orange {
+                position: absolute;
+                top: 73%;
+                left: 53%;
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                background-color: #ff925b;
+            }
+            .circle-orange-top {
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-color: #ff925b;
+            }
+            .circle-orange-down {
+                position: absolute;
+                top: 85%;
+                left: 55%;
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                background-color: #ff925b;
+            }
+            .bgc-cloud-top {
+                position: absolute;
+                top: 5%;
+                left: -10%;
+                width: 800px;
+                height: 800px;
+                overflow: hidden;
+                filter: 
+                blur(15px)
+                brightness(200%);
+                animation: top 10s ease-in-out infinite;
+            }
+            .bgc-cloud-right {
+                position: absolute;
+                top: 10%;
+                left: 82%;
+                width: 700px;
+                height: 700px;
+                overflow: hidden;
+                filter: 
+                blur(20px)
+                brightness(300%);
+                animation: right 40s ease-in-out infinite;
+            }
+            .bgc-cloud-left {
+                position: absolute;
+                top: 30%;
+                left: 10%;
+                width: 800px;
+                height: 800px;
+                overflow: hidden;
+                filter: 
+                blur(14px)
+                brightness(400%);
+                animation: left 36s ease-in-out infinite;
+            }
+            .bgc-cloud-down {
+                position: absolute;
+                bottom: 3%;
+                left: 60%;
+                width: 800px;
+                height: 800px;
+                overflow: hidden;
+                filter: 
+                blur(10px)
+                brightness(400%);
+                animation: down 50s ease-in-out infinite;
+            }
+            @keyframes top {
+                from {
+                    left: -50%;
+                }
+                to {
+                    left: 100%;
+                }
+            }
+            @keyframes right {
+                from {
+                    left: -50%;
+                }
+                to {
+                    left: 100%;
+                }
+            }
+            @keyframes left {
+                from {
+                    left: -50%;
+                }
+                to {
+                    left: 100%;
+                }
+            }
+            @keyframes down {
+                from {
+                    left: -50%;
+                }
+                to {
+                    left: 100%;
+                }
+            }
+        }
+        // 潮汐區
+        #wave-container{
+            width: 100%;
+            height: 100vh;
+            // background-image: url('../img/backfround.png');
+            // background-size: cover;
+            // background-position: center;
+            // background-color: #f3ada7;
+            // background: linear-gradient(#88badfa8, #fbb3a3, #ff9e0cad);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
     
-                &:nth-child(2){
-                    width:300px;
-                    height:300px;
+            // .plane{
+            //     position: absolute;
+            //     width: 100px;
+            //     animation: fly 20000ms infinite linear;
+            //     cursor: pointer;
+            //     z-index: 1;
+            // }
+            .sun-box{
+                position: relative;
+                left: 10%;
+                top: 10%;
+                width: 500px;
+                height: 500px;
+                // animation: sunmove 20000ms infinite linear;
+                .sun{
+                    position: absolute;
+                    width: 500px;
+                    height: 500px;
+                    background-color:#fde86e;
+                    border-radius: 50%;
                     opacity: 0;
-                    left: calc(25% - 25px);
-                    top: calc(25% - 25px);
-                    animation: sunshadow 4s infinite linear;
+                    box-shadow: 0 0 50px 10px #fde86e;
+                    animation: sunshadow 4s 1s infinite linear;
+        
+                    &:nth-child(2){
+                        width:300px;
+                        height:300px;
+                        opacity: 0;
+                        left: calc(25% - 25px);
+                        top: calc(25% - 25px);
+                        animation: sunshadow 4s infinite linear;
+                    }
+                    &:nth-child(3){
+                        width:150px;
+                        height:150px;
+                        opacity: 1;
+                        left: calc(50% - 75px);
+                        top: calc(50% - 75px);
+                        animation: none;
+                    }
+                }
+            }
+            .wave{
+                position: absolute;
+                width: 1000vw;
+                height: 1000vw;
+                background:radial-gradient(circle closest-corner at left,#6dcdefc1,#8dcde4a5,#b1cef0e0,#55a0f6e0);
+                // background: linear-gradient(to left,#6ecaecd2,#8dcde4d2,#167699);
+                left: -420%;
+                top: 700px;
+                border-radius: 48%;
+                animation: waves 30000ms infinite linear;
+        
+                &:nth-child(2){
+                    animation: waves 18000ms infinite linear;
+                    left: -450%;
                 }
                 &:nth-child(3){
-                    width:150px;
-                    height:150px;
-                    opacity: 1;
-                    left: calc(50% - 75px);
-                    top: calc(50% - 75px);
-                    animation: none;
+                    animation: waves 10000ms infinite linear;
+                    left: -500%;
                 }
+                &:nth-child(4){
+                    animation: waves 7000ms infinite linear;
+                    left: -350%;
+                }
+                &:nth-child(5){
+                    animation: waves 13000ms infinite linear;
+                    left: -380%;
+                }
+                &:nth-child(6){
+                    animation: waves 8000ms infinite linear;
+                    left: -440%;
+                }
+        
             }
-        }
-        .wave{
-            position: absolute;
-            width: 1000vw;
-            height: 1000vw;
-            background:radial-gradient(circle closest-corner at left,#6dcdefc1,#8dcde4a5,#b1cef0e0,#55a0f6e0);
-            // background: linear-gradient(to left,#6ecaecd2,#8dcde4d2,#167699);
-            left: -420%;
-            top: 700px;
-            border-radius: 48%;
-            animation: waves 30000ms infinite linear;
-    
-            &:nth-child(2){
-                animation: waves 18000ms infinite linear;
-                left: -450%;
-            }
-            &:nth-child(3){
-                animation: waves 10000ms infinite linear;
-                left: -500%;
-            }
-            &:nth-child(4){
-                animation: waves 7000ms infinite linear;
-                left: -350%;
-            }
-            &:nth-child(5){
-                animation: waves 13000ms infinite linear;
-                left: -380%;
-            }
-            &:nth-child(6){
-                animation: waves 8000ms infinite linear;
-                left: -440%;
-            }
-    
-        }
-        .bubbles {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            z-index: 5;
-            .bubble {
-                width: 10px;
-                height: 10px;
-                border: 1px solid #fff;
-                border-radius: 50%;
-                position: absolute;
-                bottom: -10%;
-                animation: up 8s ease-in-out;
-              }  
-        }
-    }
-    // 最新消息
-    .news {
-        background-color: #2a2f41;
-        position: relative;
-        h1 {
-            position: absolute;
-            top: 5%;
-            left: 45%;
-            font-size: 50px;
-            color: white;
-        }
-        .card-left {
-            top: 30%;
-            left: 15%;
-            position: absolute;
-            width: 450px;
-            height: 250px;
-            background-color: #ccc5c5;
-        }
-        .card-mid {
-            top: 30%;
-            left: 40%;
-            position: absolute;
-            width: 450px;
-            height: 250px;
-            background-color: #ccc5c5;
-        }
-        .card-right {
-            top: 30%;
-            left: 65%;
-            position: absolute;
-            width: 450px;
-            height: 250px;
-            background-color: #ccc5c5;
-        }
-
-    }
-    // 最新消息
-    .news {
-        position: relative;
-        .news-box {
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            width: 100%;
-            height: 25vh;
-            border: 1px solid snow;
-            .swiper {
+            .bubbles {
                 width: 100%;
-                height: 25vh;
-                background-color: red;
-                .swiper-slide {
-                    width: 100%;
-                    height: 300px;
-                    background-color: red;
-                    text-align: center;
-                    font-size: 18px;
+                height: 100%;
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                z-index: 5;
+                .bubble {
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: -10%;
+                    animation: up 8s ease-in-out;
+                  }  
+            }
+        }
+    }
+    // // 最新消息
+    // .news {
+    //     position: relative;
+    //     .news-box {
+    //         position: absolute;
+    //         top: 60%;
+    //         left: 50%;
+    //         transform: translate(-50%,-50%);
+    //         width: 100%;
+    //         height: 25vh;
+    //         border: 1px solid snow;
+    //         .swiper {
+    //             width: 100%;
+    //             height: 25vh;
+    //             background-color: red;
+    //             .swiper-slide {
+    //                 width: 100%;
+    //                 height: 300px;
+    //                 background-color: red;
+    //                 text-align: center;
+    //                 font-size: 18px;
                     
             
-                    /* Center slide text vertically */
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: -webkit-flex;
-                    display: flex;
-                    -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                    -webkit-justify-content: center;
-                    justify-content: center;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    -webkit-align-items: center;
-                    align-items: center;
-                }
-            }
-        }
-    }
-    
-   
+    //                 /* Center slide text vertically */
+    //                 display: -webkit-box;
+    //                 display: -ms-flexbox;
+    //                 display: -webkit-flex;
+    //                 display: flex;
+    //                 -webkit-box-pack: center;
+    //                 -ms-flex-pack: center;
+    //                 -webkit-justify-content: center;
+    //                 justify-content: center;
+    //                 -webkit-box-align: center;
+    //                 -ms-flex-align: center;
+    //                 -webkit-align-items: center;
+    //                 align-items: center;
+    //             }
+    //         }
+    //     }
+    // }
 }
 // 結尾
 footer {
     background-size: cover;
     background-image: url('../img/星空魚.jpg');
-    // 旅遊資訊
-    .travel {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        h1 {
+    // 背景底圖2
+    .background-dowm {
+        img {
+            width: 100%;
+            height: 240vh;
             position: absolute;
-            top: 1%;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 50px;
-            color: white;
+            transform: translateY(-7%);
         }
-        .box {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            width: 80%;
-            height: 80%;
-            border: 1px solid sandybrown;
-            // GOOGLE地圖
-            .map {
+        // 最新消息
+        .news {
+            position: relative;
+            h1 {
+                color: white;
+                font-size: 50px;
+                padding-top: 10px;
+                display: flex;
+                justify-content: center;
+            }
+            .news-box {
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 90%;
+                height: 300px;
+                border: 1px solid snow;
+                .swiper {
+                    width: 100%;
+                    height: 100%;
+                    .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                        .text-word {
+                            width: 85%;
+                            height: 100%;
+                            background-color: purple;
+                            opacity: .8;
+                            display: flex;
+                            flex-wrap: wrap;
+                            h2 {
+                                width: 100%;
+                            }
+                            p {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .btn {
+                        color: black;
+                        --swiper-navigation-size: 35px
+                    }
+                }
+            }
+        }
+        // 旅遊資訊
+        .travel {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            h1 {
+                position: absolute;
+                top: 1%;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 50px;
+                color: white;
+            }
+            .box {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%,-50%);   
-                display: block;
-            }
-            // 遊程安排
-            .mini-box1 {
-                width: 100%;
-                height: 100%;
-                display: none;
-                position: relative;
-                overflow: hidden;
-                .swiper {
-                    width: 100%;
-                    height: 100%;
-                    .swiper-slide {
-                        text-align: center;
-                        font-size: 18px;
-                        background-color: transparent;
-                        /* Center slide text vertically */
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: -webkit-flex;
-                        display: flex;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        -webkit-justify-content: center;
-                        justify-content: center;
-                        -webkit-box-align: center;
-                        -ms-flex-align: center;
-                        -webkit-align-items: center;
-                        align-items: center;
-                        img {
-                            position: absolute;
-                            left: 10%;
-                            width: 500px;
-                            height: 500px;
-                            border-radius: 40px;
-                            background-color: #fbbd9f;
-                        }
-                        .text {
-                            position: absolute;
-                            right: 3%;
-                            width: 600px;
-                            height: 700px;
-                            border-radius: 40px;
-                            background-color: #fbbd9f;
-                        }
-                        .circle {
-                            position: absolute;
-                            top: 10%;
-                            right: 42.4%;
-                            width: 100px;
-                            height: 100px;
-                            border-radius: 50%;
-                            background-color: purple;
-                        }
-                        .progress {
-                            position: absolute;
-                            right: 45%;
-                            width: 10px;
-                            height: 100%;
-                            background-color: green;
-                        }
-                      }
-                  }  
-            }
-            // 導覽解說
-            .mini-box2 {
-                width: 100%;
-                height: 100%;
-                background-color: #9ffbdc; 
-                overflow: hidden;
-                display: none;
-                .swiper {
-                    width: 100%;
-                    height: 100%;
-                    .swiper-slide {
-                        text-align: center;
-                        font-size: 18px;
-                        background-color: transparent;
-                        /* Center slide text vertically */
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: -webkit-flex;
-                        display: flex;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        -webkit-justify-content: center;
-                        justify-content: center;
-                        -webkit-box-align: center;
-                        -ms-flex-align: center;
-                        -webkit-align-items: center;
-                        align-items: center;
-                        img {
-                            position: absolute;
-                            left: 10%;
-                            width: 500px;
-                            height: 500px;
-                            border-radius: 40px;
-                            background-color: #fbbd9f;
-                        }
-                        .text {
-                            position: absolute;
-                            right: 3%;
-                            width: 600px;
-                            height: 700px;
-                            border-radius: 40px;
-                            background-color: #fbbd9f;
-                        }
-                        .circle {
-                            position: absolute;
-                            top: 10%;
-                            right: 42.4%;
-                            width: 100px;
-                            height: 100px;
-                            border-radius: 50%;
-                            background-color: purple;
-                        }
-                        .progress {
-                            position: absolute;
-                            right: 45%;
-                            width: 10px;
-                            height: 100%;
-                            background-color: green;
-                        }
-                      }
-                 }  
-            }
-        }
-        .buttons {
-            width: 800px;
-            position: absolute;
-            bottom: 2%;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            justify-content: space-evenly;
-            gap: 40px;
-            cursor: pointer;
-            .button{
-                font-size: 36px;
-                color: white;
-                span {
-                    top: 14%;
+                transform: translate(-50%,-50%);
+                width: 80%;
+                height: 80%;
+                border: 1px solid sandybrown;
+                // GOOGLE地圖
+                .map {
                     position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);   
+                    display: block;
+                }
+                // 遊程安排
+                .mini-box1 {
+                    width: 100%;
+                    height: 100%;
+                    display: none;
+                    position: relative;
+                    overflow: hidden;
+                    .swiper {
+                        width: 100%;
+                        height: 100%;
+                        .swiper-slide {
+                            text-align: center;
+                            font-size: 18px;
+                            background-color: transparent;
+                            /* Center slide text vertically */
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: -webkit-flex;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            -webkit-align-items: center;
+                            align-items: center;
+                            img {
+                                position: absolute;
+                                left: 10%;
+                                width: 500px;
+                                height: 500px;
+                                border-radius: 40px;
+                                background-color: #fbbd9f;
+                            }
+                            .text {
+                                position: absolute;
+                                right: 3%;
+                                width: 600px;
+                                height: 700px;
+                                border-radius: 40px;
+                                background-color: #fbbd9f;
+                            }
+                            .circle {
+                                position: absolute;
+                                top: 10%;
+                                right: 42.4%;
+                                width: 100px;
+                                height: 100px;
+                                border-radius: 50%;
+                                background-color: purple;
+                            }
+                            .progress {
+                                position: absolute;
+                                right: 45%;
+                                width: 10px;
+                                height: 100%;
+                                background-color: green;
+                            }
+                          }
+                      }  
+                }
+                // 導覽解說
+                .mini-box2 {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #9ffbdc; 
+                    overflow: hidden;
+                    display: none;
+                    .swiper {
+                        width: 100%;
+                        height: 100%;
+                        .swiper-slide {
+                            text-align: center;
+                            font-size: 18px;
+                            background-color: transparent;
+                            /* Center slide text vertically */
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: -webkit-flex;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            -webkit-align-items: center;
+                            align-items: center;
+                            img {
+                                position: absolute;
+                                left: 10%;
+                                width: 500px;
+                                height: 500px;
+                                border-radius: 40px;
+                                background-color: #fbbd9f;
+                            }
+                            .text {
+                                position: absolute;
+                                right: 3%;
+                                width: 600px;
+                                height: 700px;
+                                border-radius: 40px;
+                                background-color: #fbbd9f;
+                            }
+                            .circle {
+                                position: absolute;
+                                top: 10%;
+                                right: 42.4%;
+                                width: 100px;
+                                height: 100px;
+                                border-radius: 50%;
+                                background-color: purple;
+                            }
+                            .progress {
+                                position: absolute;
+                                right: 45%;
+                                width: 10px;
+                                height: 100%;
+                                background-color: green;
+                            }
+                          }
+                     }  
                 }
             }
-            & :hover span{
-                transition: .5s;
+            .buttons {
+                width: 800px;
                 position: absolute;
-                transform: translateX(15%);
+                bottom: 2%;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                justify-content: space-evenly;
+                gap: 40px;
+                cursor: pointer;
+                .button{
+                    font-size: 36px;
+                    color: white;
+                    span {
+                        top: 14%;
+                        position: absolute;
+                    }
+                }
+                & :hover span{
+                    transition: .5s;
+                    position: absolute;
+                    transform: translateX(15%);
+                }
             }
         }
-    }
-    .picture {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-        h1 {
-            top: 10%;
-            position: absolute;
-            left: 45%;
-            font-size: 50px;
-            color: white;
-        }
-        .pic-charge {
-            position: absolute;
-            top: 30%;
+        // 高美景觀
+        .picture {
             width: 100%;
-            #ture {
-                width: 100%;
-                height: 200px;
-                .swiper-wrapper{
-                    transition-timing-function: linear;
-                    .swiper-slide{
-                        width: 350px;
-                        height: 200px;
-                    } 
-                }
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
+            height: 100vh;
+            position: relative;
+            h1 {
+                top: 10%;
+                position: absolute;
+                left: 45%;
+                font-size: 50px;
+                color: white;
             }
-            #reverse {
+            .pic-charge {
+                position: absolute;
+                top: 30%;
                 width: 100%;
-                height: 200px;
-                .swiper-wrapper{
-                    transition-timing-function: linear;
-                    .swiper-slide{
-                        width: 350px;
-                        height: 200px;
-                    } 
-                }
-                img {
+                #ture {
                     width: 100%;
-                    height: 100%;
+                    height: 200px;
+                    .swiper-wrapper{
+                        transition-timing-function: linear;
+                        .swiper-slide{
+                            width: 350px;
+                            height: 200px;
+                        } 
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
-            }
-        }  
+                #reverse {
+                    width: 100%;
+                    height: 200px;
+                    .swiper-wrapper{
+                        transition-timing-function: linear;
+                        .swiper-slide{
+                            width: 350px;
+                            height: 200px;
+                        } 
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }  
+        }
     }
+    // 底部呈現區
     .bottom {
         width: 100%;
         height: 100vh;
@@ -1217,6 +1262,7 @@ footer {
             height: 100%;
         }
     }
+    // copyright
     .text-word {
         font-size: 20px;
         width: 100%;

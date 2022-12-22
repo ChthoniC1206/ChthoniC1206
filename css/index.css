@@ -575,20 +575,30 @@ main .wetlands .back-cloud img {
   width: 100%;
   height: 100%;
 }
-main .ecology::-webkit-scrollbar {
-  display: none;
-}
-main .ecology {
+main .backgruond-mid {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
-main .ecology h1 {
+main .backgruond-mid img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+main .backgruond-mid .ecology::-webkit-scrollbar {
+  display: none;
+}
+main .backgruond-mid .ecology {
+  position: relative;
+}
+main .backgruond-mid .ecology h1 {
   top: 5%;
   left: 43%;
   font-size: 50px;
   position: absolute;
   color: white;
 }
-main .ecology .bird {
+main .backgruond-mid .ecology .bird {
   color: black;
   display: block;
   position: absolute;
@@ -598,7 +608,7 @@ main .ecology .bird {
   height: 490px;
   position: relative;
 }
-main .ecology .bird .icon {
+main .backgruond-mid .ecology .bird .icon {
   position: absolute;
   overflow: hidden;
   top: 0%;
@@ -606,11 +616,11 @@ main .ecology .bird .icon {
   width: 80px;
   height: 80px;
 }
-main .ecology .bird .icon img {
+main .backgruond-mid .ecology .bird .icon img {
   width: 100%;
   height: 100%;
 }
-main .ecology .bird .image {
+main .backgruond-mid .ecology .bird .image {
   position: absolute;
   top: 15%;
   overflow: hidden;
@@ -618,11 +628,11 @@ main .ecology .bird .image {
   height: 400px;
   border-radius: 50%;
 }
-main .ecology .bird .image img {
+main .backgruond-mid .ecology .bird .image img {
   width: 100%;
   height: 100%;
 }
-main .ecology .bird .text {
+main .backgruond-mid .ecology .bird .text {
   font-size: 20px;
   text-align: center;
   line-height: 125px;
@@ -635,7 +645,7 @@ main .ecology .bird .text {
   border-radius: 50%;
   background-color: #ffcc99;
 }
-main .ecology .plant {
+main .backgruond-mid .ecology .plant {
   color: black;
   display: block;
   position: absolute;
@@ -645,7 +655,7 @@ main .ecology .plant {
   height: 455px;
   position: relative;
 }
-main .ecology .plant .icon {
+main .backgruond-mid .ecology .plant .icon {
   position: absolute;
   overflow: hidden;
   top: 0%;
@@ -653,11 +663,11 @@ main .ecology .plant .icon {
   width: 80px;
   height: 80px;
 }
-main .ecology .plant .icon img {
+main .backgruond-mid .ecology .plant .icon img {
   width: 100%;
   height: 100%;
 }
-main .ecology .plant .image {
+main .backgruond-mid .ecology .plant .image {
   position: absolute;
   top: 15%;
   overflow: hidden;
@@ -665,11 +675,11 @@ main .ecology .plant .image {
   height: 385px;
   border-radius: 50%;
 }
-main .ecology .plant .image img {
+main .backgruond-mid .ecology .plant .image img {
   width: 100%;
   height: 100%;
 }
-main .ecology .plant .text {
+main .backgruond-mid .ecology .plant .text {
   font-size: 20px;
   text-align: center;
   line-height: 125px;
@@ -682,7 +692,7 @@ main .ecology .plant .text {
   border-radius: 50%;
   background-color: #ffcc99;
 }
-main .ecology .crab {
+main .backgruond-mid .ecology .crab {
   color: black;
   display: block;
   position: absolute;
@@ -692,7 +702,7 @@ main .ecology .crab {
   height: 500px;
   position: relative;
 }
-main .ecology .crab .icon {
+main .backgruond-mid .ecology .crab .icon {
   position: absolute;
   overflow: hidden;
   top: 3%;
@@ -700,11 +710,11 @@ main .ecology .crab .icon {
   width: 80px;
   height: 80px;
 }
-main .ecology .crab .icon img {
+main .backgruond-mid .ecology .crab .icon img {
   width: 100%;
   height: 100%;
 }
-main .ecology .crab .image {
+main .backgruond-mid .ecology .crab .image {
   position: absolute;
   top: 15%;
   left: 5%;
@@ -713,11 +723,11 @@ main .ecology .crab .image {
   height: 420px;
   border-radius: 50%;
 }
-main .ecology .crab .image img {
+main .backgruond-mid .ecology .crab .image img {
   width: 100%;
   height: 100%;
 }
-main .ecology .crab .text {
+main .backgruond-mid .ecology .crab .text {
   font-size: 20px;
   text-align: center;
   line-height: 125px;
@@ -730,7 +740,7 @@ main .ecology .crab .text {
   border-radius: 50%;
   background-color: #ffcc99;
 }
-main .ecology .pic-bird {
+main .backgruond-mid .ecology .pic-bird {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -739,13 +749,13 @@ main .ecology .pic-bird {
   border-radius: 50%;
   overflow: hidden;
 }
-main .ecology .pic-bird img {
+main .backgruond-mid .ecology .pic-bird img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .ecology .pic-fish {
+main .backgruond-mid .ecology .pic-fish {
   position: absolute;
   top: 67%;
   left: 60%;
@@ -754,13 +764,13 @@ main .ecology .pic-fish {
   border-radius: 50%;
   overflow: hidden;
 }
-main .ecology .pic-fish img {
+main .backgruond-mid .ecology .pic-fish img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .ecology .circle-pink {
+main .backgruond-mid .ecology .circle-pink {
   position: absolute;
   top: 45%;
   left: 28%;
@@ -769,7 +779,7 @@ main .ecology .circle-pink {
   border-radius: 50%;
   background-color: #fbbd9f;
 }
-main .ecology .circle-orange {
+main .backgruond-mid .ecology .circle-orange {
   position: absolute;
   top: 73%;
   left: 53%;
@@ -778,7 +788,7 @@ main .ecology .circle-orange {
   border-radius: 50%;
   background-color: #ff925b;
 }
-main .ecology .circle-orange-top {
+main .backgruond-mid .ecology .circle-orange-top {
   position: absolute;
   top: 80%;
   left: 50%;
@@ -787,7 +797,7 @@ main .ecology .circle-orange-top {
   border-radius: 50%;
   background-color: #ff925b;
 }
-main .ecology .circle-orange-down {
+main .backgruond-mid .ecology .circle-orange-down {
   position: absolute;
   top: 85%;
   left: 55%;
@@ -796,7 +806,7 @@ main .ecology .circle-orange-down {
   border-radius: 50%;
   background-color: #ff925b;
 }
-main .ecology .bgc-cloud-top {
+main .backgruond-mid .ecology .bgc-cloud-top {
   position: absolute;
   top: 5%;
   left: -10%;
@@ -807,7 +817,7 @@ main .ecology .bgc-cloud-top {
   -webkit-animation: top 10s ease-in-out infinite;
           animation: top 10s ease-in-out infinite;
 }
-main .ecology .bgc-cloud-right {
+main .backgruond-mid .ecology .bgc-cloud-right {
   position: absolute;
   top: 10%;
   left: 82%;
@@ -818,7 +828,7 @@ main .ecology .bgc-cloud-right {
   -webkit-animation: right 40s ease-in-out infinite;
           animation: right 40s ease-in-out infinite;
 }
-main .ecology .bgc-cloud-left {
+main .backgruond-mid .ecology .bgc-cloud-left {
   position: absolute;
   top: 30%;
   left: 10%;
@@ -829,7 +839,7 @@ main .ecology .bgc-cloud-left {
   -webkit-animation: left 36s ease-in-out infinite;
           animation: left 36s ease-in-out infinite;
 }
-main .ecology .bgc-cloud-down {
+main .backgruond-mid .ecology .bgc-cloud-down {
   position: absolute;
   bottom: 3%;
   left: 60%;
@@ -904,21 +914,21 @@ main .ecology .bgc-cloud-down {
     left: 100%;
   }
 }
-main #wave-container {
+main .backgruond-mid #wave-container {
   width: 100%;
   height: 100vh;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
-main #wave-container .sun-box {
+main .backgruond-mid #wave-container .sun-box {
   position: relative;
   left: 10%;
   top: 10%;
   width: 500px;
   height: 500px;
 }
-main #wave-container .sun-box .sun {
+main .backgruond-mid #wave-container .sun-box .sun {
   position: absolute;
   width: 500px;
   height: 500px;
@@ -929,7 +939,7 @@ main #wave-container .sun-box .sun {
   -webkit-animation: sunshadow 4s 1s infinite linear;
           animation: sunshadow 4s 1s infinite linear;
 }
-main #wave-container .sun-box .sun:nth-child(2) {
+main .backgruond-mid #wave-container .sun-box .sun:nth-child(2) {
   width: 300px;
   height: 300px;
   opacity: 0;
@@ -938,7 +948,7 @@ main #wave-container .sun-box .sun:nth-child(2) {
   -webkit-animation: sunshadow 4s infinite linear;
           animation: sunshadow 4s infinite linear;
 }
-main #wave-container .sun-box .sun:nth-child(3) {
+main .backgruond-mid #wave-container .sun-box .sun:nth-child(3) {
   width: 150px;
   height: 150px;
   opacity: 1;
@@ -947,7 +957,7 @@ main #wave-container .sun-box .sun:nth-child(3) {
   -webkit-animation: none;
           animation: none;
 }
-main #wave-container .wave {
+main .backgruond-mid #wave-container .wave {
   position: absolute;
   width: 1000vw;
   height: 1000vw;
@@ -958,32 +968,32 @@ main #wave-container .wave {
   -webkit-animation: waves 30000ms infinite linear;
           animation: waves 30000ms infinite linear;
 }
-main #wave-container .wave:nth-child(2) {
+main .backgruond-mid #wave-container .wave:nth-child(2) {
   -webkit-animation: waves 18000ms infinite linear;
           animation: waves 18000ms infinite linear;
   left: -450%;
 }
-main #wave-container .wave:nth-child(3) {
+main .backgruond-mid #wave-container .wave:nth-child(3) {
   -webkit-animation: waves 10000ms infinite linear;
           animation: waves 10000ms infinite linear;
   left: -500%;
 }
-main #wave-container .wave:nth-child(4) {
+main .backgruond-mid #wave-container .wave:nth-child(4) {
   -webkit-animation: waves 7000ms infinite linear;
           animation: waves 7000ms infinite linear;
   left: -350%;
 }
-main #wave-container .wave:nth-child(5) {
+main .backgruond-mid #wave-container .wave:nth-child(5) {
   -webkit-animation: waves 13000ms infinite linear;
           animation: waves 13000ms infinite linear;
   left: -380%;
 }
-main #wave-container .wave:nth-child(6) {
+main .backgruond-mid #wave-container .wave:nth-child(6) {
   -webkit-animation: waves 8000ms infinite linear;
           animation: waves 8000ms infinite linear;
   left: -440%;
 }
-main #wave-container .bubbles {
+main .backgruond-mid #wave-container .bubbles {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -991,7 +1001,7 @@ main #wave-container .bubbles {
   left: 0%;
   z-index: 5;
 }
-main #wave-container .bubbles .bubble {
+main .backgruond-mid #wave-container .bubbles .bubble {
   width: 10px;
   height: 10px;
   border: 1px solid #fff;
@@ -1001,62 +1011,41 @@ main #wave-container .bubbles .bubble {
   -webkit-animation: up 8s ease-in-out;
           animation: up 8s ease-in-out;
 }
-main .news {
-  background-color: #2a2f41;
+
+footer {
+  background-size: cover;
+  background-image: url("../img/星空魚.jpg");
+}
+footer .background-dowm img {
+  width: 100%;
+  height: 240vh;
+  position: absolute;
+  transform: translateY(-7%);
+}
+footer .background-dowm .news {
   position: relative;
 }
-main .news h1 {
-  position: absolute;
-  top: 5%;
-  left: 45%;
-  font-size: 50px;
+footer .background-dowm .news h1 {
   color: white;
+  font-size: 50px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
 }
-main .news .card-left {
-  top: 30%;
-  left: 15%;
-  position: absolute;
-  width: 450px;
-  height: 250px;
-  background-color: #ccc5c5;
-}
-main .news .card-mid {
-  top: 30%;
-  left: 40%;
-  position: absolute;
-  width: 450px;
-  height: 250px;
-  background-color: #ccc5c5;
-}
-main .news .card-right {
-  top: 30%;
-  left: 65%;
-  position: absolute;
-  width: 450px;
-  height: 250px;
-  background-color: #ccc5c5;
-}
-main .news {
-  position: relative;
-}
-main .news .news-box {
+footer .background-dowm .news .news-box {
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 25vh;
+  width: 90%;
+  height: 300px;
   border: 1px solid snow;
 }
-main .news .news-box .swiper {
+footer .background-dowm .news .news-box .swiper {
   width: 100%;
-  height: 25vh;
-  background-color: red;
+  height: 100%;
 }
-main .news .news-box .swiper .swiper-slide {
-  width: 100%;
-  height: 300px;
-  background-color: red;
+footer .background-dowm .news .news-box .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
@@ -1064,17 +1053,30 @@ main .news .news-box .swiper .swiper-slide {
   justify-content: center;
   align-items: center;
 }
-
-footer {
-  background-size: cover;
-  background-image: url("../img/星空魚.jpg");
+footer .background-dowm .news .news-box .swiper .swiper-slide .text-word {
+  width: 85%;
+  height: 100%;
+  background-color: purple;
+  opacity: 0.8;
+  display: flex;
+  flex-wrap: wrap;
 }
-footer .travel {
+footer .background-dowm .news .news-box .swiper .swiper-slide .text-word h2 {
+  width: 100%;
+}
+footer .background-dowm .news .news-box .swiper .swiper-slide .text-word p {
+  width: 100%;
+}
+footer .background-dowm .news .news-box .swiper .btn {
+  color: black;
+  --swiper-navigation-size: 35px ;
+}
+footer .background-dowm .travel {
   width: 100%;
   height: 100vh;
   position: relative;
 }
-footer .travel h1 {
+footer .background-dowm .travel h1 {
   position: absolute;
   top: 1%;
   left: 50%;
@@ -1082,7 +1084,7 @@ footer .travel h1 {
   font-size: 50px;
   color: white;
 }
-footer .travel .box {
+footer .background-dowm .travel .box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1091,25 +1093,25 @@ footer .travel .box {
   height: 80%;
   border: 1px solid sandybrown;
 }
-footer .travel .box .map {
+footer .background-dowm .travel .box .map {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
 }
-footer .travel .box .mini-box1 {
+footer .background-dowm .travel .box .mini-box1 {
   width: 100%;
   height: 100%;
   display: none;
   position: relative;
   overflow: hidden;
 }
-footer .travel .box .mini-box1 .swiper {
+footer .background-dowm .travel .box .mini-box1 .swiper {
   width: 100%;
   height: 100%;
 }
-footer .travel .box .mini-box1 .swiper .swiper-slide {
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background-color: transparent;
@@ -1118,7 +1120,7 @@ footer .travel .box .mini-box1 .swiper .swiper-slide {
   justify-content: center;
   align-items: center;
 }
-footer .travel .box .mini-box1 .swiper .swiper-slide img {
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide img {
   position: absolute;
   left: 10%;
   width: 500px;
@@ -1126,7 +1128,7 @@ footer .travel .box .mini-box1 .swiper .swiper-slide img {
   border-radius: 40px;
   background-color: #fbbd9f;
 }
-footer .travel .box .mini-box1 .swiper .swiper-slide .text {
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .text {
   position: absolute;
   right: 3%;
   width: 600px;
@@ -1134,7 +1136,7 @@ footer .travel .box .mini-box1 .swiper .swiper-slide .text {
   border-radius: 40px;
   background-color: #fbbd9f;
 }
-footer .travel .box .mini-box1 .swiper .swiper-slide .circle {
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .circle {
   position: absolute;
   top: 10%;
   right: 42.4%;
@@ -1143,25 +1145,25 @@ footer .travel .box .mini-box1 .swiper .swiper-slide .circle {
   border-radius: 50%;
   background-color: purple;
 }
-footer .travel .box .mini-box1 .swiper .swiper-slide .progress {
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .progress {
   position: absolute;
   right: 45%;
   width: 10px;
   height: 100%;
   background-color: green;
 }
-footer .travel .box .mini-box2 {
+footer .background-dowm .travel .box .mini-box2 {
   width: 100%;
   height: 100%;
   background-color: #9ffbdc;
   overflow: hidden;
   display: none;
 }
-footer .travel .box .mini-box2 .swiper {
+footer .background-dowm .travel .box .mini-box2 .swiper {
   width: 100%;
   height: 100%;
 }
-footer .travel .box .mini-box2 .swiper .swiper-slide {
+footer .background-dowm .travel .box .mini-box2 .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background-color: transparent;
@@ -1170,7 +1172,7 @@ footer .travel .box .mini-box2 .swiper .swiper-slide {
   justify-content: center;
   align-items: center;
 }
-footer .travel .box .mini-box2 .swiper .swiper-slide img {
+footer .background-dowm .travel .box .mini-box2 .swiper .swiper-slide img {
   position: absolute;
   left: 10%;
   width: 500px;
@@ -1178,7 +1180,7 @@ footer .travel .box .mini-box2 .swiper .swiper-slide img {
   border-radius: 40px;
   background-color: #fbbd9f;
 }
-footer .travel .box .mini-box2 .swiper .swiper-slide .text {
+footer .background-dowm .travel .box .mini-box2 .swiper .swiper-slide .text {
   position: absolute;
   right: 3%;
   width: 600px;
@@ -1186,7 +1188,7 @@ footer .travel .box .mini-box2 .swiper .swiper-slide .text {
   border-radius: 40px;
   background-color: #fbbd9f;
 }
-footer .travel .box .mini-box2 .swiper .swiper-slide .circle {
+footer .background-dowm .travel .box .mini-box2 .swiper .swiper-slide .circle {
   position: absolute;
   top: 10%;
   right: 42.4%;
@@ -1195,14 +1197,14 @@ footer .travel .box .mini-box2 .swiper .swiper-slide .circle {
   border-radius: 50%;
   background-color: purple;
 }
-footer .travel .box .mini-box2 .swiper .swiper-slide .progress {
+footer .background-dowm .travel .box .mini-box2 .swiper .swiper-slide .progress {
   position: absolute;
   right: 45%;
   width: 10px;
   height: 100%;
   background-color: green;
 }
-footer .travel .buttons {
+footer .background-dowm .travel .buttons {
   width: 800px;
   position: absolute;
   bottom: 2%;
@@ -1213,63 +1215,63 @@ footer .travel .buttons {
   gap: 40px;
   cursor: pointer;
 }
-footer .travel .buttons .button {
+footer .background-dowm .travel .buttons .button {
   font-size: 36px;
   color: white;
 }
-footer .travel .buttons .button span {
+footer .background-dowm .travel .buttons .button span {
   top: 14%;
   position: absolute;
 }
-footer .travel .buttons :hover span {
+footer .background-dowm .travel .buttons :hover span {
   transition: 0.5s;
   position: absolute;
   transform: translateX(15%);
 }
-footer .picture {
+footer .background-dowm .picture {
   width: 100%;
   height: 100vh;
   position: relative;
 }
-footer .picture h1 {
+footer .background-dowm .picture h1 {
   top: 10%;
   position: absolute;
   left: 45%;
   font-size: 50px;
   color: white;
 }
-footer .picture .pic-charge {
+footer .background-dowm .picture .pic-charge {
   position: absolute;
   top: 30%;
   width: 100%;
 }
-footer .picture .pic-charge #ture {
+footer .background-dowm .picture .pic-charge #ture {
   width: 100%;
   height: 200px;
 }
-footer .picture .pic-charge #ture .swiper-wrapper {
+footer .background-dowm .picture .pic-charge #ture .swiper-wrapper {
   transition-timing-function: linear;
 }
-footer .picture .pic-charge #ture .swiper-wrapper .swiper-slide {
+footer .background-dowm .picture .pic-charge #ture .swiper-wrapper .swiper-slide {
   width: 350px;
   height: 200px;
 }
-footer .picture .pic-charge #ture img {
+footer .background-dowm .picture .pic-charge #ture img {
   width: 100%;
   height: 100%;
 }
-footer .picture .pic-charge #reverse {
+footer .background-dowm .picture .pic-charge #reverse {
   width: 100%;
   height: 200px;
 }
-footer .picture .pic-charge #reverse .swiper-wrapper {
+footer .background-dowm .picture .pic-charge #reverse .swiper-wrapper {
   transition-timing-function: linear;
 }
-footer .picture .pic-charge #reverse .swiper-wrapper .swiper-slide {
+footer .background-dowm .picture .pic-charge #reverse .swiper-wrapper .swiper-slide {
   width: 350px;
   height: 200px;
 }
-footer .picture .pic-charge #reverse img {
+footer .background-dowm .picture .pic-charge #reverse img {
   width: 100%;
   height: 100%;
 }
