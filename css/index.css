@@ -273,13 +273,18 @@ nav .navbar a {
   background-color: #fff;
 }
 nav .navbar a span {
-  color: wheat;
+  color: rgb(134, 161, 201);
   font-size: 20px;
   opacity: 0;
   width: 100px;
   position: absolute;
-  right: 20%;
+  right: 50%;
+  transform: translateY(-10%);
   font-family: "Rubik 80s Fade", cursive;
+}
+nav .navbar a .ecologys {
+  position: absolute;
+  transform: translate(-20%, -10%);
 }
 nav .navbar a:hover {
   justify-content: space-evenly;
@@ -324,21 +329,22 @@ main .wetlands div.introduce {
   color: black;
 }
 main .wetlands div.introduce .a {
-  width: 395px;
-  height: 395px;
+  width: 345px;
+  height: 345px;
   position: absolute;
   top: 30%;
   left: 15%;
   border-radius: 50%;
   position: absolute;
   top: 45%;
-  left: 38%;
+  left: 30%;
   border-radius: 50%;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: 2px 5px 5px gray;
 }
 main .wetlands div.introduce .a hr {
   width: 150px;
@@ -356,14 +362,15 @@ main .wetlands div.introduce .b {
   height: 300px;
   border-radius: 50%;
   position: absolute;
-  top: 40%;
-  left: 8%;
+  top: 30%;
+  left: 10%;
   border-radius: 50%;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: 2px 5px 5px gray;
 }
 main .wetlands div.introduce .b hr {
   width: 150px;
@@ -381,13 +388,14 @@ main .wetlands div.introduce .c {
   height: 320px;
   border-radius: 50%;
   position: absolute;
-  top: 70%;
-  left: 50%;
+  top: 65%;
+  left: 51%;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: 2px 5px 5px gray;
 }
 main .wetlands div.introduce .c hr {
   width: 150px;
@@ -401,17 +409,18 @@ main .wetlands div.introduce .c .more {
   background-color: skyblue;
 }
 main .wetlands div.introduce .d {
-  width: 370px;
-  height: 370px;
+  width: 330px;
+  height: 330px;
   border-radius: 50%;
   position: absolute;
   top: 40%;
-  left: 65%;
+  left: 70%;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: 2px 5px 5px gray;
 }
 main .wetlands div.introduce .d hr {
   width: 150px;
@@ -433,8 +442,8 @@ main .wetlands .page-a {
   height: 158px;
   border-radius: 50%;
   position: absolute;
-  top: 70%;
-  left: 30%;
+  top: 75%;
+  left: 20%;
 }
 main .wetlands .page-a img {
   width: 100%;
@@ -446,8 +455,8 @@ main .wetlands .page-b {
   height: 93px;
   border-radius: 50%;
   position: absolute;
-  top: 40%;
-  left: 60%;
+  top: 35%;
+  left: 50%;
 }
 main .wetlands .page-b img {
   width: 100%;
@@ -455,16 +464,17 @@ main .wetlands .page-b img {
 }
 main .wetlands h1 {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 43%;
   font-size: 50px;
   color: white;
   z-index: 1;
+  text-shadow: black 0.1em 0.1em 0.3em;
 }
 main .wetlands .circle-a {
   position: absolute;
   top: 90%;
-  left: 44%;
+  left: 40%;
   width: 75px;
   height: 75px;
   background-color: white;
@@ -472,7 +482,7 @@ main .wetlands .circle-a {
 }
 main .wetlands .circle-b {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 60%;
   width: 75px;
   height: 75px;
@@ -567,6 +577,7 @@ main .wetlands .back-cloud {
   height: 500px;
   position: absolute;
   top: 0%;
+  left: 0%;
   opacity: 0.9;
   filter: blur(10px);
   overflow: hidden;

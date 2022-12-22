@@ -201,14 +201,19 @@ nav {
             border-radius: 50%;
             background-color: #fff;
             span {
-                color: wheat;
+                color: rgb(134, 161, 201);
                 font-size: 20px;
                 opacity: 0;
                 width: 100px;
                 position: absolute;
-                right: 20%;
-                font-family: 'Rubik 80s Fade', cursive;      
+                right: 50%;
+                transform: translateY(-10%);
+                font-family: 'Rubik 80s Fade', cursive;
             }
+            .ecologys{
+                position: absolute;
+                transform: translate(-20%,-10%);
+            }    
             &:hover {
                 justify-content: space-evenly;
                 width: 20px;
@@ -257,22 +262,24 @@ main {
             z-index: 1;
             text-decoration: none;
             color: black;
+            
             & .a {
-                width: 395px;
-                height: 395px;
+                width: 345px;
+                height: 345px;
                 position: absolute;
                 top: 30%;
                 left: 15%;
                 border-radius: 50%;
                 position: absolute;
                 top: 45%;
-                left: 38%;
+                left: 30%;
                 border-radius: 50%;
                 background-color: white;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: center;  
+                box-shadow:2px 5px 5px gray;
                 hr {
                     width: 150px;
                 }
@@ -291,14 +298,15 @@ main {
                 height: 300px;
                 border-radius: 50%;
                 position: absolute;
-                top: 40%;
-                left: 8%;
+                top: 30%;
+                left: 10%;
                 border-radius: 50%;
                 background-color: white;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
-                align-items: center;  
+                align-items: center; 
+                box-shadow:2px 5px 5px gray; 
                 hr {
                     width: 150px;
                 }
@@ -317,13 +325,14 @@ main {
                 height: 320px;
                 border-radius: 50%;
                 position: absolute;
-                top: 70%;
-                left: 50%;
+                top: 65%;
+                left: 51%;
                 background-color: white;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
-                align-items: center;  
+                align-items: center;
+                box-shadow:2px 5px 5px gray; 
                 hr {
                     width: 150px;
                 }
@@ -338,17 +347,18 @@ main {
 
             }
             & .d {
-                width: 370px;
-                height: 370px;
+                width: 330px;
+                height: 330px;
                 border-radius: 50%;
                 position: absolute;
                 top: 40%;
-                left: 65%;
+                left: 70%;
                 background-color: white;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
-                align-items: center;  
+                align-items: center;
+                box-shadow:2px 5px 5px gray; 
                 hr {
                     width: 150px;
                 }
@@ -373,8 +383,8 @@ main {
             height: 158px;
             border-radius: 50%;
             position: absolute;
-            top: 70%;
-            left: 30%;
+            top: 75%;
+            left: 20%;
             img {
                 width: 100%;
                 height: 100%;
@@ -386,8 +396,8 @@ main {
             height: 93px;
             border-radius: 50%;
             position: absolute;
-            top: 40%;
-            left: 60%;
+            top: 35%;
+            left: 50%;
             img {
                 width: 100%;
                 height: 100%;
@@ -395,16 +405,17 @@ main {
         }
         h1 {
             position: absolute;
-            top: 20%;
+            top: 10%;
             left: 43%;
             font-size: 50px;
             color: white;
             z-index: 1;
+            text-shadow: black 0.1em 0.1em 0.3em;
         }
         .circle-a {
             position: absolute;
             top: 90%;
-            left: 44%;
+            left: 40%;
             width: 75px;
             height: 75px;
             background-color: white;
@@ -412,7 +423,7 @@ main {
         }
         .circle-b {
             position: absolute;
-            top: 60%;
+            top: 50%;
             left: 60%;
             width: 75px;
             height: 75px;
@@ -486,6 +497,7 @@ main {
             height: 500px;
             position: absolute;
             top: 0%;
+            left: 0%;
             opacity: 0.9;
             filter: blur(10px);
             overflow: hidden;
