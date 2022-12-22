@@ -22,8 +22,8 @@ img {
 }
 .loading .bird {
   position: absolute;
-  width: 8%;
-  height: 8%;
+  width: 4%;
+  height: 4%;
   top: 42%;
   left: 35%;
   -webkit-animation: bird 0.5s linear;
@@ -31,8 +31,8 @@ img {
 }
 .loading .crab {
   position: absolute;
-  width: 8%;
-  height: 8%;
+  width: 4%;
+  height: 4%;
   top: 42%;
   left: 43%;
   -webkit-animation: crab 0.8s linear;
@@ -40,8 +40,8 @@ img {
 }
 .loading .crab2 {
   position: absolute;
-  width: 8%;
-  height: 8%;
+  width: 4%;
+  height: 4%;
   top: 42%;
   left: 51%;
   -webkit-animation: crab2 1.1s linear;
@@ -49,8 +49,8 @@ img {
 }
 .loading .plant {
   position: absolute;
-  width: 8%;
-  height: 8%;
+  width: 4%;
+  height: 4%;
   top: 42%;
   left: 59%;
   -webkit-animation: plant 1.4s linear;
