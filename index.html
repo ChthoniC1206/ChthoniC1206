@@ -173,12 +173,13 @@
                 </div>
                 
             </div>
+            <!-- 生態、潮汐 -->
             <section class="backgruond-mid">
                 <img src="./img/04.素材/網頁背景/夕陽遮罩.png" alt="">
                 <!-- 潮間帶生態 -->
                 <div id="ecologys" style="width: 100%; height: 100vh;" class="ecology">
                     <h1>| 潮間帶生態 |</h1>
-                    <a href="./bird.html" class="bird">
+                    <div class="bird" id="circle" data-intro="鳥類">
                         <div class="icon">
                             <img src="./img/angry-birds.png" alt="">
                         </div>
@@ -188,8 +189,8 @@
                         <div class="text">
                             鳥類
                         </div>
-                    </a>
-                    <a href="" class="plant">
+                    </div>
+                    <div class="plant" id="circle" data-intro="植物">
                         <div class="icon">
                             <img src="./img/plant.png" alt="">
                         </div>
@@ -199,8 +200,8 @@
                         <div class="text">
                             植物
                         </div>
-                    </a>
-                    <a href="" class="crab">
+                    </div>
+                    <div class="crab" id="circle" data-intro="潮間帶生物">
                         <div class="icon">
                             <img src="./img/loading_crab 80x80.png" alt="">
                         </div>
@@ -210,7 +211,7 @@
                         <div class="text">
                             潮間帶生物
                         </div>
-                    </a>
+                    </div>
                     <div class="pic-bird">
                         <img src="./img/pexels-pixabay-349758.jpg" alt="">
                     </div>
@@ -533,7 +534,7 @@
                 </span>          
             </div>
             <div class="btna">
-                 <i class="fa-solid fa-x fa-2xl"></i>
+                <i class="fa-solid fa-x fa-2xl"></i>
             </div>      
     </div>
     <!-- 生態現狀 -->
@@ -552,7 +553,7 @@
                 因此，串連西海岸自然保留區、野生動物保護區或重要棲息環境，生態園區與復育區三種類型的地帶，不放棄每一塊曾經是或未來會是哺育萬物眾生的大地，形成帶狀保育軸，不僅水生生物或水鳥之棲地由南至北因有一脈相連的水路或廊道連接，而獲得保護；同時，農漁村原有產業仍可持續，或於轉型契機中重得生計；更有進者，受破壞、污染、荒廢的區域能獲得重建與改善。濕地生態保育軸的設置，將是台灣濕地與台灣社會的新希望。              
             </div>
             <div class="btnb">
-                 <i class="fa-solid fa-x fa-2xl"></i>
+                <i class="fa-solid fa-x fa-2xl"></i>
             </div>      
     </div>
     <!-- 人文歷史 -->
@@ -575,7 +576,7 @@
             </div>
             <img  src="./img/WET.jfif" alt="">
             <div class="btnc">
-                 <i class="fa-solid fa-x fa-2xl"></i>
+                <i class="fa-solid fa-x fa-2xl"></i>
             </div>      
     </div>
     <!-- 濕地的功能 -->
@@ -608,10 +609,20 @@
                 </div>
             </div>
             <div class="btnd">
-                 <i class="fa-solid fa-x fa-2xl"></i>
+                <i class="fa-solid fa-x fa-2xl"></i>
             </div>      
     </div>
-
+    <!-- 鳥類 -->
+    <div class="bird-sec">
+        <div class="bird-bgc">
+            <div class="box">
+                <div class="text">223
+                </div>
+                <div class="pic">212
+                </div>    
+            </div>
+        </div>
+    </div>
 
 
     
@@ -635,6 +646,12 @@
             const scrollY = window.scrollY
             console.log(window.scrollY);
         });
+
+        const circle = document.querySelectorAll('#circle')
+
+        const birdsec = document.querySelector('.bird-sec')
+        const birdbgc = document.querySelector('.bird-bgc')
+
 
     </script>
 </body>

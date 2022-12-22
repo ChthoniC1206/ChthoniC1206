@@ -1330,8 +1330,7 @@ footer {
         font-weight: 400;
         font-size: 20px;
         line-height: 200%;
-        overflow: auto;
-        
+        overflow: auto; 
     }
     .btna {
         cursor: pointer;
@@ -1544,16 +1543,18 @@ footer {
         right: 30px;
     }
 }
+// 鳥類
+
     @keyframes up {
         from {
-          bottom: -10%;
-          opacity: 1;
+            bottom: -10%;
+            opacity: 1;
         }
         to {
-          bottom: 110%;
-          opacity: .5;
+            bottom: 110%;
+            opacity: .5;
         }
-      }
+    }
     @keyframes waves{
         0%{
             transform: rotate(0deg);
