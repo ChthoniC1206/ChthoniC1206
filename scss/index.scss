@@ -983,7 +983,7 @@ footer {
             padding-top: 50px;
             h1 {
                 padding-top: 100px;
-                color: white;
+                color: #FFF;
                 font-size: 50px;
                 padding-top: 10px;
                 display: flex;
@@ -996,7 +996,7 @@ footer {
                 left: 50%;
                 transform: translate(-50%,-50%);
                 width: 85%;
-                height: 300px;
+                height: 60%;
                 // border: 1px solid snow;
                 .swiper {
                     width: 100%;
@@ -1024,11 +1024,14 @@ footer {
                             opacity: 0.5;
                             display: flex;
                             flex-wrap: wrap;
+                            padding: 5%;
                             h2 {
                                 width: 100%;
+                                
                             }
                             p {
                                 width: 100%;
+                                word-break: break-all;
                             }
                         }
                     }
