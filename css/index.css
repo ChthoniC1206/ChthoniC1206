@@ -324,11 +324,11 @@ main .wetlands {
 }
 main .wetlands div.introduce {
   cursor: pointer;
-  z-index: 1;
   text-decoration: none;
   color: black;
 }
 main .wetlands div.introduce .a {
+  z-index: 2;
   width: 345px;
   height: 345px;
   position: absolute;
@@ -359,6 +359,7 @@ main .wetlands div.introduce .a .more {
   background-color: skyblue;
 }
 main .wetlands div.introduce .b {
+  z-index: 2;
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -386,6 +387,7 @@ main .wetlands div.introduce .b .more {
   background-color: skyblue;
 }
 main .wetlands div.introduce .c {
+  z-index: 2;
   width: 320px;
   height: 320px;
   border-radius: 50%;
@@ -412,6 +414,7 @@ main .wetlands div.introduce .c .more {
   background-color: skyblue;
 }
 main .wetlands div.introduce .d {
+  z-index: 2;
   width: 330px;
   height: 330px;
   border-radius: 50%;
@@ -547,6 +550,7 @@ main .wetlands .cloud.c {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 @keyframes num1 {
@@ -555,6 +559,7 @@ main .wetlands .cloud.c {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 @-webkit-keyframes num2 {
@@ -563,6 +568,7 @@ main .wetlands .cloud.c {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 @keyframes num2 {
@@ -571,6 +577,7 @@ main .wetlands .cloud.c {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 @-webkit-keyframes num3 {
@@ -579,6 +586,7 @@ main .wetlands .cloud.c {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 @keyframes num3 {
@@ -587,6 +595,7 @@ main .wetlands .cloud.c {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 main .wetlands .back-cloud {
@@ -627,6 +636,7 @@ main .backgruond-mid .ecology h1 {
   color: white;
 }
 main .backgruond-mid .ecology .bird {
+  z-index: 1;
   color: black;
   display: block;
   position: absolute;
@@ -662,6 +672,7 @@ main .backgruond-mid .ecology .bird .image img {
   height: 100%;
 }
 main .backgruond-mid .ecology .bird .text {
+  cursor: pointer;
   font-size: 20px;
   text-align: center;
   line-height: 125px;
@@ -675,6 +686,7 @@ main .backgruond-mid .ecology .bird .text {
   background-color: #ffcc99;
 }
 main .backgruond-mid .ecology .plant {
+  z-index: 1;
   color: black;
   display: block;
   position: absolute;
@@ -710,6 +722,7 @@ main .backgruond-mid .ecology .plant .image img {
   height: 100%;
 }
 main .backgruond-mid .ecology .plant .text {
+  cursor: pointer;
   font-size: 20px;
   text-align: center;
   line-height: 125px;
@@ -723,6 +736,7 @@ main .backgruond-mid .ecology .plant .text {
   background-color: #ffcc99;
 }
 main .backgruond-mid .ecology .crab {
+  z-index: 1;
   color: black;
   display: block;
   position: absolute;
@@ -759,6 +773,7 @@ main .backgruond-mid .ecology .crab .image img {
   height: 100%;
 }
 main .backgruond-mid .ecology .crab .text {
+  cursor: pointer;
   font-size: 20px;
   text-align: center;
   line-height: 125px;
@@ -887,6 +902,7 @@ main .backgruond-mid .ecology .bgc-cloud-down {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 @keyframes top {
@@ -895,6 +911,7 @@ main .backgruond-mid .ecology .bgc-cloud-down {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 @-webkit-keyframes right {
@@ -903,6 +920,7 @@ main .backgruond-mid .ecology .bgc-cloud-down {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 @keyframes right {
@@ -911,6 +929,7 @@ main .backgruond-mid .ecology .bgc-cloud-down {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 @-webkit-keyframes left {
@@ -919,6 +938,7 @@ main .backgruond-mid .ecology .bgc-cloud-down {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 @keyframes left {
@@ -927,6 +947,7 @@ main .backgruond-mid .ecology .bgc-cloud-down {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 @-webkit-keyframes down {
@@ -935,6 +956,7 @@ main .backgruond-mid .ecology .bgc-cloud-down {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 @keyframes down {
@@ -943,6 +965,7 @@ main .backgruond-mid .ecology .bgc-cloud-down {
   }
   to {
     left: 100%;
+    overflow: hidden;
   }
 }
 main .backgruond-mid #wave-container {

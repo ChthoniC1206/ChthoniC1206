@@ -257,11 +257,11 @@ main {
         position: relative;
         div.introduce {
             cursor: pointer;
-            z-index: 1;
             text-decoration: none;
             color: black;
             
             & .a {
+                z-index: 2;
                 width: 345px;
                 height: 345px;
                 position: absolute;
@@ -293,6 +293,7 @@ main {
 
             }
             & .b {
+                z-index: 2;
                 width: 300px;
                 height: 300px;
                 border-radius: 50%;
@@ -321,6 +322,7 @@ main {
 
             }
             & .c {
+                z-index: 2;
                 width: 320px;
                 height: 320px;
                 border-radius: 50%;
@@ -348,6 +350,7 @@ main {
 
             }
             & .d {
+                z-index: 2;
                 width: 330px;
                 height: 330px;
                 border-radius: 50%;
@@ -491,6 +494,7 @@ main {
             }
             to{
                 left: 100%;
+                overflow: hidden;
             }
         }
         @keyframes num2 {
@@ -499,6 +503,7 @@ main {
             }
             to{
                 left: 100%;
+                overflow: hidden;
             }
         }
         @keyframes num3 {
@@ -507,6 +512,7 @@ main {
             }
             to{
                 left: 100%;
+                overflow: hidden;
             }
         }
         .back-cloud {
@@ -550,6 +556,7 @@ main {
             }
             // 鳥類
             .bird {
+                z-index: 1;
                 color: black;
                 display: block;
                 position: absolute;
@@ -586,6 +593,7 @@ main {
                     }
                 }
                 .text {
+                    cursor: pointer;
                     font-size: 20px;
                     text-align: center;
                     line-height: 125px;
@@ -601,6 +609,7 @@ main {
             }
             // 植物
             .plant {
+                z-index: 1;
                 color: black;
                 display: block;
                 position: absolute;
@@ -635,6 +644,7 @@ main {
                     }
                 }
                 .text {
+                    cursor: pointer;
                     font-size: 20px;
                     text-align: center;
                     line-height: 125px;
@@ -650,6 +660,7 @@ main {
             }
             // 潮間帶生物
             .crab {
+                z-index: 1;
                 color: black;
                 display: block;
                 position: absolute;
@@ -685,6 +696,7 @@ main {
                     }
                 }
                 .text {
+                    cursor: pointer;
                     font-size: 20px;
                     text-align: center;
                     line-height: 125px;
@@ -816,6 +828,7 @@ main {
                 }
                 to {
                     left: 100%;
+                    overflow: hidden;
                 }
             }
             @keyframes right {
@@ -824,6 +837,7 @@ main {
                 }
                 to {
                     left: 100%;
+                    overflow: hidden;
                 }
             }
             @keyframes left {
@@ -832,6 +846,7 @@ main {
                 }
                 to {
                     left: 100%;
+                    overflow: hidden;
                 }
             }
             @keyframes down {
@@ -840,6 +855,7 @@ main {
                 }
                 to {
                     left: 100%;
+                    overflow: hidden;
                 }
             }
         }
@@ -1255,7 +1271,7 @@ footer {
                         height: 100%;
                     }
                 }
-            }  
+            }
         }
     }
     // 底部呈現區
