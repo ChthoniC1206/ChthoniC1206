@@ -1575,6 +1575,25 @@ footer .text-word {
   background-color: #2a2f41;
   z-index: 2;
 }
+.bird-sec .bird-work .text {
+  font-size: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.bird-sec .bird-work .pic {
+  width: 100%;
+  height: 90%;
+  border: 1px solid sandybrown;
+}
+.bird-sec .bird-work .pic .bird-pic {
+  width: 250px;
+  height: 150px;
+}
+.bird-sec .bird-work .pic .bird-pic img {
+  width: 100%;
+  height: 100%;
+}
 
 .plant-sec {
   display: none;

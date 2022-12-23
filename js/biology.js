@@ -1,8 +1,9 @@
         const circle = document.querySelectorAll('#circle')
-        
+
         const birdsec = document.querySelector('.bird-sec')
         const birdbgc = document.querySelector('.bird-bgc')
         const birdwork = document.querySelector('.bird-work')
+        const birdpic = document.querySelectorAll('.bird-pic')
 
         const plantsec = document.querySelector('.plant-sec')
         const plantbgc = document.querySelector('.plant-bgc')
@@ -36,3 +37,10 @@
         crabbgc.addEventListener('click', function(){
             crabsec.style.display = 'none'
         });
+
+        birdpic.forEach(function(img){
+            img.addEventListener('click', function(){
+                console.log('333');
+            });
+        });
+        
