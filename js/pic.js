@@ -1,6 +1,8 @@
 
 
 const toppic = document.querySelectorAll('.toppic')
+const toppicfirst = document.querySelector('.top-pic-first')
+
 
 toppic.forEach(function(num,index){
     console.log(index);
