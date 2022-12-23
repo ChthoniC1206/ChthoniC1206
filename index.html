@@ -179,36 +179,36 @@
                 <!-- 潮間帶生態 -->
                 <div id="ecologys" style="width: 100%; height: 100vh;" class="ecology">
                     <h1>| 潮間帶生態 |</h1>
-                    <div class="bird" id="circle" data-intro="鳥類">
+                    <div class="bird">
                         <div class="icon">
                             <img src="./img/angry-birds.png" alt="">
                         </div>
                         <div class="image">
                             <img src="./img/1200px-Rhyacornis_fuliginosus_-_Doi_Inthanon (1).jpg" alt="">
                         </div>
-                        <div class="text">
+                        <div class="text"  id="circle" data-intro="鳥類">
                             鳥類
                         </div>
                     </div>
-                    <div class="plant" id="circle" data-intro="植物">
+                    <div class="plant" >
                         <div class="icon">
                             <img src="./img/plant.png" alt="">
                         </div>
                         <div class="image">
                             <img src="./img/pexels-gelgas-airlangga-401213.jpg" alt="">
                         </div>
-                        <div class="text">
+                        <div class="text" id="circle" data-intro="植物">
                             植物
                         </div>
                     </div>
-                    <div class="crab" id="circle" data-intro="潮間帶生物">
+                    <div class="crab" >
                         <div class="icon">
                             <img src="./img/loading_crab 80x80.png" alt="">
                         </div>
                         <div class="image">
                             <img src="./img/crab-crustacean-sea-ocean-73769.jpeg" alt="">
                         </div>
-                        <div class="text">
+                        <div class="text" id="circle" data-intro="潮間帶生物">
                             潮間帶生物
                         </div>
                     </div>
@@ -387,19 +387,19 @@
                             <div class="text"></div>
                             <div class="progress"></div>
                             <div class="circle">2</div>
-                          </div>
-                          <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
                             <img src="./img/bird.svg" alt="">
                             <div class="text"></div>
                             <div class="progress"></div>
                             <div class="circle">3</div>
-                          </div>
-                          <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
                             <img src="./img/bird.svg" alt="">
                             <div class="text"></div>
                             <div class="progress"></div>
                             <div class="circle">4</div>
-                          </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -613,16 +613,42 @@
             </div>      
     </div>
     <!-- 鳥類 -->
-    <!-- <div class="bird-sec">
-        <div class="bird-bgc">
+    <div class="bird-sec">
+        <div class="bird-bgc"></div>
+        <div class="bird-work">
             <div class="box">
-                <div class="text">223
+                <div class="text">
                 </div>
-                <div class="pic">212
-                </div>    
+                <div class="pic">
+                </div>  
             </div>
         </div>
-    </div> -->
+    </div>
+    <!-- 植物 -->
+    <div class="plant-sec">
+        <div class="plant-bgc"></div>
+        <div class="plant-work">
+            <div class="box">
+                <div class="text">
+                </div>
+                <div class="pic">
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!-- 潮間帶生物 -->
+    <div class="crab-sec">
+        <div class="crab-bgc"></div>
+        <div class="crab-work">
+            <div class="box">
+                <div class="text">
+                </div>
+                <div class="pic">
+                </div>  
+            </div>
+        </div>
+    </div>
+    
 
 
     
@@ -636,22 +662,19 @@
     <script src="./js/pic.js"></script>
     <!-- 彈跳視窗 : 濕地介紹部分 -->
     <script src="./js/text.js"></script>
+    <!-- 彈跳視窗 : 生物介紹部分 -->
+    <script src="./js/biology.js"></script>
     <!-- 旅遊資訊 -->
     <script src="./js/travel.js"></script>
     <!-- 最新消息 -->
     <script src="./js/news.js"></script>
 
+    
     <script>
         window.addEventListener('scroll', function(){
             const scrollY = window.scrollY
             console.log(window.scrollY);
         });
-
-        const circle = document.querySelectorAll('#circle')
-
-        const birdsec = document.querySelector('.bird-sec')
-        const birdbgc = document.querySelector('.bird-bgc')
-
 
     </script>
 </body>

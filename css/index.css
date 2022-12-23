@@ -1553,12 +1553,75 @@ footer .text-word {
 }
 
 .bird-sec {
+  display: none;
+}
+.bird-sec .bird-bgc {
   width: 100%;
   height: 100vh;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bird-sec .bird-work {
+  width: 100%;
+  height: 80vh;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #2a2f41;
+  z-index: 2;
+}
+
+.plant-sec {
+  display: none;
+}
+.plant-sec .plant-bgc {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.plant-sec .plant-work {
+  width: 100%;
+  height: 80vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2a2f41;
+  z-index: 2;
+}
+
+.crab-sec {
+  display: none;
+}
+.crab-sec .crab-bgc {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.crab-sec .crab-work {
+  width: 100%;
+  height: 80vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2a2f41;
+  z-index: 2;
 }
 
 @-webkit-keyframes up {
