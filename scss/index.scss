@@ -109,69 +109,69 @@ img {
             }
         }
     }
-}
-@keyframes bird {
-    0% {
-        transform: translateY(0%);
+    @keyframes bird {
+        0% {
+            transform: translateY(0%);
+        }
+        50% {
+            transform: translateY(-12%);
+        }
     }
-    50% {
-        transform: translateY(-12%);
+    @keyframes crab {
+        0% {
+            transform: translateY(0%);
+        }
+        50% {
+            transform: translateY(-18%);
+        }
     }
-}
-@keyframes crab {
-    0% {
-        transform: translateY(0%);
+    @keyframes crab2 {
+        0% {
+            transform: translateY(0%);
+        }
+        50% {
+            transform: translateY(-19%);
+        }
     }
-    50% {
-        transform: translateY(-18%);
+    @keyframes plant {
+        0% {
+            transform: translateY(0%);
+        }
+        50% {
+            transform: translateY(-18%);
+        }
     }
-}
-@keyframes crab2 {
-    0% {
-        transform: translateY(0%);
+    @keyframes lo {
+        0% {
+            transform: translateY(5%);
+        }
+        50% {
+            transform: translateY(-20%);
+        }
     }
-    50% {
-        transform: translateY(-19%);
+    @keyframes adi {
+        0% {
+            transform: translateY(5%);
+        }
+        50% {
+            transform: translateY(-20%);
+        }
     }
-}
-@keyframes plant {
-    0% {
-        transform: translateY(0%);
+    @keyframes ng {
+        0% {
+            transform: translateY(5%);
+        }
+        50% {
+            transform: translateY(-20%);
+        }
     }
-    50% {
-        transform: translateY(-18%);
-    }
-}
-@keyframes lo {
-    0% {
-        transform: translateY(5%);
-    }
-    50% {
-        transform: translateY(-20%);
-    }
-}
-@keyframes adi {
-    0% {
-        transform: translateY(5%);
-    }
-    50% {
-        transform: translateY(-20%);
-    }
-}
-@keyframes ng {
-    0% {
-        transform: translateY(5%);
-    }
-    50% {
-        transform: translateY(-20%);
-    }
-}
-@keyframes d {
-    0% {
-        transform: translateY(5%);
-    }
-    50% {
-        transform: translateY(-20%);
+    @keyframes d {
+        0% {
+            transform: translateY(5%);
+        }
+        50% {
+            transform: translateY(-20%);
+        }
     }
 }
 
@@ -1624,6 +1624,28 @@ footer {
         background-color: #2a2f41;
         z-index: 2;
     }
+}
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000066;
+  z-index: -1;
+  opacity: 0;
+  img {
+    width: 50%;
+    height: 50%;
+  }
+  &:target {
+    z-index: 1;
+    opacity: 1;
+    transition: 0.5s;
+  }
 }
     @keyframes up {
         from {
