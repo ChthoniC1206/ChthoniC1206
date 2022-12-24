@@ -1546,6 +1546,7 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        z-index: 1;
     }
     .bird-work {
         width: 100%;
@@ -1575,6 +1576,31 @@ footer {
                 }
             }
         }
+        .bird-detail {
+            width: 100%;
+            height: 80vh;
+            z-index: 2;
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #2a2f41;
+            display: block;
+            .details {
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    opacity: .6;
+                }
+                .text {
+                    position: absolute;
+                    top: 0%;
+                }
+            }
+        }
     }
 }
 // 植物
@@ -1589,6 +1615,7 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        z-index: 1;
     }
     .plant-work {
         width: 100%;
@@ -1613,6 +1640,7 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        z-index: 1;
     }
     .crab-work {
         width: 100%;
@@ -1626,26 +1654,26 @@ footer {
     }
 }
 .lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #00000066;
-  z-index: -1;
-  opacity: 0;
-  img {
-    width: 50%;
-    height: 50%;
-  }
-  &:target {
-    z-index: 1;
-    opacity: 1;
-    transition: 0.5s;
-  }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000066;
+    z-index: -1;
+    opacity: 0;
+    img {
+        width: 50%;
+        height: 50%;
+    }
+    &:target {
+        z-index: 1;
+        opacity: 1;
+        transition: 0.1s;
+    } 
 }
     @keyframes up {
         from {

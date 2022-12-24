@@ -1,20 +1,3 @@
-
-
-const toppic = document.querySelectorAll('.toppic')
-const toppicfirst = document.querySelector('.top-pic-first')
-
-
-toppic.forEach(function(num,index){
-    console.log(index);
-    num.addEventListener('click', function(){
-        if (index == 1){
-            
-        }
-    })
-})
-
-
-
 var swiper1 = new Swiper("#ture", {
     speed: 10000,
     autoplay: {

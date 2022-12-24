@@ -1,9 +1,12 @@
+
         const circle = document.querySelectorAll('#circle')
 
         const birdsec = document.querySelector('.bird-sec')
         const birdbgc = document.querySelector('.bird-bgc')
         const birdwork = document.querySelector('.bird-work')
         const birdpic = document.querySelectorAll('.bird-pic')
+        const birddetail = document.querySelector('.bird-detail')
+        const birddetails = document.querySelectorAll('.details')
 
         const plantsec = document.querySelector('.plant-sec')
         const plantbgc = document.querySelector('.plant-bgc')
@@ -30,6 +33,8 @@
         });
         birdbgc.addEventListener('click', function(){
             birdsec.style.display = 'none'
+            birddetail.style.display = 
+                    'none'
         });
         plantbgc.addEventListener('click', function(){
             plantsec.style.display = 'none'
@@ -37,10 +42,33 @@
         crabbgc.addEventListener('click', function(){
             crabsec.style.display = 'none'
         });
+        
 
-        birdpic.forEach(function(img){
+        birdpic.forEach(function(img, index){
+
             img.addEventListener('click', function(){
-                console.log('333');
+
+                console.log(birddetails.length);
+                console.log(img.dataset.intro);
+                console.log(img.dataset.intro === '花嘴鳥')
+
+                birddetail.style.display = 'none'
+                
+                if(img.dataset.intro === '花嘴鳥') {
+                    birddetail.style.display = 'block'
+                    birddetails[0].style.display = 
+                    'block'
+                    birddetails[1].style.display = 
+                    'block'
+
+                }
+                if(img.dataset.intro === '小水鴨') {
+                    birddetail.style.display = 'block'
+                    birddetails[0].style.display = 
+                    'none'
+                    birddetails[1].style.display = 
+                    'block'
+                }
             });
         });
         
