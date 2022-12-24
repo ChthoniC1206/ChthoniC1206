@@ -1,4 +1,12 @@
 const introduce = document.querySelectorAll('.introduce')
+        const introduceMapping = {
+            '0': '高美濕地簡介',
+            '1': '生態現狀',
+            '2': '人文歷史',
+            '3': '濕地的功能'   
+        }
+        const introSec = document.querySelectorAll('.intro-sec')
+
 
         // 高美濕地簡介
         const texseca = document.querySelector('.text-seca')
@@ -17,20 +25,17 @@ const introduce = document.querySelectorAll('.introduce')
         const bgcd = document.querySelector('.bgcd')       
         const btnd = document.querySelector('.btnd')
 
-        introduce.forEach(function(data){
+        
+        function introlock (){
+            introSec.forEach((detail,index) => {
+                introSec[index].style.display = 'none';
+            });    
+        }
+        introduce.forEach(function(data,index){
             data.addEventListener('click',function(){
-                console.log(data.dataset.intro);
-                if(data.dataset.intro == 'a'){
-                    texseca.style.display = 'block'
-                }
-                if(data.dataset.intro == 'b'){
-                    texsecb.style.display = 'block'
-                }
-                if(data.dataset.intro == 'c'){
-                    texsecc.style.display = 'block'
-                }
-                if(data.dataset.intro == 'd'){
-                    texsecd.style.display = 'block'
+                if(data.dataset.intro === introduceMapping[index]){
+                    introlock();
+                    introSec[index].style.display = 'block'
                 }
             });
         });

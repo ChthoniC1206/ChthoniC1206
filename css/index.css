@@ -1645,7 +1645,7 @@ footer .text-word {
   top: 50%;
   transform: translateY(-50%);
   background-color: #2a2f41;
-  display: block;
+  display: none;
 }
 .bird-sec .bird-work .bird-detail .details {
   display: none;

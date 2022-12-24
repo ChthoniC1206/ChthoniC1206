@@ -1,4 +1,10 @@
 
+        const birdIndexMapping = {
+            '0': '花嘴鳥',
+            '1': '小水鴨',
+        }
+        
+        
         const circle = document.querySelectorAll('#circle')
 
         const birdsec = document.querySelector('.bird-sec')
@@ -42,31 +48,20 @@
         crabbgc.addEventListener('click', function(){
             crabsec.style.display = 'none'
         });
-        
 
+        function lock (){
+            birddetails.forEach((detail,index) => {
+                birddetails[index].style.display = 'none';
+            });    
+        }
         birdpic.forEach(function(img, index){
 
             img.addEventListener('click', function(){
-
-                console.log(birddetails.length);
-                console.log(img.dataset.intro);
-                console.log(img.dataset.intro === '花嘴鳥')
-
-                birddetail.style.display = 'none'
                 
-                if(img.dataset.intro === '花嘴鳥') {
+                if(img.dataset.intro === birdIndexMapping[index]) {
+                    lock();
                     birddetail.style.display = 'block'
-                    birddetails[0].style.display = 
-                    'block'
-                    birddetails[1].style.display = 
-                    'block'
-
-                }
-                if(img.dataset.intro === '小水鴨') {
-                    birddetail.style.display = 'block'
-                    birddetails[0].style.display = 
-                    'none'
-                    birddetails[1].style.display = 
+                    birddetails[index].style.display = 
                     'block'
                 }
             });
