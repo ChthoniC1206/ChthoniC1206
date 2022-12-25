@@ -7,14 +7,16 @@
             '0': '蘆葦',
             '1': '鹽地鼠尾粟',
         }
-
+        const crabIndexMapping = {
+            '0': '萬歲大眼蟹',
+            '1': '短身大眼蟹',
+        }
         
         
         const circle = document.querySelectorAll('#circle')
-        const backBtn = document.querySelectorAll('.back-btn')
         const closeBtn = document.querySelectorAll('.close-btn')
 
-
+        // 鳥類區
         const birdsec = document.querySelector('.bird-sec')
         const birdbgc = document.querySelector('.bird-bgc')
         const birdwork = document.querySelector('.bird-work')
@@ -23,6 +25,7 @@
         const birddetails = document.querySelectorAll('.bird-details')
         const birdBackBtn = document.querySelectorAll('.bird-back-btn')
 
+        // 植物區
         const plantsec = document.querySelector('.plant-sec')
         const plantbgc = document.querySelector('.plant-bgc')
         const plantwork = document.querySelector('.plant-work')
@@ -31,14 +34,16 @@
         const plantdetails = document.querySelectorAll('.plant-details')
         const plantBackBtn = document.querySelectorAll('.plant-back-btn')
 
-
-
-
-
-
+        // 潮間帶區
         const crabsec = document.querySelector('.crab-sec')
         const crabbgc = document.querySelector('.crab-bgc')
         const crabwork = document.querySelector('.crab-work')
+        const crabpic = document.querySelectorAll('.crab-pic')
+        const crabdetail = document.querySelector('.crab-detail')
+        const crabdetails = document.querySelectorAll('.crab-details')
+        const crabBackBtn = document.querySelectorAll('.crab-back-btn')
+
+
 
         circle.forEach(function(data){
             data.addEventListener('click', function(){
@@ -61,6 +66,7 @@
         });
         plantbgc.addEventListener('click', function(){
             plantsec.style.display = 'none'
+            plantdetail.style.display = 'none'
         });
         crabbgc.addEventListener('click', function(){
             crabsec.style.display = 'none'
@@ -73,14 +79,19 @@
                 crabsec.style.display = 'none'
             });
         });
-        
+
         function lockBird (){
             birddetails.forEach((detail,index) => {
                 detail.style.display = 'none';
             });    
         }
         function lockPlant (){
-            birddetails.forEach((detail,index) => {
+            plantdetails.forEach((detail,index) => {
+                detail.style.display = 'none';
+            });    
+        }
+        function lockCrab (){
+            crabdetails.forEach((detail,index) => {
                 detail.style.display = 'none';
             });    
         }
@@ -103,7 +114,7 @@
         plantpic.forEach(function(img, index){
             img.addEventListener('click', function(){      
                 if(img.dataset.intro === plantIndexMapping[index]) {
-                    lockBird();
+                    lockPlant();
                     plantdetail.style.display = 'block';
                     plantdetails[index].style.display = 
                     'block';
@@ -112,6 +123,22 @@
                     plantBtn.addEventListener('click', function(){
                         plantdetail.style.display = 'none';
                         plantsec.style.display = 'block'
+                    });
+                });
+            });
+        });
+        crabpic.forEach(function(img, index){
+            img.addEventListener('click', function(){      
+                if(img.dataset.intro === crabIndexMapping[index]) {
+                    lockCrab();
+                    crabdetail.style.display = 'block';
+                    crabdetails[index].style.display = 
+                    'block';
+                };
+                crabBackBtn.forEach(function(crabBtn){
+                    crabBtn.addEventListener('click', function(){
+                        crabdetail.style.display = 'none';
+                        crabsec.style.display = 'block'
                     });
                 });
             });
