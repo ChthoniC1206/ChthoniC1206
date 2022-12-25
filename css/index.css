@@ -1360,7 +1360,7 @@ footer .text-word {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  z-index: 2;
+  z-index: 3;
 }
 .text-seca img {
   width: 100%;
@@ -1414,7 +1414,7 @@ footer .text-word {
   background-color: #fff;
   transform: translate(-50%, -50%);
   display: none;
-  z-index: 2;
+  z-index: 3;
 }
 .text-secb .left {
   height: 80vh;
@@ -1490,7 +1490,7 @@ footer .text-word {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  z-index: 2;
+  z-index: 3;
   background-color: #4598b1;
 }
 .text-secc img {
@@ -1540,7 +1540,7 @@ footer .text-word {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
-  z-index: 2;
+  z-index: 3;
   background-color: #2a2f41;
 }
 .text-secd .box {
@@ -1656,10 +1656,35 @@ footer .text-word {
 .bird-sec .bird-work .bird-detail .details img {
   width: 100%;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.5;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .bird-sec .bird-work .bird-detail .details .text {
   position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.bird-sec .bird-work .bird-detail .details .left-text {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  top: 0%;
+}
+.bird-sec .bird-work .bird-detail .details .right-text {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  color: white;
   top: 0%;
 }
 

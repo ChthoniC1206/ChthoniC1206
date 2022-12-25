@@ -1303,7 +1303,7 @@ footer {
     left: 50%;
     transform: translate(-50%,-50%);
     display: none;
-    z-index: 2;
+    z-index: 3;
     img {
         width: 100%;
         height: 100%;
@@ -1357,7 +1357,7 @@ footer {
     background-color: #fff;
     transform: translate(-50%,-50%);
     display: none;
-    z-index: 2; 
+    z-index: 3; 
     .left {
         height: 80vh;
         position: absolute;
@@ -1431,7 +1431,7 @@ footer {
     left: 50%;
     transform: translate(-50%,-50%);
     display: none;
-    z-index: 2;
+    z-index: 3;
     background-color: #4598b1;
     img {
         width: 665px;
@@ -1481,7 +1481,7 @@ footer {
     left: 50%;
     transform: translate(-50%,-50%);
     display: none;
-    z-index: 2;
+    z-index: 3;
     background-color: #2a2f41;
     .box {
         width: 100%;
@@ -1593,10 +1593,34 @@ footer {
                 img {
                     width: 100%;
                     height: 100%;
-                    opacity: .6;
+                    opacity: .5;
+                    object-fit: cover;
                 }
                 .text {
                     position: absolute;
+                    top: 0%;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .left-text {
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    top: 0%;
+                }
+                .right-text {
+                    width: 20%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: end;
+                    color: white;
                     top: 0%;
                 }
             }
