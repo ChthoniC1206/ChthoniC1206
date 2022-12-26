@@ -1556,13 +1556,13 @@ footer {
         height: 100%;
         color: white;
         font-size: 30px;
-        padding: 0px 100px;
+        padding: 10px 100px;
         img {
-            width: 450px;
+            width: 400px;
             height: 250px;
-            border: 1px solid #FFF8F8;
-            filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
-            border-radius: 10px;
+            // border: 1px solid #FFF8F8;
+            filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.377));
+            border-radius: 40px;
             padding: 20px;
         }
         p{
@@ -1570,28 +1570,27 @@ footer {
             line-height: 200%;
             padding: 60px;
         }
-        P::first-letter{
+        p::first-letter{
             font-size: 40px;
         }
         .top {
             display: flex;
             width: 100%;
             height: calc(80vh / 3);
-            border: 1px solid blue;
-            
+            // border: 1px solid blue;
         }
         .mid {
             display: flex;
             width: 100%;
             height: calc(80vh / 3);
-            border: 1px solid rgb(94, 255, 0);
+            // border: 1px solid rgb(94, 255, 0);
             
         }
         .down {
             display: flex;
             width: 100%;
             height: calc(80vh / 3);
-            border: 1px solid rgb(255, 0, 13);
+            // border: 1px solid rgb(255, 0, 13);
             
         }
     }
@@ -1613,6 +1612,7 @@ footer {
         position: fixed;
         top: 30px;
         right: 30px;
+        color: #FFF;
     }
 }
 // 鳥類
