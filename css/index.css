@@ -295,6 +295,11 @@ nav .navbar a:hover span {
   transition: 1.5s;
   opacity: 1;
 }
+@media (max-width: 800px) {
+  nav {
+    display: none;
+  }
+}
 
 main {
   width: 100%;
@@ -2116,7 +2121,7 @@ footer #end .text-word {
   z-index: 1;
 }
 
-.lightbox {
+.lightbox-up {
   position: fixed;
   top: 0;
   left: 0;
@@ -2129,12 +2134,91 @@ footer #end .text-word {
   z-index: -1;
   opacity: 0;
 }
-.lightbox img {
+.lightbox-up img {
   width: 50%;
   height: 50%;
 }
-.lightbox:target {
+.lightbox-up:target {
   z-index: 1;
   opacity: 1;
   transition: 0.1s;
+}
+
+.media-navbar {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  top: 0%;
+  background-color: #8896BC;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  display: none;
+}
+.media-navbar .left-sec {
+  width: 90%;
+  height: 100%;
+  display: flex;
+}
+.media-navbar .left-sec .logo {
+  height: 100%;
+  width: 20%;
+  padding: 10px;
+}
+.media-navbar .left-sec .logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.media-navbar .left-sec .text {
+  font-size: 30px;
+  color: white;
+  align-self: center;
+}
+.media-navbar .burger-line {
+  position: fixed;
+  top: 30px;
+  right: 0%;
+  width: 10%;
+}
+.media-navbar #burger:checked ~ .menu {
+  display: block;
+  max-height: 60%;
+}
+.media-navbar input {
+  display: none;
+}
+.media-navbar .menu {
+  list-style: none;
+  width: 100%;
+  background-color: #252525;
+  top: 10%;
+  left: 0%;
+  position: fixed;
+  display: flex;
+  display: none;
+  text-align: center;
+  z-index: 5;
+  border-bottom: 2px solid snow;
+}
+.media-navbar .menu .line {
+  margin: 0 auto;
+  width: 80%;
+  border: 1px solid snow;
+}
+.media-navbar .menu a {
+  padding: 15px 0;
+  font-size: 24px;
+  color: white;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+.media-navbar .menu a:hover {
+  background-color: black;
+}
+@media (max-width: 800px) {
+  .media-navbar {
+    display: block;
+  }
 }/*# sourceMappingURL=index.css.map */

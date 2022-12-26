@@ -225,6 +225,9 @@ nav {
         }
         
         
+    }
+    @media (max-width: 800px) {
+        display: none;
     }  
 }
 
@@ -290,7 +293,6 @@ main {
                     border-radius: 50%;
                     background-color: skyblue;
                 }
-
             }
             & .b {
                 z-index: 2;
@@ -2019,7 +2021,9 @@ footer {
         }
     }
 }
-.lightbox {
+
+// 高美景觀 light-box
+.lightbox-up {
     position: fixed;
     top: 0;
     left: 0;
@@ -2041,3 +2045,86 @@ footer {
         transition: 0.1s;
     } 
 }
+<<<<<<< HEAD
+=======
+
+// 漢堡條
+.media-navbar {
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 0%;
+    background-color: #8896BC;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    display: none;
+    .left-sec {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        .logo {
+            height: 100%;
+            width: 20%;
+            padding: 10px;
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+        .text {
+            font-size: 30px;
+            color: white;
+            align-self: center;
+        }
+    }
+    .burger-line {
+        position: fixed;
+        top: 30px;
+        right: 0%;
+        width: 10%;
+    }
+    #burger {
+        &:checked ~  .menu {
+            display: block;
+            max-height: 60%;
+        }
+    }
+    input {
+        display: none;
+    }
+    .menu {
+        list-style: none;
+        width: 100%;
+        background-color: #252525;
+        top: 10%;
+        left: 0%;
+        position: fixed;
+        display: flex;
+        display: none;
+        text-align: center;
+        z-index: 5;
+        border-bottom: 2px solid snow;
+            .line {
+                margin: 0 auto;
+                width: 80%;
+                border: 1px solid snow;
+            }
+            a{  
+                padding: 15px 0; 
+                font-size: 24px;
+                color: white;
+                display: block;
+                width: 100%;
+                text-decoration: none;
+                &:hover {
+                    background-color: black;
+                }
+            }
+    }
+    @media (max-width: 800px) {
+        display: block;
+    }
+}
+>>>>>>> 43700ce25c8d8633afef3491d110fbeb290caeeb
