@@ -526,6 +526,7 @@ main .wetlands .cloud img {
   height: 100%;
 }
 main .wetlands .cloud.a {
+  overflow: hidden;
   filter: blur(20px) brightness(200%);
   width: 700px;
   height: 700px;
@@ -534,6 +535,7 @@ main .wetlands .cloud.a {
           animation: num1 20s ease-in-out infinite;
 }
 main .wetlands .cloud.b {
+  overflow: hidden;
   filter: blur(10px) brightness(200%);
   width: 400px;
   height: 400px;
@@ -542,6 +544,7 @@ main .wetlands .cloud.b {
           animation: num2 25s ease-in-out infinite;
 }
 main .wetlands .cloud.c {
+  overflow: hidden;
   filter: blur(15px) brightness(200%);
   width: 500px;
   height: 500px;
@@ -1254,11 +1257,22 @@ footer .background-dowm .travel .box {
   border: 1px solid sandybrown;
 }
 footer .background-dowm .travel .box .map {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
+}
+footer .background-dowm .travel .box .map iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
 }
 footer .background-dowm .travel .box .mini-box1 {
   width: 100%;
