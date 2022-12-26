@@ -2,6 +2,7 @@
         const birdIndexMapping = {
             '0': '花嘴鳥',
             '1': '小水鴨',
+            '2': '蒼鷺',
         }
         const plantIndexMapping = {
             '0': '蘆葦',
