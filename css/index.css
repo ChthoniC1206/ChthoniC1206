@@ -617,6 +617,8 @@ main .backgruond-mid {
   position: relative;
 }
 main .backgruond-mid img {
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1064,14 +1066,108 @@ main .backgruond-mid #wave-container .bubbles .bubble {
   -webkit-animation: up 8s ease-in-out;
           animation: up 8s ease-in-out;
 }
+@-webkit-keyframes up {
+  from {
+    bottom: -10%;
+    opacity: 1;
+  }
+  to {
+    bottom: 110%;
+    opacity: 0.5;
+  }
+}
+@keyframes up {
+  from {
+    bottom: -10%;
+    opacity: 1;
+  }
+  to {
+    bottom: 110%;
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes waves {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes waves {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes fly {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes fly {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@-webkit-keyframes sunshadow {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+@keyframes sunshadow {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+@-webkit-keyframes sunmove {
+  0% {
+    transform: rotate(0deg) translate(700px);
+  }
+  100% {
+    transform: rotate(360deg) translate(700px);
+  }
+}
+@keyframes sunmove {
+  0% {
+    transform: rotate(0deg) translate(700px);
+  }
+  100% {
+    transform: rotate(360deg) translate(700px);
+  }
+}
 
 footer {
+  position: relative;
   background-size: cover;
-  background-image: url("../img/星空魚.jpg");
+}
+footer .background-dowm {
+  width: 100%;
+  height: 100%;
 }
 footer .background-dowm img {
   width: 100%;
-  height: 240vh;
+  height: 100%;
   position: absolute;
   transform: translateY(-7%);
 }
@@ -1289,20 +1385,26 @@ footer .background-dowm .travel .buttons :hover span {
 }
 footer .background-dowm .picture {
   width: 100%;
-  height: 100vh;
+  height: 636px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 footer .background-dowm .picture h1 {
-  top: 10%;
-  position: absolute;
-  left: 45%;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
   font-size: 50px;
   color: white;
 }
 footer .background-dowm .picture .pic-charge {
-  position: absolute;
-  top: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
   width: 100%;
+  height: 102%;
 }
 footer .background-dowm .picture .pic-charge #ture {
   width: 100%;
@@ -1315,9 +1417,11 @@ footer .background-dowm .picture .pic-charge #ture .swiper-wrapper .swiper-slide
   width: 350px;
   height: 200px;
 }
-footer .background-dowm .picture .pic-charge #ture img {
+footer .background-dowm .picture .pic-charge #ture .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 footer .background-dowm .picture .pic-charge #reverse {
   width: 100%;
@@ -1330,19 +1434,31 @@ footer .background-dowm .picture .pic-charge #reverse .swiper-wrapper .swiper-sl
   width: 350px;
   height: 200px;
 }
-footer .background-dowm .picture .pic-charge #reverse img {
+footer .background-dowm .picture .pic-charge #reverse .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-footer .bottom {
+footer #end {
   width: 100%;
   height: 100vh;
+  background-image: url(../img/04.素材/網頁背景/footer圖.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
-footer .bottom img {
+footer #end .pic {
+  width: 100%;
+  height: 80vh;
+}
+footer #end .pic img {
   width: 100%;
   height: 100%;
 }
-footer .text-word {
+footer #end .text-word {
   font-size: 20px;
   width: 100%;
   height: 5vh;
@@ -1957,96 +2073,4 @@ footer .text-word {
   z-index: 1;
   opacity: 1;
   transition: 0.1s;
-}
-
-@-webkit-keyframes up {
-  from {
-    bottom: -10%;
-    opacity: 1;
-  }
-  to {
-    bottom: 110%;
-    opacity: 0.5;
-  }
-}
-
-@keyframes up {
-  from {
-    bottom: -10%;
-    opacity: 1;
-  }
-  to {
-    bottom: 110%;
-    opacity: 0.5;
-  }
-}
-@-webkit-keyframes waves {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes waves {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes fly {
-  0% {
-    left: -10%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-@keyframes fly {
-  0% {
-    left: -10%;
-  }
-  100% {
-    left: 100%;
-  }
-}
-@-webkit-keyframes sunshadow {
-  0% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.3;
-  }
-}
-@keyframes sunshadow {
-  0% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.3;
-  }
-}
-@-webkit-keyframes sunmove {
-  0% {
-    transform: rotate(0deg) translate(700px);
-  }
-  100% {
-    transform: rotate(360deg) translate(700px);
-  }
-}
-@keyframes sunmove {
-  0% {
-    transform: rotate(0deg) translate(700px);
-  }
-  100% {
-    transform: rotate(360deg) translate(700px);
-  }
 }/*# sourceMappingURL=index.css.map */

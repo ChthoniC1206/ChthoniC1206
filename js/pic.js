@@ -51,15 +51,15 @@ swiper2.el.onmouseleave = function () {
     swiper2.setTransition(10000);
     swiper2.setTranslate(Now_translate2);
 }
-swiper3.el.onmouseenter = function () {
-    var swiper3_translate = swiper1.getTranslate();
-    swiper3.setTranslate(swiper3_translate);
+// swiper3.el.onmouseenter = function () {
+//     var swiper3_translate = swiper1.getTranslate();
+//     swiper3.setTranslate(swiper3_translate);
 
-}
+// }
 
-swiper3.el.onmouseleave = function () {
-    var Now_translate3 = swiper3.getTranslate();
-    Now_translate3 = Now_translate3 - 300;
-    swiper3.setTransition(10000);
-    swiper3.setTranslate(Now_translate3);
-}
+// swiper3.el.onmouseleave = function () {
+//     var Now_translate3 = swiper3.getTranslate();
+//     Now_translate3 = Now_translate3 - 300;
+//     swiper3.setTransition(10000);
+//     swiper3.setTranslate(Now_translate3);
+// }
