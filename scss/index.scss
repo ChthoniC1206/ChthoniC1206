@@ -1556,30 +1556,43 @@ footer {
         height: 100%;
         color: white;
         font-size: 30px;
+        padding: 0px 100px;
         img {
             width: 450px;
             height: 250px;
             border: 1px solid #FFF8F8;
             filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
             border-radius: 10px;
+            padding: 20px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 200%;
+            padding: 60px;
+        }
+        P::first-letter{
+            font-size: 40px;
         }
         .top {
             display: flex;
             width: 100%;
             height: calc(80vh / 3);
             border: 1px solid blue;
+            
         }
         .mid {
             display: flex;
             width: 100%;
             height: calc(80vh / 3);
             border: 1px solid rgb(94, 255, 0);
+            
         }
         .down {
             display: flex;
             width: 100%;
             height: calc(80vh / 3);
             border: 1px solid rgb(255, 0, 13);
+            
         }
     }
     .bgcd {
