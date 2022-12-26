@@ -1481,12 +1481,6 @@ footer .text-word {
   top: 30px;
   right: 30px;
 }
-.text-secb .word-right::-webkit-scrollbar {
-  display: none;
-}
-.text-secb .word-left::-webkit-scrollbar {
-  display: none;
-}
 
 .text-secc {
   width: 100%;
@@ -1553,23 +1547,13 @@ footer .text-word {
   width: 100%;
   height: 100%;
   color: white;
-  font-size: 20px;
-  padding: 0px 100px;
+  font-size: 30px;
 }
-.text-secd .box .img {
-  width: 600px;
+.text-secd .box img {
+  width: 450px;
   height: 250px;
   border: 1px solid #FFF8F8;
   filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 10px;
-  padding: 20px;
-}
-.text-secd .box .img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
   border-radius: 10px;
 }
 .text-secd .box .top {
@@ -1577,42 +1561,18 @@ footer .text-word {
   width: 100%;
   height: 26.6666666667vh;
   border: 1px solid blue;
-  padding: 10px 10px;
-}
-.text-secd .box .top p {
-  padding: 50px;
-  line-height: 200%;
-}
-.text-secd .box .top p::first-letter {
-  font-size: 40px;
 }
 .text-secd .box .mid {
   display: flex;
   width: 100%;
   height: 26.6666666667vh;
   border: 1px solid rgb(94, 255, 0);
-  padding: 10px 10px;
-}
-.text-secd .box .mid p {
-  padding: 50px;
-  line-height: 200%;
-}
-.text-secd .box .mid p::first-letter {
-  font-size: 40px;
 }
 .text-secd .box .down {
   display: flex;
   width: 100%;
   height: 26.6666666667vh;
   border: 1px solid rgb(255, 0, 13);
-  padding: 10px 10px;
-}
-.text-secd .box .down p {
-  padding: 50px;
-  line-height: 200%;
-}
-.text-secd .box .down p::first-letter {
-  font-size: 40px;
 }
 .text-secd .bgcd {
   position: fixed;
@@ -1632,7 +1592,6 @@ footer .text-word {
   position: fixed;
   top: 30px;
   right: 30px;
-  color: #ddd;
 }
 
 .bird-sec {
