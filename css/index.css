@@ -481,6 +481,7 @@ main .wetlands .page-b {
   position: absolute;
   top: 35%;
   left: 50%;
+  z-index: 3;
 }
 main .wetlands .page-b img {
   width: 100%;
@@ -1482,6 +1483,8 @@ footer #end .text-word {
   transform: translate(-50%, -50%);
   display: none;
   z-index: 3;
+  -webkit-animation: seca 1.5s;
+          animation: seca 1.5s;
 }
 .text-seca img {
   width: 100%;
@@ -1533,6 +1536,22 @@ footer #end .text-word {
   top: 30px;
   right: 30px;
 }
+@-webkit-keyframes seca {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes seca {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .text-secb {
   width: 100%;
@@ -1544,6 +1563,8 @@ footer #end .text-word {
   transform: translate(-50%, -50%);
   display: none;
   z-index: 3;
+  -webkit-animation: secb 1.5s;
+          animation: secb 1.5s;
 }
 .text-secb .left {
   height: 80vh;
@@ -1641,6 +1662,22 @@ footer #end .text-word {
   top: 30px;
   right: 30px;
 }
+@-webkit-keyframes secb {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes secb {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .text-secc {
   width: 100%;
@@ -1652,6 +1689,8 @@ footer #end .text-word {
   display: none;
   z-index: 3;
   background-color: #4598b1;
+  -webkit-animation: secc 1.5s;
+          animation: secc 1.5s;
 }
 .text-secc img {
   width: 665px;
@@ -1709,6 +1748,22 @@ footer #end .text-word {
   top: 30px;
   right: 30px;
 }
+@-webkit-keyframes secc {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes secc {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .text-secd {
   width: 100%;
@@ -1720,6 +1775,8 @@ footer #end .text-word {
   display: none;
   z-index: 3;
   background-color: #2a2f41;
+  -webkit-animation: secd 1.5s;
+          animation: secd 1.5s;
 }
 .text-secd .box {
   width: 100%;
@@ -1777,6 +1834,22 @@ footer #end .text-word {
   top: 30px;
   right: 30px;
   color: #FFF;
+}
+@-webkit-keyframes secd {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes secd {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .bird-sec {

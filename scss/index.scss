@@ -383,6 +383,7 @@ main {
             & .a:hover{
                 background-color: #fde86e;
                 font-weight: bold;
+                
             }
             & .b:hover{
                 background-color: #fde86e;
@@ -420,6 +421,7 @@ main {
             position: absolute;
             top: 35%;
             left: 50%;
+            z-index: 3;
             img {
                 width: 100%;
                 height: 100%;
@@ -532,6 +534,9 @@ main {
                 width: 100%;
                 height: 100%;
             }
+        }
+        @media (max-width: 1400px) {
+            
         }
     } 
     .backgruond-mid {
@@ -1375,6 +1380,8 @@ footer {
     transform: translate(-50%,-50%);
     display: none;
     z-index: 3;
+    animation: seca 1.5s ;
+    
     img {
         width: 100%;
         height: 100%;
@@ -1411,6 +1418,7 @@ footer {
         overflow: auto;
         text-align: justify;
         text-justify:inter-ideograph;
+        
         span{
             font-size: 40px;
         }
@@ -1425,9 +1433,18 @@ footer {
         position: fixed;
         top: 30px;
         right: 30px;
+    }    
+    @keyframes seca{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
     }
-    
 }
+
+
 
 // 生態現狀
 .text-secb {
@@ -1440,6 +1457,7 @@ footer {
     transform: translate(-50%,-50%);
     display: none;
     z-index: 3;
+    animation: secb 1.5s ;
     .left {
         height: 80vh;
         position: absolute;
@@ -1537,6 +1555,14 @@ footer {
         top: 30px;
         right: 30px;
     }
+    @keyframes secb{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
 }
 // 人文歷史
 .text-secc {
@@ -1549,6 +1575,7 @@ footer {
     display: none;
     z-index: 3;
     background-color: #4598b1;
+    animation: secc 1.5s ;
     img {
         width: 665px;
         height: 690px;
@@ -1605,6 +1632,14 @@ footer {
         top: 30px;
         right: 30px;
     }
+    @keyframes secc{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
 }
 // 濕地的功能
 .text-secd {
@@ -1617,6 +1652,7 @@ footer {
     display: none;
     z-index: 3;
     background-color: #2a2f41;
+    animation: secd 1.5s ;
     .box {
         width: 100%;
         height: 100%;
@@ -1679,6 +1715,14 @@ footer {
         top: 30px;
         right: 30px;
         color: #FFF;
+    }
+    @keyframes secd{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
     }
 }
 // 鳥類
@@ -2045,8 +2089,6 @@ footer {
         transition: 0.1s;
     } 
 }
-<<<<<<< HEAD
-=======
 
 // 漢堡條
 .media-navbar {
@@ -2127,4 +2169,3 @@ footer {
         display: block;
     }
 }
->>>>>>> 43700ce25c8d8633afef3491d110fbeb290caeeb
