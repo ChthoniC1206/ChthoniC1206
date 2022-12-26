@@ -823,19 +823,30 @@
             <div class="logo">
                 <img src="./img/04.素材/Footer/高美濕地Logo.png" alt="">
             </div>
-            <p>高美濕地旅遊網</p>
+            <p class="text">高美濕地旅遊網</p>
         </div>
-        <div class="right-sec">
-            <i class="fa-solid fa-bars"></i>
-            <div class="burger">
-                <div class="a">關於濕地</div>
-                <div class="a"></div>
-                <div class="a"></div>
-                <div class="a"></div>
-                <div class="a"></div>
-                <div class="a"></div>
-                <div class="a"></div>
-            </div>
+        <div class="burger-line">
+            <label for="burger" style="font-size: 30px; color: white;">
+                    <i class="fa-solid fa-bars"></i>
+            </label>
+            <input name="checkbox" type="checkbox" id="burger">
+            <ul class="menu">
+                <a class="type-btn" href="#banner">縮時攝影</a>
+                <div class="line"></div>
+                <a class="type-btn" href="#wetland">關於濕地</a>
+                <div class="line"></div>
+                <a class="type-btn" href="#ecologys">潮間帶生態</a>
+                <div class="line"></div>
+                <a class="type-btn" href="#wave-container">潮汐時間</a>
+                <div class="line"></div>
+                <a class="type-btn" href="#new">最新消息</a>
+                <div class="line"></div>
+                <a class="type-btn" href="#trave">旅遊資訊</a>
+                <div class="line"></div>
+                <a class="type-btn" href="#pictures">高美景觀</a>
+                <div class="line"></div>
+                <a class="type-btn" href="#end">聯絡我們</a>
+            </ul>
         </div>
     </div>
     
@@ -864,6 +875,23 @@
         window.addEventListener('scroll', function(){
             const scrollY = window.scrollY
             console.log(window.scrollY);
+        });
+
+        const typeBtn = document.querySelectorAll('.type-btn')
+        const menu =document.querySelector('.menu')
+
+        const checkbox = document.querySelector('#burger')
+
+        
+
+        typeBtn.forEach(function(data){
+            data.addEventListener('click', function(){
+                console.log(checkbox.checked);
+                if(checkbox.checked === 'true'){
+                    console.log(menu);
+                    menu.style.display = 'none';
+                }
+            });
         });
 
     </script>
