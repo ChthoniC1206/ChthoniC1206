@@ -1509,8 +1509,16 @@ footer #end .text-word {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 200%;
+  line-height: 300%;
   overflow: auto;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+.text-seca .word span {
+  font-size: 40px;
+}
+.text-seca .word .text {
+  text-indent: 40px;
 }
 .text-seca .btna {
   cursor: pointer;
@@ -1546,48 +1554,79 @@ footer #end .text-word {
           clip-path: polygon(45% 0, 100% 0, 100% 100%, 60% 100%);
   opacity: 0.7;
 }
+.text-secb .h1-left {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: start;
+  text-shadow: -1px 0 black, 0 5px rgba(0, 0, 0, 0.425), 1px 0 black, 0 1px black;
+}
+.text-secb .h1-right {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: end;
+  text-shadow: -1px 0 black, 0 5px rgba(0, 0, 0, 0.425), 1px 0 black, 0 1px black;
+}
 .text-secb .bgcb {
   position: fixed;
   top: 50%;
   left: 50%;
   background-color: rgb(0, 0, 0);
   transform: translate(-50%, -50%);
-  opacity: 0.6;
+  opacity: 0.7;
   width: 100%;
   height: 100vh;
   z-index: -1;
 }
+.text-secb .word-right::-webkit-scrollbar {
+  display: none;
+}
 .text-secb .word-right {
   position: fixed;
-  top: 20%;
-  left: 60%;
+  top: 10%;
+  left: 58%;
   color: white;
   transform: translate(20%, 0%);
   width: 30%;
-  height: 60vh;
+  height: 70vh;
   line-height: 200%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 200%;
-  border: 1px solid black;
+  border: 5px groove rgba(0, 0, 0, 0.485);
+  overflow: scroll;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  padding: 20px;
+}
+.text-secb span {
+  font-size: 40px;
+}
+.text-secb .word-left::-webkit-scrollbar {
+  display: none;
 }
 .text-secb .word-left {
   position: fixed;
-  top: 20%;
+  top: 10%;
   left: 0%;
   color: white;
   transform: translate(20%, 0%);
   width: 30%;
-  height: 60vh;
+  height: 70vh;
   line-height: 200%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 200%;
-  border: 1px solid black;
+  border: 5px groove rgba(0, 0, 0, 0.485);
+  overflow: scroll;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  padding: 20px;
 }
 .text-secb .btnb {
   cursor: pointer;
@@ -1612,6 +1651,9 @@ footer #end .text-word {
 .text-secc img {
   width: 665px;
   height: 690px;
+  position: absolute;
+  top: 43.5px;
+  left: 10%;
 }
 .text-secc .bgcc {
   position: fixed;
@@ -1626,18 +1668,33 @@ footer #end .text-word {
 }
 .text-secc .word {
   position: fixed;
-  top: 10%;
-  left: 60%;
+  top: 8%;
+  left: 45%;
   color: white;
   transform: translate(20%, 0%);
-  width: 30%;
-  height: 100%;
+  width: 40%;
+  height: 70vh;
   line-height: 200%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 200%;
+  line-height: 300%;
+  overflow: auto;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+.text-secc .word span {
+  font-size: 40px;
+}
+.text-secc .word p {
+  line-height: 300%;
+}
+.text-secc .word .text {
+  text-indent: 40px;
+}
+.text-secc .word::-webkit-scrollbar {
+  display: none;
 }
 .text-secc .btnc {
   cursor: pointer;

@@ -240,8 +240,8 @@ main {
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
     }
+}
     #container {
         background-image: url('../img/backfround.png');
         // background-image: url('../img/夕陽拷貝.png');
@@ -259,7 +259,7 @@ main {
             cursor: pointer;
             text-decoration: none;
             color: black;
-            
+
             & .a {
                 z-index: 2;
                 width: 345px;
@@ -1014,6 +1014,7 @@ main {
         }
     }
 }
+
 // 結尾
 footer {
     position: relative;
@@ -1386,6 +1387,7 @@ footer {
         width: 100%;
         height: 100vh;
         z-index: -1;
+        
     }
     .word::-webkit-scrollbar {
         display: none;
@@ -1403,8 +1405,16 @@ footer {
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        line-height: 200%;
-        overflow: auto; 
+        line-height: 300%;
+        overflow: auto;
+        text-align: justify;
+        text-justify:inter-ideograph;
+        span{
+            font-size: 40px;
+        }
+        .text{
+            text-indent: 40px;
+        }
     }
     .btna {
         cursor: pointer;
@@ -1414,7 +1424,9 @@ footer {
         top: 30px;
         right: 30px;
     }
+    
 }
+
 // 生態現狀
 .text-secb {
     width: 100%;
@@ -1425,7 +1437,7 @@ footer {
     background-color: #fff;
     transform: translate(-50%,-50%);
     display: none;
-    z-index: 3; 
+    z-index: 3;
     .left {
         height: 80vh;
         position: absolute;
@@ -1438,49 +1450,83 @@ footer {
         clip-path: polygon(45% 0, 100% 0, 100% 100%, 60% 100%);
         opacity: .7;
     }
+    .h1-left{
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align:start;
+        text-shadow: -1px 0 black, 0 5px rgba(0, 0, 0, 0.425),1px 0 black, 0 1px black;
+    }
+    .h1-right{
+        font-size: 40px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        text-align: end;
+        text-shadow: -1px 0 black, 0 5px rgba(0, 0, 0, 0.425),1px 0 black, 0 1px black;
+        
+    }
     .bgcb {
         position: fixed;
         top: 50%;
         left: 50%;
         background-color: rgb(0, 0, 0);
         transform: translate(-50%,-50%);
-        opacity: .6;
+        opacity: .7;
         width: 100%;
         height: 100vh;
         z-index: -1;
     }
+    .word-right::-webkit-scrollbar {
+        display: none;
+    }
     .word-right {
         position: fixed;
-        top: 20%;
-        left: 60%;
+        top: 10%;
+        left: 58%;
         color: white;
         transform: translate(20%,0%);
         width: 30%;
-        height: 60vh;
+        height: 70vh;
         line-height: 200%;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 200%;
-        border: 1px solid black;
+        border: 5px groove rgba(0, 0, 0, 0.485);
+        overflow: scroll;
+        text-align: justify;
+        text-justify:inter-ideograph;
+        padding: 20px;
+    }
+    span{
+        font-size: 40px;
+    }
+    .word-left::-webkit-scrollbar {
+        display: none;
+        
     }
     .word-left {
         position: fixed;
-        top: 20%;
+        top: 10%;
         left: 0%;
         color: white;
         transform: translate(20%,0%);
         width: 30%;
-        height: 60vh;
+        height: 70vh;
         line-height: 200%;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 200%;
-        border: 1px solid black;
+        border: 5px groove rgba(0, 0, 0, 0.485);
+        overflow: scroll;
+        text-align: justify;
+        text-justify:inter-ideograph;
+        padding: 20px;
     }
+
     .btnb {
         cursor: pointer;
         width: 40px;
@@ -1504,6 +1550,9 @@ footer {
     img {
         width: 665px;
         height: 690px;
+        position: absolute;
+        top: 43.5px;
+        left: 10%;
     }
     .bgcc {
         position: fixed;
@@ -1518,18 +1567,33 @@ footer {
     }
     .word {
         position: fixed;
-        top: 10%;
-        left: 60%;
+        top: 8%;
+        left: 45%;
         color: white;
         transform: translate(20%,0%);
-        width: 30%;
-        height: 100%;
+        width: 40%;
+        height: 70vh;
         line-height: 200%;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
-        line-height: 200%;
+        line-height: 300%;
+        overflow: auto;
+        text-align: justify;
+        text-justify:inter-ideograph;
+        span{
+            font-size: 40px;
+        }
+        p{
+            line-height: 300%;
+        }
+        .text{
+            text-indent: 40px;
+        }
+    }
+    .word::-webkit-scrollbar {
+        display: none;
     }
     .btnc {
         cursor: pointer;
@@ -1977,4 +2041,3 @@ footer {
         transition: 0.1s;
     } 
 }
-    
