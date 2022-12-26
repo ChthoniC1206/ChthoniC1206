@@ -2059,7 +2059,7 @@ footer #end .text-word {
   z-index: 1;
 }
 
-.lightbox {
+.lightbox-up {
   position: fixed;
   top: 0;
   left: 0;
@@ -2072,12 +2072,35 @@ footer #end .text-word {
   z-index: -1;
   opacity: 0;
 }
-.lightbox img {
+.lightbox-up img {
   width: 50%;
   height: 50%;
 }
-.lightbox:target {
+.lightbox-up:target {
   z-index: 1;
   opacity: 1;
   transition: 0.1s;
+}
+
+.media-navbar {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  top: 0%;
+  background-color: #8896BC;
+  display: flex;
+}
+.media-navbar .left-sec {
+  width: 90%;
+  height: 100%;
+  display: flex;
+}
+.media-navbar .left-sec .logo {
+  height: 100%;
+  width: 10%;
+  border: 1px solid black;
+}
+.media-navbar .left-sec .logo img {
+  height: 100%;
+  display: block;
 }/*# sourceMappingURL=index.css.map */
