@@ -272,7 +272,11 @@ nav .navbar a {
   background-color: #fff;
 }
 nav .navbar a span {
+<<<<<<< Updated upstream
   color: #FFF;
+=======
+  color: rgb(252, 252, 252);
+>>>>>>> Stashed changes
   font-size: 20px;
   opacity: 0;
   width: 100px;
@@ -625,33 +629,41 @@ main .wetlands .back-cloud img {
   width: 100%;
   height: 100%;
 }
-main .backgruond-mid {
+main .background-mid {
   width: 100%;
   height: 100%;
   position: relative;
 }
+<<<<<<< Updated upstream
 main .backgruond-mid img {
   -o-object-fit: cover;
      object-fit: cover;
+=======
+main .background-mid img {
+>>>>>>> Stashed changes
   position: absolute;
   height: 100%;
   width: 100%;
 }
-main .backgruond-mid .ecology::-webkit-scrollbar {
+main .background-mid .ecology::-webkit-scrollbar {
   display: none;
 }
-main .backgruond-mid .ecology {
+main .background-mid .ecology {
   position: relative;
 }
-main .backgruond-mid .ecology h1 {
+main .background-mid .ecology h1 {
   top: 5%;
   left: 43%;
   font-size: 50px;
   position: absolute;
   color: white;
 }
+<<<<<<< Updated upstream
 main .backgruond-mid .ecology .bird {
   z-index: 1;
+=======
+main .background-mid .ecology .bird {
+>>>>>>> Stashed changes
   color: black;
   display: block;
   position: absolute;
@@ -661,7 +673,7 @@ main .backgruond-mid .ecology .bird {
   height: 490px;
   position: relative;
 }
-main .backgruond-mid .ecology .bird .icon {
+main .background-mid .ecology .bird .icon {
   position: absolute;
   overflow: hidden;
   top: 5%;
@@ -669,11 +681,11 @@ main .backgruond-mid .ecology .bird .icon {
   width: 80px;
   height: 80px;
 }
-main .backgruond-mid .ecology .bird .icon img {
+main .background-mid .ecology .bird .icon img {
   width: 100%;
   height: 100%;
 }
-main .backgruond-mid .ecology .bird .image {
+main .background-mid .ecology .bird .image {
   position: absolute;
   top: 15%;
   overflow: hidden;
@@ -682,12 +694,16 @@ main .backgruond-mid .ecology .bird .image {
   border-radius: 50%;
   box-shadow: 2px 5px 5px gray;
 }
-main .backgruond-mid .ecology .bird .image img {
+main .background-mid .ecology .bird .image img {
   width: 100%;
   height: 100%;
 }
+<<<<<<< Updated upstream
 main .backgruond-mid .ecology .bird .text {
   cursor: pointer;
+=======
+main .background-mid .ecology .bird .text {
+>>>>>>> Stashed changes
   font-size: 20px;
   position: absolute;
   bottom: 15%;
@@ -712,8 +728,12 @@ main .backgruond-mid .ecology .bird .text span {
 main .backgruond-mid .ecology .bird .text span:hover {
   font-weight: bolder;
 }
+<<<<<<< Updated upstream
 main .backgruond-mid .ecology .plant {
   z-index: 1;
+=======
+main .background-mid .ecology .plant {
+>>>>>>> Stashed changes
   color: black;
   display: block;
   position: absolute;
@@ -723,7 +743,7 @@ main .backgruond-mid .ecology .plant {
   height: 455px;
   position: relative;
 }
-main .backgruond-mid .ecology .plant .icon {
+main .background-mid .ecology .plant .icon {
   position: absolute;
   overflow: hidden;
   top: -1%;
@@ -731,11 +751,11 @@ main .backgruond-mid .ecology .plant .icon {
   width: 80px;
   height: 80px;
 }
-main .backgruond-mid .ecology .plant .icon img {
+main .background-mid .ecology .plant .icon img {
   width: 100%;
   height: 100%;
 }
-main .backgruond-mid .ecology .plant .image {
+main .background-mid .ecology .plant .image {
   position: absolute;
   top: 15%;
   overflow: hidden;
@@ -744,12 +764,16 @@ main .backgruond-mid .ecology .plant .image {
   border-radius: 50%;
   box-shadow: 2px 5px 5px gray;
 }
-main .backgruond-mid .ecology .plant .image img {
+main .background-mid .ecology .plant .image img {
   width: 100%;
   height: 100%;
 }
+<<<<<<< Updated upstream
 main .backgruond-mid .ecology .plant .text {
   cursor: pointer;
+=======
+main .background-mid .ecology .plant .text {
+>>>>>>> Stashed changes
   font-size: 20px;
   position: absolute;
   bottom: 7%;
@@ -774,8 +798,12 @@ main .backgruond-mid .ecology .plant .text span {
 main .backgruond-mid .ecology .plant .text span:hover {
   font-weight: bolder;
 }
+<<<<<<< Updated upstream
 main .backgruond-mid .ecology .crab {
   z-index: 1;
+=======
+main .background-mid .ecology .crab {
+>>>>>>> Stashed changes
   color: black;
   display: block;
   position: absolute;
@@ -785,7 +813,7 @@ main .backgruond-mid .ecology .crab {
   height: 500px;
   position: relative;
 }
-main .backgruond-mid .ecology .crab .icon {
+main .background-mid .ecology .crab .icon {
   position: absolute;
   overflow: hidden;
   top: -14%;
@@ -793,11 +821,11 @@ main .backgruond-mid .ecology .crab .icon {
   width: 80px;
   height: 80px;
 }
-main .backgruond-mid .ecology .crab .icon img {
+main .background-mid .ecology .crab .icon img {
   width: 100%;
   height: 100%;
 }
-main .backgruond-mid .ecology .crab .image {
+main .background-mid .ecology .crab .image {
   position: absolute;
   top: -5%;
   left: 5%;
@@ -807,12 +835,16 @@ main .backgruond-mid .ecology .crab .image {
   border-radius: 50%;
   box-shadow: 2px 5px 5px gray;
 }
-main .backgruond-mid .ecology .crab .image img {
+main .background-mid .ecology .crab .image img {
   width: 100%;
   height: 100%;
 }
+<<<<<<< Updated upstream
 main .backgruond-mid .ecology .crab .text {
   cursor: pointer;
+=======
+main .background-mid .ecology .crab .text {
+>>>>>>> Stashed changes
   font-size: 20px;
   position: absolute;
   bottom: 43%;
@@ -837,7 +869,7 @@ main .backgruond-mid .ecology .crab .text span {
 main .backgruond-mid .ecology .crab .text span:hover {
   font-weight: bolder;
 }
-main .backgruond-mid .ecology .pic-bird {
+main .background-mid .ecology .pic-bird {
   position: absolute;
   top: 20%;
   left: 50%;
@@ -846,13 +878,13 @@ main .backgruond-mid .ecology .pic-bird {
   border-radius: 50%;
   overflow: hidden;
 }
-main .backgruond-mid .ecology .pic-bird img {
+main .background-mid .ecology .pic-bird img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .backgruond-mid .ecology .pic-fish {
+main .background-mid .ecology .pic-fish {
   position: absolute;
   top: 55%;
   left: 65%;
@@ -861,13 +893,13 @@ main .backgruond-mid .ecology .pic-fish {
   border-radius: 50%;
   overflow: hidden;
 }
-main .backgruond-mid .ecology .pic-fish img {
+main .background-mid .ecology .pic-fish img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .backgruond-mid .ecology .circle-pink {
+main .background-mid .ecology .circle-pink {
   position: absolute;
   top: 60%;
   left: 28%;
@@ -876,7 +908,7 @@ main .backgruond-mid .ecology .circle-pink {
   border-radius: 50%;
   background-color: rgba(251, 189, 159, 0.51);
 }
-main .backgruond-mid .ecology .circle-orange {
+main .background-mid .ecology .circle-orange {
   position: absolute;
   top: 90%;
   left: 51%;
@@ -885,7 +917,7 @@ main .backgruond-mid .ecology .circle-orange {
   border-radius: 50%;
   background-color: #ff925b;
 }
-main .backgruond-mid .ecology .circle-orange-top {
+main .background-mid .ecology .circle-orange-top {
   position: absolute;
   top: 95%;
   left: 50%;
@@ -894,7 +926,7 @@ main .backgruond-mid .ecology .circle-orange-top {
   border-radius: 50%;
   background-color: #ff925b;
 }
-main .backgruond-mid .ecology .circle-orange-down {
+main .background-mid .ecology .circle-orange-down {
   position: absolute;
   top: 80%;
   left: 35%;
@@ -903,12 +935,16 @@ main .backgruond-mid .ecology .circle-orange-down {
   border-radius: 50%;
   background-color: #ff925b;
 }
+<<<<<<< Updated upstream
 @media (max-width: 800px) {
   main .backgruond-mid .ecology #cloud-ecology {
     display: none;
   }
 }
 main .backgruond-mid .ecology .bgc-cloud-top {
+=======
+main .background-mid .ecology .bgc-cloud-top {
+>>>>>>> Stashed changes
   position: absolute;
   top: 5%;
   left: -10%;
@@ -919,7 +955,7 @@ main .backgruond-mid .ecology .bgc-cloud-top {
   -webkit-animation: top 10s ease-in-out infinite;
           animation: top 10s ease-in-out infinite;
 }
-main .backgruond-mid .ecology .bgc-cloud-right {
+main .background-mid .ecology .bgc-cloud-right {
   position: absolute;
   top: 10%;
   left: 82%;
@@ -930,7 +966,7 @@ main .backgruond-mid .ecology .bgc-cloud-right {
   -webkit-animation: right 40s ease-in-out infinite;
           animation: right 40s ease-in-out infinite;
 }
-main .backgruond-mid .ecology .bgc-cloud-left {
+main .background-mid .ecology .bgc-cloud-left {
   position: absolute;
   top: 30%;
   left: 10%;
@@ -941,7 +977,7 @@ main .backgruond-mid .ecology .bgc-cloud-left {
   -webkit-animation: left 36s ease-in-out infinite;
           animation: left 36s ease-in-out infinite;
 }
-main .backgruond-mid .ecology .bgc-cloud-down {
+main .background-mid .ecology .bgc-cloud-down {
   position: absolute;
   bottom: 3%;
   left: 60%;
@@ -1024,14 +1060,54 @@ main .backgruond-mid .ecology .bgc-cloud-down {
     overflow: hidden;
   }
 }
-main .backgruond-mid #wave-container {
+main .background-mid #wave-container {
   width: 100%;
   height: 100vh;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
+<<<<<<< Updated upstream
 main .backgruond-mid #wave-container .wave {
+=======
+main .background-mid #wave-container .sun-box {
+  position: relative;
+  left: 10%;
+  top: 10%;
+  width: 500px;
+  height: 500px;
+}
+main .background-mid #wave-container .sun-box .sun {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: #fde86e;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 50px 10px #fde86e;
+  -webkit-animation: sunshadow 4s 1s infinite linear;
+          animation: sunshadow 4s 1s infinite linear;
+}
+main .background-mid #wave-container .sun-box .sun:nth-child(2) {
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  left: calc(25% - 25px);
+  top: calc(25% - 25px);
+  -webkit-animation: sunshadow 4s infinite linear;
+          animation: sunshadow 4s infinite linear;
+}
+main .background-mid #wave-container .sun-box .sun:nth-child(3) {
+  width: 150px;
+  height: 150px;
+  opacity: 1;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+  -webkit-animation: none;
+          animation: none;
+}
+main .background-mid #wave-container .wave {
+>>>>>>> Stashed changes
   position: absolute;
   width: 1000vw;
   height: 1000vw;
@@ -1043,32 +1119,32 @@ main .backgruond-mid #wave-container .wave {
   -webkit-animation: waves 30000ms infinite linear;
           animation: waves 30000ms infinite linear;
 }
-main .backgruond-mid #wave-container .wave:nth-child(2) {
+main .background-mid #wave-container .wave:nth-child(2) {
   -webkit-animation: waves 18000ms infinite linear;
           animation: waves 18000ms infinite linear;
   left: -450%;
 }
-main .backgruond-mid #wave-container .wave:nth-child(3) {
+main .background-mid #wave-container .wave:nth-child(3) {
   -webkit-animation: waves 10000ms infinite linear;
           animation: waves 10000ms infinite linear;
   left: -500%;
 }
-main .backgruond-mid #wave-container .wave:nth-child(4) {
+main .background-mid #wave-container .wave:nth-child(4) {
   -webkit-animation: waves 7000ms infinite linear;
           animation: waves 7000ms infinite linear;
   left: -350%;
 }
-main .backgruond-mid #wave-container .wave:nth-child(5) {
+main .background-mid #wave-container .wave:nth-child(5) {
   -webkit-animation: waves 13000ms infinite linear;
           animation: waves 13000ms infinite linear;
   left: -380%;
 }
-main .backgruond-mid #wave-container .wave:nth-child(6) {
+main .background-mid #wave-container .wave:nth-child(6) {
   -webkit-animation: waves 8000ms infinite linear;
           animation: waves 8000ms infinite linear;
   left: -440%;
 }
-main .backgruond-mid #wave-container .bubbles {
+main .background-mid #wave-container .bubbles {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1076,7 +1152,7 @@ main .backgruond-mid #wave-container .bubbles {
   left: 0%;
   z-index: 5;
 }
-main .backgruond-mid #wave-container .bubbles .bubble {
+main .background-mid #wave-container .bubbles .bubble {
   width: 10px;
   height: 10px;
   border: 1px solid #fff;
@@ -1197,7 +1273,11 @@ footer .background-dowm .news {
 }
 footer .background-dowm .news h1 {
   padding-top: 100px;
+<<<<<<< Updated upstream
   color: #FFF;
+=======
+  color: white;
+>>>>>>> Stashed changes
   font-size: 50px;
   padding-top: 10px;
   display: flex;
@@ -1210,7 +1290,11 @@ footer .background-dowm .news .news-box {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 85%;
+<<<<<<< Updated upstream
   height: 60%;
+=======
+  height: 300px;
+>>>>>>> Stashed changes
 }
 footer .background-dowm .news .news-box .swiper {
   width: 100%;
