@@ -1434,7 +1434,14 @@ footer .background-dowm .picture {
   display: flex;
   flex-wrap: wrap;
 }
-footer .background-dowm .picture h1 {
+footer .background-dowm .picture .pic-charge {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  width: 100%;
+  height: 102%;
+}
+footer .background-dowm .picture .pic-charge h1 {
   width: 100%;
   height: 20%;
   display: flex;
@@ -1442,13 +1449,6 @@ footer .background-dowm .picture h1 {
   margin-bottom: 50px;
   font-size: 50px;
   color: white;
-}
-footer .background-dowm .picture .pic-charge {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  width: 100%;
-  height: 102%;
 }
 footer .background-dowm .picture .pic-charge #ture {
   width: 100%;
@@ -1483,6 +1483,49 @@ footer .background-dowm .picture .pic-charge #reverse .swiper-wrapper .swiper-sl
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 800px) {
+  footer .background-dowm .picture .pic-charge {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  footer .background-dowm .picture {
+    width: 100%;
+    height: 100vh;
+    background-color: #2a2f41;
+  }
+}
+footer .background-dowm .pad-phone {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+}
+footer .background-dowm .pad-phone h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+footer .background-dowm .pad-phone .swiper {
+  width: 100%;
+  height: 100%;
+}
+footer .background-dowm .pad-phone .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  footer .background-dowm .pad-phone {
+    display: block;
+  }
 }
 footer #end {
   width: 100%;
