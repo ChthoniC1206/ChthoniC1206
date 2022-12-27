@@ -121,7 +121,7 @@ img {
             transform: translateY(0%);
         }
         50% {
-            transform: translateY(-18%);
+            transform: translateY(-25%);
         }
     }
     @keyframes crab2 {
@@ -129,7 +129,7 @@ img {
             transform: translateY(0%);
         }
         50% {
-            transform: translateY(-19%);
+            transform: translateY(-20%);
         }
     }
     @keyframes plant {
@@ -137,7 +137,7 @@ img {
             transform: translateY(0%);
         }
         50% {
-            transform: translateY(-18%);
+            transform: translateY(-15%);
         }
     }
     @keyframes lo {
@@ -1493,7 +1493,6 @@ footer {
         }
     }
 }
-
 // 高美濕地簡介
 .text-seca {
     width: 100%;
@@ -1567,9 +1566,6 @@ footer {
         }
     }
 }
-
-
-
 // 生態現狀
 .text-secb {
     width: 100%;
