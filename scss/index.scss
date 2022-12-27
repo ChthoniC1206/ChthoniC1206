@@ -380,7 +380,7 @@ main {
 
             }
             & .a:hover{
-                background-color: #fde86e;
+                background-color: #fde86ea1;
                 font-weight: bold;
                 
             }
@@ -433,7 +433,7 @@ main {
             font-size: 50px;
             color: white;
             z-index: 1;
-            text-shadow: black 0.1em 0.1em 0.3em;
+            text-shadow: black 1px 5px 5px;
         }
         .circle-a {
             position: absolute;
@@ -609,13 +609,14 @@ main {
                     // line-height: 125px;
                     position: absolute;
                     bottom: 15%;
-                    right: 18%;
+                    right: 18.5%;
                     z-index: 2;
                     width: 110px;
                     height: 110px;
                     border-radius: 50%;
                     background-color: #ffcc99;
                     border: 7px outset #8495c7;
+                    transform:rotate(4deg);
                     span{
                         width: 40px;
                         height: 40px;
@@ -623,6 +624,11 @@ main {
                         position: absolute;
                         left: 28px;
                         bottom: 20px;
+                        transform:rotate(-4deg);
+                    }
+                    span:hover{
+                        font-weight: bolder;
+                        
                     }
                 }
             }
@@ -632,7 +638,7 @@ main {
                 color: black;
                 display: block;
                 position: absolute;
-                top: -7%;
+                top: -10%;
                 left: 68%;
                 width: 385px;
                 height: 455px;
@@ -669,13 +675,14 @@ main {
                     // line-height: 125px;
                     position: absolute;
                     bottom: 7%;
-                    right: 15%;
+                    right: 13.5%;
                     z-index: 2;
                     width: 110px;
                     height: 110px;
                     border-radius: 50%;
                     background-color: #ffcc99;
                     border: 7px outset #8495c7;
+                    transform:rotate(5deg);
                     span{
                         width: 40px;
                         height: 40px;
@@ -683,8 +690,13 @@ main {
                         position: absolute;
                         left: 28px;
                         bottom: 20px;
+                        transform:rotate(-5deg);
+                    }
+                    span:hover{
+                        font-weight: bolder;       
                     }
                 }
+                
             }
             // 潮間帶生物
             .crab {
@@ -700,8 +712,8 @@ main {
                 .icon {
                     position: absolute;
                     overflow: hidden;
-                    top: 6%;
-                    left: 39%;
+                    top: -14%;
+                    left: 28%;
                     width: 80px;
                     height: 80px;
                     img {
@@ -711,11 +723,11 @@ main {
                 }
                 .image {
                     position: absolute;
-                    top: 15%;
+                    top: -5%;
                     left: 5%;
                     overflow: hidden;
-                    width: 422px;
-                    height: 420px;
+                    width: 305px;
+                    height: 305px;
                     border-radius: 50%;
                     box-shadow:2px 5px 5px gray;
                     img {
@@ -729,19 +741,33 @@ main {
                     // text-align: center;
                     // line-height: 125px;
                     position: absolute;
-                    bottom: -3%;
-                    right: 15%;
+                    bottom: 43%;
+                    right: 34%;
                     z-index: 2;
                     width: 110px;
                     height: 110px;
                     border-radius: 50%;
                     background-color: #ffcc99;
                     border: 7px outset #8495c7;
+                    transform: rotate(2deg);
+                    span{
+                        width: 40px;
+                        height: 40px;
+                        font-size: 20px;
+                        position: absolute;
+                        left: 28px;
+                        bottom: 35px;
+                        transform: rotate(-2deg);
+                    }
+                    span:hover{
+                        font-weight: bolder; 
+                          
+                    }
                 }
             }
             .pic-bird {
                 position: absolute;
-                top: 30%;
+                top: 20%;
                 left: 50%;
                 width: 150px;
                 height: 150px;
@@ -755,7 +781,7 @@ main {
             }
             .pic-fish {
                 position: absolute;
-                top: 70%;
+                top: 55%;
                 left: 65%;
                 width: 100px;
                 height: 100px;
