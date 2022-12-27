@@ -857,7 +857,7 @@ main .background-mid .ecology .pic-bird {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  z-index: 3;
+  z-index: 2;
   overflow: hidden;
 }
 main .background-mid .ecology .pic-bird img {
@@ -873,7 +873,7 @@ main .background-mid .ecology .pic-fish {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  z-index: 3;
+  z-index: 2;
   overflow: hidden;
 }
 main .background-mid .ecology .pic-fish img {
