@@ -1409,8 +1409,8 @@ footer {
             }
             @media (max-width: 800px) {
                 width: 100%;
-                height: 100vh;
-                background-color: #2a2f41;
+                height: 580px;
+                // background-color: #2a2f41;
             }
         }
         .pad-phone {
@@ -1420,18 +1420,20 @@ footer {
             flex-wrap: wrap;
             h1 {
                 width: 100%;
+                height: 80px;
                 display: flex;
+                font-size: 32px;
                 justify-content: center;
+                align-items: center;
                 color: white;
             }
             .swiper {
                 width: 100%;
-                height: 100%;
+                height: 500px;
                 .swiper-slide {
                     text-align: center;
                     font-size: 18px;
                     background: #fff;
-            
                     /* Center slide text vertically */
                     display: -webkit-box;
                     display: -ms-flexbox;
@@ -1445,13 +1447,16 @@ footer {
                     -ms-flex-align: center;
                     -webkit-align-items: center;
                     align-items: center;
+                        img {
+                            display: block;
+                            height: 120%;
+                            object-fit: cover;
+                        }
                 }    
             }
-        
             display: none;
             @media (max-width: 800px) {
                 display: block;
-                
             }
         }
         
