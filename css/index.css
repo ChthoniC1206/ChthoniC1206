@@ -1049,11 +1049,19 @@ main .background-mid #wave-container {
   z-index: 1;
   overflow: hidden;
 }
+main .background-mid #wave-container h1 {
+  padding-top: 100px;
+  color: #FFF;
+  font-size: 50px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
 main .background-mid #wave-container .wave {
   position: absolute;
   width: 1000vw;
   height: 1000vw;
-  background-color: #6d789b;
+  background: radial-gradient(circle closest-corner at left, #6d789b, #919ab1, #5f6c91, #647497);
   opacity: 0.4;
   left: -420%;
   top: 700px;
@@ -1075,16 +1083,6 @@ main .background-mid #wave-container .wave:nth-child(4) {
   -webkit-animation: waves 7000ms infinite linear;
           animation: waves 7000ms infinite linear;
   left: -350%;
-}
-main .background-mid #wave-container .wave:nth-child(5) {
-  -webkit-animation: waves 13000ms infinite linear;
-          animation: waves 13000ms infinite linear;
-  left: -380%;
-}
-main .background-mid #wave-container .wave:nth-child(6) {
-  -webkit-animation: waves 8000ms infinite linear;
-          animation: waves 8000ms infinite linear;
-  left: -440%;
 }
 main .background-mid #wave-container .bubbles {
   width: 100%;
