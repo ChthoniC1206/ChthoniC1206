@@ -347,7 +347,6 @@ main .wetlands div.introduce .a {
   left: 32%;
   border-radius: 50%;
   background-color: white;
-  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -375,7 +374,6 @@ main .wetlands div.introduce .b {
   left: 15%;
   border-radius: 50%;
   background-color: white;
-  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -402,7 +400,6 @@ main .wetlands div.introduce .c {
   top: 65%;
   left: 53%;
   background-color: white;
-  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -429,7 +426,6 @@ main .wetlands div.introduce .d {
   top: 40%;
   left: 70%;
   background-color: white;
-  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -2104,6 +2100,51 @@ footer #end .text-word {
   width: 100%;
   height: 100%;
 }
+.bird-sec .bird-work .pic2 {
+  width: 100%;
+  height: 90%;
+  border: 1px solid sandybrown;
+  display: flex;
+}
+.bird-sec .bird-work .pic2 .bird-pic {
+  cursor: pointer;
+  width: 250px;
+  height: 150px;
+}
+.bird-sec .bird-work .pic2 .bird-pic img {
+  width: 100%;
+  height: 100%;
+}
+.bird-sec .bird-work .pic3 {
+  width: 100%;
+  height: 90%;
+  border: 1px solid sandybrown;
+  display: flex;
+}
+.bird-sec .bird-work .pic3 .bird-pic {
+  cursor: pointer;
+  width: 250px;
+  height: 150px;
+}
+.bird-sec .bird-work .pic3 .bird-pic img {
+  width: 100%;
+  height: 100%;
+}
+.bird-sec .bird-work .pic4 {
+  width: 100%;
+  height: 90%;
+  border: 1px solid sandybrown;
+  display: flex;
+}
+.bird-sec .bird-work .pic4 .bird-pic {
+  cursor: pointer;
+  width: 250px;
+  height: 150px;
+}
+.bird-sec .bird-work .pic4 .bird-pic img {
+  width: 100%;
+  height: 100%;
+}
 .bird-sec .bird-work .bird-detail {
   width: 100%;
   height: 80vh;
@@ -2164,7 +2205,7 @@ footer #end .text-word {
 .bird-sec .bird-work .close-btn {
   cursor: pointer;
   position: fixed;
-  top: 110px;
+  top: 10px;
   right: 0px;
   color: white;
   width: 5%;
