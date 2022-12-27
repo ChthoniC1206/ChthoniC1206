@@ -448,28 +448,28 @@ main .wetlands div.introduce .d .more {
   background-color: skyblue;
 }
 main .wetlands div.introduce .a:hover {
-  background-image: linear-gradient(to top, #4C83FF 0%, #accbee 50%, #e7f0fd 100%);
+  background-image: linear-gradient(to top, rgba(76, 130, 255, 0.7960784314) 0%, #accbee 50%, #e7f0fd 100%);
   font-weight: bold;
 }
 main .wetlands div.introduce .a:hover .more {
   border: 1px solid #309bec;
 }
 main .wetlands div.introduce .b:hover {
-  background-image: linear-gradient(to top, #4C83FF 0%, #accbee 50%, #e7f0fd 100%);
+  background-image: linear-gradient(to top, rgba(76, 130, 255, 0.7960784314) 0%, #accbee 50%, #e7f0fd 100%);
   font-weight: bold;
 }
 main .wetlands div.introduce .b:hover .more {
   border: 1px solid #309bec;
 }
 main .wetlands div.introduce .c:hover {
-  background-image: linear-gradient(to top, #4C83FF 0%, #accbee 50%, #e7f0fd 100%);
+  background-image: linear-gradient(to top, rgba(76, 130, 255, 0.7960784314) 0%, #accbee 50%, #e7f0fd 100%);
   font-weight: bold;
 }
 main .wetlands div.introduce .c:hover .more {
   border: 1px solid #309bec;
 }
 main .wetlands div.introduce .d:hover {
-  background-image: linear-gradient(to top, #4C83FF 0%, #accbee 50%, #e7f0fd 100%);
+  background-image: linear-gradient(to top, rgba(76, 130, 255, 0.7960784314) 0%, #accbee 50%, #e7f0fd 100%);
   font-weight: bold;
 }
 main .wetlands div.introduce .d:hover .more {
