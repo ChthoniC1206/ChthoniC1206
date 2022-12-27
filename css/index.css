@@ -648,7 +648,7 @@ main .backgruond-mid .ecology .bird {
   display: block;
   position: absolute;
   top: 15%;
-  left: 20%;
+  left: 15%;
   width: 400px;
   height: 490px;
   position: relative;
@@ -657,7 +657,7 @@ main .backgruond-mid .ecology .bird .icon {
   position: absolute;
   overflow: hidden;
   top: 5%;
-  left: 40%;
+  left: 32%;
   width: 80px;
   height: 80px;
 }
@@ -669,8 +669,8 @@ main .backgruond-mid .ecology .bird .image {
   position: absolute;
   top: 15%;
   overflow: hidden;
-  width: 400px;
-  height: 400px;
+  width: 335px;
+  height: 335px;
   border-radius: 50%;
   box-shadow: 2px 5px 5px gray;
 }
@@ -681,24 +681,31 @@ main .backgruond-mid .ecology .bird .image img {
 main .backgruond-mid .ecology .bird .text {
   cursor: pointer;
   font-size: 20px;
-  text-align: center;
-  line-height: 125px;
   position: absolute;
-  bottom: -3%;
-  right: 2%;
+  bottom: 15%;
+  right: 18%;
   z-index: 2;
-  width: 125px;
-  height: 125px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   background-color: #ffcc99;
+  border: 7px outset #8495c7;
+}
+main .backgruond-mid .ecology .bird .text span {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  position: absolute;
+  left: 28px;
+  bottom: 20px;
 }
 main .backgruond-mid .ecology .plant {
   z-index: 1;
   color: black;
   display: block;
   position: absolute;
-  top: -10%;
-  left: 65%;
+  top: -7%;
+  left: 68%;
   width: 385px;
   height: 455px;
   position: relative;
@@ -706,8 +713,8 @@ main .backgruond-mid .ecology .plant {
 main .backgruond-mid .ecology .plant .icon {
   position: absolute;
   overflow: hidden;
-  top: 0%;
-  left: 40%;
+  top: -1%;
+  left: 35%;
   width: 80px;
   height: 80px;
 }
@@ -719,8 +726,8 @@ main .backgruond-mid .ecology .plant .image {
   position: absolute;
   top: 15%;
   overflow: hidden;
-  width: 385px;
-  height: 385px;
+  width: 347px;
+  height: 347px;
   border-radius: 50%;
   box-shadow: 2px 5px 5px gray;
 }
@@ -731,16 +738,23 @@ main .backgruond-mid .ecology .plant .image img {
 main .backgruond-mid .ecology .plant .text {
   cursor: pointer;
   font-size: 20px;
-  text-align: center;
-  line-height: 125px;
   position: absolute;
-  bottom: -3%;
-  right: 2%;
+  bottom: 7%;
+  right: 15%;
   z-index: 2;
-  width: 125px;
-  height: 125px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   background-color: #ffcc99;
+  border: 7px outset #8495c7;
+}
+main .backgruond-mid .ecology .plant .text span {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  position: absolute;
+  left: 28px;
+  bottom: 20px;
 }
 main .backgruond-mid .ecology .crab {
   z-index: 1;
@@ -782,16 +796,15 @@ main .backgruond-mid .ecology .crab .image img {
 main .backgruond-mid .ecology .crab .text {
   cursor: pointer;
   font-size: 20px;
-  text-align: center;
-  line-height: 125px;
   position: absolute;
   bottom: -3%;
   right: 15%;
   z-index: 2;
-  width: 125px;
-  height: 125px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   background-color: #ffcc99;
+  border: 7px outset #8495c7;
 }
 main .backgruond-mid .ecology .pic-bird {
   position: absolute;

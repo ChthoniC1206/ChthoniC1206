@@ -569,7 +569,7 @@ main {
                 display: block;
                 position: absolute;
                 top: 15%;
-                left: 20%;
+                left: 15%;
                 width: 400px;
                 height: 490px;
                 position: relative;
@@ -577,7 +577,7 @@ main {
                     position: absolute;
                     overflow: hidden;
                     top: 5%;
-                    left: 40%;
+                    left: 32%;
                     width: 80px;
                     height: 80px;
                     img {
@@ -589,8 +589,8 @@ main {
                     position: absolute;
                     top: 15%;
                     overflow: hidden;
-                    width: 400px;
-                    height: 400px;
+                    width: 335px;
+                    height: 335px;
                     border-radius: 50%;
                     box-shadow:2px 5px 5px gray;
                     img {
@@ -603,16 +603,25 @@ main {
                 .text {
                     cursor: pointer;
                     font-size: 20px;
-                    text-align: center;
-                    line-height: 125px;
+                    // text-align:start;
+                    // line-height: 125px;
                     position: absolute;
-                    bottom: -3%;
-                    right: 2%;
+                    bottom: 15%;
+                    right: 18%;
                     z-index: 2;
-                    width: 125px;
-                    height: 125px;
+                    width: 110px;
+                    height: 110px;
                     border-radius: 50%;
                     background-color: #ffcc99;
+                    border: 7px outset #8495c7;
+                    span{
+                        width: 40px;
+                        height: 40px;
+                        font-size: 20px;
+                        position: absolute;
+                        left: 28px;
+                        bottom: 20px;
+                    }
                 }
             }
             // 植物
@@ -621,16 +630,16 @@ main {
                 color: black;
                 display: block;
                 position: absolute;
-                top: -10%;
-                left: 65%;
+                top: -7%;
+                left: 68%;
                 width: 385px;
                 height: 455px;
                 position: relative;
                 .icon {
                     position: absolute;
                     overflow: hidden;
-                    top: 0%;
-                    left: 40%;
+                    top: -1%;
+                    left: 35%;
                     width: 80px;
                     height: 80px;
                     img {
@@ -642,8 +651,8 @@ main {
                     position: absolute;
                     top: 15%;
                     overflow: hidden;
-                    width: 385px;
-                    height: 385px;
+                    width: 347px;
+                    height: 347px;
                     border-radius: 50%;
                     box-shadow:2px 5px 5px gray;
                     img {
@@ -654,16 +663,25 @@ main {
                 .text {
                     cursor: pointer;
                     font-size: 20px;
-                    text-align: center;
-                    line-height: 125px;
+                    // text-align: center;
+                    // line-height: 125px;
                     position: absolute;
-                    bottom: -3%;
-                    right: 2%;
+                    bottom: 7%;
+                    right: 15%;
                     z-index: 2;
-                    width: 125px;
-                    height: 125px;
+                    width: 110px;
+                    height: 110px;
                     border-radius: 50%;
                     background-color: #ffcc99;
+                    border: 7px outset #8495c7;
+                    span{
+                        width: 40px;
+                        height: 40px;
+                        font-size: 20px;
+                        position: absolute;
+                        left: 28px;
+                        bottom: 20px;
+                    }
                 }
             }
             // 潮間帶生物
@@ -706,16 +724,17 @@ main {
                 .text {
                     cursor: pointer;
                     font-size: 20px;
-                    text-align: center;
-                    line-height: 125px;
+                    // text-align: center;
+                    // line-height: 125px;
                     position: absolute;
                     bottom: -3%;
                     right: 15%;
                     z-index: 2;
-                    width: 125px;
-                    height: 125px;
+                    width: 110px;
+                    height: 110px;
                     border-radius: 50%;
                     background-color: #ffcc99;
+                    border: 7px outset #8495c7;
                 }
             }
             .pic-bird {
