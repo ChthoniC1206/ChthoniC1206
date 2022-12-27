@@ -514,6 +514,11 @@ main .wetlands .circle-b {
   background-color: white;
   border-radius: 50%;
 }
+@media (max-width: 800px) {
+  main .wetlands #cloud-introduce {
+    display: none;
+  }
+}
 main .wetlands .cloud {
   position: absolute;
   width: 300px;
@@ -897,6 +902,11 @@ main .backgruond-mid .ecology .circle-orange-down {
   height: 45px;
   border-radius: 50%;
   background-color: #ff925b;
+}
+@media (max-width: 800px) {
+  main .backgruond-mid .ecology #cloud-ecology {
+    display: none;
+  }
 }
 main .backgruond-mid .ecology .bgc-cloud-top {
   position: absolute;
