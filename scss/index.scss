@@ -890,17 +890,9 @@ main {
         }
         // 潮汐區
         #wave-container{
-            width: 100%;
-            height: 100vh;
-            // background-image: url('../img/backfround.png');
-            // background-size: cover;
-            // background-position: center;
-            // background-color: #f3ada7;
-            // background: linear-gradient(#88badfa8, #fbb3a3, #ff9e0cad);
             position: relative;
             z-index: 1;
             overflow: hidden;
-    
             // .sun-box{
             //     position: relative;
             //     left: 10%;
