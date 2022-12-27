@@ -12,7 +12,6 @@ img {
     width: 100%;
     height: 100vh;
 }
-
 // loading畫面
 .loading {
     position: fixed;
@@ -1772,12 +1771,14 @@ footer {
             width: 100%;
             height: 90%;
             border: 1px solid sandybrown;
+            display: flex;
             .bird-pic {
+                cursor: pointer;
                 width: 250px;
                 height: 150px;
                 img {
                     width: 100%;
-                    height: 100%    ;
+                    height: 100%;
                 }
             }
         }
@@ -1800,7 +1801,6 @@ footer {
                     width: 100%;
                     height: 100%;
                     opacity: .5;
-                    object-fit: cover;
                 }
                 .text {
                     position: absolute;
@@ -2144,7 +2144,7 @@ footer {
     #burger {
         &:checked ~  .menu {
             display: block;
-            max-height: 60%;
+            max-height: 800px;
         }
     }
     input {
