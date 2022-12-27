@@ -1376,45 +1376,91 @@ footer .background-dowm .travel .box .mini-box1 .swiper {
 }
 footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 30px;
   background-color: transparent;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide img {
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .img1 {
   position: absolute;
-  left: 10%;
+  width: 45%;
+  height: 60%;
+  left: 3%;
   top: 25%;
-  width: 35%;
-  height: 65%;
+  background-size: cover;
   border-radius: 40px;
-  background-color: #fbbd9f;
+  background-image: url("../img/travel/one-day.jpg");
+}
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .img1:hover {
+  background-image: url("../img/travel/oneday-hover.png");
+  border-radius: 0%;
+}
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .img2 {
+  position: absolute;
+  width: 45%;
+  height: 500px;
+  left: 3%;
+  top: 25%;
+  background-size: cover;
+  border-radius: 40px;
+  background-image: url("../img/travel/half-day.jpg");
+}
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .img2:hover {
+  background-image: url("../img/travel/halfday-hover.png");
+  border-radius: 0%;
 }
 footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .text {
   position: absolute;
   right: 3%;
-  width: 600px;
-  height: 700px;
+  width: 50%;
+  height: 100%;
   border-radius: 40px;
-  background-color: #fbbd9f;
 }
-footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .circle {
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .text .circle {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 10%;
-  right: 42.4%;
+  left: 10px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: purple;
+  background-color: #AFDCEA;
 }
-footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .progress {
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .text .progress {
   position: absolute;
-  right: 50%;
+  left: 55px;
   width: 10px;
   height: 100%;
-  background-color: green;
+  background-color: #AFDCEA;
+}
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .text .text-area {
+  position: absolute;
+  width: 75%;
+  left: 115px;
+  color: #fff;
+  flex-wrap: wrap;
+}
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .text .text-area h3 {
+  padding-top: 20%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .text .text-area h5 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 800;
+}
+footer .background-dowm .travel .box .mini-box1 .swiper .swiper-slide .text .text-area p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-start;
 }
 footer .background-dowm .travel .box .mini-box2 {
   width: 100%;
