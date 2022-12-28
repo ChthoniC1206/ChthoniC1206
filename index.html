@@ -1022,10 +1022,93 @@
             <div class="bird-bgc"></div>
             <div class="bird-work">
                 <div class="box">
-                    <div class="text">
-                        鳥類
+
+                    <div class="show-bird" style="padding:11px 150px 6px 150px;">
+                        <div
+                            style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2-bird"
+                        >
+                        <div class="swiper-wrapper" style="opacity: 0.5;">
+                            <div class="swiper-slide">
+                            <img src="./img/04.素材/潮間帶生物/鳥類/1.花嘴鴨.jpeg" />
+                            <div class="text" style="position: fixed; opacity: 1;">
+                                <h1>標題</h1>
+                                <p>內文</p>
+                                <p>內文</p>
+                                <p>內文</p>
+                                <p>內文</p>
+                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                            </div>
+                        </div>
+                        
+                        </div>
+                        <div thumbsSlider="" class="swiper mySwiper-bird">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="swiper-button-next" style="position: absolute;
+                        right: 5%;"></div>
+                        <div class="swiper-button-prev" style="position: absolute;left: 5%;"></div>
                     </div>
-                    <div class="pic">
+                    <!-- <div class="pic">
                         <div class="bird-pic" data-intro="花嘴鴨">
                             <img src="./img/04.素材/潮間帶生物/鳥類/1.花嘴鴨.jpeg" alt="" >
                         </div>
@@ -1116,13 +1199,13 @@
                         <div class="bird-pic" data-intro="洋燕">
                             <img src="./img/04.素材/潮間帶生物/鳥類/30.洋燕.jpeg" alt="">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="close-btn">
                     <i class="fa-solid fa-x"></i>
                 </div>
             </div>
-            <div class="bird-detail">
+            <!-- <div class="bird-detail">
                     <div class="bird-details" data-intro="花嘴鴨">
                         <img src="./img/04.素材/潮間帶生物/鳥類/1.花嘴鴨.jpeg" alt="">
                         <div class="text">
@@ -1756,7 +1839,7 @@
                             </div>
                         </div>
                     </div>
-            </div>  
+            </div>   -->
         </div>
         <!-- 植物 -->
         <div class="plant-sec">
@@ -2763,7 +2846,24 @@
         //     console.log(window.scrollY);
         // });
 
-
+        var swiper = new Swiper(".mySwiper-bird", {
+        loop: true,
+        spaceBetween: 5,
+        slidesPerView: 8,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2-bird", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });   
         
     </script>
 </body>
