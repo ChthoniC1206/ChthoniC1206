@@ -275,10 +275,6 @@ main {
                 width: 345px;
                 height: 345px;
                 position: absolute;
-                top: 30%;
-                left: 25%;
-                border-radius: 50%;
-                position: absolute;
                 top: 45%;
                 left: 32%;
                 border-radius: 50%;
@@ -382,9 +378,22 @@ main {
                 }
 
             }
-            & .a:hover{
+            & .a:hover {
                 background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
                 font-weight: bold;
+                animation: gradientChange 0.8s;
+                animation: bob infinite ;
+                @keyframes gradientChange  {    
+                    0% {opacity: 0.2;}
+                    25%{opacity: 0.4;}
+                    50%{opacity: 0.6;}
+                    75% {opacity: 0.8;}
+                    100% {opacity: 1;}
+                }
+                @keyframes bob {
+                    
+                }
+                    
                 .more{
                     border: 1px solid #309bec;
                 }
@@ -393,6 +402,15 @@ main {
             & .b:hover{
                 background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
                 font-weight: bold;
+                animation: gradientChange 0.8s;
+                @keyframes gradientChange  {    
+                    0% {opacity: 0.2;}
+                    25%{opacity: 0.4;}
+                    50%{opacity: 0.6;}
+                    75% {opacity: 0.8;}
+                    100% {opacity: 1;}
+                }
+                
                 .more{
                     border: 1px solid #309bec;
                 }
