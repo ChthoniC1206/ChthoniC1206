@@ -1,3 +1,44 @@
+const topIndexMapping = {
+    '0' : '景觀1',
+    '1' : '景觀2',
+    '2' : '景觀3',
+    '3' : '景觀4',
+    '4' : '景觀5',
+    '5' : '景觀6',
+    '6' : '景觀7',
+    '7' : '景觀8',
+    '8' : '景觀9',
+}
+
+const topPic = document.querySelectorAll('.top-pic')
+const lightBox = document.querySelector('.lightbox')
+const lightBoxBgc = document.querySelector('.lightbox-bgc')
+const lightBoxPic = document.querySelectorAll('.lightbox-pic')
+
+function lockPic (){
+    lightBoxPic.forEach((detail,index) => {
+        detail.style.display = 'none';
+    });    
+}
+function close(){
+    lightBox.addEventListener('click', function(){
+        lightBox.style.display = 'none'
+    });
+}
+topPic.forEach(function(data, index){
+    data.addEventListener('click', function(){
+        if(data.dataset.intro === topIndexMapping[index]){
+            lockPic();
+            lightBox.style.display = 'block'
+            lightBoxPic[index].style.display = 'block'
+        }
+    });
+});
+close();
+
+
+
+
 var swiper1 = new Swiper("#ture", {
     speed: 10000,
     autoplay: {
@@ -51,15 +92,3 @@ swiper2.el.onmouseleave = function () {
     swiper2.setTransition(10000);
     swiper2.setTranslate(Now_translate2);
 }
-// swiper3.el.onmouseenter = function () {
-//     var swiper3_translate = swiper1.getTranslate();
-//     swiper3.setTranslate(swiper3_translate);
-
-// }
-
-// swiper3.el.onmouseleave = function () {
-//     var Now_translate3 = swiper3.getTranslate();
-//     Now_translate3 = Now_translate3 - 300;
-//     swiper3.setTransition(10000);
-//     swiper3.setTranslate(Now_translate3);
-// }
