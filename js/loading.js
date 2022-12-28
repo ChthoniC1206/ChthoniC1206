@@ -22,3 +22,4 @@ loading.addEventListener('transitionend',function(e){
         loading.style.display = 'none'
     }
 });
+

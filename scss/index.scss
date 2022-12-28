@@ -1079,7 +1079,6 @@ footer {
     position: relative;
     background-size: cover;
     .background-dowm {
-    
         width: 100%;
         height: 100%;
         img {
@@ -1498,25 +1497,29 @@ footer {
         // 高美景觀
         .picture {
             width: 100%;
-            height: 636px;
+            height: 40vh;
             position: relative;
             display: flex;
             flex-wrap: wrap;
             .pic-charge {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                width: 100%;
+                height: 100%;
                 h1 {
                     width: 100%;
-                    height: 20%;
+                    height: 5%;
                     display: flex;
                     justify-content: center;
                     margin-bottom: 50px;
                     font-size: 50px;
                     color: white;
                 }
-                display: flex;
-                flex-wrap: wrap;
-                align-content: flex-end;
-                width: 100%;
-                height: 102%;
+                .box {
+                    width: 100%;
+                    height: 95%;
+                }
                 #ture {
                     width: 100%;
                     height: 200px;
@@ -2453,6 +2456,38 @@ footer {
         }
     }
 }
+// 高美景觀 light-box 重做
+.lightbox {
+    display: none;
+    .lightbox-bgc {
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #292929;
+        opacity: 0.8;
+        z-index: 2;
+        }
+    .box {
+        z-index: 2;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 60%;
+        height: 60%;
+        .lightbox-pic {
+            width: 100%;
+            height: 100%;
+            display: none;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
 
 // 高美景觀 light-box
 .lightbox-up {
