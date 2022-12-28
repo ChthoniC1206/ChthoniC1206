@@ -12,6 +12,12 @@ img {
     width: 100%;
     height: 100vh;
 }
+.none {
+    display: none;
+}
+.block {
+    display: block;
+}
 // loading畫面
 .loading {
     position: fixed;
@@ -2488,31 +2494,6 @@ footer {
     }
 }
 
-
-// 高美景觀 light-box
-.lightbox-up {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #00000066;
-    z-index: -1;
-    opacity: 0;
-    img {
-        width: 50%;
-        height: 50%;
-    }
-    &:target {
-        z-index: 1;
-        opacity: 1;
-        transition: 0.1s;
-    } 
-}
-
 // 漢堡條
 .media-navbar {
     width: 100%;
@@ -2557,22 +2538,24 @@ footer {
     }
     #burger {
         &:checked ~  .menu {
-            display: block;
-            max-height: 800px;
+            height: 800px;
         }
     }
     input {
         display: none;
     }
     .menu {
+        height: 0px;
+        overflow: hidden;
+        transition: 2s;
+
         list-style: none;
         width: 100%;
         background-color: #252525;
         top: 10%;
         left: 0%;
         position: fixed;
-        display: flex;
-        display: none;
+        display: block;
         text-align: center;
         z-index: 5;
         border-bottom: 2px solid snow;
