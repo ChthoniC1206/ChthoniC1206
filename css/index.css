@@ -1755,14 +1755,105 @@ footer #end {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
+  position: relative;
+  overflow: hidden;
 }
 footer #end .pic {
   width: 100%;
-  height: 80vh;
+  height: 95vh;
 }
 footer #end .pic img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer #end .pic .end-logo {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  width: 155px;
+  height: 155px;
+}
+footer #end .pic .end-map {
+  top: 60.1%;
+  right: -8%;
+  position: absolute;
+  width: 70%;
+  height: 30%;
+}
+footer #end .pic .end-map img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer #end .pic .windmill {
+  position: absolute;
+  left: -15%;
+  width: 90%;
+  gap: 40px;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 7px solid white;
+}
+footer #end .pic .windmill .windmill-1 {
+  width: 461px;
+  height: 625px;
+}
+footer #end .pic .windmill .windmill-2 {
+  width: 300px;
+  height: 400px;
+}
+footer #end .pic .windmill .windmill-3 {
+  width: 175px;
+  height: 235px;
+}
+footer #end .pic .windmill .windmill-4 {
+  width: 100px;
+  height: 135px;
+}
+footer #end .pic .end-text {
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
+  width: 700px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer #end .pic .end-text .title {
+  width: 100%;
+  color: white;
+}
+footer #end .pic .end-text .title h2 {
+  font-size: 36px;
+}
+footer #end .pic .end-text .text {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  justify-content: space-around;
+}
+footer #end .pic .end-text .text .address {
+  width: 50%;
+}
+footer #end .pic .end-text .text .phone {
+  width: 50%;
+}
+footer #end .pic .end-text .text .mail {
+  width: 50%;
+}
+footer #end .pic .end-text .text .icon {
+  display: flex;
+  width: 50%;
+  gap: 20px;
+}
+footer #end .pic .end-text .text .icon a {
+  display: block;
+  color: white;
+  width: 50px;
+  height: 50px;
 }
 footer #end .text-word {
   font-size: 20px;
