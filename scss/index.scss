@@ -270,6 +270,7 @@ main {
             cursor: pointer;
             text-decoration: none;
             color: black;
+
             .a {
                 z-index: 2;
                 width: 345px;
@@ -283,16 +284,8 @@ main {
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: center;  
-                box-shadow:2px 3px 5px gray;
-                // opacity: 0.9;    
-                animation: gradientChange 0.8s;
-                    @keyframes gradientChange  {    
-                        0% {opacity: 0.2;}
-                        25%{opacity: 0.4;}
-                        50%{opacity: 0.6;}
-                        75% {opacity: 0.8;}
-                        100% {opacity: 1;}
-                    }      
+                box-shadow:2px 3px 5px gray; 
+                opacity: 0.7;
                 hr {
                     width: 150px;
                 }
@@ -308,15 +301,21 @@ main {
                     background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
                     font-weight: bold;
                     opacity: 1;
-                    transition: opacity 1s;
-                    
-                        
+                    transition: opacity 2s;
+                    // animation: gradientChange 0.8s;
+                    // @keyframes gradientChange  {    
+                    //     0% {opacity: 0.2;}
+                    //     25%{opacity: 0.4;}
+                    //     50%{opacity: 0.6;}
+                    //     75% {opacity: 0.8;}
+                    //     100% {opacity: 1;}
+                    // }
                     .more{
                         border: 1px solid #309bec;
-                    }
-                    
+                    } 
                 }
             }
+
             .b {
                 z-index: 2;
                 width: 300px;
@@ -332,6 +331,7 @@ main {
                 justify-content: space-evenly;
                 align-items: center; 
                 box-shadow:2px 3px 5px gray; 
+                opacity: 0.7;
                 hr {
                     width: 150px;
                 }
@@ -346,21 +346,14 @@ main {
                 &:hover{
                     background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
                     font-weight: bold;
-                    // animation: gradientChange 0.8s;
-                    // @keyframes gradientChange  {    
-                    //     0% {opacity: 0.2;}
-                    //     25%{opacity: 0.4;}
-                    //     50%{opacity: 0.6;}
-                    //     75% {opacity: 0.8;}
-                    //     100% {opacity: 1;}
-                    // }
-                    
+                    opacity: 1;
+                    transition: opacity 1s;                
                     .more{
                         border: 1px solid #309bec;
                     }
-                    
                 }
             }
+
             .c {
                 z-index: 2;
                 width: 320px;
@@ -374,7 +367,8 @@ main {
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: center;
-                box-shadow:2px 3px 5px gray; 
+                box-shadow:2px 3px 5px gray;
+                opacity: 0.7;
                 hr {
                     width: 150px;
                 }
@@ -389,11 +383,14 @@ main {
                 &:hover{
                     background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
                     font-weight: bold;
+                    opacity: 1;
+                    transition: opacity 1s;
                     .more{
                         border: 1px solid #309bec;
                     }
                 }
             }
+
             .d {
                 z-index: 2;
                 width: 330px;
@@ -408,6 +405,7 @@ main {
                 justify-content: space-evenly;
                 align-items: center;
                 box-shadow:2px 3px 5px gray;
+                opacity: 0.7;
                 hr {
                     width: 150px;
                 }
@@ -422,7 +420,9 @@ main {
                 }
                 &:hover{
                     background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
-                    font-weight: bold;           
+                    font-weight: bold;
+                    opacity: 1;
+                    transition: opacity 1s;          
                     .more{
                         border: 1px solid #309bec;
                     }
@@ -579,7 +579,152 @@ main {
                 height: 100%;
             }
         }
-    } 
+    }
+    //關於濕地 變版 iPad
+    @media (max-width: 820px) {
+        .wetlands{
+            position: relative;
+            div.introduce {
+                cursor: pointer;
+                text-decoration: none;
+                color: black;
+                .a{
+                    z-index: 2;
+                    width: 140px;
+                    height: 140px;
+                    position: absolute;
+                    top: 45%;
+                    left: 15%;
+                    border-radius: 50%;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;  
+                    box-shadow:2px 3px 5px gray; 
+                    opacity: 0.7;
+                    h2{
+                        width: 100%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                    hr {
+                        width: 90px;   
+                    }
+                    p{
+                        width: 100%;
+                        font-size: 12px;
+                        text-align: center;                   
+                    }
+                    .more {
+                        line-height: 20px;
+                        font-size: 10px;
+                        text-align: center;
+                        width: 27px;
+                        height: 27px;
+                        border-radius: 50%;
+                        background-color: skyblue;
+                    }
+                }
+
+                .b {
+                    z-index: 2;
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 20%;
+                    left: 10%;
+                    border-radius: 50%;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center; 
+                    box-shadow:2px 3px 5px gray; 
+                    opacity: 0.7;
+                    h2{
+                        width: 100%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                    hr {
+                        width: 90px;            
+                    }
+                    p{
+                        width: 90%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                    .more {
+                        line-height: 20px;
+                        font-size: 10px;
+                        text-align: center;
+                        width: 27px;
+                        height: 27px;
+                        border-radius: 50%;
+                        background-color: skyblue;
+                    }
+                }
+
+                .c {
+                    z-index: 2;
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 65%;
+                    left: 53%;
+                    background-color: white;           
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    box-shadow:2px 3px 5px gray;
+                    opacity: 0.7;
+                    h2{
+                        width: 100%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                    hr {
+                        width: 90px;            
+                    }
+                    p{
+                        width: 80%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                    .more {
+                        line-height: 20px;
+                        font-size: 10px;
+                        text-align: center;
+                        width: 27px;
+                        height: 27px;
+                        border-radius: 50%;
+                        background-color: skyblue;
+                    }
+                }
+
+
+
+
+
+                h1 {
+                    position: absolute;
+                    top: 10%;
+                    left: 43%;
+                    font-size: 32px;
+                    color: white;
+                    z-index: 1;
+                    text-shadow: gray 2px 5px 8px;
+                }
+
+                }
+        }
+
+    }
+
     .background-mid {
         width: 100%;
         height: 100%;

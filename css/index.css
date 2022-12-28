@@ -356,42 +356,7 @@ main .wetlands div.introduce .a {
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 2px 3px 5px gray;
-  -webkit-animation: gradientChange 0.8s;
-          animation: gradientChange 0.8s;
-}
-@-webkit-keyframes gradientChange {
-  0% {
-    opacity: 0.2;
-  }
-  25% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  75% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes gradientChange {
-  0% {
-    opacity: 0.2;
-  }
-  25% {
-    opacity: 0.4;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  75% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 1;
-  }
+  opacity: 0.7;
 }
 main .wetlands div.introduce .a hr {
   width: 150px;
@@ -408,7 +373,7 @@ main .wetlands div.introduce .a:hover {
   background-image: linear-gradient(to top, rgba(76, 130, 255, 0.7960784314) 0%, #accbee 50%, #e7f0fd 100%);
   font-weight: bold;
   opacity: 1;
-  transition: opacity 1s;
+  transition: opacity 2s;
 }
 main .wetlands div.introduce .a:hover .more {
   border: 1px solid #309bec;
@@ -428,6 +393,7 @@ main .wetlands div.introduce .b {
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 2px 3px 5px gray;
+  opacity: 0.7;
 }
 main .wetlands div.introduce .b hr {
   width: 150px;
@@ -443,6 +409,8 @@ main .wetlands div.introduce .b .more {
 main .wetlands div.introduce .b:hover {
   background-image: linear-gradient(to top, rgba(76, 130, 255, 0.7960784314) 0%, #accbee 50%, #e7f0fd 100%);
   font-weight: bold;
+  opacity: 1;
+  transition: opacity 1s;
 }
 main .wetlands div.introduce .b:hover .more {
   border: 1px solid #309bec;
@@ -461,6 +429,7 @@ main .wetlands div.introduce .c {
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 2px 3px 5px gray;
+  opacity: 0.7;
 }
 main .wetlands div.introduce .c hr {
   width: 150px;
@@ -476,6 +445,8 @@ main .wetlands div.introduce .c .more {
 main .wetlands div.introduce .c:hover {
   background-image: linear-gradient(to top, rgba(76, 130, 255, 0.7960784314) 0%, #accbee 50%, #e7f0fd 100%);
   font-weight: bold;
+  opacity: 1;
+  transition: opacity 1s;
 }
 main .wetlands div.introduce .c:hover .more {
   border: 1px solid #309bec;
@@ -494,6 +465,7 @@ main .wetlands div.introduce .d {
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 2px 3px 5px gray;
+  opacity: 0.7;
 }
 main .wetlands div.introduce .d hr {
   width: 150px;
@@ -509,6 +481,8 @@ main .wetlands div.introduce .d .more {
 main .wetlands div.introduce .d:hover {
   background-image: linear-gradient(to top, rgba(76, 130, 255, 0.7960784314) 0%, #accbee 50%, #e7f0fd 100%);
   font-weight: bold;
+  opacity: 1;
+  transition: opacity 1s;
 }
 main .wetlands div.introduce .d:hover .more {
   border: 1px solid #309bec;
@@ -682,6 +656,140 @@ main .wetlands .back-cloud {
 main .wetlands .back-cloud img {
   width: 100%;
   height: 100%;
+}
+@media (max-width: 820px) {
+  main .wetlands {
+    position: relative;
+  }
+  main .wetlands div.introduce {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  main .wetlands div.introduce .a {
+    z-index: 2;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 3px 5px gray;
+    opacity: 0.7;
+  }
+  main .wetlands div.introduce .a h2 {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .a hr {
+    width: 90px;
+  }
+  main .wetlands div.introduce .a p {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .a .more {
+    line-height: 20px;
+    font-size: 10px;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: skyblue;
+  }
+  main .wetlands div.introduce .b {
+    z-index: 2;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 3px 5px gray;
+    opacity: 0.7;
+  }
+  main .wetlands div.introduce .b h2 {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .b hr {
+    width: 90px;
+  }
+  main .wetlands div.introduce .b p {
+    width: 90%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .b .more {
+    line-height: 20px;
+    font-size: 10px;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: skyblue;
+  }
+  main .wetlands div.introduce .c {
+    z-index: 2;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 53%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 3px 5px gray;
+    opacity: 0.7;
+  }
+  main .wetlands div.introduce .c h2 {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .c hr {
+    width: 90px;
+  }
+  main .wetlands div.introduce .c p {
+    width: 80%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .c .more {
+    line-height: 20px;
+    font-size: 10px;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: skyblue;
+  }
+  main .wetlands div.introduce h1 {
+    position: absolute;
+    top: 10%;
+    left: 43%;
+    font-size: 32px;
+    color: white;
+    z-index: 1;
+    text-shadow: gray 2px 5px 8px;
+  }
 }
 main .background-mid {
   width: 100%;
