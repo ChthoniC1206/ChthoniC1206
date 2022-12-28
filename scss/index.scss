@@ -270,7 +270,7 @@ main {
             cursor: pointer;
             text-decoration: none;
             color: black;
-            & .a {
+            .a {
                 z-index: 2;
                 width: 345px;
                 height: 345px;
@@ -284,6 +284,15 @@ main {
                 justify-content: space-evenly;
                 align-items: center;  
                 box-shadow:2px 3px 5px gray;
+                // opacity: 0.9;    
+                animation: gradientChange 0.8s;
+                    @keyframes gradientChange  {    
+                        0% {opacity: 0.2;}
+                        25%{opacity: 0.4;}
+                        50%{opacity: 0.6;}
+                        75% {opacity: 0.8;}
+                        100% {opacity: 1;}
+                    }      
                 hr {
                     width: 150px;
                 }
@@ -295,8 +304,20 @@ main {
                     border-radius: 50%;
                     background-color: skyblue;
                 }
+                &:hover {
+                    background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
+                    font-weight: bold;
+                    opacity: 1;
+                    transition: opacity 1s;
+                    
+                        
+                    .more{
+                        border: 1px solid #309bec;
+                    }
+                    
+                }
             }
-            & .b {
+            .b {
                 z-index: 2;
                 width: 300px;
                 height: 300px;
@@ -322,8 +343,25 @@ main {
                     border-radius: 50%;
                     background-color: skyblue;
                 }
+                &:hover{
+                    background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
+                    font-weight: bold;
+                    // animation: gradientChange 0.8s;
+                    // @keyframes gradientChange  {    
+                    //     0% {opacity: 0.2;}
+                    //     25%{opacity: 0.4;}
+                    //     50%{opacity: 0.6;}
+                    //     75% {opacity: 0.8;}
+                    //     100% {opacity: 1;}
+                    // }
+                    
+                    .more{
+                        border: 1px solid #309bec;
+                    }
+                    
+                }
             }
-            & .c {
+            .c {
                 z-index: 2;
                 width: 320px;
                 height: 320px;
@@ -348,9 +386,15 @@ main {
                     border-radius: 50%;
                     background-color: skyblue;
                 }
-
+                &:hover{
+                    background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
+                    font-weight: bold;
+                    .more{
+                        border: 1px solid #309bec;
+                    }
+                }
             }
-            & .d {
+            .d {
                 z-index: 2;
                 width: 330px;
                 height: 330px;
@@ -376,61 +420,14 @@ main {
                     background-color: skyblue;
                     
                 }
-
-            }
-            & .a:hover {
-                background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
-                font-weight: bold;
-                animation: gradientChange 0.8s;
-                animation: bob infinite ;
-                @keyframes gradientChange  {    
-                    0% {opacity: 0.2;}
-                    25%{opacity: 0.4;}
-                    50%{opacity: 0.6;}
-                    75% {opacity: 0.8;}
-                    100% {opacity: 1;}
-                }
-                @keyframes bob {
-                    
-                }
-                    
-                .more{
-                    border: 1px solid #309bec;
-                }
-                
-            }
-            & .b:hover{
-                background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
-                font-weight: bold;
-                animation: gradientChange 0.8s;
-                @keyframes gradientChange  {    
-                    0% {opacity: 0.2;}
-                    25%{opacity: 0.4;}
-                    50%{opacity: 0.6;}
-                    75% {opacity: 0.8;}
-                    100% {opacity: 1;}
-                }
-                
-                .more{
-                    border: 1px solid #309bec;
-                }
-                
-            }
-            & .c:hover{
-                background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
-                font-weight: bold;
-                .more{
-                    border: 1px solid #309bec;
-                }
-            }
-            & .d:hover{
-                background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
-                font-weight: bold;
-                
-                .more{
-                    border: 1px solid #309bec;
-                }
-            }      
+                &:hover{
+                    background-image: linear-gradient(to top, #4c82ffcb 0%, #accbee 50%, #e7f0fd 100%);
+                    font-weight: bold;           
+                    .more{
+                        border: 1px solid #309bec;
+                    }
+                }  
+            }               
         }
         
         .page-a {
