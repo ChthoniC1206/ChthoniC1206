@@ -963,6 +963,107 @@ main {
             position: relative;
             z-index: 1;
             overflow: hidden;
+            
+            .weather-info{
+                z-index: 1;
+                position: absolute;
+                top: 15%;
+                left: 18%;
+                width: 1200px;
+                height: 709px;
+                border-radius: 10px;
+                background: rgba(20, 20, 20, 0.3);
+                backdrop-filter: blur(5px);
+                color: white;
+                .location{
+                    width: 100%;
+                    height: 76px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h2{
+                        font-size: 40px;
+                    }
+                }
+                .weather{
+                    display: flex;
+                    justify-content: center;
+                    .weather-img{
+                        width: 100px;
+                        height: 100px;
+                        img{
+                            width: 10%;
+                            height: 10%;
+                        }
+                    }
+                    .tempture{
+                        font-size: 90px;
+                    }
+                }
+                .chance-of-rain{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    h3{
+                        font-size: 20px;
+                    }
+                    .rain{
+                        .rain-img{
+                            width: 50px;
+                            height: 50px;
+                            img{
+                                width: 5%;
+                                height: 5%;
+                            }
+                        }
+                    }
+                }
+                .weather-card{
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 0 110px;
+                    .card{
+                        width: 150px;
+                        height: 150px;
+                        background: rgba(65, 65, 65, 0.6);
+                        border-radius: 10px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        .weather-week{
+                            display: flex;
+                            justify-content: center;
+                            .weather-week-img{
+                                width: 50px;
+                                height: 50px;
+                                img{
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                            }
+                            .tempture{
+                                font-size: 20px;
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+                h3{
+                    margin-bottom: 10px;
+                }
+                .other-info{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    .info{
+                        width: 300px;
+                        height: 250px;
+                        border-top: 2px solid white;
+                    }
+                }
+            }
 
             h1{
                 padding-top: 100px;
@@ -972,30 +1073,12 @@ main {
                 display: flex;
                 justify-content: center;
             }
-            // .sun-box{
-            //     position: relative;
-            //     left: 25.5%;
-            //     top: 9.5%;
-            //     width: 100%;
-            //     height: 500px;
-            //     .sun{
-            //         position: absolute;
-            //         width: 280px;
-            //         height: 280px;
-            //         background-color:#fdee9c;
-            //         border-radius: 50%;
-            //         opacity: 0;
-            //         box-shadow: 0 0 50px 10px #fde86e;
-            //         animation: sunshadow 4s 1s infinite linear;
-            //     }
-            // }
 
             .wave{
                 position: absolute;
                 width: 1000vw;
                 height: 1000vw;
                 background:radial-gradient(circle closest-corner at left,#6d789b,#919ab1,#5f6c91,#647497);
-                // background-color: #6d789b;
                 opacity: 0.4;
                 left: -420%;
                 top: 700px;
@@ -1014,14 +1097,6 @@ main {
                     animation: waves 7000ms infinite linear;
                     left: -350%;
                 }
-                // &:nth-child(5){
-                //     animation: waves 13000ms infinite linear;
-                //     left: -380%;
-                // }
-                // &:nth-child(6){
-                //     animation: waves 8000ms infinite linear;
-                //     left: -440%;
-                // }
         
             }
             .bubbles {
