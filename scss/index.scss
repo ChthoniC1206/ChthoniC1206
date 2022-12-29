@@ -1351,17 +1351,18 @@ main {
         #banner {
             width: 100%;
             height: 50vh;
+
             video {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
         }
-        
+
         //關於濕地
         .wetlands {
             position: relative;
-            
+
             div.introduce {
                 cursor: pointer;
                 text-decoration: none;
@@ -1383,6 +1384,7 @@ main {
                     justify-content: space-evenly;
                     align-items: center;
                     box-shadow: 2px 3px 5px gray;
+
                     h2 {
                         width: 100%;
                         font-size: 12px;
@@ -1607,21 +1609,22 @@ main {
 
         .background-mid {
             position: relative;
-    
+
             img {
                 object-fit: cover;
                 position: absolute;
                 height: 100%;
                 width: 100%;
             }
-    
+
             // 生態區
             .ecology::-webkit-scrollbar {
                 display: none;
             }
-            
+
             .ecology {
                 position: relative;
+
                 h1 {
                     top: 5%;
                     left: 43%;
@@ -1629,7 +1632,7 @@ main {
                     position: absolute;
                     color: white;
                 }
-    
+
                 // 鳥類
                 .bird {
                     z-index: 1;
@@ -1641,7 +1644,7 @@ main {
                     width: 200px;
                     height: 250px;
                     position: relative;
-    
+
                     .icon {
                         position: absolute;
                         overflow: hidden;
@@ -1649,13 +1652,13 @@ main {
                         left: 32%;
                         width: 51px;
                         height: 51px;
-    
+
                         img {
                             width: 100%;
                             height: 100%;
                         }
                     }
-    
+
                     .image {
                         position: absolute;
                         top: 15%;
@@ -1664,14 +1667,14 @@ main {
                         height: 180px;
                         border-radius: 50%;
                         box-shadow: 2px 3px 5px gray;
-    
+
                         img {
                             width: 100%;
                             height: 100%;
-    
+
                         }
                     }
-    
+
                     .text {
                         cursor: pointer;
                         font-size: 12px;
@@ -1687,7 +1690,7 @@ main {
                         background-color: #fee4cd;
                         border: 7px outset #8495c7;
                         transform: rotate(-3deg);
-    
+
                         span {
                             width: 40px;
                             height: 40px;
@@ -1698,7 +1701,7 @@ main {
                             transform: rotate(3deg);
                         }
                     }
-    
+
                     .text:hover {
                         background-color: #8495c7;
                         border: 7px solid #4c5673;
@@ -1706,7 +1709,7 @@ main {
                         font-weight: bolder;
                     }
                 }
-    
+
                 // 植物
                 .plant {
                     z-index: 1;
@@ -1718,7 +1721,7 @@ main {
                     width: 200px;
                     height: 250px;
                     position: relative;
-    
+
                     .icon {
                         position: absolute;
                         overflow: hidden;
@@ -1726,13 +1729,13 @@ main {
                         left: 38%;
                         width: 45px;
                         height: 45px;
-    
+
                         img {
                             width: 100%;
                             height: 100%;
                         }
                     }
-    
+
                     .image {
                         position: absolute;
                         top: 15%;
@@ -1742,13 +1745,13 @@ main {
                         height: 180px;
                         border-radius: 50%;
                         box-shadow: 2px 3px 5px gray;
-    
+
                         img {
                             width: 100%;
                             height: 100%;
                         }
                     }
-    
+
                     .text {
                         cursor: pointer;
                         font-size: 12px;
@@ -1764,7 +1767,7 @@ main {
                         background-color: #fee4cd;
                         border: 7px outset #8495c7;
                         transform: rotate(-3deg);
-    
+
                         span {
                             width: 40px;
                             height: 40px;
@@ -1775,16 +1778,16 @@ main {
                             transform: rotate(3deg);
                         }
                     }
-    
+
                     .text:hover {
                         background-color: #8495c7;
                         border: 7px solid #4c5673;
                         color: #FFF;
                         font-weight: bolder;
                     }
-    
+
                 }
-    
+
                 // 潮間帶生物
                 .crab {
                     z-index: 1;
@@ -1796,7 +1799,7 @@ main {
                     width: 200px;
                     height: 250px;
                     position: relative;
-    
+
                     .icon {
                         position: absolute;
                         overflow: hidden;
@@ -1804,13 +1807,13 @@ main {
                         left: 39%;
                         width: 47px;
                         height: 47px;
-    
+
                         img {
                             width: 100%;
                             height: 100%;
                         }
                     }
-    
+
                     .image {
                         position: absolute;
                         top: -44%;
@@ -1820,13 +1823,13 @@ main {
                         height: 180px;
                         border-radius: 50%;
                         box-shadow: 2px 3px 5px gray;
-    
+
                         img {
                             width: 100%;
                             height: 100%;
                         }
                     }
-    
+
                     .text {
                         cursor: pointer;
                         font-size: 12px;
@@ -1842,7 +1845,7 @@ main {
                         background-color: #fee4cd;
                         border: 7px outset #8495c7;
                         transform: rotate(-4deg);
-    
+
                         span {
                             width: 30px;
                             height: 30px;
@@ -1853,7 +1856,7 @@ main {
                             transform: rotate(4deg);
                         }
                     }
-    
+
                     .text:hover {
                         background-color: #8495c7;
                         border: 7px solid #4c5673;
@@ -1861,7 +1864,7 @@ main {
                         font-weight: bolder;
                     }
                 }
-    
+
                 .pic-bird {
                     position: absolute;
                     top: 25%;
@@ -1870,9 +1873,9 @@ main {
                     height: 60px;
                     border-radius: 50%;
                     z-index: 2;
-                    overflow: hidden;         
+                    overflow: hidden;
                     box-shadow: 2px 3px 5px gray;
-    
+
                     img {
                         width: 100%;
                         height: 100%;
@@ -1880,7 +1883,7 @@ main {
                         transform: rotateY(180deg);
                     }
                 }
-    
+
                 .pic-fish {
                     position: absolute;
                     top: 55%;
@@ -1891,6 +1894,7 @@ main {
                     z-index: 2;
                     overflow: hidden;
                     box-shadow: 2px 3px 5px gray;
+
                     img {
                         width: 100%;
                         height: 100%;
@@ -1898,7 +1902,7 @@ main {
                         transform: rotateY(180deg);
                     }
                 }
-    
+
                 .circle-pink {
                     position: absolute;
                     top: 50%;
@@ -1909,7 +1913,7 @@ main {
                     background-color: #e59d81;
                     z-index: 2;
                 }
-    
+
                 .circle-orange {
                     position: absolute;
                     top: 60%;
@@ -1920,7 +1924,7 @@ main {
                     background-color: #e59d81;
                     z-index: 2;
                 }
-    
+
                 .circle-orange-top {
                     position: absolute;
                     top: 65%;
@@ -1931,7 +1935,7 @@ main {
                     background-color: #e59d81;
                     z-index: 2;
                 }
-    
+
                 .circle-orange-down {
                     position: absolute;
                     top: 60%;
@@ -1942,13 +1946,13 @@ main {
                     background-color: #e59d81;
                     z-index: 2;
                 }
-    
+
                 #cloud-ecology {
                     @media (max-width: 820px) {
                         display: none;
                     }
                 }
-    
+
                 .bgc-cloud-top {
                     position: absolute;
                     top: 5%;
@@ -1960,7 +1964,7 @@ main {
                         blur(15px) brightness(200%);
                     animation: top 10s ease-in-out infinite;
                 }
-    
+
                 .bgc-cloud-right {
                     position: absolute;
                     top: 10%;
@@ -1972,7 +1976,7 @@ main {
                         blur(20px) brightness(300%);
                     animation: right 40s ease-in-out infinite;
                 }
-    
+
                 .bgc-cloud-left {
                     position: absolute;
                     top: 30%;
@@ -1984,7 +1988,7 @@ main {
                         blur(14px) brightness(400%);
                     animation: left 36s ease-in-out infinite;
                 }
-    
+
                 .bgc-cloud-down {
                     position: absolute;
                     bottom: 3%;
@@ -1996,45 +2000,758 @@ main {
                         blur(10px) brightness(400%);
                     animation: down 50s ease-in-out infinite;
                 }
-    
+
                 @keyframes top {
                     from {
                         left: -50%;
                     }
-    
+
                     to {
                         left: 100%;
                         overflow: hidden;
                     }
                 }
-    
+
                 @keyframes right {
                     from {
                         left: -50%;
                     }
-    
+
                     to {
                         left: 100%;
                         overflow: hidden;
                     }
                 }
-    
+
                 @keyframes left {
                     from {
                         left: -50%;
                     }
-    
+
                     to {
                         left: 100%;
                         overflow: hidden;
                     }
                 }
-    
+
                 @keyframes down {
                     from {
                         left: -50%;
                     }
-    
+
+                    to {
+                        left: 100%;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    //關於濕地 變版 手機板
+    @media (max-width: 400px) {
+        main {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-size: cover;
+        }
+
+        // 縮時影片
+        #banner {
+            width: 100%;
+            height: 30vh;
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        //關於濕地
+        .wetlands {
+            position: relative;
+
+            div.introduce {
+                cursor: pointer;
+                text-decoration: none;
+                color: black;
+                width: 100%;
+                height: 80vh;
+
+                .a {
+                    z-index: 2;
+                    width: 140px;
+                    height: 140px;
+                    position: absolute;
+                    top: 20%;
+                    left: 10%;
+                    // border-radius: 50%;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    box-shadow: 2px 3px 5px gray;
+
+                    h2 {
+                        width: 100%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+
+                    hr {
+                        width: 90px;
+                    }
+
+                    p {
+                        width: 100%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+
+                    .more {
+                        line-height: 25px;
+                        font-size: 10px;
+                        text-align: center;
+                        width: 27px;
+                        height: 27px;
+                        border-radius: 50%;
+                        background-color: skyblue;
+                    }
+                }
+
+                .b {
+                    z-index: 2;
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 50%;
+                    position: absolute;
+
+                    top: 38%;
+                    left: 10%;
+                    border-radius: 50%;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    box-shadow: 2px 3px 5px gray;
+
+                    h2 {
+                        width: 100%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+
+                    hr {
+                        width: 90px;
+                    }
+
+                    p {
+                        width: 90%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+
+                    .more {
+                        line-height: 25px;
+                        font-size: 10px;
+                        text-align: center;
+                        width: 27px;
+                        height: 27px;
+                        border-radius: 50%;
+                        background-color: skyblue;
+                    }
+                }
+
+                .c {
+                    z-index: 2;
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 38%;
+                    left: 50%;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    box-shadow: 2px 3px 5px gray;
+
+                    h2 {
+                        width: 100%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+
+                    hr {
+                        width: 90px;
+                    }
+
+                    p {
+                        width: 80%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+
+                    .more {
+                        line-height: 25px;
+                        font-size: 10px;
+                        text-align: center;
+                        width: 27px;
+                        height: 27px;
+                        border-radius: 50%;
+                        background-color: skyblue;
+                    }
+                }
+
+                .d {
+                    z-index: 2;
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 20%;
+                    left: 50%;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    box-shadow: 2px 3px 5px gray;
+
+                    h2 {
+                        width: 100%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+
+                    hr {
+                        width: 90px;
+                    }
+
+                    p {
+                        width: 80%;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+
+                    .more {
+                        line-height: 25px;
+                        font-size: 10px;
+                        text-align: center;
+                        width: 27px;
+                        height: 27px;
+                        border-radius: 50%;
+                        background-color: skyblue;
+                    }
+                }
+            }
+
+            .page-a {
+                overflow: hidden;
+                width: 53px;
+                height: 53px;
+                border-radius: 50%;
+                position: absolute;
+                top: 52%;
+                left: 40%;
+                z-index: 2;
+                box-shadow: 2px 3px 5px gray;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .page-b {
+                overflow: hidden;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                position: absolute;
+                top: 15%;
+                left: 50%;
+                z-index: 2;
+                box-shadow: 2px 3px 5px gray;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            h1 {
+                position: absolute;
+                top: 10%;
+                left: 35%;
+                font-size: 24px;
+                color: white;
+                z-index: 1;
+                text-shadow: gray 2px 5px 8px;
+            }
+
+            .circle-a {
+                position: absolute;
+                top: 55%;
+                left: 10%;
+                width: 24px;
+                height: 24px;
+                background-color: white;
+                border-radius: 50%;
+                z-index: 2;
+            }
+
+            .circle-b {
+                position: absolute;
+                top: 35%;
+                left: 45%;
+                width: 22px;
+                height: 22px;
+                background-color: white;
+                border-radius: 50%;
+                z-index: 2;
+            }
+        }
+
+        .background-mid {
+            position: relative;
+
+            img {
+                object-fit: cover;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+
+            // 生態區
+            .ecology::-webkit-scrollbar {
+                display: none;
+            }
+
+            .ecology {
+                position: relative;
+
+                h1 {
+                    top: 5%;
+                    left: 43%;
+                    font-size: 32px;
+                    position: absolute;
+                    color: white;
+                }
+
+                // 鳥類
+                .bird {
+                    z-index: 1;
+                    color: black;
+                    display: block;
+                    position: absolute;
+                    top: 15%;
+                    left: 15%;
+                    width: 200px;
+                    height: 250px;
+                    position: relative;
+
+                    .icon {
+                        position: absolute;
+                        overflow: hidden;
+                        top: 2%;
+                        left: 32%;
+                        width: 51px;
+                        height: 51px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .image {
+                        position: absolute;
+                        top: 15%;
+                        overflow: hidden;
+                        width: 180px;
+                        height: 180px;
+                        border-radius: 50%;
+                        box-shadow: 2px 3px 5px gray;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+
+                        }
+                    }
+
+                    .text {
+                        cursor: pointer;
+                        font-size: 12px;
+                        // text-align:start;
+                        // line-height: 125px;
+                        position: absolute;
+                        bottom: 15%;
+                        right: 8%;
+                        z-index: 2;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        background-color: #fee4cd;
+                        border: 7px outset #8495c7;
+                        transform: rotate(-3deg);
+
+                        span {
+                            width: 40px;
+                            height: 40px;
+                            font-size: 12px;
+                            position: absolute;
+                            left: 12px;
+                            bottom: -10px;
+                            transform: rotate(3deg);
+                        }
+                    }
+
+                    .text:hover {
+                        background-color: #8495c7;
+                        border: 7px solid #4c5673;
+                        color: #FFF;
+                        font-weight: bolder;
+                    }
+                }
+
+                // 植物
+                .plant {
+                    z-index: 1;
+                    color: black;
+                    display: block;
+                    position: absolute;
+                    top: -10%;
+                    left: 70%;
+                    width: 200px;
+                    height: 250px;
+                    position: relative;
+
+                    .icon {
+                        position: absolute;
+                        overflow: hidden;
+                        top: 0%;
+                        left: 38%;
+                        width: 45px;
+                        height: 45px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .image {
+                        position: absolute;
+                        top: 15%;
+                        left: 5%;
+                        overflow: hidden;
+                        width: 180px;
+                        height: 180px;
+                        border-radius: 50%;
+                        box-shadow: 2px 3px 5px gray;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .text {
+                        cursor: pointer;
+                        font-size: 12px;
+                        // text-align: center;
+                        // line-height: 125px;
+                        position: absolute;
+                        bottom: 15%;
+                        left: 67%;
+                        z-index: 2;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        background-color: #fee4cd;
+                        border: 7px outset #8495c7;
+                        transform: rotate(-3deg);
+
+                        span {
+                            width: 40px;
+                            height: 40px;
+                            font-size: 12px;
+                            position: absolute;
+                            left: 11px;
+                            top: 15px;
+                            transform: rotate(3deg);
+                        }
+                    }
+
+                    .text:hover {
+                        background-color: #8495c7;
+                        border: 7px solid #4c5673;
+                        color: #FFF;
+                        font-weight: bolder;
+                    }
+
+                }
+
+                // 潮間帶生物
+                .crab {
+                    z-index: 1;
+                    color: black;
+                    display: block;
+                    position: absolute;
+                    top: 0%;
+                    left: 40%;
+                    width: 200px;
+                    height: 250px;
+                    position: relative;
+
+                    .icon {
+                        position: absolute;
+                        overflow: hidden;
+                        top: -54%;
+                        left: 39%;
+                        width: 47px;
+                        height: 47px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .image {
+                        position: absolute;
+                        top: -44%;
+                        left: 5%;
+                        overflow: hidden;
+                        width: 180px;
+                        height: 180px;
+                        border-radius: 50%;
+                        box-shadow: 2px 3px 5px gray;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .text {
+                        cursor: pointer;
+                        font-size: 12px;
+                        // text-align: center;
+                        // line-height: 125px;
+                        position: absolute;
+                        top: 2%;
+                        right: 3%;
+                        z-index: 2;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        background-color: #fee4cd;
+                        border: 7px outset #8495c7;
+                        transform: rotate(-4deg);
+
+                        span {
+                            width: 30px;
+                            height: 30px;
+                            font-size: 10px;
+                            position: absolute;
+                            left: 11px;
+                            bottom: 8px;
+                            transform: rotate(4deg);
+                        }
+                    }
+
+                    .text:hover {
+                        background-color: #8495c7;
+                        border: 7px solid #4c5673;
+                        color: #FFF;
+                        font-weight: bolder;
+                    }
+                }
+
+                .pic-bird {
+                    position: absolute;
+                    top: 25%;
+                    left: 50%;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    z-index: 2;
+                    overflow: hidden;
+                    box-shadow: 2px 3px 5px gray;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transform: rotateY(180deg);
+                    }
+                }
+
+                .pic-fish {
+                    position: absolute;
+                    top: 55%;
+                    left: 70%;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    z-index: 2;
+                    overflow: hidden;
+                    box-shadow: 2px 3px 5px gray;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transform: rotateY(180deg);
+                    }
+                }
+
+                .circle-pink {
+                    position: absolute;
+                    top: 50%;
+                    left: 28%;
+                    width: 37px;
+                    height: 37px;
+                    border-radius: 50%;
+                    background-color: #e59d81;
+                    z-index: 2;
+                }
+
+                .circle-orange {
+                    position: absolute;
+                    top: 60%;
+                    left: 80%;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    background-color: #e59d81;
+                    z-index: 2;
+                }
+
+                .circle-orange-top {
+                    position: absolute;
+                    top: 65%;
+                    left: 78%;
+                    width: 13px;
+                    height: 13px;
+                    border-radius: 50%;
+                    background-color: #e59d81;
+                    z-index: 2;
+                }
+
+                .circle-orange-down {
+                    position: absolute;
+                    top: 60%;
+                    left: 35%;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background-color: #e59d81;
+                    z-index: 2;
+                }
+
+                #cloud-ecology {
+                    @media (max-width: 820px) {
+                        display: none;
+                    }
+                }
+
+                .bgc-cloud-top {
+                    position: absolute;
+                    top: 5%;
+                    left: -10%;
+                    width: 800px;
+                    height: 800px;
+                    overflow: hidden;
+                    filter:
+                        blur(15px) brightness(200%);
+                    animation: top 10s ease-in-out infinite;
+                }
+
+                .bgc-cloud-right {
+                    position: absolute;
+                    top: 10%;
+                    left: 82%;
+                    width: 700px;
+                    height: 700px;
+                    overflow: hidden;
+                    filter:
+                        blur(20px) brightness(300%);
+                    animation: right 40s ease-in-out infinite;
+                }
+
+                .bgc-cloud-left {
+                    position: absolute;
+                    top: 30%;
+                    left: 10%;
+                    width: 800px;
+                    height: 800px;
+                    overflow: hidden;
+                    filter:
+                        blur(14px) brightness(400%);
+                    animation: left 36s ease-in-out infinite;
+                }
+
+                .bgc-cloud-down {
+                    position: absolute;
+                    bottom: 3%;
+                    left: 60%;
+                    width: 800px;
+                    height: 800px;
+                    overflow: hidden;
+                    filter:
+                        blur(10px) brightness(400%);
+                    animation: down 50s ease-in-out infinite;
+                }
+
+                @keyframes top {
+                    from {
+                        left: -50%;
+                    }
+
+                    to {
+                        left: 100%;
+                        overflow: hidden;
+                    }
+                }
+
+                @keyframes right {
+                    from {
+                        left: -50%;
+                    }
+
+                    to {
+                        left: 100%;
+                        overflow: hidden;
+                    }
+                }
+
+                @keyframes left {
+                    from {
+                        left: -50%;
+                    }
+
+                    to {
+                        left: 100%;
+                        overflow: hidden;
+                    }
+                }
+
+                @keyframes down {
+                    from {
+                        left: -50%;
+                    }
+
                     to {
                         left: 100%;
                         overflow: hidden;
@@ -2876,6 +3593,9 @@ footer {
                     }
                 }
             }
+            .text-title {
+                display: none;
+            }
             @media (max-width: 820px) {
                 height: 97vh;
                 .end-logo {
@@ -2946,6 +3666,74 @@ footer {
                         }
                     }
                 }
+            }
+            @media (max-width: 420px) {
+                .end-logo {
+                    top: 20%;
+                    right: 50%;
+                    transform: translateX(50%);
+                    width: 100px;
+                    height: 100px;
+                }
+                .end-text {
+                    position: absolute;
+                    bottom: 5%;
+                    width: 100%;
+                    height: 20%;
+                    padding: 0% 2%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .title {
+                        width: 100%;
+                        color: white;
+                        h2 {
+                            font-size: 20px;
+                        }
+                        margin-bottom: 20px;
+                    }   
+                    .text {
+                        color: white;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 15px;
+                        justify-content: space-around;
+                        gap: 15px;
+                        .address {
+                            width: 100%;
+                        }
+    
+                        .phone {
+                            width: 100%;
+                        }
+    
+                        .mail {
+                            width: 100%;
+                        }
+    
+                        .icon {
+                            display: flex;
+                            width: 100%;
+                            gap: 10px;
+                            a {
+                                display: block;
+                                color: white;
+                                width: 50px;
+                                height: 50px;
+                            }
+    
+                        }
+                    }
+                }
+                .text-title {
+                    display: block;
+                    color: white;
+                    font-size: 32px;
+                    position: absolute;
+                    top: 40%;
+                    width: 100%;
+                }
+                
             }
         }
 
@@ -3498,37 +4286,44 @@ footer {
                     opacity: .5;
                     object-fit: fill;
                 }
-                .big-box { 
+
+                .big-box {
                     height: 100%;
                     width: 100%;
                     background-color: #3C3B3B;
                 }
+
                 .text {
                     z-index: 3;
                 }
-                
-            } 
+
+            }
+
             // 下半部
             .mySwiper-bird {
                 height: 20%;
                 box-sizing: border-box;
                 padding: 10px 0;
+
                 .swiper-slide {
                     width: 25%;
                     height: 100%;
                     opacity: 0.4;
+
                     img {
                         display: block;
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
-                        
+
                     }
                 }
             }
+
             .mySwiper-bird .swiper-slide-thumb-active {
                 opacity: 1;
             }
+
             // .swiper-slide img {
             //     display: block;
             //     width: 100%;
@@ -3969,6 +4764,7 @@ footer {
                 width: 80%;
                 height: 80%;
                 display: block;
+                left: 100px;
             }
         }
 
@@ -4042,26 +4838,78 @@ footer {
             width: 90%;
             height: 100%;
             align-items: center;
-    
+
             .logo {
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 height: 100%;
-                width: 20%;
-                padding: 10px;
-    
+                width: 15%;
+                padding: 20px;
+
                 img {
-                    width: 80%;
-                    height: 80%;
+                    width: 62px;
+                    height: 62px;
                     display: block;
                 }
             }
-    
+
             .text {
-                font-size: 30px;
+                font-size: 20px;
                 color: white;
                 align-self: center;
             }
         }
+
+        #burger {
+            &:checked~.menu {
+                height: 100%;
+            }
+        }
+
+    }
+
+    @media (max-width: 400px) {
+        display: block;
+
+        .media-navbar {
+            width: 100%;
+            height: 100%;
+
+            .left-sec {
+                display: flex;
+                width: 80%;
+                height: 100%;
+                align-items: center;
+
+                .logo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50%;
+                    height: 100%;
+                    padding: 20px;
+
+                    img {
+                        width: 28px;
+                        height: 28px;
+                        display: block;
+                    }
+                }
+
+                .text {
+                    font-size: 15px;
+                    color: white;
+                    align-self: center;
+                }
+            }
+
+            #burger {
+                &:checked~.menu {
+                    height: 100%;
+                }
+            }
+        }
+
     }
 }
