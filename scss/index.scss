@@ -3366,6 +3366,7 @@ footer {
         .show-bird {
             width: 100%;
             height: 80vh;
+<<<<<<< HEAD
             border: 1px solid blue;
 
             body {
@@ -3378,11 +3379,22 @@ footer {
                 height: 100%;
             }
 
+=======
+            .swiper {
+                width: 100%;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+>>>>>>> 4007a501a5fda5e9cfd118b5fe2d6397ea4395eb
             .swiper-slide {
                 text-align: center;
                 font-size: 18px;
                 background: #fff;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4007a501a5fda5e9cfd118b5fe2d6397ea4395eb
                 /* Center slide text vertically */
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -3396,6 +3408,7 @@ footer {
                 -ms-flex-align: center;
                 -webkit-align-items: center;
                 align-items: center;
+<<<<<<< HEAD
             }
 
             .swiper {
@@ -3451,13 +3464,59 @@ footer {
                 width: 200px;
                 height: 150px;
 
+=======
+
+                // background-size: cover;
+                // background-position: center;
+            }
+            // 上半部
+            .mySwiper2-bird {
+                height: 80%;
+                width: 100%;
+>>>>>>> 4007a501a5fda5e9cfd118b5fe2d6397ea4395eb
                 img {
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
                     opacity: .5;
+                    object-fit: fill;
+                }
+                .big-box { 
+                    height: 100%;
+                    width: 100%;
+                    background-color: #3C3B3B;
+                }
+                .text {
+                    z-index: 3;
+                }
+                
+            } 
+            // 下半部
+            .mySwiper-bird {
+                height: 20%;
+                box-sizing: border-box;
+                padding: 10px 0;
+                .swiper-slide {
+                    width: 25%;
+                    height: 100%;
+                    opacity: 0.4;
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        
+                    }
                 }
             }
+            .mySwiper-bird .swiper-slide-thumb-active {
+                opacity: 1;
+            }
+            // .swiper-slide img {
+            //     display: block;
+            //     width: 100%;
+            //     height: 100%;
+            //     object-fit: cover;
+            // }
         }
 
         .close-btn {
@@ -3472,6 +3531,7 @@ footer {
             z-index: 1;
         }
     }
+<<<<<<< HEAD
 
     .bird-detail {
         width: 100%;
@@ -3558,6 +3618,83 @@ footer {
         }
     }
 
+=======
+    // .bird-detail {
+    //     width: 100%;
+    //     height: 80vh;
+    //     z-index: 2;
+    //     position: fixed;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     background-color: #2a2f41;
+    //     display: none;
+    //     .bird-details {
+    //         display: none;
+    //         width: 100%;
+    //         height: 100%;
+    //         position: relative;
+    //         z-index: 2;
+    //         img {
+    //             width: 100%;
+    //             height: 100%;
+    //             opacity: .5;
+    //         }
+    //         .text {
+    //             font-size: 50px;
+    //             position: absolute;
+    //             top: 0%;
+    //             width: 100%;
+    //             height: 100%;
+    //             display: flex;
+    //             justify-content: space-between;
+    //         }
+    //         .left-text {
+    //             width: 70%;
+    //             height: 100%;
+    //             display: flex;
+    //             flex-direction: column;
+    //             justify-content: flex-start;
+    //             align-items: flex-start;
+    //             padding-left: 50px;
+    //             padding-top: 10px;
+    //             color: white;
+    //             top: 0%;
+    //             h1{
+    //                 font-size: 50px;
+    //             }
+    //             h2{
+    //                 font-size: 40px;
+    //             }
+    //             h3{
+    //                 font-size: 40px;
+    //             }
+    //             ul li{
+    //                 width: 100%;
+    //                 font-size: 20px;
+    //                 list-style: none;
+    //             }
+    //         }
+    //         .right-text {
+    //             width: 20%;
+    //             display: flex;
+    //             flex-direction: column;
+    //             align-items: flex-start;
+    //             justify-content: end;
+    //             color: white;
+    //             top: 0%;
+    //         }
+    //         .bird-back-btn {
+    //             display: flex;
+    //             justify-content: center;
+    //             align-items: center;
+    //             cursor: pointer;
+    //             width: 100px;
+    //             height: 100px;
+    //         }
+    //     }
+    // }
+    
+>>>>>>> 4007a501a5fda5e9cfd118b5fe2d6397ea4395eb
 }
 
 // 植物
