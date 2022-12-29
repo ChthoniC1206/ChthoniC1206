@@ -1,109 +1,17 @@
-
-        const birdIndexMapping = {
-            '0': '花嘴鴨',
-            '1': '小水鴨',
-            '2': '蒼鷺',
-            '3': '大白鷺',
-            '4': '中白鷺',
-            '5': '小白鷺',
-            '6': '黃頭鷺',
-            '7': '夜鷺',
-            '8': '埃及聖䴉',
-            '9': '灰面鵟鷹',
-            '10': '紅冠水雞',
-            '11': '高蹺鴴',
-            '12': '太平洋金斑鴴',
-            '13': '東方環頸鴴',
-            '14': '小環頸鴴',
-            '15': '磯鷸',
-            '16': '青足鷸',
-            '17': '鷹斑鷸',
-            '18': '大杓鷸',
-            '19': '翻石鷸',
-            '20': '黑腹濱鷸',
-            '21': '小燕鷗',
-            '22': '黑腹燕鷗',
-            '23': '紅鳩',
-            '24': '珠頸斑鳩',
-            '25': '翠鳥',
-            '26': '紅尾伯勞',
-            '27': '大卷尾',
-            '28': '家燕',
-            '29': '洋燕',
-        }
-        const plantIndexMapping = {
-            '0': '蘆葦',
-            '1': '鹽地鼠尾粟',
-            '2': '中華結縷草',
-            '3': '互花米草',
-            '4': '銀合歡',
-            '5': '水筆仔',
-            '6': '馬鞍藤',
-            '7': '扁稈藨草',
-            '8': '濱刀豆',
-            '9': '大安水蓑衣',
-            '10': '白茅',
-            '11': '綬草',
-            '12': '海埔姜',
-        }
-        const crabIndexMapping = {
-            '0': '萬歲大眼蟹',
-            '1': '短身大眼蟹',
-            '2': '臺灣厚蟹',
-            '3': '德氏仿厚蟹',
-            '4': '雙扇股窗蟹',
-            '5': '豆形皮拳蟹',
-            '6': '斯氏沙蟹',
-            '7': '角眼沙蟹',
-            '8': '弧邊管招潮蟹',
-            '9': '台灣旱招潮蟹',
-            '10': '北方丑招潮蟹',
-            '11': '乳白南方招潮蟹',
-            '12': '短指和尚蟹',
-            '13': '雙齒擬相手蟹',
-            '14': '勝利黎明蟹',
-            '15': '凶狠圓軸蟹',
-            '16': '隆背張口蟹',
-            '17': '漢氏螳臂蟹',
-            '18': '紅螯螳臂蟹',
-            '19': '鋸緣青蟳',
-            '20': '大彈塗魚',
-            '21': '跳彈塗魚',
-            '22': '黑點多紀魨',
-        }
-        
-        
         const circle = document.querySelectorAll('#circle')
         const closeBtn = document.querySelectorAll('.close-btn')
 
         // 鳥類區
         const birdsec = document.querySelector('.bird-sec')
         const birdbgc = document.querySelector('.bird-bgc')
-        const birdwork = document.querySelector('.bird-work')
-        const birdpic = document.querySelectorAll('.bird-pic')
-        const birddetail = document.querySelector('.bird-detail')
-        const birddetails = document.querySelectorAll('.bird-details')
-        const birdBackBtn = document.querySelectorAll('.bird-back-btn')
 
         // 植物區
         const plantsec = document.querySelector('.plant-sec')
-        const plantbgc = document.querySelector('.plant-bgc')
-        const plantwork = document.querySelector('.plant-work')
-        const plantpic = document.querySelectorAll('.plant-pic')
-        const plantdetail = document.querySelector('.plant-detail')
-        const plantdetails = document.querySelectorAll('.plant-details')
-        const plantBackBtn = document.querySelectorAll('.plant-back-btn')
+        const plantbgc = document.querySelector('.plant-bgc')      
 
         // 潮間帶區
         const crabsec = document.querySelector('.crab-sec')
         const crabbgc = document.querySelector('.crab-bgc')
-        const crabwork = document.querySelector('.crab-work')
-        const crabpic = document.querySelectorAll('.crab-pic')
-        const crabdetail = document.querySelector('.crab-detail')
-        const crabdetails = document.querySelectorAll('.crab-details')
-        const crabBackBtn = document.querySelectorAll('.crab-back-btn')
-
-
 
         circle.forEach(function(data){
             data.addEventListener('click', function(){
@@ -113,20 +21,20 @@
                 }
                 if (data.dataset.intro == '植物'){
                     plantsec.style.display = 'block'
+                    mediaNavbar.classList.add('none')
                 }
                 if (data.dataset.intro == '潮間帶生物'){
                     crabsec.style.display = 'block'
+                    mediaNavbar.classList.add('none')
                 }
             });
             
         });
         birdbgc.addEventListener('click', function(){
             birdsec.style.display = 'none'
-            birddetail.style.display = 'none'
         });
         plantbgc.addEventListener('click', function(){
             plantsec.style.display = 'none'
-            plantdetail.style.display = 'none'
         });
         crabbgc.addEventListener('click', function(){
             crabsec.style.display = 'none'
@@ -140,67 +48,103 @@
             });
         });
 
-        function lockBird (){
-            birddetails.forEach((detail,index) => {
-                detail.style.display = 'none';
-            });    
-        }
-        function lockPlant (){
-            plantdetails.forEach((detail,index) => {
-                detail.style.display = 'none';
-            });    
-        }
-        function lockCrab (){
-            crabdetails.forEach((detail,index) => {
-                detail.style.display = 'none';
-            });    
-        }
-        birdpic.forEach(function(img, index){
-            img.addEventListener('click', function(){      
-                if(img.dataset.intro === birdIndexMapping[index]) {
-                    lockBird();
-                    birddetail.style.display = 'block';
-                    birddetails[index].style.display = 
-                    'block';
-                };
-                birdBackBtn.forEach(function(birdBtn){
-                    birdBtn.addEventListener('click', function(){
-                        birddetail.style.display = 'none';
-                        birdsec.style.display = 'block'
-                    });
-                });
-            });
-        });
-        plantpic.forEach(function(img, index){
-            img.addEventListener('click', function(){      
-                if(img.dataset.intro === plantIndexMapping[index]) {
-                    lockPlant();
-                    plantdetail.style.display = 'block';
-                    plantdetails[index].style.display = 
-                    'block';
-                };
-                plantBackBtn.forEach(function(plantBtn){
-                    plantBtn.addEventListener('click', function(){
-                        plantdetail.style.display = 'none';
-                        plantsec.style.display = 'block'
-                    });
-                });
-            });
-        });
-        crabpic.forEach(function(img, index){
-            img.addEventListener('click', function(){      
-                if(img.dataset.intro === crabIndexMapping[index]) {
-                    lockCrab();
-                    crabdetail.style.display = 'block';
-                    crabdetails[index].style.display = 
-                    'block';
-                };
-                crabBackBtn.forEach(function(crabBtn){
-                    crabBtn.addEventListener('click', function(){
-                        crabdetail.style.display = 'none';
-                        crabsec.style.display = 'block'
-                    });
-                });
-            });
-        });
+        var swiper = new Swiper(".mySwiper-bird", {
+            loop: true,
+            spaceBetween: 5,
+            slidesPerView: 8,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                830: {
+                    spaceBetween: 5,
+                    slidesPerView: 8,
+                },
+                410: {
+                    spaceBetween: 5,
+                    slidesPerView: 3,
+                },
+                100: {
+                    spaceBetween: 5,
+                    slidesPerView: 2,
+                },
+            }
+          });
+          var swiper2 = new Swiper(".mySwiper2-bird", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+              swiper: swiper,
+            },
+          });
+          
+          var swiper = new Swiper(".mySwiper-plant", {
+            loop: true,
+            spaceBetween: 5,
+            slidesPerView: 8,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                830: {
+                    spaceBetween: 5,
+                    slidesPerView: 8,
+                },
+                410: {
+                    spaceBetween: 5,
+                    slidesPerView: 3,
+                },
+                100: {
+                    spaceBetween: 5,
+                    slidesPerView: 2,
+                },
+            }
+          });
+          var swiper2 = new Swiper(".mySwiper2-plant", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+              swiper: swiper,
+            },
+          });  
+          
+          var swiper = new Swiper(".mySwiper-crab", {
+            loop: true,
+            spaceBetween: 5,
+            slidesPerView: 8,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                830: {
+                    spaceBetween: 5,
+                    slidesPerView: 8,
+                },
+                410: {
+                    spaceBetween: 5,
+                    slidesPerView: 3,
+                },
+                100: {
+                    spaceBetween: 5,
+                    slidesPerView: 2,
+                },
+            }
+          });
+          var swiper2 = new Swiper(".mySwiper2-crab", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+              swiper: swiper,
+            },
+          });
+
         
