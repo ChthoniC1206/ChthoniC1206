@@ -810,8 +810,6 @@ main {
                 .text {
                     cursor: pointer;
                     font-size: 20px;
-                    // text-align: center;
-                    // line-height: 125px;
                     position: absolute;
                     bottom: 7%;
                     right: 13.5%;
@@ -1104,13 +1102,19 @@ main {
             position: relative;
             z-index: 1;
             overflow: hidden;
+<<<<<<< Updated upstream
 
             .weather-info {
+=======
+            .weather-box{
+                display: flex;
+                justify-content: center;
+            .weather-info{
+>>>>>>> Stashed changes
                 z-index: 1;
                 position: absolute;
-                top: 15%;
-                left: 18%;
-                width: 1200px;
+                
+                width: 70%;
                 height: 709px;
                 border-radius: 10px;
                 background: rgba(20, 20, 20, 0.3);
@@ -1126,6 +1130,9 @@ main {
 
                     h2 {
                         font-size: 40px;
+                        @media (max-width:375px){
+                            font-size: 30px;
+                        }
                     }
                 }
 
@@ -1139,15 +1146,28 @@ main {
                         display: flex;
                         align-items: flex-end;
                         margin: 0 10px;
+<<<<<<< Updated upstream
 
                         img {
+=======
+                        @media (max-width:375px){
+                            align-items: flex-start;
+                        }
+                        img{
+>>>>>>> Stashed changes
                             width: 10%;
                             height: 10%;
+                            @media (max-width:375px){
+                                width: 30%;
+                            }
                         }
                     }
 
                     .tempture {
                         font-size: 90px;
+                        @media (max-width:375px){
+                            font-size: 60px;
+                        }
                     }
                 }
 
@@ -1164,10 +1184,27 @@ main {
                         .rain-img {
                             width: 50px;
                             height: 50px;
+<<<<<<< Updated upstream
 
                             img {
                                 width: 5%;
                                 height: 5%;
+=======
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img{
+                                width: 8%;
+                                height: 8%;
+                                @media (max-width:820px){
+                                    width: 10%;
+                                    height: 10%;
+                                }
+                                @media (max-width:375px){
+                                    width: 10%;
+                                    height: 10%;
+                                }
+>>>>>>> Stashed changes
                             }
                         }
                     }
@@ -1209,6 +1246,7 @@ main {
                             }
                         }
                     }
+<<<<<<< Updated upstream
                 }
 
                 h3 {
@@ -1222,10 +1260,26 @@ main {
                     justify-content: space-around;
 
                     .info {
+=======
+                    @media (max-width:375px){
+                        margin-bottom: 20px;
+                    }
+                }
+                h3{
+                    margin: 10px 0;
+                    padding: 0 10px;
+                }
+                .other-info{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    .info{
+>>>>>>> Stashed changes
                         width: 300px;
                         height: 250px;
                         font-size: 20px;
                         border-top: 2px solid white;
+<<<<<<< Updated upstream
 
                         p {
                             margin: 15px 0;
@@ -1884,6 +1938,17 @@ main {
                             left: 11px;
                             bottom: 8px;
                             transform: rotate(-2deg);
+=======
+                        p{
+                            margin: 15px 0;
+>>>>>>> Stashed changes
+                        }
+                        @media (max-width:820px) {
+                            width: 150px;
+                        }
+                        @media (max-width:375px){
+                            width: 100px;
+                            font-size: 12px;
                         }
                     }
     
@@ -1894,6 +1959,7 @@ main {
                         font-weight: bolder;
                     }
                 }
+<<<<<<< Updated upstream
     
                 .pic-bird {
                     position: absolute;
@@ -1912,6 +1978,47 @@ main {
                         object-fit: cover;
                         transform: rotateY(180deg);
                     }
+=======
+                @media (max-width:820px){
+                width: 641px;
+                height: 650px;
+                left: 10%;
+                }
+                @media (max-width:375px){
+                    width: 375px;
+                    height: 630px;
+                    left: 0;
+                    border-radius: 0;
+                    align-items: space;
+
+                }
+            }
+        }
+            h1{
+                padding-top: 100px;
+                color: #FFF;
+                font-size: 50px;
+                padding-top: 10px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 60px;
+            }
+
+            .wave{
+                position: absolute;
+                width: 1000vw;
+                height: 1000vw;
+                background:radial-gradient(circle closest-corner at left,#6d789b,#919ab1,#5f6c91,#647497);
+                opacity: 0.4;
+                left: -420%;
+                top: 700px;
+                border-radius: 48%;
+                animation: waves 30000ms infinite linear;
+        
+                &:nth-child(2){
+                    animation: waves 18000ms infinite linear;
+                    left: -450%;
+>>>>>>> Stashed changes
                 }
     
                 .pic-fish {
@@ -1981,6 +2088,7 @@ main {
                         display: none;
                     }
                 }
+<<<<<<< Updated upstream
     
                 .bgc-cloud-top {
                     position: absolute;
@@ -2076,6 +2184,10 @@ main {
             }
         }
 
+=======
+            }
+    }
+>>>>>>> Stashed changes
     }
 }
 
