@@ -3875,25 +3875,16 @@ footer #end .text-word {
   z-index: 2;
   overflow: auto;
 }
-.bird-sec .bird-work .text {
-  font-size: 50px;
-  height: 8vh;
-  color: white;
-  display: flex;
-  justify-content: center;
-}
 .bird-sec .bird-work .show-bird {
   width: 100%;
   height: 80vh;
-  border: 1px solid blue;
-}
-.bird-sec .bird-work .show-bird body {
-  background: #000;
-  color: #000;
+  padding: 11px 115px 5px 115px;
 }
 .bird-sec .bird-work .show-bird .swiper {
   width: 100%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bird-sec .bird-work .show-bird .swiper-slide {
   text-align: center;
@@ -3903,20 +3894,33 @@ footer #end .text-word {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.bird-sec .bird-work .show-bird .swiper {
-  width: 100%;
-  height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.bird-sec .bird-work .show-bird .swiper-slide {
   background-size: cover;
   background-position: center;
 }
 .bird-sec .bird-work .show-bird .mySwiper2-bird {
   height: 80%;
   width: 100%;
+}
+.bird-sec .bird-work .show-bird .mySwiper2-bird .text {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  font-size: 50px;
+  height: 8vh;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+}
+.bird-sec .bird-work .show-bird .mySwiper2-bird .big-box {
+  background-color: #3C3B3B;
+}
+.bird-sec .bird-work .show-bird .mySwiper2-bird img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  opacity: 0.5;
 }
 .bird-sec .bird-work .show-bird .mySwiper-bird {
   height: 20%;
@@ -3931,59 +3935,18 @@ footer #end .text-word {
 .bird-sec .bird-work .show-bird .mySwiper-bird .swiper-slide-thumb-active {
   opacity: 1;
 }
-.bird-sec .bird-work .show-bird .swiper-slide img {
+.bird-sec .bird-work .show-bird .mySwiper-bird img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.bird-sec .bird-work .pic {
-  width: 83.5%;
-  height: 10%;
-  display: flex;
-  margin: 0 auto;
-  border: 1px solid blue;
+.bird-sec .bird-work .show-bird .swiper-button-next {
+  right: 4%;
 }
-.bird-sec .bird-work .pic .bird-pic {
-  cursor: pointer;
-  width: 200px;
-  height: 150px;
-}
-.bird-sec .bird-work .pic .bird-pic img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-.bird-sec .bird-work .pic .bird-pic .big-box {
-  height: 100%;
-  width: 100%;
-  background-color: #3C3B3B;
-}
-.bird-sec .bird-work .pic .bird-pic .text {
-  z-index: 3;
-}
-.bird-sec .bird-work .pic .mySwiper-bird {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-.bird-sec .bird-work .pic .mySwiper-bird .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.4;
-}
-.bird-sec .bird-work .pic .mySwiper-bird .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.bird-sec .bird-work .pic .mySwiper-bird .swiper-slide-thumb-active {
-  opacity: 1;
+.bird-sec .bird-work .show-bird .swiper-button-prev {
+  left: 4%;
 }
 .bird-sec .bird-work .close-btn {
   cursor: pointer;
@@ -3995,80 +3958,6 @@ footer #end .text-word {
   height: 5%;
   font-size: 30px;
   z-index: 1;
-}
-.bird-sec .bird-detail {
-  width: 100%;
-  height: 80vh;
-  z-index: 2;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #2a2f41;
-  display: none;
-}
-.bird-sec .bird-detail .bird-details {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-}
-.bird-sec .bird-detail .bird-details img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-}
-.bird-sec .bird-detail .bird-details .text {
-  font-size: 50px;
-  position: absolute;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.bird-sec .bird-detail .bird-details .left-text {
-  width: 70%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-left: 50px;
-  padding-top: 10px;
-  color: white;
-  top: 0%;
-}
-.bird-sec .bird-detail .bird-details .left-text h1 {
-  font-size: 50px;
-}
-.bird-sec .bird-detail .bird-details .left-text h2 {
-  font-size: 40px;
-}
-.bird-sec .bird-detail .bird-details .left-text h3 {
-  font-size: 40px;
-}
-.bird-sec .bird-detail .bird-details .left-text ul li {
-  width: 100%;
-  font-size: 20px;
-  list-style: none;
-}
-.bird-sec .bird-detail .bird-details .right-text {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: end;
-  color: white;
-  top: 0%;
-}
-.bird-sec .bird-detail .bird-details .bird-back-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
 }
 
 .plant-sec {
