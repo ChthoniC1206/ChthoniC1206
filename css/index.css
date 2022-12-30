@@ -3083,6 +3083,8 @@ footer .background-dowm .picture .pic-charge #ture .swiper-wrapper {
 footer .background-dowm .picture .pic-charge #ture .swiper-wrapper .swiper-slide {
   width: 350px;
   height: 200px;
+  opacity: 0.8;
+  filter: blur(3px);
 }
 footer .background-dowm .picture .pic-charge #ture .swiper-wrapper .swiper-slide a {
   display: block;
@@ -3092,6 +3094,10 @@ footer .background-dowm .picture .pic-charge #ture .swiper-wrapper .swiper-slide
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+footer .background-dowm .picture .pic-charge #ture .swiper-wrapper .swiper-slide:hover {
+  opacity: 1;
+  filter: blur(0px);
 }
 footer .background-dowm .picture .pic-charge #reverse {
   width: 100%;
