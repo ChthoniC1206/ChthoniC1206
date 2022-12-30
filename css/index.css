@@ -2667,6 +2667,7 @@ footer .background-dowm img {
 footer .background-dowm .news {
   position: relative;
   padding-top: 50px;
+  margin-bottom: 120px;
 }
 footer .background-dowm .news .pc h1 {
   padding-top: 100px;
@@ -2801,8 +2802,8 @@ footer .background-dowm .news .bubbles .bubble {
 footer .background-dowm .travel {
   width: 100%;
   height: 100vh;
-  margin-top: 120px;
   position: relative;
+  margin-bottom: 120px;
 }
 footer .background-dowm .travel h1 {
   position: absolute;
@@ -3060,13 +3061,12 @@ footer .background-dowm .picture .pic-charge {
 }
 footer .background-dowm .picture .pic-charge h1 {
   width: 100%;
-  height: 5%;
+  height: 80px;
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 50px;
   color: white;
-  margin-top: 10px;
 }
 footer .background-dowm .picture .pic-charge .box {
   width: 100%;
@@ -3211,6 +3211,11 @@ footer .background-dowm .picture .phone .swiper .swiper-slide img {
 @media (max-width: 400px) {
   footer .background-dowm .picture .phone {
     display: block;
+  }
+}
+@media (max-width: 420px) {
+  footer .background-dowm .picture {
+    height: 380px;
   }
 }
 footer #end {

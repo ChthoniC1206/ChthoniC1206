@@ -2783,7 +2783,7 @@ footer {
         .news {
             position: relative;
             padding-top: 50px;
-
+            margin-bottom: 120px;
             .pc {
                 h1 {
                     padding-top: 100px;
@@ -2958,8 +2958,9 @@ footer {
         .travel {
             width: 100%;
             height: 100vh;
-            margin-top: 120px;
+            
             position: relative;
+            margin-bottom: 120px;
 
             h1 {
                 position: absolute;
@@ -3273,23 +3274,19 @@ footer {
                 align-content: flex-start;
                 width: 100%;
                 height: 100%;
-
                 h1 {
                     width: 100%;
-                    height: 5%;
+                    height: 80px;
                     display: flex;
                     justify-content: center;
-                    margin-bottom: 50px;
+                    margin-bottom: 30px;
                     font-size: 50px;
                     color: white;
-                    margin-top: 10px;
                 }
-
                 .box {
                     width: 100%;
                     height: 95%;
                 }
-
                 #ture {
                     width: 100%;
                     height: 200px;
@@ -3413,7 +3410,6 @@ footer {
                 height: 70%;
                 display: flex;
                 flex-wrap: wrap;
-
                 h1 {
                     width: 100%;
                     height: 80px;
@@ -3423,11 +3419,9 @@ footer {
                     align-items: center;
                     color: white;
                 }
-
                 .swiper {
                     width: 100%;
                     height: 300px;
-
                     .swiper-slide {
                         text-align: center;
                         font-size: 18px;
@@ -3445,7 +3439,6 @@ footer {
                         -ms-flex-align: center;
                         -webkit-align-items: center;
                         align-items: center;
-
                         img {
                             display: block;
                             height: 120%;
@@ -3454,15 +3447,16 @@ footer {
                         }
                     }
                 }
-
                 display: none;
-
                 @media (max-width: 400px) {
                     display: block;
                 }
             }
+            @media (max-width: 420px) {
+                height: 380px;
+            }
         }
-
+        
     }
 
     // 底部呈現區
