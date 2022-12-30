@@ -4228,7 +4228,6 @@ footer {
                     color: white;
                     display: flex;
                     flex-wrap: wrap;
-                    border: 1px solid blue;
                 }
                 .big-box {
                     background-color: #3C3B3B;
@@ -4283,7 +4282,6 @@ footer {
 // 植物
 .plant-sec {
     display: none;
-
     .plant-bgc {
         width: 100%;
         height: 100vh;
@@ -4295,7 +4293,9 @@ footer {
         transform: translate(-50%, -50%);
         z-index: 1;
     }
-
+    .plant-work::-webkit-scrollbar {
+        display: none;
+    }
     .plant-work {
         width: 100%;
         height: 80vh;
@@ -4305,35 +4305,89 @@ footer {
         transform: translate(-50%, -50%);
         background-color: #3C3B3B;
         z-index: 2;
+        overflow: auto;
+        .show-plant { 
+            width: 100%;
+            height: 80vh;
+            padding: 11px 115px 5px 115px;
+            .swiper {
+                width: 100%;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
 
-        // border: 1px solid salmon;
-        .text {
-            font-size: 50px;
-            color: white;
-            display: flex;
-            justify-content: center;
-        }
+                background-size: cover;
+                background-position: center;
 
-        .pic {
-            width: 93%;
-            height: 90%;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin: 0 auto;
+            }
 
-            .plant-pic {
-                cursor: pointer;
-                width: 250px;
-                height: 150px;
-
+            .mySwiper2-plant {
+                height: 80%;
+                width: 100%;
+                .text {
+                    width: 100%;
+                    height: 100%;
+                    position: fixed;
+                    font-size: 50px;
+                    height: 8vh;
+                    color: white;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .big-box {
+                    background-color: #3C3B3B;
+                }
                 img {
                     width: 100%;
                     height: 100%;
+                    object-fit: fill;
+                    opacity: .5;
                 }
             }
+            .mySwiper-plant {
+                height: 20%;
+                box-sizing: border-box;
+                padding: 10px 0;
+                .swiper-slide {
+                    width: 25%;
+                    height: 100%;
+                    opacity: 0.4;
+                }
+                .swiper-slide-thumb-active {
+                    opacity: 1;
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .swiper-button-next {
+                right: 4%;
+            }
+            .swiper-button-prev {
+                left: 4%;
+            }
         }
-
         .close-btn {
             cursor: pointer;
             position: fixed;
@@ -4344,72 +4398,6 @@ footer {
             height: 5%;
             font-size: 30px;
             z-index: 1;
-        }
-    }
-
-    .plant-detail {
-        width: 100%;
-        height: 80vh;
-        z-index: 2;
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: #2a2f41;
-        display: none;
-
-        .plant-details {
-            display: none;
-            width: 100%;
-            height: 100%;
-            position: relative;
-            z-index: 2;
-
-            img {
-                width: 100%;
-                height: 100%;
-                opacity: .5;
-                object-fit: cover;
-            }
-
-            .text {
-                font-size: 50px;
-                position: absolute;
-                top: 0%;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .left-text {
-                width: 30%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                color: white;
-                top: 0%;
-            }
-
-            .right-text {
-                width: 20%;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: end;
-                color: white;
-                top: 0%;
-            }
-
-            .plant-back-btn {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                width: 100px;
-                height: 100px;
-            }
         }
     }
 }
@@ -4429,7 +4417,9 @@ footer {
         transform: translate(-50%, -50%);
         z-index: 1;
     }
-
+    .crab-work::-webkit-scrollbar {
+        display: none;
+    }
     .crab-work {
         width: 100%;
         height: 80vh;
@@ -4439,38 +4429,93 @@ footer {
         transform: translate(-50%, -50%);
         background-color: #3C3B3B;
         z-index: 2;
+        overflow: auto;
+        .show-crab { 
+            width: 100%;
+            height: 80vh;
+            padding: 11px 115px 5px 115px;
+            .swiper {
+                width: 100%;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
 
-        .text {
-            font-size: 50px;
-            color: white;
-            display: flex;
-            justify-content: center;
-        }
+                background-size: cover;
+                background-position: center;
 
-        .pic {
-            width: 93%;
-            height: 90%;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin: 0 auto;
+            }
 
-            .crab-pic {
-                cursor: pointer;
-                width: 250px;
-                height: 150px;
-
+            .mySwiper2-crab {
+                height: 80%;
+                width: 100%;
+                .text {
+                    width: 100%;
+                    height: 100%;
+                    position: fixed;
+                    font-size: 50px;
+                    height: 8vh;
+                    color: white;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .big-box {
+                    background-color: #3C3B3B;
+                }
                 img {
                     width: 100%;
                     height: 100%;
+                    object-fit: fill;
+                    opacity: .5;
                 }
             }
+            .mySwiper-crab {
+                height: 20%;
+                box-sizing: border-box;
+                padding: 10px 0;
+                .swiper-slide {
+                    width: 25%;
+                    height: 100%;
+                    opacity: 0.4;
+                }
+                .swiper-slide-thumb-active {
+                    opacity: 1;
+                }
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .swiper-button-next {
+                right: 4%;
+            }
+            .swiper-button-prev {
+                left: 4%;
+            }
         }
-
         .close-btn {
             cursor: pointer;
             position: fixed;
-            top: 10px;
+            top: 20px;
             right: 0px;
             color: white;
             width: 5%;
@@ -4479,74 +4524,7 @@ footer {
             z-index: 1;
         }
     }
-
-    .crab-detail {
-        width: 100%;
-        height: 80vh;
-        z-index: 2;
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: #2a2f41;
-        display: none;
-
-        .crab-details {
-            display: none;
-            width: 100%;
-            height: 100%;
-            position: relative;
-            z-index: 2;
-
-            img {
-                width: 100%;
-                height: 100%;
-                opacity: .5;
-                object-fit: cover;
-            }
-
-            .text {
-                font-size: 50px;
-                position: absolute;
-                top: 0%;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .left-text {
-                width: 30%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                color: white;
-                top: 0%;
-            }
-
-            .right-text {
-                width: 20%;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: end;
-                color: white;
-                top: 0%;
-            }
-
-            .crab-back-btn {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                width: 100px;
-                height: 100px;
-            }
-        }
-    }
 }
-
 // 高美景觀 light-box 重做
 .lightbox {
     display: none;

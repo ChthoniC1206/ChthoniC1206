@@ -3910,7 +3910,6 @@ footer #end .text-word {
   color: white;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid blue;
 }
 .bird-sec .bird-work .show-bird .mySwiper2-bird .big-box {
   background-color: #3C3B3B;
@@ -3974,6 +3973,9 @@ footer #end .text-word {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+.plant-sec .plant-work::-webkit-scrollbar {
+  display: none;
+}
 .plant-sec .plant-work {
   width: 100%;
   height: 80vh;
@@ -3983,29 +3985,79 @@ footer #end .text-word {
   transform: translate(-50%, -50%);
   background-color: #3C3B3B;
   z-index: 2;
+  overflow: auto;
 }
-.plant-sec .plant-work .text {
-  font-size: 50px;
-  color: white;
-  display: flex;
-  justify-content: center;
+.plant-sec .plant-work .show-plant {
+  width: 100%;
+  height: 80vh;
+  padding: 11px 115px 5px 115px;
 }
-.plant-sec .plant-work .pic {
-  width: 93%;
-  height: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin: 0 auto;
-}
-.plant-sec .plant-work .pic .plant-pic {
-  cursor: pointer;
-  width: 250px;
-  height: 150px;
-}
-.plant-sec .plant-work .pic .plant-pic img {
+.plant-sec .plant-work .show-plant .swiper {
   width: 100%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.plant-sec .plant-work .show-plant .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant {
+  height: 80%;
+  width: 100%;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .text {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  font-size: 50px;
+  height: 8vh;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .big-box {
+  background-color: #3C3B3B;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  opacity: 0.5;
+}
+.plant-sec .plant-work .show-plant .mySwiper-plant {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.plant-sec .plant-work .show-plant .mySwiper-plant .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+.plant-sec .plant-work .show-plant .mySwiper-plant .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.plant-sec .plant-work .show-plant .mySwiper-plant img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.plant-sec .plant-work .show-plant .swiper-button-next {
+  right: 4%;
+}
+.plant-sec .plant-work .show-plant .swiper-button-prev {
+  left: 4%;
 }
 .plant-sec .plant-work .close-btn {
   cursor: pointer;
@@ -4017,66 +4069,6 @@ footer #end .text-word {
   height: 5%;
   font-size: 30px;
   z-index: 1;
-}
-.plant-sec .plant-detail {
-  width: 100%;
-  height: 80vh;
-  z-index: 2;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #2a2f41;
-  display: none;
-}
-.plant-sec .plant-detail .plant-details {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-}
-.plant-sec .plant-detail .plant-details img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.plant-sec .plant-detail .plant-details .text {
-  font-size: 50px;
-  position: absolute;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.plant-sec .plant-detail .plant-details .left-text {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  top: 0%;
-}
-.plant-sec .plant-detail .plant-details .right-text {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: end;
-  color: white;
-  top: 0%;
-}
-.plant-sec .plant-detail .plant-details .plant-back-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
 }
 
 .crab-sec {
@@ -4093,6 +4085,9 @@ footer #end .text-word {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+.crab-sec .crab-work::-webkit-scrollbar {
+  display: none;
+}
 .crab-sec .crab-work {
   width: 100%;
   height: 80vh;
@@ -4102,100 +4097,90 @@ footer #end .text-word {
   transform: translate(-50%, -50%);
   background-color: #3C3B3B;
   z-index: 2;
+  overflow: auto;
 }
-.crab-sec .crab-work .text {
-  font-size: 50px;
-  color: white;
-  display: flex;
-  justify-content: center;
+.crab-sec .crab-work .show-crab {
+  width: 100%;
+  height: 80vh;
+  padding: 11px 115px 5px 115px;
 }
-.crab-sec .crab-work .pic {
-  width: 93%;
-  height: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin: 0 auto;
-}
-.crab-sec .crab-work .pic .crab-pic {
-  cursor: pointer;
-  width: 250px;
-  height: 150px;
-}
-.crab-sec .crab-work .pic .crab-pic img {
+.crab-sec .crab-work .show-crab .swiper {
   width: 100%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.crab-sec .crab-work .show-crab .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+.crab-sec .crab-work .show-crab .mySwiper2-crab {
+  height: 80%;
+  width: 100%;
+}
+.crab-sec .crab-work .show-crab .mySwiper2-crab .text {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  font-size: 50px;
+  height: 8vh;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.crab-sec .crab-work .show-crab .mySwiper2-crab .big-box {
+  background-color: #3C3B3B;
+}
+.crab-sec .crab-work .show-crab .mySwiper2-crab img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  opacity: 0.5;
+}
+.crab-sec .crab-work .show-crab .mySwiper-crab {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.crab-sec .crab-work .show-crab .mySwiper-crab .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+.crab-sec .crab-work .show-crab .mySwiper-crab .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.crab-sec .crab-work .show-crab .mySwiper-crab img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.crab-sec .crab-work .show-crab .swiper-button-next {
+  right: 4%;
+}
+.crab-sec .crab-work .show-crab .swiper-button-prev {
+  left: 4%;
 }
 .crab-sec .crab-work .close-btn {
   cursor: pointer;
   position: fixed;
-  top: 10px;
+  top: 20px;
   right: 0px;
   color: white;
   width: 5%;
   height: 5%;
   font-size: 30px;
   z-index: 1;
-}
-.crab-sec .crab-detail {
-  width: 100%;
-  height: 80vh;
-  z-index: 2;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #2a2f41;
-  display: none;
-}
-.crab-sec .crab-detail .crab-details {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-}
-.crab-sec .crab-detail .crab-details img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.crab-sec .crab-detail .crab-details .text {
-  font-size: 50px;
-  position: absolute;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.crab-sec .crab-detail .crab-details .left-text {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  top: 0%;
-}
-.crab-sec .crab-detail .crab-details .right-text {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: end;
-  color: white;
-  top: 0%;
-}
-.crab-sec .crab-detail .crab-details .crab-back-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
 }
 
 .lightbox {
