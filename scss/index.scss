@@ -4666,11 +4666,11 @@ footer {
         }
     }
 }
-// 高美景觀 light-box 重做
-.lightbox {
+// 高美景觀 light-box 第一排
+.lightbox-up {
     display: none;
 
-    .lightbox-bgc {
+    .lightbox-bgc-up {
         position: fixed;
         top: 0%;
         width: 100%;
@@ -4689,7 +4689,42 @@ footer {
         width: 60%;
         height: 60%;
 
-        .lightbox-pic {
+        .lightbox-pic-up {
+            width: 100%;
+            height: 100%;
+            display: none;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+// 高美景觀 light-box 第二排
+.lightbox-down {
+    display: none;
+
+    .lightbox-bgc-down {
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #292929;
+        opacity: 0.8;
+        z-index: 2;
+    }
+
+    .box {
+        z-index: 2;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 60%;
+
+        .lightbox-pic-down {
             width: 100%;
             height: 100%;
             display: none;

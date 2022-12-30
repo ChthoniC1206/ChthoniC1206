@@ -9,33 +9,71 @@ const topIndexMapping = {
     '7' : '景觀8',
     '8' : '景觀9',
 }
+const downIndexMapping = {
+    '0' : '景觀11',
+    '1' : '景觀12',
+    '2' : '景觀13',
+    '3' : '景觀14',
+    '4' : '景觀15',
+    '5' : '景觀16',
+    '6' : '景觀17',
+}
 
 const topPic = document.querySelectorAll('.top-pic')
-const lightBox = document.querySelector('.lightbox')
-const lightBoxBgc = document.querySelector('.lightbox-bgc')
-const lightBoxPic = document.querySelectorAll('.lightbox-pic')
+const lightBoxUp = document.querySelector('.lightbox-up')
+const lightBoxBgcUp = document.querySelector('.lightbox-bgc-up')
+const lightBoxPicUp = document.querySelectorAll('.lightbox-pic-up')
 
-function lockPic (){
-    lightBoxPic.forEach((detail,index) => {
+const downPic = document.querySelectorAll('.down-pic')
+const lightBoxDown = document.querySelector('.lightbox-down')
+const lightBoxBgcDown = document.querySelector('.lightbox-bgc-down')
+const lightBoxPicDown = document.querySelectorAll('.lightbox-pic-down')
+
+
+
+
+function lockPicUp (){
+    lightBoxPicUp.forEach((detail,index) => {
         detail.style.display = 'none';
     });    
 }
-function close(){
-    lightBox.addEventListener('click', function(){
-        lightBox.style.display = 'none'
+function closeUp(){
+    lightBoxUp.addEventListener('click', function(){
+        lightBoxUp.style.display = 'none'
     });
 }
 topPic.forEach(function(data, index){
     data.addEventListener('click', function(){
         if(data.dataset.intro === topIndexMapping[index]){
-            lockPic();
-            lightBox.style.display = 'block'
-            lightBoxPic[index].style.display = 'block'
+            lockPicUp();
+            lightBoxUp.style.display = 'block'
+            lightBoxPicUp[index].style.display = 'block'
         }
     });
 });
-close();
 
+function lockPicDown (){
+    lightBoxPicDown.forEach((detail,index) => {
+        detail.style.display = 'none';
+    });    
+}
+function closeDown(){
+    lightBoxDown.addEventListener('click', function(){
+        lightBoxDown.style.display = 'none'
+    });
+}
+downPic.forEach(function(data, index){
+    data.addEventListener('click', function(){
+        if(data.dataset.intro === downIndexMapping[index]){
+            lockPicDown();
+            lightBoxDown.style.display = 'block'
+            lightBoxPicDown[index].style.display = 'block'
+        }
+    });
+});
+
+closeUp();
+closeDown();
 
 
 

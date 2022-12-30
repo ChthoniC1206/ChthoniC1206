@@ -15,7 +15,6 @@
 
         circle.forEach(function(data){
             data.addEventListener('click', function(){
-                console.log(data.dataset.intro);
                 if (data.dataset.intro == '鳥類'){
                     birdsec.style.display = 'block'
                 }
