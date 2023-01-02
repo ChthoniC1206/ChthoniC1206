@@ -17,7 +17,6 @@ function move() {
 }   
 move()
 loading.addEventListener('transitionend',function(e){
-    console.log(e.propertyName);
     if(e.propertyName == 'opacity'){
         loading.style.display = 'none'
     }

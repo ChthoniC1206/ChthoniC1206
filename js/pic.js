@@ -29,9 +29,6 @@ const lightBoxDown = document.querySelector('.lightbox-down')
 const lightBoxBgcDown = document.querySelector('.lightbox-bgc-down')
 const lightBoxPicDown = document.querySelectorAll('.lightbox-pic-down')
 
-
-
-
 function lockPicUp (){
     lightBoxPicUp.forEach((detail,index) => {
         detail.style.display = 'none';
