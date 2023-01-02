@@ -3937,8 +3937,9 @@ footer #end .text-word {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 50px;
+  padding: 0px 50px;
   padding-top: 50px;
+  height: 40%;
   gap: 20px;
 }
 .bird-sec .bird-work .show-bird .mySwiper2-bird .text .title h1 {
@@ -3948,12 +3949,25 @@ footer #end .text-word {
   font-size: 36px;
 }
 .bird-sec .bird-work .show-bird .mySwiper2-bird .text .content {
+  height: 60%;
   padding: 0px 50px;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 20px;
 }
 .bird-sec .bird-work .show-bird .mySwiper2-bird .text .content p {
   width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.bird-sec .bird-work .show-bird .mySwiper2-bird .text .content .a {
+  font-size: 24px;
+}
+.bird-sec .bird-work .show-bird .mySwiper2-bird .text .content .b {
+  width: 40%;
+  word-break: break-all;
+  text-align: justify;
 }
 .bird-sec .bird-work .show-bird .mySwiper2-bird .big-box {
   background-color: #3C3B3B;

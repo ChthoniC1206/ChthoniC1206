@@ -4233,22 +4233,42 @@ footer {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
-                        padding-left: 50px;
+                        padding: 0px 50px;
                         padding-top: 50px;
+                        height: 40%;
                         gap: 20px;
-                        h1 {
-                            font-size: 50px;
-                        }
-                        p {
-                            font-size: 36px;
-                        }
+                            h1 {
+                                font-size: 50px;
+                            }
+                            p {
+                                font-size: 36px;
+                            }
+                        
                     }
                     .content {
+                        height: 60%;
                         padding: 0px 50px;
                         display: flex;
-                        flex-wrap: wrap;
+                        flex-wrap: wrap;    
+                        align-content: flex-start;
+                        gap: 20px;                                      
                         p {
                             width: 100%;
+                            display: flex;
+                            justify-content: start;
+                        }
+                        .a {
+                            font-size: 24px;
+                            
+                        }
+                        .b { 
+                            width: 40%;
+                            
+                            word-break: break-all;
+                            text-align: justify;
+                        }
+                        .d {
+                            
                         }
                     }
                 }
