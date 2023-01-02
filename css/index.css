@@ -1111,6 +1111,11 @@ main .background-mid #wave-container .weather-box .weather-info .location {
 main .background-mid #wave-container .weather-box .weather-info .location h2 {
   font-size: 40px;
 }
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info .location h2 {
+    font-size: 30px;
+  }
+}
 main .background-mid #wave-container .weather-box .weather-info .weather {
   display: flex;
   justify-content: center;
@@ -1123,11 +1128,26 @@ main .background-mid #wave-container .weather-box .weather-info .weather .weathe
   margin: 0 10px;
 }
 main .background-mid #wave-container .weather-box .weather-info .weather .weather-img img {
-  width: 10%;
+  width: 8%;
   height: 10%;
+}
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info .weather .weather-img img {
+    width: 30%;
+  }
+}
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info .weather .weather-img {
+    align-items: center;
+  }
 }
 main .background-mid #wave-container .weather-box .weather-info .weather .tempture {
   font-size: 90px;
+}
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info .weather .tempture {
+    font-size: 50px;
+  }
 }
 main .background-mid #wave-container .weather-box .weather-info .chance-of-rain {
   width: 100%;
@@ -1148,6 +1168,11 @@ main .background-mid #wave-container .weather-box .weather-info .chance-of-rain 
 @media (max-width: 820px) {
   main .background-mid #wave-container .weather-box .weather-info .chance-of-rain .rain .rain-img img {
     width: 10%;
+  }
+}
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info .chance-of-rain .rain .rain-img img {
+    width: 20%;
   }
 }
 main .background-mid #wave-container .weather-box .weather-info .weather-card {
@@ -1200,9 +1225,24 @@ main .background-mid #wave-container .weather-box .weather-info .other-info .inf
 main .background-mid #wave-container .weather-box .weather-info .other-info .info p {
   margin: 15px 0;
 }
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info .other-info .info p {
+    font-size: 10px;
+  }
+}
 @media (max-width: 820px) {
   main .background-mid #wave-container .weather-box .weather-info .other-info .info {
     width: 200px;
+  }
+}
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info .other-info .info {
+    width: 100px;
+  }
+}
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info {
+    height: 600px;
   }
 }
 main .background-mid #wave-container .wave {
@@ -1216,6 +1256,7 @@ main .background-mid #wave-container .wave {
   border-radius: 48%;
   -webkit-animation: waves 30000ms infinite linear;
           animation: waves 30000ms infinite linear;
+  z-index: 1;
 }
 main .background-mid #wave-container .wave:nth-child(2) {
   -webkit-animation: waves 18000ms infinite linear;
