@@ -4210,11 +4210,75 @@ footer #end .text-word {
   width: 100%;
   height: 100%;
   position: fixed;
-  font-size: 50px;
-  height: 8vh;
+  font-size: 20px;
   color: white;
   display: flex;
   flex-wrap: wrap;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .text .title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 50px;
+  padding-top: 50px;
+  height: 40%;
+  gap: 20px;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .text .title h1 {
+  font-size: 50px;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .text .title p {
+  font-size: 36px;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .text .content {
+  height: 45%;
+  padding: 0px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 20px;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .text .content p {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .text .content .a {
+  font-size: 24px;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .text .content .b {
+  width: 40%;
+  word-break: break-all;
+  text-align: justify;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .text .from {
+  padding: 0px 50px;
+  width: 100%;
+  height: 15%;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .e {
+  width: 370px;
+  display: flex;
+  justify-content: start;
+  font-size: 16px;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .f {
+  width: 370px;
+  font-size: 12px;
+  display: flex;
+  justify-content: start;
+}
+.plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .g {
+  width: 370px;
+  font-size: 12px;
+  display: flex;
+  justify-content: start;
 }
 .plant-sec .plant-work .show-plant .mySwiper2-plant .big-box {
   background-color: #3C3B3B;
