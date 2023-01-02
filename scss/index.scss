@@ -4246,7 +4246,7 @@ footer {
                         
                     }
                     .content {
-                        height: 60%;
+                        height: 45%;
                         padding: 0px 50px;
                         display: flex;
                         flex-wrap: wrap;    
@@ -4263,12 +4263,27 @@ footer {
                         }
                         .b { 
                             width: 40%;
-                            
                             word-break: break-all;
                             text-align: justify;
                         }
-                        .d {
-                            
+                    }
+                    .from {
+                        padding: 0px 50px;
+                        width: 100%;
+                        height: 15%;
+                        padding-bottom: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        gap: 10px;
+                        .e {
+                            width: 330px;
+                            display: flex;
+                            justify-content: start;
+                            font-size: 16px;
+                        }
+                        .f {
+                            font-size: 12px;
                         }
                     }
                 }
