@@ -3,6 +3,20 @@ const swipers = new Swiper(".mySwipers-new", {
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
+    breakpoints: {
+        830: {
+            spaceBetween: 3,
+            slidesPerView: 3,
+        },
+        410: {
+            spaceBetween: 2,
+            slidesPerView: 2,
+        },
+        100: {
+            spaceBetween: 1,
+            slidesPerView: 1,
+        },
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
