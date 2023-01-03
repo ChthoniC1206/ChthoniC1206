@@ -2740,6 +2740,16 @@ footer .background-dowm .news .pc h1 {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 820px) {
+  footer .background-dowm .news .pc h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 420px) {
+  footer .background-dowm .news .pc h1 {
+    font-size: 24px;
+  }
+}
 footer .background-dowm .news .pc .news-box {
   position: absolute;
   margin-top: 30px;
@@ -2798,6 +2808,14 @@ footer .background-dowm .news .pc .news-box .swiper .swiper-slide .text-word a {
 footer .background-dowm .news .pc .news-box .swiper .swiper-slide .text-word a:hover {
   border-bottom: 2px solid white;
 }
+@media (max-width: 820px) {
+  footer .background-dowm .news .pc .news-box .swiper .swiper-slide .text-word h2 {
+    font-size: 24px;
+  }
+  footer .background-dowm .news .pc .news-box .swiper .swiper-slide .text-word p {
+    font-size: 16px;
+  }
+}
 footer .background-dowm .news .pc .news-box .swiper-button-next {
   right: 0%;
 }
@@ -2807,6 +2825,12 @@ footer .background-dowm .news .pc .news-box .swiper-button-prev {
 footer .background-dowm .news .pc .news-box .btn {
   color: white !important;
   --swiper-navigation-size: 30px;
+}
+@media (max-width: 820px) {
+  footer .background-dowm .news .pc .news-box {
+    width: 90%;
+    height: 60%;
+  }
 }
 footer .background-dowm .news .bubbles {
   width: 100%;

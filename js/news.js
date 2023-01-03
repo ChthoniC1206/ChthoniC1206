@@ -9,8 +9,8 @@ const swipers = new Swiper(".mySwipers-new", {
             slidesPerView: 3,
         },
         410: {
-            spaceBetween: 2,
-            slidesPerView: 2,
+            spaceBetween: 1,
+            slidesPerView: 1,
         },
         100: {
             spaceBetween: 1,
