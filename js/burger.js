@@ -6,7 +6,6 @@
         const menuOpBtn = document.querySelector('.btn-open')
         const menuCloseBtn = document.querySelector('.btn-close')
         
-        console.log(menuOpBtn);
         menuOpBtn.addEventListener('click', function(){
             menuOpBtn.classList.add('none')
             menuCloseBtn.classList.remove('none')
@@ -21,3 +20,4 @@
                 checkbox.checked = false;
             });
         });
+        

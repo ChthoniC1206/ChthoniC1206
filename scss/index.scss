@@ -2812,17 +2812,15 @@ footer {
             margin-bottom: 120px;
             .pc {
                 h1 {
-                    padding-top: 100px;
+                    padding-top: 50px;
                     color: #FFF;
                     font-size: 50px;
-                    padding-top: 10px;
                     display: flex;
                     justify-content: center;
                 }
-
                 .news-box {
                     position: absolute;
-                    margin-top: 70px;
+                    margin-top: 30px;
                     top: 60%;
                     left: 50%;
                     transform: translate(-50%, -50%);
@@ -2831,7 +2829,6 @@ footer {
                     .swiper {
                         width: 100%;
                         height: 100%;
-
                         .swiper-slide {
                             text-align: center;
                             font-size: 18px;
@@ -2853,27 +2850,51 @@ footer {
                                 width: 85%;
                                 height: 100%;
                                 background-color: #292929;
-                                opacity: 0.5;
+                                opacity: .8;
                                 display: flex;
                                 flex-wrap: wrap;
                                 padding: 5%;
-
+                                border-radius: 20px;
                                 h2 {
+                                    padding-top: 15px;
+                                    height: 30%;
+                                    color: white;
                                     width: 100%;
-
+                                    border-bottom: 4px dashed white;
                                 }
-
                                 p {
                                     width: 100%;
-                                    word-break: break-all;
+                                    color: white;
+                                    text-align: justify;
                                 }
-                            }
-                        }
+                                .date {
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                a {
+                                    display: flex;
+                                    align-items: flex-end;
+                                    font-size: 24px;
+                                    color: white;
+                                    text-decoration: none;
+                                    margin: 0 auto;
+                                    &:hover {
+                                        border-bottom: 2px solid white;
+                                    }
+                                }
 
-                        .btn {
-                            color: black;
-                            --swiper-navigation-size: 35px;
-                        }
+                            }
+                        }      
+                    }
+                    .swiper-button-next {
+                        right: 0%;
+                    }
+                    .swiper-button-prev {
+                        left: 0%;
+                    }
+                    .btn {
+                        color: white !important;
+                        --swiper-navigation-size: 30px;
                     }
                 }
 
