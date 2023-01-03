@@ -296,7 +296,6 @@ main {
             height: 100%;
             object-fit: cover;
         }
-
         @media (max-width: 820px) {
             padding-top: 50px;
         }
@@ -316,8 +315,6 @@ main {
 
     .wetlands {
         position: relative;
-        width: 100%;
-        height: 100vh;
 
         div.introduce {
             cursor: pointer;
@@ -686,8 +683,6 @@ main {
 
         .ecology {
             position: relative;
-            width: 100%;
-            height: 100vh;
 
             h1 {
                 top: 5%;
@@ -1099,7 +1094,7 @@ main {
                 from {
                     left: -50%;
                 }
-
+                
                 to {
                     left: 100%;
                     overflow: hidden;
@@ -1112,7 +1107,6 @@ main {
             position: relative;
             z-index: 1;
             overflow: hidden;
-
             h1 {
                 padding-top: 100px;
                 color: #FFF;
@@ -1122,11 +1116,9 @@ main {
                 justify-content: center;
                 margin: 50px;
             }
-
-            .weather-box {
+            .weather-box{
                 display: flex;
                 justify-content: center;
-
                 .weather-info {
                     z-index: 1;
                     width: 80%;
@@ -1135,93 +1127,75 @@ main {
                     background: rgba(20, 20, 20, 0.3);
                     backdrop-filter: blur(5px);
                     color: white;
-
+    
                     .location {
                         width: 100%;
                         height: 76px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-
                         h2 {
                             font-size: 40px;
-
-                            @media (max-width:400px) {
+                            @media (max-width:400px){
                                 font-size: 30px;
                             }
                         }
                     }
-
                     .weather {
                         display: flex;
                         justify-content: center;
-
                         .weather-img {
                             width: 100px;
                             height: 100px;
                             display: flex;
                             align-items: flex-end;
-                            justify-content: center;
                             margin: 0 10px;
-
                             img {
                                 width: 8%;
                                 height: 10%;
-
-                                @media (max-width:400px) {
+                                @media (max-width:400px){
                                     width: 30%;
                                 }
                             }
-
-                            @media (max-width:400px) {
+                            @media (max-width:400px){
                                 align-items: center;
                             }
                         }
-
                         .tempture {
                             font-size: 90px;
-
-                            @media (max-width:400px) {
+                            @media (max-width:400px){
                                 font-size: 50px;
                             }
                         }
-                    }
-
+                    } 
                     .chance-of-rain {
                         width: 100%;
                         display: flex;
                         justify-content: center;
-
                         h3 {
                             font-size: 20px;
                         }
-
                         .rain {
                             .rain-img {
                                 width: 50px;
                                 height: 50px;
-
                                 img {
                                     width: 5%;
                                     height: 5%;
-
-                                    @media (max-width:820px) {
+                                    @media (max-width:820px){
                                         width: 10%;
                                     }
-
-                                    @media (max-width:400px) {
+                                    @media (max-width:400px){
                                         width: 20%;
                                     }
                                 }
                             }
                         }
                     }
-
                     .weather-card {
                         display: flex;
                         justify-content: space-around;
                         padding: 0 110px;
-
                         .card {
                             width: 150px;
                             height: 150px;
@@ -1231,21 +1205,17 @@ main {
                             flex-wrap: wrap;
                             justify-content: center;
                             align-items: center;
-
                             .weather-week {
                                 display: flex;
                                 justify-content: center;
-
                                 .weather-week-img {
                                     width: 50px;
                                     height: 50px;
-
                                     img {
                                         width: 50px;
                                         height: 50px;
                                     }
                                 }
-
                                 .tempture {
                                     font-size: 20px;
                                     display: flex;
@@ -1253,51 +1223,43 @@ main {
                                 }
                             }
                         }
-                        @media (max-width:400px){
-                            padding: 0 10px;
-                        }
                     }
-
                     h3 {
                         margin: 10px 0;
                         padding: 0 10px;
                     }
-
+    
                     .other-info {
                         width: 100%;
                         display: flex;
                         justify-content: space-around;
-
+    
                         .info {
                             width: 300px;
                             height: 250px;
                             font-size: 20px;
                             border-top: 2px solid white;
-
+    
                             p {
                                 margin: 15px 0;
-
-                                @media (max-width:400px) {
+                                @media (max-width:400px){
                                     font-size: 10px;
                                 }
                             }
-
-                            @media (max-width:820px) {
+                            @media (max-width:820px){
                                 width: 200px;
                             }
-
-                            @media (max-width:400px) {
-                                width: 100px;
-                                ;
+                            @media (max-width:400px){
+                                width: 100px;;
                             }
                         }
                     }
-
-                    @media (max-width:400px) {
+                    @media (max-width:400px){
                         height: 600px;
                     }
                 }
             }
+
 
             .wave {
                 position: absolute;
@@ -1309,7 +1271,7 @@ main {
                 top: 700px;
                 border-radius: 48%;
                 animation: waves 30000ms infinite linear;
-                z-index: 5;
+                z-index: 1;
 
                 &:nth-child(2) {
                     animation: waves 18000ms infinite linear;
@@ -1430,7 +1392,7 @@ main {
         .wetlands {
             position: relative;
             width: 100%;
-            height: 100vh;
+            height: 80vh;
 
             div.introduce {
                 cursor: pointer;
@@ -1452,7 +1414,6 @@ main {
                     align-items: center;
                     box-shadow: 2px 3px 5px gray;
                     opacity: 1;
-
                     h2 {
                         width: 100%;
                         font-size: 12px;
@@ -1496,7 +1457,6 @@ main {
                     align-items: center;
                     box-shadow: 2px 3px 5px gray;
                     opacity: 1;
-
                     h2 {
                         width: 100%;
                         font-size: 12px;
@@ -1539,7 +1499,6 @@ main {
                     align-items: center;
                     box-shadow: 2px 3px 5px gray;
                     opacity: 1;
-
                     h2 {
                         width: 100%;
                         font-size: 12px;
@@ -1582,7 +1541,6 @@ main {
                     align-items: center;
                     box-shadow: 2px 3px 5px gray;
                     opacity: 1;
-
                     h2 {
                         width: 100%;
                         font-size: 12px;
@@ -1617,7 +1575,7 @@ main {
                 height: 53px;
                 border-radius: 50%;
                 position: absolute;
-                top: 50%;
+                top: 40%;
                 left: 15%;
                 z-index: 2;
                 box-shadow: 2px 3px 5px gray;
@@ -1695,8 +1653,6 @@ main {
 
             .ecology {
                 position: relative;
-                width: 100%;
-                height: 80vh;
 
                 h1 {
                     top: 5%;
@@ -2147,14 +2103,14 @@ main {
         //關於濕地
         .wetlands {
             position: relative;
-            width: 100%;
-            height: 100vh;
 
             div.introduce {
                 cursor: pointer;
                 text-decoration: none;
                 color: black;
-
+                width: 100%;
+                height: 80vh;
+                
 
                 .a {
                     z-index: 2;
@@ -2198,7 +2154,7 @@ main {
                         background-color: skyblue;
                     }
 
-
+                    
                 }
 
                 .b {
@@ -2417,8 +2373,6 @@ main {
 
             .ecology {
                 position: relative;
-                width: 100%;
-                height: 100vh;
 
                 h1 {
                     top: 10%;
@@ -2612,7 +2566,7 @@ main {
                     .image {
                         position: absolute;
                         top: -3%;
-                        left: -50%;
+                        left:-50%;
                         overflow: hidden;
                         width: 125px;
                         height: 125px;
@@ -2866,7 +2820,6 @@ footer {
             position: relative;
             padding-top: 50px;
             margin-bottom: 120px;
-
             .pc {
                 h1 {
                     padding-top: 50px;
@@ -2874,16 +2827,13 @@ footer {
                     font-size: 50px;
                     display: flex;
                     justify-content: center;
-
                     @media (max-width: 820px) {
                         font-size: 32px;
                     }
-
                     @media (max-width: 420px) {
                         font-size: 24px;
                     }
                 }
-
                 .news-box {
                     position: absolute;
                     margin-top: 30px;
@@ -2892,11 +2842,9 @@ footer {
                     transform: translate(-50%, -50%);
                     width: 85%;
                     height: 60%;
-
                     .swiper {
                         width: 100%;
                         height: 100%;
-
                         .swiper-slide {
                             text-align: center;
                             font-size: 18px;
@@ -2923,7 +2871,6 @@ footer {
                                 flex-wrap: wrap;
                                 padding: 5%;
                                 border-radius: 20px;
-
                                 h2 {
                                     padding-top: 15px;
                                     height: 30%;
@@ -2931,18 +2878,15 @@ footer {
                                     width: 100%;
                                     border-bottom: 4px dashed white;
                                 }
-
                                 p {
                                     width: 100%;
                                     color: white;
                                     text-align: justify;
                                 }
-
                                 .date {
                                     display: flex;
                                     justify-content: center;
                                 }
-
                                 a {
                                     display: flex;
                                     align-items: flex-end;
@@ -2950,38 +2894,31 @@ footer {
                                     color: white;
                                     text-decoration: none;
                                     margin: 0 auto;
-
                                     &:hover {
                                         border-bottom: 2px solid white;
                                     }
                                 }
-
                                 @media (max-width: 820px) {
                                     h2 {
                                         font-size: 24px;
                                     }
-
                                     p {
                                         font-size: 16px;
                                     }
                                 }
                             }
-                        }
+                        }      
                     }
-
                     .swiper-button-next {
                         right: 0%;
                     }
-
                     .swiper-button-prev {
                         left: 0%;
                     }
-
                     .btn {
                         color: white !important;
                         --swiper-navigation-size: 30px;
                     }
-
                     @media (max-width: 820px) {
                         width: 90%;
                         height: 60%;
@@ -2990,7 +2927,7 @@ footer {
 
             }
 
-
+            
 
             .bubbles {
                 width: 100%;
@@ -3016,11 +2953,10 @@ footer {
         .travel {
             width: 100%;
             height: 100vh;
-
+            
             position: relative;
             margin-bottom: 120px;
-
-            .pc {
+            .pc{
                 h1 {
                     position: absolute;
                     top: 1%;
@@ -3029,7 +2965,6 @@ footer {
                     font-size: 50px;
                     color: white;
                 }
-
                 .box {
                     position: absolute;
                     top: 50%;
@@ -3038,7 +2973,7 @@ footer {
                     width: 80%;
                     height: 80%;
                     border: 1px solid sandybrown;
-
+    
                     // GOOGLE地圖
                     .map {
                         width: 100%;
@@ -3050,7 +2985,7 @@ footer {
                         left: 50%;
                         transform: translate(-50%, -50%);
                         display: block;
-
+    
                         iframe {
                             position: absolute;
                             width: 100%;
@@ -3059,7 +2994,7 @@ footer {
                             left: 0%;
                         }
                     }
-
+    
                     // 遊程安排
                     .mini-box1 {
                         width: 100%;
@@ -3067,11 +3002,11 @@ footer {
                         display: none;
                         position: relative;
                         overflow: hidden;
-
+    
                         .swiper {
                             width: 100%;
                             height: 100%;
-
+    
                             .swiper-slide {
                                 text-align: center;
                                 font-size: 30px;
@@ -3089,7 +3024,7 @@ footer {
                                 -ms-flex-align: center;
                                 -webkit-align-items: center;
                                 align-items: center;
-
+    
                                 .img1 {
                                     position: absolute;
                                     width: 45%;
@@ -3100,14 +3035,14 @@ footer {
                                     border-radius: 40px;
                                     background-image: url("../img/travel/one-day.jpg");
                                     opacity: 0.9;
-
+    
                                     &:hover {
                                         // transition:background-image 1s;
                                         background-image: url("../img/travel/oneday-hover.svg");
                                         border-radius: 0%;
                                     }
                                 }
-
+    
                                 .img2 {
                                     position: absolute;
                                     width: 45%;
@@ -3118,21 +3053,21 @@ footer {
                                     border-radius: 40px;
                                     background-image: url("../img/travel/smile.jfif");
                                     opacity: 0.9;
-
+    
                                     &:hover {
                                         // transition:background-image 1s;
                                         background-image: url("../img/travel/halfday-hover.svg");
                                         border-radius: 0%;
                                     }
                                 }
-
+    
                                 .text {
                                     position: absolute;
                                     right: 3%;
                                     width: 50%;
                                     height: 100%;
                                     border-radius: 40px;
-
+    
                                     // background-color: #fbbd9f;
                                     .circle {
                                         position: absolute;
@@ -3146,7 +3081,7 @@ footer {
                                         border-radius: 50%;
                                         background-color: #AFDCEA;
                                     }
-
+    
                                     .progress {
                                         position: absolute;
                                         left: 55px;
@@ -3154,28 +3089,28 @@ footer {
                                         height: 100%;
                                         background-color: #AFDCEA;
                                     }
-
+    
                                     .text-area {
                                         position: absolute;
                                         width: 75%;
                                         left: 115px;
                                         color: #fff;
                                         flex-wrap: wrap;
-
+    
                                         h3 {
                                             padding-top: 20%;
                                             display: flex;
                                             justify-content: center;
                                             font-weight: bold;
                                         }
-
+    
                                         h5 {
                                             margin-top: 20px;
                                             display: flex;
                                             justify-content: flex-start;
                                             font-weight: 800;
                                         }
-
+    
                                         p {
                                             margin-top: 1rem;
                                             font-size: 1rem;
@@ -3187,7 +3122,7 @@ footer {
                             }
                         }
                     }
-
+    
                     // 導覽解說
                     .mini-box2 {
                         width: 100%;
@@ -3195,11 +3130,11 @@ footer {
                         position: relative;
                         overflow: hidden;
                         display: none;
-
+    
                         .swiper {
                             width: 100%;
                             height: 100%;
-
+    
                             .swiper-slide {
                                 text-align: center;
                                 font-size: 30px;
@@ -3217,7 +3152,7 @@ footer {
                                 -ms-flex-align: center;
                                 -webkit-align-items: center;
                                 align-items: center;
-
+    
                                 img {
                                     position: absolute;
                                     width: 45%;
@@ -3227,7 +3162,7 @@ footer {
                                     background-size: cover;
                                     border-radius: 40px;
                                 }
-
+    
                                 .text {
                                     position: absolute;
                                     right: 3%;
@@ -3235,7 +3170,7 @@ footer {
                                     height: 100%;
                                     border-radius: 40px;
                                 }
-
+    
                                 .circle {
                                     position: absolute;
                                     display: flex;
@@ -3248,7 +3183,7 @@ footer {
                                     border-radius: 50%;
                                     background-color: #AFDCEA
                                 }
-
+    
                                 .progress {
                                     position: absolute;
                                     left: 55px;
@@ -3256,28 +3191,28 @@ footer {
                                     height: 100%;
                                     background-color: #AFDCEA;
                                 }
-
+    
                                 .text-area {
                                     position: absolute;
                                     width: 75%;
                                     left: 115px;
                                     color: #fff;
                                     flex-wrap: wrap;
-
+    
                                     h3 {
                                         padding-top: 20%;
                                         display: flex;
                                         justify-content: center;
                                         font-weight: bold;
                                     }
-
+    
                                     h5 {
                                         margin-top: 20px;
                                         display: flex;
                                         justify-content: flex-start;
                                         font-weight: 800;
                                     }
-
+    
                                     p {
                                         margin-top: 1rem;
                                         font-size: 1rem;
@@ -3289,7 +3224,6 @@ footer {
                         }
                     }
                 }
-
                 .buttons {
                     width: 800px;
                     position: absolute;
@@ -3300,138 +3234,113 @@ footer {
                     justify-content: space-evenly;
                     gap: 40px;
                     cursor: pointer;
-
+    
                     .button {
                         font-size: 36px;
                         color: white;
-
+    
                         span {
                             top: 14%;
                             position: absolute;
                         }
                     }
-
+    
                     & :hover span {
                         transition: .5s;
                         position: absolute;
                         transform: translateX(15%);
                     }
                 }
-
                 @media (max-width:820px) {
-                    display: none;
-                    ;
+                    display: none;;
                 }
             }
-
             // 平板版
-            .pad {
+            .pad{
                 display: none;
-
-                @media (max-width: 820px) {
-                    color: #fff;
-
-                    .titlePad {
-                        font-size: 32px;
-                    }
-
-                    h1 {
-                        font-size: 26px;
-                        display: flex;
-                        justify-content: center;
-                    }
-
-                    display: block;
-
-                    .container {
-                        width: 95%;
-                        display: flex;
-                        justify-content: space-between;
-                        // border: 1px solid black;
-                        margin-top: 1rem;
-                        transform: translateX(2.5%);
+                @media (max-width: 820px){
                         color: #fff;
-                    }
-
-                    .box {
-                        // border: 1px solid sandybrown;
-                        margin-top: 2rem;
-
-                        .map {
-                            width: 100%;
-                            height: 400px;
-                            overflow: hidden;
-                            display: block;
-
-                            iframe {
-                                width: 100%;
-                            }
+                        .titlePad{
+                            font-size: 32px;
                         }
-                    }
-
-                    .arrange {
-                        width: 100%;
-
-                        h1 {
+                        h1{
+                            font-size: 26px;
                             display: flex;
                             justify-content: center;
-                            margin-top: 2rem;
                         }
-
-                        .oneday,
-                        .halfday {
-                            gap: 2rem;
-
-                            .text {
+                        display: block;
+                        .container{
+                            width: 95%;
+                            display: flex;
+                            justify-content: space-between;
+                            // border: 1px solid black;
+                            margin-top: 1rem;
+                            transform: translateX(2.5%);
+                            color: #fff;
+                        }
+                        .box{
+                            // border: 1px solid sandybrown;
+                            margin-top: 2rem;
+                            .map {
+                                width: 100%;
+                                height: 400px;
+                                overflow: hidden; 
+                                display: block;
+                                iframe {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .arrange{
+                            width: 100%;
+                            h1{
+                                display: flex;
+                                justify-content: center;
+                                margin-top: 2rem;
+                            }
+                            .oneday, .halfday{
+                                gap: 2rem;
+                                .text{
                                 width: 48%;
                                 height: 40vh;
                                 left: 0;
-
-                                h3 {
+                                h3{
                                     margin-top: 10px;
                                     margin-bottom: 5px;
                                 }
-
-                                p {
+                                p{
                                     margin-left: 1rem;
                                     font-weight: 400;
                                 }
-
-                                .last {
+                                .last{
                                     margin-bottom: 1rem;
                                 }
-                            }
-
-                            .pic {
-                                img {
-                                    width: 60%;
-                                    height: 40vh;
-                                    transform: translate(-85%);
+                                }
+                                .pic{
+                                    img{
+                                        width: 60%;
+                                        height: 40vh;
+                                        transform: translate(-85%);
+                                    }
                                 }
                             }
-
                             // 手機板
                             @media (max-width: 650px) {
-
-                                .oneday,
-                                .halfday {
+                                .oneday, .halfday{
                                     display: flex;
                                     flex-wrap: wrap;
-
-                                    .text {
-                                        display: block;
-                                        width: 100%;
-                                        height: 35vh;
-                                        // background-color: salmon;
+                                    .text{
+                                    display: block;
+                                    width: 100%;
+                                    height: 35vh;
+                                    // background-color: salmon;
                                     }
-
-                                    .pic {
+                                    .pic{
                                         display: block;
                                         width: 100%;
                                         height: 35vh;
                                         margin-bottom: 5vw;
-
-                                        img {
+                                        img{
                                             transform: translate(1%);
                                             transform: translateY(-10%);
                                             width: 115%;
@@ -3440,76 +3349,52 @@ footer {
                                     }
                                 }
                             }
-
                             @media (max-width:400px) {
-                                .pic {
+                                .pic{
                                     margin-bottom: 0.5rem;
                                 }
                             }
                         }
-                    }
-
-                    .parallax {
-                        width: 100%;
-                        height: 25vh;
-                        background-image: url("../img/travel/parallax-pic.jfif");
-                        background-attachment: fixed;
-                        background-position: center center;
-                        background-size: cover;
-                    }
-
-                    .guide {
-                        h1 {
-                            display: flex;
-                            justify-content: center;
-                            margin-top: 2rem;
-                            margin-bottom: 1rem;
+                        .parallax{
+                            width: 100%;
+                            height: 25vh;
+                            background-image: url("../img/travel/parallax-pic.jfif");
+                            background-attachment: fixed;
+                            background-position: center center;
+                            background-size: cover;
                         }
-
-                        .guide-content {
-                            display: flex;
-                            flex-wrap: wrap;
-
-                            .box3,
-                            .box4 {
+                        .guide{
+                            h1{
+                                display: flex;
+                                justify-content: center;
                                 margin-top: 2rem;
+                                margin-bottom: 1rem;
                             }
-
-                            .guide-card {
-                                width: 45vw;
-                                height: 40vh;
-                                gap: 3rem;
-                                position: relative;
-
-                                .text-area {
-                                    position: absolute;
-                                    width: 37vw;
-                                    right: 0px;
+                            .guide-content{
+                                display: flex;
+                                flex-wrap: wrap;
+                                .box3, .box4{
+                                    margin-top: 2rem;
                                 }
-
-                                .guide-card {
+                                .guide-card{
                                     width: 45vw;
                                     height: 40vh;
                                     gap: 3rem;
                                     position: relative;
-
-                                    .text-area {
+                                    .text-area{
                                         position: absolute;
                                         width: 37vw;
                                         right: 0px;
                                     }
-
-                                    h3 {
+                                    h3{
                                         margin-top: 10px;
                                         margin-bottom: 5px;
                                     }
-
-                                    p {
+                                    p{
                                         margin-left: 1rem;
                                         font-weight: 400;
                                     }
-
-                                    .circle {
+                                    .circle{
                                         color: #000000;
                                         position: absolute;
                                         width: 7vw;
@@ -3524,267 +3409,232 @@ footer {
                                     }
                                 }
                             }
-
                             @media (max-width:650px) {
-<<<<<<< HEAD
                                 .guide-content{
                                     // background-color: beige;
-<<<<<<< HEAD
-=======
-=======
-                                .guide-content {
->>>>>>> 5700a5fe41f88afb283314726dd2fa6e999bf026
->>>>>>> 1767ce20c58660d08010045767cc474369a70d88
                                     display: flex;
                                     flex-wrap: wrap;
-
-                                    .guide-card {
+                                    .guide-card{
                                         width: 95vw;
                                         height: 30vh;
-<<<<<<< HEAD
                                         background-color: salmon;
-=======
-<<<<<<< HEAD
-                                        background-color: salmon;
-=======
-
->>>>>>> 5700a5fe41f88afb283314726dd2fa6e999bf026
->>>>>>> 1767ce20c58660d08010045767cc474369a70d88
                                     }
                                 }
                             }
-                        }
-                    }
-                }
-
-                @media (max-width:820px) {
-                    height: 100%;
+                        }  
                 }
             }
+            @media (max-width:820px) {
+                height: 100%;
+            }
+        }
 
-            // 高美景觀
-            .picture {
-                width: 100%;
-                height: 40vh;
-                position: relative;
+        // 高美景觀
+        .picture {
+            width: 100%;
+            height: 40vh;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+
+            .pic-charge {
                 display: flex;
                 flex-wrap: wrap;
-
-                .pic-charge {
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-content: flex-start;
+                align-content: flex-start;
+                width: 100%;
+                height: 100%;
+                h1 {
                     width: 100%;
-                    height: 100%;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 30px;
+                    font-size: 50px;
+                    color: white;
+                }
+                .box {
+                    width: 100%;
+                    height: 95%;
+                }
+                #ture {
+                    width: 100%;
+                    height: 200px;
 
-                    h1 {
-                        width: 100%;
-                        height: 50px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-bottom: 30px;
-                        font-size: 50px;
-                        color: white;
-                    }
+                    .swiper-wrapper {
+                        transition-timing-function: linear;
 
-                    .box {
-                        width: 100%;
-                        height: 95%;
-                    }
-
-                    #ture {
-                        width: 100%;
-                        height: 200px;
-
-                        .swiper-wrapper {
-                            transition-timing-function: linear;
-
-                            .swiper-slide {
-                                width: 350px;
-                                height: 200px;
-
-                                a {
-                                    display: block;
-                                }
-
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
-                                }
-
-                                opacity: .8;
-                                filter: blur(1px);
-
-                                &:hover {
-                                    opacity: 1;
-                                    filter: blur(0px);
-                                }
+                        .swiper-slide {
+                            width: 350px;
+                            height: 200px;
+                            a {
+                                display: block;
+                            }
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                            opacity: .8;
+                            filter: blur(1px);
+                            &:hover {
+                                opacity: 1;
+                                filter: blur(0px);
                             }
                         }
                     }
+                }
 
-                    #reverse {
-                        width: 100%;
-                        height: 200px;
+                #reverse {
+                    width: 100%;
+                    height: 200px;
+.pad
+                    .swiper-wrapper {
+                        transition-timing-function: linear;
 
-                        .pad .swiper-wrapper {
-                            transition-timing-function: linear;
+                        .swiper-slide {
+                            width: 350px;
+                            height: 200px;
 
-                            .swiper-slide {
-                                width: 350px;
-                                height: 200px;
-
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
-                                }
-
-                                opacity: .8;
-                                filter: blur(1px);
-
-                                &:hover {
-                                    opacity: 1;
-                                    filter: blur(0px);
-                                }
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                            opacity: .8;
+                            filter: blur(1px);
+                            &:hover {
+                                opacity: 1;
+                                filter: blur(0px);
                             }
                         }
-                    }
-
-                    @media (max-width: 820px) {
-                        display: none;
                     }
                 }
 
                 @media (max-width: 820px) {
-                    width: 100%;
-                    height: 580px;
-                }
-
-                @media (max-width: 4000px) {
-                    width: 100%;
-                    height: 470px;
-                }
-
-                .pad {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-wrap: wrap;
-
-                    h1 {
-                        width: 100%;
-                        height: 80px;
-                        display: flex;
-                        font-size: 32px;
-                        justify-content: center;
-                        align-items: center;
-                        color: white;
-                    }
-
-                    .swiper {
-                        width: 100%;
-                        height: 500px;
-
-                        .swiper-slide {
-                            text-align: center;
-                            font-size: 18px;
-                            background: #fff;
-                            /* Center slide text vertically */
-                            display: -webkit-box;
-                            display: -ms-flexbox;
-                            display: -webkit-flex;
-                            display: flex;
-                            -webkit-box-pack: center;
-                            -ms-flex-pack: center;
-                            -webkit-justify-content: center;
-                            justify-content: center;
-                            -webkit-box-align: center;
-                            -ms-flex-align: center;
-                            -webkit-align-items: center;
-                            align-items: center;
-
-                            img {
-                                display: block;
-                                height: 120%;
-                                object-fit: cover;
-                            }
-                        }
-                    }
-
                     display: none;
-
-                    @media (max-width: 820px) {
-                        display: block;
-                    }
-
-                    @media (max-width: 420px) {
-                        display: none;
-                    }
-                }
-
-                .phone {
-                    width: 100%;
-                    height: 70%;
-                    display: flex;
-                    flex-wrap: wrap;
-
-                    h1 {
-                        width: 100%;
-                        height: 80px;
-                        display: flex;
-                        font-size: 32px;
-                        justify-content: center;
-                        align-items: center;
-                        color: white;
-                    }
-
-                    .swiper {
-                        width: 100%;
-                        height: 300px;
-
-                        .swiper-slide {
-                            text-align: center;
-                            font-size: 18px;
-                            background: #fff;
-                            /* Center slide text vertically */
-                            display: -webkit-box;
-                            display: -ms-flexbox;
-                            display: -webkit-flex;
-                            display: flex;
-                            -webkit-box-pack: center;
-                            -ms-flex-pack: center;
-                            -webkit-justify-content: center;
-                            justify-content: center;
-                            -webkit-box-align: center;
-                            -ms-flex-align: center;
-                            -webkit-align-items: center;
-                            align-items: center;
-
-                            img {
-                                display: block;
-                                height: 120%;
-                                object-fit: cover;
-                                object-position: center;
-                            }
-                        }
-                    }
-
-                    display: none;
-
-                    @media (max-width: 420px) {
-                        display: block;
-                    }
-                }
-
-                @media (max-width: 420px) {
-                    height: 380px;
                 }
             }
 
+            @media (max-width: 820px) {
+                width: 100%;
+                height: 580px;
+            }
+
+            @media (max-width: 4000px) {
+                width: 100%;
+                height: 470px;
+            }
+
+            .pad {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                h1 {
+                    width: 100%;
+                    height: 80px;
+                    display: flex;
+                    font-size: 32px;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                }
+
+                .swiper {
+                    width: 100%;
+                    height: 500px;
+
+                    .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        background: #fff;
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+
+                        img {
+                            display: block;
+                            height: 120%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                display: none;
+
+                @media (max-width: 820px) {
+                    display: block;
+                }
+
+                @media (max-width: 420px) {
+                    display: none;
+                }
+            }
+
+            .phone {
+                width: 100%;
+                height: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                h1 {
+                    width: 100%;
+                    height: 80px;
+                    display: flex;
+                    font-size: 32px;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                }
+                .swiper {
+                    width: 100%;
+                    height: 300px;
+                    .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        background: #fff;
+                        /* Center slide text vertically */
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        -webkit-justify-content: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        -webkit-align-items: center;
+                        align-items: center;
+                        img {
+                            display: block;
+                            height: 120%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                }
+                display: none;
+                @media (max-width: 420px) {
+                    display: block;
+                }
+            }
+            @media (max-width: 420px) {
+                height: 380px;
+            }
         }
+        
     }
 
     // 底部呈現區
@@ -3915,14 +3765,11 @@ footer {
                     }
                 }
             }
-
             .text-title {
                 display: none;
             }
-
             @media (max-width: 820px) {
                 height: 97vh;
-
                 .end-logo {
                     top: 15%;
                     right: 50%;
@@ -3930,11 +3777,9 @@ footer {
                     width: 250px;
                     height: 250px;
                 }
-
                 .windmill {
                     display: none;
                 }
-
                 .end-map {
                     width: 100%;
                     height: 40%;
@@ -3942,7 +3787,6 @@ footer {
                     right: 50%;
                     transform: translate(50%);
                 }
-
                 .end-text {
                     position: absolute;
                     bottom: 2%;
@@ -3951,16 +3795,15 @@ footer {
                     padding: 0% 2%;
                     display: flex;
                     flex-wrap: wrap;
-
                     .title {
                         width: 100%;
                         color: white;
-
+    
                         h2 {
                             font-size: 32px;
                         }
                     }
-
+    
                     .text {
                         color: white;
                         width: 100%;
@@ -3968,36 +3811,34 @@ footer {
                         flex-wrap: wrap;
                         font-size: 20px;
                         justify-content: space-around;
-
+    
                         .address {
                             width: 50%;
                         }
-
+    
                         .phone {
                             width: 50%;
                         }
-
+    
                         .mail {
                             width: 50%;
                         }
-
+    
                         .icon {
                             display: flex;
                             width: 50%;
                             gap: 20px;
-
                             a {
                                 display: block;
                                 color: white;
                                 width: 50px;
                                 height: 50px;
                             }
-
+    
                         }
                     }
                 }
             }
-
             @media (max-width: 420px) {
                 .end-logo {
                     top: 15%;
@@ -4006,7 +3847,6 @@ footer {
                     width: 150px;
                     height: 150px;
                 }
-
                 .end-text {
                     position: absolute;
                     bottom: 5%;
@@ -4016,20 +3856,16 @@ footer {
                     padding: 0% 2%;
                     display: flex;
                     flex-wrap: wrap;
-
                     .title {
                         width: 100%;
                         color: white;
                         display: flex;
                         justify-content: center;
-
                         h2 {
                             font-size: 24px;
                         }
-
                         margin-bottom: 20px;
-                    }
-
+                    }   
                     .text {
                         color: white;
                         width: 100%;
@@ -4041,43 +3877,37 @@ footer {
                         gap: 5px;
                         letter-spacing: 5px;
                         text-align: justify;
-
                         .address {
                             display: flex;
                             justify-content: center;
                             width: 100%;
                         }
-
                         .phone {
                             display: flex;
                             justify-content: center;
                             width: 100%;
                         }
-
                         .mail {
                             display: flex;
                             justify-content: center;
                             width: 100%;
                         }
-
                         .icon {
                             width: 100%;
-                            display: flex;
+                            display: flex; 
                             justify-content: center;
                             gap: 20px;
                             padding-top: 20px;
-
                             a {
                                 display: block;
                                 color: white;
                                 width: 50px;
                                 height: 50px;
                             }
-
+    
                         }
                     }
                 }
-
                 .text-title {
                     display: block;
                     color: white;
@@ -4088,7 +3918,7 @@ footer {
                     top: 35%;
                     width: 100%;
                 }
-
+                
             }
         }
 
@@ -4101,12 +3931,11 @@ footer {
             justify-content: center;
             background-color: transparent;
             color: white;
-
             @media (max-width: 820px) {
                 font-size: 12px;
             }
         }
-
+        
     }
 }
 
@@ -4153,6 +3982,7 @@ footer {
         transform: translate(20%, 0%);
         width: 30%;
         height: 70vh;
+        line-height: 200%;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -4169,9 +3999,7 @@ footer {
         .text {
             text-indent: 40px;
         }
-
     }
-
 
     .btna {
         cursor: pointer;
@@ -4191,67 +4019,7 @@ footer {
             opacity: 1;
         }
     }
-
-    @media (max-width: 820px) {
-        width: 100%;
-        height: 80vh;
-        position: fixed;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: none;
-        z-index: 3;
-        animation: seca 1.5s;
-
-        img {
-            width: 100%;
-            height: 100%;
-            opacity: .6;
-        }
-
-        .word {
-            position: fixed;
-            top: 10%;
-            left: 0%;
-            color: white;
-            transform: translate(-2%, 0%);
-            padding: 50px 100px 0px;
-            width: 100%;
-            height: 70vh;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            // font-size: 20px;
-            line-height: 200%;
-            overflow: auto;
-            text-align: justify;
-            text-justify: inter-ideograph;
-
-            span {
-                font-size: 24px;
-            }
-
-            .text {
-                text-indent: 24px;
-            }
-
-            p {
-                font-size: 12px;
-            }
-        }
-
-        .btna {
-            cursor: pointer;
-            width: 40px;
-            height: 40px;
-            position: fixed;
-            top: 30px;
-            right: 50px;
-        }
-
-    }
 }
-
 
 // 生態現狀
 .text-secb {
@@ -4383,8 +4151,6 @@ footer {
             opacity: 1;
         }
     }
-
-
 }
 
 // 人文歷史
@@ -4472,81 +4238,6 @@ footer {
 
         to {
             opacity: 1;
-        }
-    }
-
-    @media (max-width:820px) {
-        width: 100%;
-        height: 100vh;
-        position: fixed;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: none;
-        z-index: 3;
-        background-color: #4598b1;
-        animation: secc 1.5s;
-
-        img {
-            width: 100%;
-            height: 80%;
-            position: absolute;
-            top: 10%;
-            left: 0%;
-        }
-
-        .bgcc {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            background-color: rgb(0, 0, 0);
-            transform: translate(-50%, -50%);
-            opacity: 0.5;
-            width: 100%;
-            height: 100vh;
-            z-index: 1;
-        }
-
-        .word {
-            position: fixed;
-            top: 10%;
-            left: 0%;
-            color: white;
-            transform: translate(0%, 0%);
-            padding: 50px 100px 0px;
-            width: 100%;
-            height: 70vh;
-            line-height: 200%;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 300%;
-            overflow: auto;
-            text-align: justify;
-            text-justify: inter-ideograph;
-            z-index:1;
-
-            span {
-                font-size: 24px;
-            }
-
-            p {
-                line-height: 200%;
-            }
-
-            .text {
-                text-indent: 24px;
-            }
-        }
-        .btnc {
-            cursor: pointer;
-            width: 40px;
-            height: 40px;
-            position: fixed;
-            top: 12%;
-            right: 30px;
-            z-index: 1;
         }
     }
 }
@@ -4640,10 +4331,6 @@ footer {
             opacity: 1;
         }
     }
-
-    @media (max-width:820px) {
-        
-    }
 }
 
 // 鳥類
@@ -4676,19 +4363,16 @@ footer {
         background-color: #3C3B3B;
         z-index: 2;
         overflow: auto;
-
-        .show-bird {
+        .show-bird { 
             width: 100%;
             height: 80vh;
             padding: 11px 115px 5px 115px;
-
             .swiper {
                 width: 100%;
                 height: 100%;
                 margin-left: auto;
                 margin-right: auto;
             }
-
             .swiper-slide {
                 text-align: center;
                 font-size: 18px;
@@ -4711,11 +4395,9 @@ footer {
                 background-position: center;
 
             }
-
             .mySwiper2-bird {
                 height: 80%;
                 width: 100%;
-
                 .text {
                     width: 100%;
                     height: 100%;
@@ -4724,7 +4406,6 @@ footer {
                     color: white;
                     display: flex;
                     flex-wrap: wrap;
-
                     .title {
                         width: 100%;
                         display: flex;
@@ -4734,70 +4415,57 @@ footer {
                         padding-top: 50px;
                         height: 40%;
                         gap: 20px;
-
-                        h1 {
-                            font-size: 50px;
-                        }
-
-                        p {
-                            font-size: 36px;
-                        }
-
+                            h1 {
+                                font-size: 50px;
+                            }
+                            p {
+                                font-size: 36px;
+                            }
                         @media (max-width: 820px) {
                             padding: 0px 30px;
                             padding-top: 50px;
                             height: 20%;
-
                             h1 {
                                 font-size: 36px;
                             }
-
                             p {
                                 font-size: 24px;
                             }
                         }
-
                         @media (max-width: 420px) {
                             padding: 0px 10px;
                             padding-top: 10px;
                             gap: 5px;
                             align-items: flex-end;
-
                             h1 {
                                 font-size: 24px;
                             }
-
                             p {
                                 font-size: 20px;
                             }
                         }
                     }
-
                     .content {
                         height: 45%;
                         padding: 0px 50px;
                         display: flex;
-                        flex-wrap: wrap;
+                        flex-wrap: wrap;    
                         align-content: flex-start;
-                        gap: 20px;
-
+                        gap: 20px;                                      
                         p {
                             width: 100%;
                             display: flex;
                             justify-content: start;
                         }
-
                         .a {
                             font-size: 24px;
-
+                            
                         }
-
-                        .b {
+                        .b { 
                             width: 40%;
                             word-break: break-all;
                             text-align: justify;
                         }
-
                         @media (max-width: 820px) {
                             gap: 10px;
                             padding: 0px 30px;
@@ -4805,34 +4473,27 @@ footer {
                             font-size: 16px;
                             width: 100%;
                             align-content: center;
-
                             .a {
                                 font-size: 20px;
                             }
-
                             .b {
                                 width: 100%;
                             }
                         }
-
                         @media (max-width: 420px) {
                             padding: 0px 10px;
                             font-size: 12px;
-
                             .a {
                                 font-size: 16px;
                             }
-
                             .b {
                                 width: 100%;
                             }
-
                             .d {
                                 text-align: justify;
                             }
                         }
                     }
-
                     .from {
                         padding: 0px 50px;
                         width: 100%;
@@ -4842,66 +4503,54 @@ footer {
                         flex-direction: column;
                         align-items: flex-end;
                         gap: 10px;
-
                         .e {
                             width: 330px;
                             display: flex;
                             justify-content: start;
                             font-size: 16px;
                         }
-
                         .f {
 
                             font-size: 12px;
                         }
-
                         @media (max-width: 820px) {
                             padding: 0px 30px;
                         }
-
                         @media (max-width: 420px) {
                             height: 15%;
                             gap: 5px;
                             padding: 0px 10px;
-
                             .e {
                                 width: 100%;
                                 font-size: 12px;
                             }
-
                             .f {
                                 width: 100%;
                                 font-size: 10px;
                             }
                         }
                     }
-
                     @media (max-width: 420px) {
                         top: 50%;
                         height: 50%;
                         font-size: 14px;
                         gap: 5px;
-
                         .a {
                             font-size: 16px;
                         }
                     }
                 }
-
                 .big-box {
                     background-color: #3C3B3B;
                 }
-
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: fill;
                     opacity: .5;
-
                     @media (max-width: 820px) {
                         object-fit: cover;
                     }
-
                     @media (max-width: 420px) {
                         position: absolute;
                         top: 5%;
@@ -4911,79 +4560,64 @@ footer {
                 }
 
             }
-
             .mySwiper-bird {
                 height: 20%;
                 box-sizing: border-box;
                 padding: 10px 0;
-
                 .swiper-slide {
                     width: 25%;
                     height: 100%;
                     opacity: 0.4;
-
                     @media (max-width: 420px) {
                         height: 80%;
                     }
                 }
-
                 .swiper-slide-thumb-active {
                     opacity: 1;
                 }
-
                 img {
                     display: block;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
-
                 @media (max-width: 420px) {
                     padding-top: 20px;
                 }
             }
-
             .swiper-button-next {
                 right: 4%;
-
                 @media (max-width: 820px) {
                     top: 90%;
                     right: 2%;
                     --swiper-navigation-size: 30px;
                 }
-
                 @media (max-width: 420px) {
                     display: none;
                 }
             }
-
             .swiper-button-prev {
                 left: 4%;
-
                 @media (max-width: 820px) {
                     top: 90%;
                     left: 2%;
                     --swiper-navigation-size: 30px;
                 }
-
                 @media (max-width: 420px) {
                     display: none;
                 }
             }
-
             @media (max-width: 820px) {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
                 padding: 11px 50px 5px 50px;
             }
-
             @media (max-width: 420px) {
                 padding: 20px 5px 20px 5px;
                 height: 90vh;
             }
         }
-
         .close-btn {
             cursor: pointer;
             position: fixed;
@@ -4994,23 +4628,19 @@ footer {
             height: 5%;
             font-size: 30px;
             z-index: 1;
-
             @media (max-width: 820px) {
                 right: -10px;
                 font-size: 20px;
             }
-
             @media (max-width: 420px) {
                 top: 60px;
                 right: 15px;
                 font-size: 30px;
             }
         }
-
         @media (max-width: 820px) {
             top: 55%;
         }
-
         @media (max-width: 420px) {
             height: 100vh;
         }
@@ -5020,7 +4650,6 @@ footer {
 // 植物
 .plant-sec {
     display: none;
-
     .plant-bgc {
         width: 100%;
         height: 100vh;
@@ -5032,11 +4661,9 @@ footer {
         transform: translate(-50%, -50%);
         z-index: 1;
     }
-
     .plant-work::-webkit-scrollbar {
         display: none;
     }
-
     .plant-work {
         width: 100%;
         height: 80vh;
@@ -5047,19 +4674,16 @@ footer {
         background-color: #3C3B3B;
         z-index: 2;
         overflow: auto;
-
-        .show-plant {
+        .show-plant { 
             width: 100%;
             height: 80vh;
             padding: 11px 115px 5px 115px;
-
             .swiper {
                 width: 100%;
                 height: 100%;
                 margin-left: auto;
                 margin-right: auto;
             }
-
             .swiper-slide {
                 text-align: center;
                 font-size: 18px;
@@ -5082,11 +4706,9 @@ footer {
                 background-position: center;
 
             }
-
             .mySwiper2-plant {
                 height: 80%;
                 width: 100%;
-
                 .text {
                     width: 100%;
                     height: 100%;
@@ -5095,7 +4717,6 @@ footer {
                     color: white;
                     display: flex;
                     flex-wrap: wrap;
-
                     .title {
                         width: 100%;
                         display: flex;
@@ -5105,70 +4726,57 @@ footer {
                         padding-top: 50px;
                         height: 40%;
                         gap: 20px;
-
-                        h1 {
-                            font-size: 50px;
-                        }
-
-                        p {
-                            font-size: 36px;
-                        }
-
+                            h1 {
+                                font-size: 50px;
+                            }
+                            p {
+                                font-size: 36px;
+                            }
                         @media (max-width: 820px) {
                             padding: 0px 30px;
                             padding-top: 50px;
                             height: 20%;
-
                             h1 {
                                 font-size: 36px;
                             }
-
                             p {
                                 font-size: 24px;
                             }
                         }
-
                         @media (max-width: 420px) {
                             padding: 0px 10px;
                             padding-top: 10px;
                             gap: 5px;
                             align-items: flex-end;
-
                             h1 {
                                 font-size: 24px;
                             }
-
                             p {
                                 font-size: 20px;
                             }
                         }
                     }
-
                     .content {
                         height: 45%;
                         padding: 0px 50px;
                         display: flex;
-                        flex-wrap: wrap;
+                        flex-wrap: wrap;    
                         align-content: flex-start;
-                        gap: 20px;
-
+                        gap: 20px;                                      
                         p {
                             width: 100%;
                             display: flex;
                             justify-content: start;
                         }
-
                         .a {
                             font-size: 24px;
-
+                            
                         }
-
-                        .b {
+                        .b { 
                             width: 40%;
                             word-break: break-all;
                             text-align: justify;
                         }
-
                         @media (max-width: 820px) {
                             gap: 10px;
                             padding: 0px 30px;
@@ -5176,35 +4784,28 @@ footer {
                             font-size: 16px;
                             width: 100%;
                             align-content: center;
-
                             .a {
                                 font-size: 20px;
                             }
-
                             .b {
                                 width: 100%;
                             }
                         }
-
                         @media (max-width: 420px) {
                             padding: 0px 10px;
                             font-size: 12px;
                             height: 40%;
-
                             .a {
                                 font-size: 16px;
                             }
-
                             .b {
                                 width: 100%;
                             }
-
                             .d {
                                 text-align: justify;
                             }
                         }
                     }
-
                     .from {
                         padding: 0px 50px;
                         width: 100%;
@@ -5214,47 +4815,39 @@ footer {
                         flex-direction: column;
                         align-items: flex-end;
                         gap: 10px;
-
                         .e {
-                            width: 400px;
+                            width: 370px;
                             display: flex;
                             justify-content: start;
                             font-size: 16px;
                         }
-
                         .f {
-                            width: 400px;
+                            width: 370px;
                             display: flex;
                             justify-content: start;
                             font-size: 12px;
                         }
-
                         .g {
-                            width: 400px;
+                            width: 370px;
                             display: flex;
                             justify-content: start;
                             font-size: 12px;
                         }
-
                         @media (max-width: 820px) {
                             padding: 0px 30px;
                         }
-
                         @media (max-width: 420px) {
                             height: 20%;
                             gap: 5px;
                             padding: 0px 10px;
-
                             .e {
                                 width: 100%;
                                 font-size: 12px;
                             }
-
                             .f {
                                 width: 100%;
                                 font-size: 10px;
                             }
-
                             .g {
                                 width: 100%;
                                 font-size: 10px;
@@ -5262,33 +4855,27 @@ footer {
 
                         }
                     }
-
                     @media (max-width: 420px) {
                         top: 50%;
                         height: 50%;
                         font-size: 14px;
                         gap: 5px;
-
                         .a {
                             font-size: 16px;
                         }
                     }
                 }
-
                 .big-box {
                     background-color: #3C3B3B;
                 }
-
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: fill;
                     opacity: .5;
-
                     @media (max-width: 820px) {
                         object-fit: cover;
                     }
-
                     @media (max-width: 420px) {
                         position: absolute;
                         top: 5%;
@@ -5298,79 +4885,64 @@ footer {
                 }
 
             }
-
-            .mySwiper-plant {
+            .mySwiper-plant{
                 height: 20%;
                 box-sizing: border-box;
                 padding: 10px 0;
-
                 .swiper-slide {
                     width: 25%;
                     height: 100%;
                     opacity: 0.4;
-
                     @media (max-width: 420px) {
                         height: 80%;
                     }
                 }
-
                 .swiper-slide-thumb-active {
                     opacity: 1;
                 }
-
                 img {
                     display: block;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
-
                 @media (max-width: 420px) {
                     padding-top: 20px;
                 }
             }
-
             .swiper-button-next {
                 right: 4%;
-
                 @media (max-width: 820px) {
                     top: 90%;
                     right: 2%;
                     --swiper-navigation-size: 30px;
                 }
-
                 @media (max-width: 420px) {
                     display: none;
                 }
             }
-
             .swiper-button-prev {
                 left: 4%;
-
                 @media (max-width: 820px) {
                     top: 90%;
                     left: 2%;
                     --swiper-navigation-size: 30px;
                 }
-
                 @media (max-width: 420px) {
                     display: none;
                 }
             }
-
             @media (max-width: 820px) {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
                 padding: 11px 50px 5px 50px;
             }
-
             @media (max-width: 420px) {
                 padding: 20px 5px 20px 5px;
                 height: 90vh;
             }
         }
-
         .close-btn {
             cursor: pointer;
             position: fixed;
@@ -5381,23 +4953,19 @@ footer {
             height: 5%;
             font-size: 30px;
             z-index: 1;
-
             @media (max-width: 820px) {
                 right: -10px;
                 font-size: 20px;
             }
-
             @media (max-width: 420px) {
                 top: 60px;
                 right: 15px;
                 font-size: 30px;
             }
         }
-
         @media (max-width: 820px) {
             top: 55%;
         }
-
         @media (max-width: 420px) {
             height: 100vh;
         }
@@ -5407,7 +4975,6 @@ footer {
 // 潮間帶生物
 .crab-sec {
     display: none;
-
     .crab-bgc {
         width: 100%;
         height: 100vh;
@@ -5419,11 +4986,9 @@ footer {
         transform: translate(-50%, -50%);
         z-index: 1;
     }
-
     .crab-work::-webkit-scrollbar {
         display: none;
     }
-
     .crab-work {
         width: 100%;
         height: 80vh;
@@ -5434,19 +4999,16 @@ footer {
         background-color: #3C3B3B;
         z-index: 2;
         overflow: auto;
-
-        .show-crab {
+        .show-crab { 
             width: 100%;
             height: 80vh;
             padding: 11px 115px 5px 115px;
-
             .swiper {
                 width: 100%;
                 height: 100%;
                 margin-left: auto;
                 margin-right: auto;
             }
-
             .swiper-slide {
                 text-align: center;
                 font-size: 18px;
@@ -5467,11 +5029,9 @@ footer {
                 background-size: cover;
                 background-position: center;
             }
-
             .mySwiper2-crab {
                 height: 80%;
                 width: 100%;
-
                 .text {
                     width: 100%;
                     height: 100%;
@@ -5480,7 +5040,6 @@ footer {
                     color: white;
                     display: flex;
                     flex-wrap: wrap;
-
                     .title {
                         width: 100%;
                         display: flex;
@@ -5490,70 +5049,57 @@ footer {
                         padding-top: 50px;
                         height: 40%;
                         gap: 20px;
-
-                        h1 {
-                            font-size: 50px;
-                        }
-
-                        p {
-                            font-size: 36px;
-                        }
-
+                            h1 {
+                                font-size: 50px;
+                            }
+                            p {
+                                font-size: 36px;
+                            }
                         @media (max-width: 820px) {
                             padding: 0px 30px;
                             padding-top: 50px;
                             height: 20%;
-
                             h1 {
                                 font-size: 36px;
                             }
-
                             p {
                                 font-size: 24px;
                             }
                         }
-
                         @media (max-width: 420px) {
                             padding: 0px 10px;
                             padding-top: 10px;
                             gap: 5px;
                             align-items: flex-end;
-
                             h1 {
                                 font-size: 24px;
                             }
-
                             p {
                                 font-size: 20px;
                             }
                         }
                     }
-
                     .content {
                         height: 45%;
                         padding: 0px 50px;
                         display: flex;
-                        flex-wrap: wrap;
+                        flex-wrap: wrap;    
                         align-content: flex-start;
-                        gap: 20px;
-
+                        gap: 20px;                                      
                         p {
                             width: 100%;
                             display: flex;
                             justify-content: start;
                         }
-
                         .a {
                             font-size: 24px;
-
+                            
                         }
-
-                        .b {
+                        .b { 
                             width: 40%;
                             word-break: break-all;
                             text-align: justify;
                         }
-
                         @media (max-width: 820px) {
                             gap: 10px;
                             padding: 0px 30px;
@@ -5561,35 +5107,28 @@ footer {
                             font-size: 16px;
                             width: 100%;
                             align-content: center;
-
                             .a {
                                 font-size: 20px;
                             }
-
                             .b {
                                 width: 100%;
                             }
                         }
-
                         @media (max-width: 420px) {
                             padding: 0px 10px;
                             font-size: 12px;
                             height: 40%;
-
                             .a {
                                 font-size: 16px;
                             }
-
                             .b {
                                 width: 100%;
                             }
-
                             .d {
                                 text-align: justify;
                             }
                         }
                     }
-
                     .from {
                         padding: 0px 50px;
                         width: 100%;
@@ -5598,61 +5137,51 @@ footer {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-end;
-                        gap: 5px;
+                        gap: 10px;
                         text-align: justify;
-
                         .e {
                             width: 400px;
                             display: flex;
                             justify-content: start;
                             font-size: 16px;
                         }
-
                         .f {
                             width: 400px;
                             display: flex;
                             justify-content: start;
                             font-size: 12px;
                         }
-
                         .g {
                             width: 400px;
                             display: flex;
                             justify-content: start;
                             font-size: 12px;
                         }
-
                         .h {
                             width: 400px;
                             display: flex;
                             justify-content: start;
                             font-size: 12px;
                         }
-
                         @media (max-width: 820px) {
                             padding: 0px 30px;
                         }
-
                         @media (max-width: 420px) {
                             height: 10%;
                             gap: 5px;
                             padding: 0px 10px;
-
                             .e {
                                 width: 100%;
                                 font-size: 12px;
                             }
-
                             .f {
                                 width: 100%;
                                 font-size: 10px;
                             }
-
                             .g {
                                 width: 100%;
                                 font-size: 10px;
                             }
-
                             .h {
                                 width: 100%;
                                 font-size: 10px;
@@ -5660,33 +5189,27 @@ footer {
 
                         }
                     }
-
                     @media (max-width: 420px) {
                         top: 50%;
                         height: 50%;
                         font-size: 14px;
                         gap: 5px;
-
                         .a {
                             font-size: 16px;
                         }
                     }
                 }
-
                 .big-box {
                     background-color: #3C3B3B;
                 }
-
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: fill;
                     opacity: .5;
-
                     @media (max-width: 820px) {
                         object-fit: cover;
                     }
-
                     @media (max-width: 420px) {
                         position: absolute;
                         top: 5%;
@@ -5696,79 +5219,64 @@ footer {
                 }
 
             }
-
-            .mySwiper-crab {
+            .mySwiper-crab{
                 height: 20%;
                 box-sizing: border-box;
                 padding: 10px 0;
-
                 .swiper-slide {
                     width: 25%;
                     height: 100%;
                     opacity: 0.4;
-
                     @media (max-width: 420px) {
                         height: 80%;
                     }
                 }
-
                 .swiper-slide-thumb-active {
                     opacity: 1;
                 }
-
                 img {
                     display: block;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
-
                 @media (max-width: 420px) {
                     padding-top: 20px;
                 }
             }
-
             .swiper-button-next {
                 right: 4%;
-
                 @media (max-width: 820px) {
                     top: 90%;
                     right: 2%;
                     --swiper-navigation-size: 30px;
                 }
-
                 @media (max-width: 420px) {
                     display: none;
                 }
             }
-
             .swiper-button-prev {
                 left: 4%;
-
                 @media (max-width: 820px) {
                     top: 90%;
                     left: 2%;
                     --swiper-navigation-size: 30px;
                 }
-
                 @media (max-width: 420px) {
                     display: none;
                 }
             }
-
             @media (max-width: 820px) {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
                 padding: 11px 50px 5px 50px;
             }
-
             @media (max-width: 420px) {
                 padding: 20px 5px 20px 5px;
                 height: 90vh;
             }
         }
-
         .close-btn {
             cursor: pointer;
             position: fixed;
@@ -5779,23 +5287,19 @@ footer {
             height: 5%;
             font-size: 30px;
             z-index: 1;
-
             @media (max-width: 820px) {
                 right: -10px;
                 font-size: 20px;
             }
-
             @media (max-width: 420px) {
                 top: 60px;
                 right: 15px;
                 font-size: 30px;
             }
         }
-
         @media (max-width: 820px) {
             top: 55%;
         }
-
         @media (max-width: 420px) {
             height: 100vh;
         }
@@ -5829,7 +5333,6 @@ footer {
             width: 100%;
             height: 100%;
             display: none;
-
             img {
                 width: 100%;
                 height: 100%;
@@ -5837,7 +5340,6 @@ footer {
         }
     }
 }
-
 // 高美景觀 light-box 第二排
 .lightbox-down {
     display: none;
@@ -5961,7 +5463,6 @@ footer {
             display: block;
             width: 100%;
             text-decoration: none;
-
             &:hover {
                 background-color: black;
             }
@@ -5970,7 +5471,6 @@ footer {
 
     @media (max-width: 820px) {
         display: block;
-
         .left-sec {
             display: flex;
             width: 90%;
@@ -6010,19 +5510,16 @@ footer {
     @media (max-width: 420px) {
         display: block;
         height: 8%;
-
         .media-navbar {
             width: 100%;
             height: 100%;
         }
-
         .left-sec {
             display: flex;
             width: 80%;
             height: 100%;
             align-items: center;
             justify-content: start;
-
             .logo {
                 display: flex;
                 justify-content: start;
@@ -6031,7 +5528,6 @@ footer {
                 height: 100%;
                 padding: 10px;
                 margin-right: 15px;
-
                 img {
                     width: 50px;
                     height: 50px;
@@ -6053,7 +5549,6 @@ footer {
                 height: 100%;
             }
         }
-
         .burger-line {
             display: flex;
             align-items: center;
@@ -6062,7 +5557,6 @@ footer {
             right: 0%;
             width: 10%;
         }
-
         .menu {
             top: 8%;
         }

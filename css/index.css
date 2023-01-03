@@ -341,8 +341,6 @@ main .wetlands::-webkit-scrollbar {
 }
 main .wetlands {
   position: relative;
-  width: 100%;
-  height: 100vh;
 }
 main .wetlands div.introduce {
   cursor: pointer;
@@ -681,8 +679,6 @@ main .background-mid .ecology::-webkit-scrollbar {
 }
 main .background-mid .ecology {
   position: relative;
-  width: 100%;
-  height: 100vh;
 }
 main .background-mid .ecology h1 {
   top: 5%;
@@ -1134,7 +1130,6 @@ main .background-mid #wave-container .weather-box .weather-info .weather .weathe
   height: 100px;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
   margin: 0 10px;
 }
 main .background-mid #wave-container .weather-box .weather-info .weather .weather-img img {
@@ -1217,11 +1212,6 @@ main .background-mid #wave-container .weather-box .weather-info .weather-card .c
   display: flex;
   align-items: center;
 }
-@media (max-width: 400px) {
-  main .background-mid #wave-container .weather-box .weather-info .weather-card {
-    padding: 0 10px;
-  }
-}
 main .background-mid #wave-container .weather-box .weather-info h3 {
   margin: 10px 0;
   padding: 0 10px;
@@ -1271,7 +1261,7 @@ main .background-mid #wave-container .wave {
   border-radius: 48%;
   -webkit-animation: waves 30000ms infinite linear;
           animation: waves 30000ms infinite linear;
-  z-index: 5;
+  z-index: 1;
 }
 main .background-mid #wave-container .wave:nth-child(2) {
   -webkit-animation: waves 18000ms infinite linear;
@@ -1398,7 +1388,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
   main .wetlands {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
   }
   main .wetlands div.introduce {
     cursor: pointer;
@@ -1564,7 +1554,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
     height: 53px;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 15%;
     z-index: 2;
     box-shadow: 2px 3px 5px gray;
@@ -1632,8 +1622,6 @@ main .background-mid #wave-container .wave:nth-child(4) {
   }
   main .background-mid .ecology {
     position: relative;
-    width: 100%;
-    height: 80vh;
   }
   main .background-mid .ecology h1 {
     top: 5%;
@@ -2072,13 +2060,13 @@ main .background-mid #wave-container .wave:nth-child(4) {
   }
   main .wetlands {
     position: relative;
-    width: 100%;
-    height: 100vh;
   }
   main .wetlands div.introduce {
     cursor: pointer;
     text-decoration: none;
     color: black;
+    width: 100%;
+    height: 80vh;
   }
   main .wetlands div.introduce .a {
     z-index: 2;
@@ -2306,8 +2294,6 @@ main .background-mid #wave-container .wave:nth-child(4) {
   }
   main .background-mid .ecology {
     position: relative;
-    width: 100%;
-    height: 100vh;
   }
   main .background-mid .ecology h1 {
     top: 10%;
@@ -3159,66 +3145,48 @@ footer .background-dowm .travel .pad {
     justify-content: center;
     margin-top: 2rem;
   }
-  footer .background-dowm .travel .pad .arrange .oneday,
-footer .background-dowm .travel .pad .arrange .halfday {
+  footer .background-dowm .travel .pad .arrange .oneday, footer .background-dowm .travel .pad .arrange .halfday {
     gap: 2rem;
   }
-  footer .background-dowm .travel .pad .arrange .oneday .text,
-footer .background-dowm .travel .pad .arrange .halfday .text {
+  footer .background-dowm .travel .pad .arrange .oneday .text, footer .background-dowm .travel .pad .arrange .halfday .text {
     width: 48%;
     height: 40vh;
     left: 0;
   }
-  footer .background-dowm .travel .pad .arrange .oneday .text h3,
-footer .background-dowm .travel .pad .arrange .halfday .text h3 {
+  footer .background-dowm .travel .pad .arrange .oneday .text h3, footer .background-dowm .travel .pad .arrange .halfday .text h3 {
     margin-top: 10px;
     margin-bottom: 5px;
   }
-  footer .background-dowm .travel .pad .arrange .oneday .text p,
-footer .background-dowm .travel .pad .arrange .halfday .text p {
+  footer .background-dowm .travel .pad .arrange .oneday .text p, footer .background-dowm .travel .pad .arrange .halfday .text p {
     margin-left: 1rem;
     font-weight: 400;
   }
-  footer .background-dowm .travel .pad .arrange .oneday .text .last,
-footer .background-dowm .travel .pad .arrange .halfday .text .last {
+  footer .background-dowm .travel .pad .arrange .oneday .text .last, footer .background-dowm .travel .pad .arrange .halfday .text .last {
     margin-bottom: 1rem;
   }
-  footer .background-dowm .travel .pad .arrange .oneday .pic img,
-footer .background-dowm .travel .pad .arrange .halfday .pic img {
+  footer .background-dowm .travel .pad .arrange .oneday .pic img, footer .background-dowm .travel .pad .arrange .halfday .pic img {
     width: 60%;
     height: 40vh;
     transform: translate(-85%);
   }
 }
 @media (max-width: 820px) and (max-width: 650px) {
-  footer .background-dowm .travel .pad .arrange .oneday .oneday,
-footer .background-dowm .travel .pad .arrange .oneday .halfday,
-footer .background-dowm .travel .pad .arrange .halfday .oneday,
-footer .background-dowm .travel .pad .arrange .halfday .halfday {
+  footer .background-dowm .travel .pad .arrange .oneday, footer .background-dowm .travel .pad .arrange .halfday {
     display: flex;
     flex-wrap: wrap;
   }
-  footer .background-dowm .travel .pad .arrange .oneday .oneday .text,
-footer .background-dowm .travel .pad .arrange .oneday .halfday .text,
-footer .background-dowm .travel .pad .arrange .halfday .oneday .text,
-footer .background-dowm .travel .pad .arrange .halfday .halfday .text {
+  footer .background-dowm .travel .pad .arrange .oneday .text, footer .background-dowm .travel .pad .arrange .halfday .text {
     display: block;
     width: 100%;
     height: 35vh;
   }
-  footer .background-dowm .travel .pad .arrange .oneday .oneday .pic,
-footer .background-dowm .travel .pad .arrange .oneday .halfday .pic,
-footer .background-dowm .travel .pad .arrange .halfday .oneday .pic,
-footer .background-dowm .travel .pad .arrange .halfday .halfday .pic {
+  footer .background-dowm .travel .pad .arrange .oneday .pic, footer .background-dowm .travel .pad .arrange .halfday .pic {
     display: block;
     width: 100%;
     height: 35vh;
     margin-bottom: 5vw;
   }
-  footer .background-dowm .travel .pad .arrange .oneday .oneday .pic img,
-footer .background-dowm .travel .pad .arrange .oneday .halfday .pic img,
-footer .background-dowm .travel .pad .arrange .halfday .oneday .pic img,
-footer .background-dowm .travel .pad .arrange .halfday .halfday .pic img {
+  footer .background-dowm .travel .pad .arrange .oneday .pic img, footer .background-dowm .travel .pad .arrange .halfday .pic img {
     transform: translate(1%);
     transform: translateY(-10%);
     width: 115%;
@@ -3226,8 +3194,7 @@ footer .background-dowm .travel .pad .arrange .halfday .halfday .pic img {
   }
 }
 @media (max-width: 820px) and (max-width: 400px) {
-  footer .background-dowm .travel .pad .arrange .oneday .pic,
-footer .background-dowm .travel .pad .arrange .halfday .pic {
+  footer .background-dowm .travel .pad .arrange .pic {
     margin-bottom: 0.5rem;
   }
 }
@@ -3252,8 +3219,7 @@ footer .background-dowm .travel .pad .arrange .halfday .pic {
     display: flex;
     flex-wrap: wrap;
   }
-  footer .background-dowm .travel .pad .guide .guide-content .box3,
-footer .background-dowm .travel .pad .guide .guide-content .box4 {
+  footer .background-dowm .travel .pad .guide .guide-content .box3, footer .background-dowm .travel .pad .guide .guide-content .box4 {
     margin-top: 2rem;
   }
   footer .background-dowm .travel .pad .guide .guide-content .guide-card {
@@ -3267,26 +3233,15 @@ footer .background-dowm .travel .pad .guide .guide-content .box4 {
     width: 37vw;
     right: 0px;
   }
-  footer .background-dowm .travel .pad .guide .guide-content .guide-card .guide-card {
-    width: 45vw;
-    height: 40vh;
-    gap: 3rem;
-    position: relative;
-  }
-  footer .background-dowm .travel .pad .guide .guide-content .guide-card .guide-card .text-area {
-    position: absolute;
-    width: 37vw;
-    right: 0px;
-  }
-  footer .background-dowm .travel .pad .guide .guide-content .guide-card .guide-card h3 {
+  footer .background-dowm .travel .pad .guide .guide-content .guide-card h3 {
     margin-top: 10px;
     margin-bottom: 5px;
   }
-  footer .background-dowm .travel .pad .guide .guide-content .guide-card .guide-card p {
+  footer .background-dowm .travel .pad .guide .guide-content .guide-card p {
     margin-left: 1rem;
     font-weight: 400;
   }
-  footer .background-dowm .travel .pad .guide .guide-content .guide-card .guide-card .circle {
+  footer .background-dowm .travel .pad .guide .guide-content .guide-card .circle {
     color: #000000;
     position: absolute;
     width: 7vw;
@@ -3301,36 +3256,36 @@ footer .background-dowm .travel .pad .guide .guide-content .box4 {
   }
 }
 @media (max-width: 820px) and (max-width: 650px) {
-  footer .background-dowm .travel .pad .guide .guide-content .guide-content {
+  footer .background-dowm .travel .pad .guide .guide-content {
     display: flex;
     flex-wrap: wrap;
   }
-  footer .background-dowm .travel .pad .guide .guide-content .guide-content .guide-card {
+  footer .background-dowm .travel .pad .guide .guide-content .guide-card {
     width: 95vw;
     height: 30vh;
     background-color: salmon;
   }
 }
 @media (max-width: 820px) {
-  footer .background-dowm .travel .pad {
+  footer .background-dowm .travel {
     height: 100%;
   }
 }
-footer .background-dowm .travel .picture {
+footer .background-dowm .picture {
   width: 100%;
   height: 40vh;
   position: relative;
   display: flex;
   flex-wrap: wrap;
 }
-footer .background-dowm .travel .picture .pic-charge {
+footer .background-dowm .picture .pic-charge {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   width: 100%;
   height: 100%;
 }
-footer .background-dowm .travel .picture .pic-charge h1 {
+footer .background-dowm .picture .pic-charge h1 {
   width: 100%;
   height: 50px;
   display: flex;
@@ -3340,84 +3295,84 @@ footer .background-dowm .travel .picture .pic-charge h1 {
   font-size: 50px;
   color: white;
 }
-footer .background-dowm .travel .picture .pic-charge .box {
+footer .background-dowm .picture .pic-charge .box {
   width: 100%;
   height: 95%;
 }
-footer .background-dowm .travel .picture .pic-charge #ture {
+footer .background-dowm .picture .pic-charge #ture {
   width: 100%;
   height: 200px;
 }
-footer .background-dowm .travel .picture .pic-charge #ture .swiper-wrapper {
+footer .background-dowm .picture .pic-charge #ture .swiper-wrapper {
   transition-timing-function: linear;
 }
-footer .background-dowm .travel .picture .pic-charge #ture .swiper-wrapper .swiper-slide {
+footer .background-dowm .picture .pic-charge #ture .swiper-wrapper .swiper-slide {
   width: 350px;
   height: 200px;
   opacity: 0.8;
   filter: blur(1px);
 }
-footer .background-dowm .travel .picture .pic-charge #ture .swiper-wrapper .swiper-slide a {
+footer .background-dowm .picture .pic-charge #ture .swiper-wrapper .swiper-slide a {
   display: block;
 }
-footer .background-dowm .travel .picture .pic-charge #ture .swiper-wrapper .swiper-slide img {
+footer .background-dowm .picture .pic-charge #ture .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-footer .background-dowm .travel .picture .pic-charge #ture .swiper-wrapper .swiper-slide:hover {
+footer .background-dowm .picture .pic-charge #ture .swiper-wrapper .swiper-slide:hover {
   opacity: 1;
   filter: blur(0px);
 }
-footer .background-dowm .travel .picture .pic-charge #reverse {
+footer .background-dowm .picture .pic-charge #reverse {
   width: 100%;
   height: 200px;
 }
-footer .background-dowm .travel .picture .pic-charge #reverse .pad .swiper-wrapper {
+footer .background-dowm .picture .pic-charge #reverse .pad .swiper-wrapper {
   transition-timing-function: linear;
 }
-footer .background-dowm .travel .picture .pic-charge #reverse .pad .swiper-wrapper .swiper-slide {
+footer .background-dowm .picture .pic-charge #reverse .pad .swiper-wrapper .swiper-slide {
   width: 350px;
   height: 200px;
   opacity: 0.8;
   filter: blur(1px);
 }
-footer .background-dowm .travel .picture .pic-charge #reverse .pad .swiper-wrapper .swiper-slide img {
+footer .background-dowm .picture .pic-charge #reverse .pad .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-footer .background-dowm .travel .picture .pic-charge #reverse .pad .swiper-wrapper .swiper-slide:hover {
+footer .background-dowm .picture .pic-charge #reverse .pad .swiper-wrapper .swiper-slide:hover {
   opacity: 1;
   filter: blur(0px);
 }
 @media (max-width: 820px) {
-  footer .background-dowm .travel .picture .pic-charge {
+  footer .background-dowm .picture .pic-charge {
     display: none;
   }
 }
 @media (max-width: 820px) {
-  footer .background-dowm .travel .picture {
+  footer .background-dowm .picture {
     width: 100%;
     height: 580px;
   }
 }
 @media (max-width: 4000px) {
-  footer .background-dowm .travel .picture {
+  footer .background-dowm .picture {
     width: 100%;
     height: 470px;
   }
 }
-footer .background-dowm .travel .picture .pad {
+footer .background-dowm .picture .pad {
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   display: none;
 }
-footer .background-dowm .travel .picture .pad h1 {
+footer .background-dowm .picture .pad h1 {
   width: 100%;
   height: 80px;
   display: flex;
@@ -3426,11 +3381,11 @@ footer .background-dowm .travel .picture .pad h1 {
   align-items: center;
   color: white;
 }
-footer .background-dowm .travel .picture .pad .swiper {
+footer .background-dowm .picture .pad .swiper {
   width: 100%;
   height: 500px;
 }
-footer .background-dowm .travel .picture .pad .swiper .swiper-slide {
+footer .background-dowm .picture .pad .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -3439,30 +3394,30 @@ footer .background-dowm .travel .picture .pad .swiper .swiper-slide {
   justify-content: center;
   align-items: center;
 }
-footer .background-dowm .travel .picture .pad .swiper .swiper-slide img {
+footer .background-dowm .picture .pad .swiper .swiper-slide img {
   display: block;
   height: 120%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 820px) {
-  footer .background-dowm .travel .picture .pad {
+  footer .background-dowm .picture .pad {
     display: block;
   }
 }
 @media (max-width: 420px) {
-  footer .background-dowm .travel .picture .pad {
+  footer .background-dowm .picture .pad {
     display: none;
   }
 }
-footer .background-dowm .travel .picture .phone {
+footer .background-dowm .picture .phone {
   width: 100%;
   height: 70%;
   display: flex;
   flex-wrap: wrap;
   display: none;
 }
-footer .background-dowm .travel .picture .phone h1 {
+footer .background-dowm .picture .phone h1 {
   width: 100%;
   height: 80px;
   display: flex;
@@ -3471,11 +3426,11 @@ footer .background-dowm .travel .picture .phone h1 {
   align-items: center;
   color: white;
 }
-footer .background-dowm .travel .picture .phone .swiper {
+footer .background-dowm .picture .phone .swiper {
   width: 100%;
   height: 300px;
 }
-footer .background-dowm .travel .picture .phone .swiper .swiper-slide {
+footer .background-dowm .picture .phone .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -3484,7 +3439,7 @@ footer .background-dowm .travel .picture .phone .swiper .swiper-slide {
   justify-content: center;
   align-items: center;
 }
-footer .background-dowm .travel .picture .phone .swiper .swiper-slide img {
+footer .background-dowm .picture .phone .swiper .swiper-slide img {
   display: block;
   height: 120%;
   -o-object-fit: cover;
@@ -3493,12 +3448,12 @@ footer .background-dowm .travel .picture .phone .swiper .swiper-slide img {
      object-position: center;
 }
 @media (max-width: 420px) {
-  footer .background-dowm .travel .picture .phone {
+  footer .background-dowm .picture .phone {
     display: block;
   }
 }
 @media (max-width: 420px) {
-  footer .background-dowm .travel .picture {
+  footer .background-dowm .picture {
     height: 380px;
   }
 }
@@ -3812,6 +3767,7 @@ footer #end .text-word {
   transform: translate(20%, 0%);
   width: 30%;
   height: 70vh;
+  line-height: 200%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -3849,59 +3805,6 @@ footer #end .text-word {
   }
   to {
     opacity: 1;
-  }
-}
-@media (max-width: 820px) {
-  .text-seca {
-    width: 100%;
-    height: 80vh;
-    position: fixed;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    z-index: 3;
-    -webkit-animation: seca 1.5s;
-            animation: seca 1.5s;
-  }
-  .text-seca img {
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-  }
-  .text-seca .word {
-    position: fixed;
-    top: 10%;
-    left: 0%;
-    color: white;
-    transform: translate(-2%, 0%);
-    padding: 50px 100px 0px;
-    width: 100%;
-    height: 70vh;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    line-height: 200%;
-    overflow: auto;
-    text-align: justify;
-    text-justify: inter-ideograph;
-  }
-  .text-seca .word span {
-    font-size: 24px;
-  }
-  .text-seca .word .text {
-    text-indent: 24px;
-  }
-  .text-seca .word p {
-    font-size: 12px;
-  }
-  .text-seca .btna {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    top: 30px;
-    right: 50px;
   }
 }
 
@@ -4116,77 +4019,6 @@ footer #end .text-word {
     opacity: 1;
   }
 }
-@media (max-width: 820px) {
-  .text-secc {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    z-index: 3;
-    background-color: #4598b1;
-    -webkit-animation: secc 1.5s;
-            animation: secc 1.5s;
-  }
-  .text-secc img {
-    width: 100%;
-    height: 80%;
-    position: absolute;
-    top: 10%;
-    left: 0%;
-  }
-  .text-secc .bgcc {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    background-color: rgb(0, 0, 0);
-    transform: translate(-50%, -50%);
-    opacity: 0.5;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-  }
-  .text-secc .word {
-    position: fixed;
-    top: 10%;
-    left: 0%;
-    color: white;
-    transform: translate(0%, 0%);
-    padding: 50px 100px 0px;
-    width: 100%;
-    height: 70vh;
-    line-height: 200%;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 300%;
-    overflow: auto;
-    text-align: justify;
-    text-justify: inter-ideograph;
-    z-index: 1;
-  }
-  .text-secc .word span {
-    font-size: 24px;
-  }
-  .text-secc .word p {
-    line-height: 200%;
-  }
-  .text-secc .word .text {
-    text-indent: 24px;
-  }
-  .text-secc .btnc {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    top: 12%;
-    right: 30px;
-    z-index: 1;
-  }
-}
 
 .text-secd {
   width: 100%;
@@ -4274,6 +4106,7 @@ footer #end .text-word {
     opacity: 1;
   }
 }
+
 .bird-sec {
   display: none;
 }
@@ -4785,19 +4618,19 @@ footer #end .text-word {
   gap: 10px;
 }
 .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .e {
-  width: 400px;
+  width: 370px;
   display: flex;
   justify-content: start;
   font-size: 16px;
 }
 .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .f {
-  width: 400px;
+  width: 370px;
   display: flex;
   justify-content: start;
   font-size: 12px;
 }
 .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .g {
-  width: 400px;
+  width: 370px;
   display: flex;
   justify-content: start;
   font-size: 12px;
@@ -5137,7 +4970,7 @@ footer #end .text-word {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 5px;
+  gap: 10px;
   text-align: justify;
 }
 .crab-sec .crab-work .show-crab .mySwiper2-crab .text .from .e {
