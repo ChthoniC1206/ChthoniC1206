@@ -3993,7 +3993,7 @@ footer #end .text-word {
 @media (max-width: 420px) {
   .bird-sec .bird-work .show-bird .mySwiper2-bird .text .content {
     padding: 0px 10px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .bird-sec .bird-work .show-bird .mySwiper2-bird .text .content .a {
     font-size: 16px;
@@ -4037,10 +4037,11 @@ footer #end .text-word {
   }
   .bird-sec .bird-work .show-bird .mySwiper2-bird .text .from .e {
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
   }
   .bird-sec .bird-work .show-bird .mySwiper2-bird .text .from .f {
-    font-size: 12px;
+    width: 100%;
+    font-size: 10px;
   }
 }
 @media (max-width: 420px) {
@@ -4333,7 +4334,7 @@ footer #end .text-word {
 @media (max-width: 420px) {
   .plant-sec .plant-work .show-plant .mySwiper2-plant .text .content {
     padding: 0px 10px;
-    font-size: 14px;
+    font-size: 12px;
     height: 40%;
   }
   .plant-sec .plant-work .show-plant .mySwiper2-plant .text .content .a {
@@ -4387,15 +4388,15 @@ footer #end .text-word {
   }
   .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .e {
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
   }
   .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .f {
     width: 100%;
-    font-size: 12px;
+    font-size: 10px;
   }
   .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .g {
     width: 100%;
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media (max-width: 420px) {
@@ -4621,8 +4622,35 @@ footer #end .text-word {
 .crab-sec .crab-work .show-crab .mySwiper2-crab .text .title p {
   font-size: 36px;
 }
+@media (max-width: 820px) {
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .title {
+    padding: 0px 30px;
+    padding-top: 50px;
+    height: 20%;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .title h1 {
+    font-size: 36px;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .title p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 420px) {
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .title {
+    padding: 0px 10px;
+    padding-top: 10px;
+    gap: 5px;
+    align-items: flex-end;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .title h1 {
+    font-size: 24px;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .title p {
+    font-size: 20px;
+  }
+}
 .crab-sec .crab-work .show-crab .mySwiper2-crab .text .content {
-  height: 40%;
+  height: 45%;
   padding: 0px 50px;
   display: flex;
   flex-wrap: wrap;
@@ -4642,15 +4670,48 @@ footer #end .text-word {
   word-break: break-all;
   text-align: justify;
 }
+@media (max-width: 820px) {
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .content {
+    gap: 10px;
+    padding: 0px 30px;
+    height: 60%;
+    font-size: 16px;
+    width: 100%;
+    align-content: center;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .content .a {
+    font-size: 20px;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .content .b {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .content {
+    padding: 0px 10px;
+    font-size: 12px;
+    height: 40%;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .content .a {
+    font-size: 16px;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .content .b {
+    width: 100%;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .content .d {
+    text-align: justify;
+  }
+}
 .crab-sec .crab-work .show-crab .mySwiper2-crab .text .from {
   padding: 0px 50px;
   width: 100%;
-  height: 20%;
+  height: 15%;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
+  text-align: justify;
 }
 .crab-sec .crab-work .show-crab .mySwiper2-crab .text .from .e {
   width: 400px;
@@ -4660,21 +4721,60 @@ footer #end .text-word {
 }
 .crab-sec .crab-work .show-crab .mySwiper2-crab .text .from .f {
   width: 400px;
-  font-size: 12px;
   display: flex;
   justify-content: start;
+  font-size: 12px;
 }
 .crab-sec .crab-work .show-crab .mySwiper2-crab .text .from .g {
   width: 400px;
-  font-size: 12px;
   display: flex;
   justify-content: start;
+  font-size: 12px;
 }
 .crab-sec .crab-work .show-crab .mySwiper2-crab .text .from .h {
   width: 400px;
-  font-size: 12px;
   display: flex;
   justify-content: start;
+  font-size: 12px;
+}
+@media (max-width: 820px) {
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .from {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 420px) {
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .from {
+    height: 10%;
+    gap: 5px;
+    padding: 0px 10px;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .from .e {
+    width: 100%;
+    font-size: 12px;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .from .f {
+    width: 100%;
+    font-size: 10px;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .from .g {
+    width: 100%;
+    font-size: 10px;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .from .h {
+    width: 100%;
+    font-size: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text {
+    top: 50%;
+    height: 50%;
+    font-size: 14px;
+    gap: 5px;
+  }
+  .crab-sec .crab-work .show-crab .mySwiper2-crab .text .a {
+    font-size: 16px;
+  }
 }
 .crab-sec .crab-work .show-crab .mySwiper2-crab .big-box {
   background-color: #3C3B3B;
@@ -4696,7 +4796,7 @@ footer #end .text-word {
   .crab-sec .crab-work .show-crab .mySwiper2-crab img {
     position: absolute;
     top: 5%;
-    height: 50%;
+    height: 45%;
     opacity: 1;
   }
 }
@@ -4710,6 +4810,11 @@ footer #end .text-word {
   height: 100%;
   opacity: 0.4;
 }
+@media (max-width: 420px) {
+  .crab-sec .crab-work .show-crab .mySwiper-crab .swiper-slide {
+    height: 80%;
+  }
+}
 .crab-sec .crab-work .show-crab .mySwiper-crab .swiper-slide-thumb-active {
   opacity: 1;
 }
@@ -4719,6 +4824,11 @@ footer #end .text-word {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 420px) {
+  .crab-sec .crab-work .show-crab .mySwiper-crab {
+    padding-top: 20px;
+  }
 }
 .crab-sec .crab-work .show-crab .swiper-button-next {
   right: 4%;
