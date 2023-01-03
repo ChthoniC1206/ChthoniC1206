@@ -20,11 +20,9 @@
                 }
                 if (data.dataset.intro == '植物'){
                     plantsec.style.display = 'block'
-                    mediaNavbar.classList.add('none')
                 }
                 if (data.dataset.intro == '潮間帶生物'){
                     crabsec.style.display = 'block'
-                    mediaNavbar.classList.add('none')
                 }
             });
             

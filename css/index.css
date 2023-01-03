@@ -3926,6 +3926,33 @@ footer #end .text-word {
 .bird-sec .bird-work .show-bird .mySwiper2-bird .text .title p {
   font-size: 36px;
 }
+@media (max-width: 820px) {
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .title {
+    padding: 0px 30px;
+    padding-top: 50px;
+    height: 20%;
+  }
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .title h1 {
+    font-size: 36px;
+  }
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .title p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 420px) {
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .title {
+    padding: 0px 10px;
+    padding-top: 10px;
+    gap: 5px;
+    align-items: flex-end;
+  }
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .title h1 {
+    font-size: 24px;
+  }
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .title p {
+    font-size: 20px;
+  }
+}
 .bird-sec .bird-work .show-bird .mySwiper2-bird .text .content {
   height: 45%;
   padding: 0px 50px;
@@ -3947,6 +3974,37 @@ footer #end .text-word {
   word-break: break-all;
   text-align: justify;
 }
+@media (max-width: 820px) {
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .content {
+    gap: 10px;
+    padding: 0px 30px;
+    height: 60%;
+    font-size: 16px;
+    width: 100%;
+    align-content: center;
+  }
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .content .a {
+    font-size: 20px;
+  }
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .content .b {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .content {
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .content .a {
+    font-size: 16px;
+  }
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .content .b {
+    width: 100%;
+  }
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .content .d {
+    text-align: justify;
+  }
+}
 .bird-sec .bird-work .show-bird .mySwiper2-bird .text .from {
   padding: 0px 50px;
   width: 100%;
@@ -3965,6 +4023,36 @@ footer #end .text-word {
 }
 .bird-sec .bird-work .show-bird .mySwiper2-bird .text .from .f {
   font-size: 12px;
+}
+@media (max-width: 820px) {
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .from {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 420px) {
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .from {
+    height: 15%;
+    gap: 5px;
+    padding: 0px 10px;
+  }
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .from .e {
+    width: 100%;
+    font-size: 14px;
+  }
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .from .f {
+    font-size: 12px;
+  }
+}
+@media (max-width: 420px) {
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text {
+    top: 50%;
+    height: 50%;
+    font-size: 14px;
+    gap: 5px;
+  }
+  .bird-sec .bird-work .show-bird .mySwiper2-bird .text .a {
+    font-size: 16px;
+  }
 }
 .bird-sec .bird-work .show-bird .mySwiper2-bird .big-box {
   background-color: #3C3B3B;
@@ -3986,7 +4074,7 @@ footer #end .text-word {
   .bird-sec .bird-work .show-bird .mySwiper2-bird img {
     position: absolute;
     top: 5%;
-    height: 50%;
+    height: 45%;
     opacity: 1;
   }
 }
@@ -4000,6 +4088,11 @@ footer #end .text-word {
   height: 100%;
   opacity: 0.4;
 }
+@media (max-width: 420px) {
+  .bird-sec .bird-work .show-bird .mySwiper-bird .swiper-slide {
+    height: 80%;
+  }
+}
 .bird-sec .bird-work .show-bird .mySwiper-bird .swiper-slide-thumb-active {
   opacity: 1;
 }
@@ -4009,6 +4102,11 @@ footer #end .text-word {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 420px) {
+  .bird-sec .bird-work .show-bird .mySwiper-bird {
+    padding-top: 20px;
+  }
 }
 .bird-sec .bird-work .show-bird .swiper-button-next {
   right: 4%;
@@ -4168,6 +4266,33 @@ footer #end .text-word {
 .plant-sec .plant-work .show-plant .mySwiper2-plant .text .title p {
   font-size: 36px;
 }
+@media (max-width: 820px) {
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .title {
+    padding: 0px 30px;
+    padding-top: 50px;
+    height: 20%;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .title h1 {
+    font-size: 36px;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .title p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 420px) {
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .title {
+    padding: 0px 10px;
+    padding-top: 10px;
+    gap: 5px;
+    align-items: flex-end;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .title h1 {
+    font-size: 24px;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .title p {
+    font-size: 20px;
+  }
+}
 .plant-sec .plant-work .show-plant .mySwiper2-plant .text .content {
   height: 45%;
   padding: 0px 50px;
@@ -4189,6 +4314,38 @@ footer #end .text-word {
   word-break: break-all;
   text-align: justify;
 }
+@media (max-width: 820px) {
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .content {
+    gap: 10px;
+    padding: 0px 30px;
+    height: 60%;
+    font-size: 16px;
+    width: 100%;
+    align-content: center;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .content .a {
+    font-size: 20px;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .content .b {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .content {
+    padding: 0px 10px;
+    font-size: 14px;
+    height: 40%;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .content .a {
+    font-size: 16px;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .content .b {
+    width: 100%;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .content .d {
+    text-align: justify;
+  }
+}
 .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from {
   padding: 0px 50px;
   width: 100%;
@@ -4207,15 +4364,50 @@ footer #end .text-word {
 }
 .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .f {
   width: 370px;
-  font-size: 12px;
   display: flex;
   justify-content: start;
+  font-size: 12px;
 }
 .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .g {
   width: 370px;
-  font-size: 12px;
   display: flex;
   justify-content: start;
+  font-size: 12px;
+}
+@media (max-width: 820px) {
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 420px) {
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from {
+    height: 20%;
+    gap: 5px;
+    padding: 0px 10px;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .e {
+    width: 100%;
+    font-size: 14px;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .f {
+    width: 100%;
+    font-size: 12px;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .from .g {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+@media (max-width: 420px) {
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text {
+    top: 50%;
+    height: 50%;
+    font-size: 14px;
+    gap: 5px;
+  }
+  .plant-sec .plant-work .show-plant .mySwiper2-plant .text .a {
+    font-size: 16px;
+  }
 }
 .plant-sec .plant-work .show-plant .mySwiper2-plant .big-box {
   background-color: #3C3B3B;
@@ -4237,7 +4429,7 @@ footer #end .text-word {
   .plant-sec .plant-work .show-plant .mySwiper2-plant img {
     position: absolute;
     top: 5%;
-    height: 50%;
+    height: 45%;
     opacity: 1;
   }
 }
@@ -4251,6 +4443,11 @@ footer #end .text-word {
   height: 100%;
   opacity: 0.4;
 }
+@media (max-width: 420px) {
+  .plant-sec .plant-work .show-plant .mySwiper-plant .swiper-slide {
+    height: 80%;
+  }
+}
 .plant-sec .plant-work .show-plant .mySwiper-plant .swiper-slide-thumb-active {
   opacity: 1;
 }
@@ -4260,6 +4457,11 @@ footer #end .text-word {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 420px) {
+  .plant-sec .plant-work .show-plant .mySwiper-plant {
+    padding-top: 20px;
+  }
 }
 .plant-sec .plant-work .show-plant .swiper-button-next {
   right: 4%;
