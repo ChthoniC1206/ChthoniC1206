@@ -1134,24 +1134,42 @@ main .background-mid #wave-container .weather-box .weather-info .weather .weathe
   height: 100px;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   margin: 0 10px;
 }
 main .background-mid #wave-container .weather-box .weather-info .weather .weather-img img {
-  width: 8%;
-  height: 10%;
+  width: 10%;
+  height: 15%;
+}
+@media (max-width: 820px) {
+  main .background-mid #wave-container .weather-box .weather-info .weather .weather-img img {
+    width: 10%;
+    height: 10%;
+  }
 }
 @media (max-width: 400px) {
   main .background-mid #wave-container .weather-box .weather-info .weather .weather-img img {
-    width: 30%;
+    width: 20%;
+  }
+}
+@media (max-width: 820px) {
+  main .background-mid #wave-container .weather-box .weather-info .weather .weather-img {
+    align-items: start;
+    justify-content: end;
   }
 }
 @media (max-width: 400px) {
   main .background-mid #wave-container .weather-box .weather-info .weather .weather-img {
-    align-items: center;
+    align-items: start;
   }
 }
 main .background-mid #wave-container .weather-box .weather-info .weather .tempture {
   font-size: 90px;
+}
+@media (max-width: 820px) {
+  main .background-mid #wave-container .weather-box .weather-info .weather .tempture {
+    font-size: 60px;
+  }
 }
 @media (max-width: 400px) {
   main .background-mid #wave-container .weather-box .weather-info .weather .tempture {
@@ -1185,36 +1203,60 @@ main .background-mid #wave-container .weather-box .weather-info .chance-of-rain 
   }
 }
 main .background-mid #wave-container .weather-box .weather-info .weather-card {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 110px;
+  padding: 0 75px;
 }
-main .background-mid #wave-container .weather-box .weather-info .weather-card .card {
-  width: 150px;
-  height: 150px;
+main .background-mid #wave-container .weather-box .weather-info .weather-card .mySwipers-weather {
+  width: 100%;
+  height: 180px;
+}
+main .background-mid #wave-container .weather-box .weather-info .weather-card .mySwipers-weather .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .background-mid #wave-container .weather-box .weather-info .weather-card .mySwipers-weather .swiper-wrapper .swiper-slide {
+  width: 180px;
+  height: 180px;
   background: rgba(65, 65, 65, 0.6);
   border-radius: 10px;
+  margin: 0 10px;
+}
+main .background-mid #wave-container .weather-box .weather-info .weather-card .mySwipers-weather .swiper-wrapper .swiper-slide .text-word {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
-main .background-mid #wave-container .weather-box .weather-info .weather-card .card .weather-week {
-  display: flex;
-  justify-content: center;
-}
-main .background-mid #wave-container .weather-box .weather-info .weather-card .card .weather-week .weather-week-img {
-  width: 50px;
-  height: 50px;
-}
-main .background-mid #wave-container .weather-box .weather-info .weather-card .card .weather-week .weather-week-img img {
-  width: 50px;
-  height: 50px;
-}
-main .background-mid #wave-container .weather-box .weather-info .weather-card .card .weather-week .tempture {
+main .background-mid #wave-container .weather-box .weather-info .weather-card .mySwipers-weather .swiper-wrapper .swiper-slide .text-word h4 {
+  margin: 10px 0;
   font-size: 20px;
+}
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info .weather-card .mySwipers-weather .swiper-wrapper .swiper-slide .text-word h4 {
+    font-size: 15px;
+  }
+}
+main .background-mid #wave-container .weather-box .weather-info .weather-card .mySwipers-weather .swiper-wrapper .swiper-slide .text-word .weather-infomation {
   display: flex;
   align-items: center;
+}
+main .background-mid #wave-container .weather-box .weather-info .weather-card .mySwipers-weather .swiper-wrapper .swiper-slide .text-word .weather-infomation .weather-image {
+  width: 50px;
+  height: 50px;
+}
+main .background-mid #wave-container .weather-box .weather-info .weather-card .mySwipers-weather .swiper-wrapper .swiper-slide .text-word .weather-infomation .weather-image img {
+  width: 50px;
+  height: 50px;
+}
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info .weather-card .mySwipers-weather .swiper-wrapper .swiper-slide {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info .weather-card {
+    padding: 0 10px;
+  }
 }
 main .background-mid #wave-container .weather-box .weather-info h3 {
   margin: 10px 0;
@@ -1251,7 +1293,18 @@ main .background-mid #wave-container .weather-box .weather-info .other-info .inf
 }
 @media (max-width: 400px) {
   main .background-mid #wave-container .weather-box .weather-info {
-    height: 600px;
+    height: 650px;
+  }
+}
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info {
+    width: 100%;
+  }
+  main .background-mid #wave-container .weather-box .weather-info .swiper-button-next {
+    top: 55%;
+  }
+  main .background-mid #wave-container .weather-box .weather-info .swiper-button-prev {
+    top: 55%;
   }
 }
 main .background-mid #wave-container .wave {
@@ -1265,7 +1318,7 @@ main .background-mid #wave-container .wave {
   border-radius: 48%;
   -webkit-animation: waves 30000ms infinite linear;
           animation: waves 30000ms infinite linear;
-  z-index: 1;
+  z-index: 5;
 }
 main .background-mid #wave-container .wave:nth-child(2) {
   -webkit-animation: waves 18000ms infinite linear;

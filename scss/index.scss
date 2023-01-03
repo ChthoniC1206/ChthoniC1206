@@ -1159,9 +1159,11 @@ main {
                             height: 100px;
                             display: flex;
                             align-items: flex-end;
+                            justify-content: center;
                             margin: 0 10px;
 
                             img {
+<<<<<<< Updated upstream
                                 width: 8%;
                                 height: 10%;
 
@@ -1172,13 +1174,38 @@ main {
 
                             @media (max-width:400px) {
                                 align-items: center;
+=======
+                                width: 10%;
+                                height: 15%;
+                                @media (max-width:820px){
+                                    width: 10%;
+                                    height: 10%;
+                                }
+                                @media (max-width:400px){
+                                    width: 20%;
+                                }
+                            }
+                            @media (max-width:820px){
+                                align-items: start;
+                                justify-content: end;
+                            }
+                            @media (max-width:400px){
+                                align-items: start;
+>>>>>>> Stashed changes
                             }
                         }
 
                         .tempture {
                             font-size: 90px;
+<<<<<<< Updated upstream
 
                             @media (max-width:400px) {
+=======
+                            @media (max-width:820px){
+                                font-size: 60px;
+                            }
+                            @media (max-width:400px){
+>>>>>>> Stashed changes
                                 font-size: 50px;
                             }
                         }
@@ -1213,6 +1240,7 @@ main {
                             }
                         }
                     }
+<<<<<<< Updated upstream
 
                     .weather-card {
                         display: flex;
@@ -1247,8 +1275,56 @@ main {
                                     font-size: 20px;
                                     display: flex;
                                     align-items: center;
+=======
+                    .weather-card{
+                        padding: 0 75px;
+                        .mySwipers-weather{
+                            width: 100%;
+                            height: 180px;
+                            .swiper-wrapper{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .swiper-slide{
+                                    width: 180px;
+                                    height: 180px;
+                                    background: rgba(65, 65, 65, 0.6);
+                                    border-radius: 10px;
+                                    margin: 0 10px;
+                                    .text-word{
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        h4{
+                                            margin: 10px 0;
+                                            font-size: 20px;
+                                            @media (max-width:400px){
+                                                font-size: 15px;
+                                            }
+                                        }
+                                        .weather-infomation{
+                                            display: flex;
+                                            align-items: center;
+                                            .weather-image{
+                                                width: 50px;
+                                                height: 50px;
+                                                img{
+                                                    width: 50px;
+                                                    height: 50px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    @media (max-width:400px){
+                                        width: 120px;
+                                        height: 120px;
+                                    }
+>>>>>>> Stashed changes
                                 }
                             }
+                        }
+                        @media (max-width:400px){
+                            padding: 0 10px;
                         }
                     }
 
@@ -1286,13 +1362,26 @@ main {
                             }
                         }
                     }
+<<<<<<< Updated upstream
 
                     @media (max-width:400px) {
                         height: 600px;
+=======
+                    @media (max-width:400px){
+                        height: 650px;
+                    }
+                    @media (max-width:400px){
+                        width: 100%;
+                        .swiper-button-next{
+                            top: 55%;
+                        }
+                        .swiper-button-prev{
+                            top: 55%;
+                        }
+>>>>>>> Stashed changes
                     }
                 }
             }
-
 
             .wave {
                 position: absolute;
@@ -1304,7 +1393,7 @@ main {
                 top: 700px;
                 border-radius: 48%;
                 animation: waves 30000ms infinite linear;
-                z-index: 1;
+                z-index: 5;
 
                 &:nth-child(2) {
                     animation: waves 18000ms infinite linear;
