@@ -3411,12 +3411,13 @@ footer {
                             }
                             @media (max-width:650px) {
                                 .guide-content{
+                                    // background-color: beige;
                                     display: flex;
                                     flex-wrap: wrap;
                                     .guide-card{
                                         width: 95vw;
                                         height: 30vh;
-                                        
+                                        background-color: salmon;
                                     }
                                 }
                             }
