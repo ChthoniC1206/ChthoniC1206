@@ -296,6 +296,7 @@ main {
             height: 100%;
             object-fit: cover;
         }
+
         @media (max-width: 820px) {
             padding-top: 50px;
         }
@@ -687,6 +688,7 @@ main {
             position: relative;
             width: 100%;
             height: 100vh;
+
             h1 {
                 top: 5%;
                 left: 43%;
@@ -1781,6 +1783,7 @@ main {
                 position: relative;
                 width: 100%;
                 height: 80vh;
+
                 h1 {
                     top: 5%;
                     left: 43%;
@@ -2957,13 +2960,16 @@ footer {
                     font-size: 50px;
                     display: flex;
                     justify-content: center;
+
                     @media (max-width: 820px) {
                         font-size: 32px;
                     }
+
                     @media (max-width: 420px) {
                         font-size: 24px;
                     }
                 }
+
                 .news-box {
                     position: absolute;
                     margin-top: 30px;
@@ -2976,6 +2982,7 @@ footer {
                     .swiper {
                         width: 100%;
                         height: 100%;
+
                         .swiper-slide {
                             text-align: center;
                             font-size: 18px;
@@ -3002,6 +3009,7 @@ footer {
                                 flex-wrap: wrap;
                                 padding: 5%;
                                 border-radius: 20px;
+
                                 h2 {
                                     padding-top: 15px;
                                     height: 30%;
@@ -3009,15 +3017,18 @@ footer {
                                     width: 100%;
                                     border-bottom: 4px dashed white;
                                 }
+
                                 p {
                                     width: 100%;
                                     color: white;
                                     text-align: justify;
                                 }
+
                                 .date {
                                     display: flex;
                                     justify-content: center;
                                 }
+
                                 a {
                                     display: flex;
                                     align-items: flex-end;
@@ -3025,31 +3036,38 @@ footer {
                                     color: white;
                                     text-decoration: none;
                                     margin: 0 auto;
+
                                     &:hover {
                                         border-bottom: 2px solid white;
                                     }
                                 }
+
                                 @media (max-width: 820px) {
                                     h2 {
                                         font-size: 24px;
                                     }
+
                                     p {
                                         font-size: 16px;
                                     }
                                 }
                             }
-                        }      
+                        }
                     }
+
                     .swiper-button-next {
                         right: 0%;
                     }
+
                     .swiper-button-prev {
                         left: 0%;
                     }
+
                     .btn {
                         color: white !important;
                         --swiper-navigation-size: 30px;
                     }
+
                     @media (max-width: 820px) {
                         width: 90%;
                         height: 60%;
@@ -3391,13 +3409,9 @@ footer {
                     ;
                 }
             }
-<<<<<<< Updated upstream
-            // 平板版
-            .pad{
-=======
 
+            // 平板版
             .pad {
->>>>>>> Stashed changes
                 display: none;
 
                 @media (max-width: 820px) {
@@ -3481,23 +3495,29 @@ footer {
                                     transform: translate(-85%);
                                 }
                             }
+
                             // 手機板
                             @media (max-width: 650px) {
-                                .oneday, .halfday{
+
+                                .oneday,
+                                .halfday {
                                     display: flex;
                                     flex-wrap: wrap;
-                                    .text{
-                                    display: block;
-                                    width: 100%;
-                                    height: 35vh;
-                                    // background-color: salmon;
+
+                                    .text {
+                                        display: block;
+                                        width: 100%;
+                                        height: 35vh;
+                                        // background-color: salmon;
                                     }
-                                    .pic{
+
+                                    .pic {
                                         display: block;
                                         width: 100%;
                                         height: 35vh;
                                         margin-bottom: 5vw;
-                                        img{
+
+                                        img {
                                             transform: translate(1%);
                                             transform: translateY(-10%);
                                             width: 115%;
@@ -3506,8 +3526,9 @@ footer {
                                     }
                                 }
                             }
+
                             @media (max-width:400px) {
-                                .pic{
+                                .pic {
                                     margin-bottom: 0.5rem;
                                 }
                             }
@@ -3551,26 +3572,30 @@ footer {
                                     width: 37vw;
                                     right: 0px;
                                 }
-<<<<<<< Updated upstream
-                                .guide-card{
+
+                                .guide-card {
                                     width: 45vw;
                                     height: 40vh;
                                     gap: 3rem;
                                     position: relative;
-                                    .text-area{
+
+                                    .text-area {
                                         position: absolute;
                                         width: 37vw;
                                         right: 0px;
                                     }
-                                    h3{
+
+                                    h3 {
                                         margin-top: 10px;
                                         margin-bottom: 5px;
                                     }
-                                    p{
+
+                                    p {
                                         margin-left: 1rem;
                                         font-weight: 400;
                                     }
-                                    .circle{
+
+                                    .circle {
                                         color: #000000;
                                         position: absolute;
                                         width: 7vw;
@@ -3585,282 +3610,251 @@ footer {
                                     }
                                 }
                             }
+
                             @media (max-width:650px) {
-                                .guide-content{
+                                .guide-content {
                                     display: flex;
                                     flex-wrap: wrap;
-                                    .guide-card{
+
+                                    .guide-card {
                                         width: 95vw;
                                         height: 30vh;
-                                        
+
                                     }
                                 }
                             }
-                        }  
-=======
+                        }
+                    }
+                }
 
-                                h3 {
-                                    margin-top: 10px;
-                                    margin-bottom: 5px;
+                @media (max-width:820px) {
+                    height: 100%;
+                }
+            }
+
+            // 高美景觀
+            .picture {
+                width: 100%;
+                height: 40vh;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+
+                .pic-charge {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: flex-start;
+                    width: 100%;
+                    height: 100%;
+
+                    h1 {
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 30px;
+                        font-size: 50px;
+                        color: white;
+                    }
+
+                    .box {
+                        width: 100%;
+                        height: 95%;
+                    }
+
+                    #ture {
+                        width: 100%;
+                        height: 200px;
+
+                        .swiper-wrapper {
+                            transition-timing-function: linear;
+
+                            .swiper-slide {
+                                width: 350px;
+                                height: 200px;
+
+                                a {
+                                    display: block;
                                 }
 
-                                p {
-                                    margin-left: 1rem;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
                                 }
 
-                                .circle {
-                                    color: #000000;
-                                    position: absolute;
-                                    width: 7vw;
-                                    height: 5vh;
-                                    border-radius: 50%;
-                                    background-color: #AFDCEA;
-                                    top: 0px;
-                                    left: 0px;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
+                                opacity: .8;
+                                filter: blur(1px);
+
+                                &:hover {
+                                    opacity: 1;
+                                    filter: blur(0px);
                                 }
                             }
                         }
                     }
 
+                    #reverse {
+                        width: 100%;
+                        height: 200px;
 
->>>>>>> Stashed changes
+                        .pad .swiper-wrapper {
+                            transition-timing-function: linear;
+
+                            .swiper-slide {
+                                width: 350px;
+                                height: 200px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+
+                                opacity: .8;
+                                filter: blur(1px);
+
+                                &:hover {
+                                    opacity: 1;
+                                    filter: blur(0px);
+                                }
+                            }
+                        }
+                    }
+
+                    @media (max-width: 820px) {
+                        display: none;
+                    }
                 }
-            }
 
-            @media (max-width:820px) {
-                height: 100%;
-            }
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
-        }
-
-        // 高美景觀
-        .picture {
-            width: 100%;
-            height: 40vh;
-            position: relative;
-            display: flex;
-            flex-wrap: wrap;
-
-            .pic-charge {
-                display: flex;
-                flex-wrap: wrap;
-                align-content: flex-start;
-                width: 100%;
-                height: 100%;
-
-                h1 {
+                @media (max-width: 820px) {
                     width: 100%;
-                    height: 50px;
+                    height: 580px;
+                }
+
+                @media (max-width: 4000px) {
+                    width: 100%;
+                    height: 470px;
+                }
+
+                .pad {
+                    width: 100%;
+                    height: 100%;
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-bottom: 30px;
-                    font-size: 50px;
-                    color: white;
-                }
+                    flex-wrap: wrap;
 
-                .box {
-                    width: 100%;
-                    height: 95%;
-                }
+                    h1 {
+                        width: 100%;
+                        height: 80px;
+                        display: flex;
+                        font-size: 32px;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                    }
 
-                #ture {
-                    width: 100%;
-                    height: 200px;
-
-                    .swiper-wrapper {
-                        transition-timing-function: linear;
+                    .swiper {
+                        width: 100%;
+                        height: 500px;
 
                         .swiper-slide {
-                            width: 350px;
-                            height: 200px;
+                            text-align: center;
+                            font-size: 18px;
+                            background: #fff;
+                            /* Center slide text vertically */
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: -webkit-flex;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            -webkit-align-items: center;
+                            align-items: center;
 
-                            a {
+                            img {
                                 display: block;
-                            }
-
-                            img {
-                                width: 100%;
-                                height: 100%;
+                                height: 120%;
                                 object-fit: cover;
-                            }
-
-                            opacity: .8;
-                            filter: blur(1px);
-
-                            &:hover {
-                                opacity: 1;
-                                filter: blur(0px);
                             }
                         }
                     }
+
+                    display: none;
+
+                    @media (max-width: 820px) {
+                        display: block;
+                    }
+
+                    @media (max-width: 420px) {
+                        display: none;
+                    }
                 }
 
-                #reverse {
+                .phone {
                     width: 100%;
-                    height: 200px;
+                    height: 70%;
+                    display: flex;
+                    flex-wrap: wrap;
 
-                    .pad .swiper-wrapper {
-                        transition-timing-function: linear;
+                    h1 {
+                        width: 100%;
+                        height: 80px;
+                        display: flex;
+                        font-size: 32px;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                    }
+
+                    .swiper {
+                        width: 100%;
+                        height: 300px;
 
                         .swiper-slide {
-                            width: 350px;
-                            height: 200px;
+                            text-align: center;
+                            font-size: 18px;
+                            background: #fff;
+                            /* Center slide text vertically */
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: -webkit-flex;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            -webkit-justify-content: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            -webkit-align-items: center;
+                            align-items: center;
 
                             img {
-                                width: 100%;
-                                height: 100%;
+                                display: block;
+                                height: 120%;
                                 object-fit: cover;
-                            }
-
-                            opacity: .8;
-                            filter: blur(1px);
-
-                            &:hover {
-                                opacity: 1;
-                                filter: blur(0px);
+                                object-position: center;
                             }
                         }
                     }
-                }
 
-                @media (max-width: 820px) {
                     display: none;
-                }
-            }
 
-            @media (max-width: 820px) {
-                width: 100%;
-                height: 580px;
-            }
-
-            @media (max-width: 4000px) {
-                width: 100%;
-                height: 470px;
-            }
-
-            .pad {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-wrap: wrap;
-
-                h1 {
-                    width: 100%;
-                    height: 80px;
-                    display: flex;
-                    font-size: 32px;
-                    justify-content: center;
-                    align-items: center;
-                    color: white;
-                }
-
-                .swiper {
-                    width: 100%;
-                    height: 500px;
-
-                    .swiper-slide {
-                        text-align: center;
-                        font-size: 18px;
-                        background: #fff;
-                        /* Center slide text vertically */
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: -webkit-flex;
-                        display: flex;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        -webkit-justify-content: center;
-                        justify-content: center;
-                        -webkit-box-align: center;
-                        -ms-flex-align: center;
-                        -webkit-align-items: center;
-                        align-items: center;
-
-                        img {
-                            display: block;
-                            height: 120%;
-                            object-fit: cover;
-                        }
+                    @media (max-width: 420px) {
+                        display: block;
                     }
                 }
 
-                display: none;
-
-                @media (max-width: 820px) {
-                    display: block;
-                }
-
                 @media (max-width: 420px) {
-                    display: none;
+                    height: 380px;
                 }
             }
 
-            .phone {
-                width: 100%;
-                height: 70%;
-                display: flex;
-                flex-wrap: wrap;
-
-                h1 {
-                    width: 100%;
-                    height: 80px;
-                    display: flex;
-                    font-size: 32px;
-                    justify-content: center;
-                    align-items: center;
-                    color: white;
-                }
-
-                .swiper {
-                    width: 100%;
-                    height: 300px;
-
-                    .swiper-slide {
-                        text-align: center;
-                        font-size: 18px;
-                        background: #fff;
-                        /* Center slide text vertically */
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: -webkit-flex;
-                        display: flex;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        -webkit-justify-content: center;
-                        justify-content: center;
-                        -webkit-box-align: center;
-                        -ms-flex-align: center;
-                        -webkit-align-items: center;
-                        align-items: center;
-
-                        img {
-                            display: block;
-                            height: 120%;
-                            object-fit: cover;
-                            object-position: center;
-                        }
-                    }
-                }
-
-                display: none;
-
-                @media (max-width: 420px) {
-                    display: block;
-                }
-            }
-
-            @media (max-width: 420px) {
-                height: 380px;
-            }
         }
-
     }
 
     // 底部呈現區
@@ -4601,15 +4595,15 @@ footer {
             overflow: auto;
             text-align: justify;
             text-justify: inter-ideograph;
-    
+
             span {
                 font-size: 24px;
             }
-    
+
             p {
                 line-height: 200%;
             }
-    
+
             .text {
                 text-indent: 24px;
             }
@@ -6023,6 +6017,7 @@ footer {
             display: block;
             width: 100%;
             text-decoration: none;
+
             &:hover {
                 background-color: black;
             }
@@ -6031,6 +6026,7 @@ footer {
 
     @media (max-width: 820px) {
         display: block;
+
         .left-sec {
             display: flex;
             width: 90%;
@@ -6070,6 +6066,7 @@ footer {
     @media (max-width: 420px) {
         display: block;
         height: 8%;
+
         .media-navbar {
             width: 100%;
             height: 100%;
@@ -6112,6 +6109,7 @@ footer {
                 height: 100%;
             }
         }
+
         .burger-line {
             display: flex;
             align-items: center;
@@ -6120,6 +6118,7 @@ footer {
             right: 0%;
             width: 10%;
         }
+
         .menu {
             top: 8%;
         }
