@@ -29,6 +29,7 @@
 @media (max-width: 400px) {
   .weather-card .mySwipers-weather .swiper-wrapper .swiper-slide .text-word h4 {
     font-size: 15px;
+    margin: 5px;
   }
 }
 .weather-card .mySwipers-weather .swiper-wrapper .swiper-slide .text-word .weather-infomation {

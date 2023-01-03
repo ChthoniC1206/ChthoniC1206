@@ -1180,6 +1180,16 @@ main .background-mid #wave-container .weather-box .weather-info .chance-of-rain 
     width: 20%;
   }
 }
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info .swiper-button-next {
+    top: 55%;
+  }
+}
+@media (max-width: 400px) {
+  main .background-mid #wave-container .weather-box .weather-info .swiper-button-prev {
+    top: 55%;
+  }
+}
 main .background-mid #wave-container .weather-box .weather-info h3 {
   margin: 10px 0;
   padding: 0 10px;
@@ -1215,7 +1225,7 @@ main .background-mid #wave-container .weather-box .weather-info .other-info .inf
 }
 @media (max-width: 400px) {
   main .background-mid #wave-container .weather-box .weather-info {
-    height: 600px;
+    height: 650px;
   }
 }
 main .background-mid #wave-container .wave {

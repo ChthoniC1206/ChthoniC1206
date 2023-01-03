@@ -3,6 +3,21 @@ const swipers = new Swiper(".mySwipers-weather", {
     slidesPerGroup: 6,
     loop: true,
     loopFillGroupWithBlank: true,
+    breakpoints:{
+        810: {
+            spaceBetween: 3,
+            slidesPerView: 3,
+        },
+        400: {
+            spaceBetween: 1,
+            slidesPerView: 1,
+        },
+        100: {
+            spaceBetween: 1,
+            slidesPerView: 1,
+        },
+
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
