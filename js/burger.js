@@ -1,7 +1,6 @@
         const typeBtn = document.querySelectorAll('.type-btn')
         const menu =document.querySelector('.menu')
         const checkbox = document.querySelector('#burger')
-        
 
         const menuOpBtn = document.querySelector('.btn-open')
         const menuCloseBtn = document.querySelector('.btn-close')
