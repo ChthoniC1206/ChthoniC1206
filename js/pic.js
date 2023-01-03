@@ -94,22 +94,12 @@ var swiper2 = new Swiper("#reverse", {
     loopAdditionalSlides: 7,
     slidesPerView: 6,
 }); 
-var swiper3 = new Swiper("#ture2", {
-    speed: 10000,
-    autoplay: {
-        delay: 0,
-    },
-    loop: true,
-    loopAdditionalSlides: 7,
-    slidesPerView: 6,
-});
 
 swiper1.el.onmouseenter = function () {
     var swiper1_translate = swiper1.getTranslate();
     swiper1.setTranslate(swiper1_translate);
 
 }
-
 swiper1.el.onmouseleave = function () {
     var Now_translate1 = swiper1.getTranslate();
     Now_translate1 = Now_translate1 - 300;
