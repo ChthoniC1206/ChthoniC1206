@@ -3526,7 +3526,6 @@ footer {
                             }
 
                             @media (max-width:650px) {
-<<<<<<< Updated upstream
                                 .guide-content {
                                     display: flex;
                                     flex-wrap: wrap;
@@ -3535,18 +3534,6 @@ footer {
                                         width: 95vw;
                                         height: 30vh;
 
-=======
-                                .guide-content{
-                                    // background-color: beige;
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    width: 95vw;
-                                    height: 30vh;
-                                    .guide-card{
-                                        width: 95vw;
-                                        height: 30vh;
-                                        background-color: salmon;
->>>>>>> Stashed changes
                                     }
                                 }
                             }
