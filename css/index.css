@@ -326,6 +326,11 @@ main #banner video {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 820px) {
+  main #banner {
+    padding-top: 50px;
+  }
+}
 main #container {
   background-image: url("../img/backfround.png");
   background-size: cover;
@@ -5273,6 +5278,7 @@ footer #end .text-word {
 @media (max-width: 420px) {
   .media-navbar {
     display: block;
+    height: 8%;
   }
   .media-navbar .media-navbar {
     width: 100%;
@@ -5308,5 +5314,16 @@ footer #end .text-word {
   }
   .media-navbar #burger:checked ~ .menu {
     height: 100%;
+  }
+  .media-navbar .burger-line {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 25px;
+    right: 0%;
+    width: 10%;
+  }
+  .media-navbar .menu {
+    top: 8%;
   }
 }/*# sourceMappingURL=index.css.map */
