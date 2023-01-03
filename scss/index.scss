@@ -1192,38 +1192,8 @@ main {
                             }
                         }
                     }
-                    .weather-card {
-                        display: flex;
-                        justify-content: space-around;
-                        padding: 0 110px;
-                        .card {
-                            width: 150px;
-                            height: 150px;
-                            background: rgba(65, 65, 65, 0.6);
-                            border-radius: 10px;
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: center;
-                            align-items: center;
-                            .weather-week {
-                                display: flex;
-                                justify-content: center;
-                                .weather-week-img {
-                                    width: 50px;
-                                    height: 50px;
-                                    img {
-                                        width: 50px;
-                                        height: 50px;
-                                    }
-                                }
-                                .tempture {
-                                    font-size: 20px;
-                                    display: flex;
-                                    align-items: center;
-                                }
-                            }
-                        }
-                    }
+                    
+                    
                     h3 {
                         margin: 10px 0;
                         padding: 0 10px;
