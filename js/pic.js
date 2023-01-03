@@ -93,11 +93,16 @@ var swiper2 = new Swiper("#reverse", {
     loop: true,
     loopAdditionalSlides: 7,
     slidesPerView: 6,
-}); 
+});
 
 swiper1.el.onmouseenter = function () {
     var swiper1_translate = swiper1.getTranslate();
     swiper1.setTranslate(swiper1_translate);
+
+}
+swiper2.el.onmouseenter = function () {
+    var swiper2_translate = swiper2.getTranslate();
+    swiper2.setTranslate(swiper2_translate);
 
 }
 swiper1.el.onmouseleave = function () {
@@ -105,11 +110,6 @@ swiper1.el.onmouseleave = function () {
     Now_translate1 = Now_translate1 - 300;
     swiper1.setTransition(10000);
     swiper1.setTranslate(Now_translate1);
-}
-swiper2.el.onmouseenter = function () {
-    var swiper2_translate = swiper2.getTranslate();
-    swiper2.setTranslate(swiper2_translate);
-
 }
 swiper2.el.onmouseleave = function () {
     var Now_translate2 = swiper2.getTranslate();
