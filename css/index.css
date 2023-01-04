@@ -2944,7 +2944,6 @@ footer .background-dowm .travel .pc .box {
   transform: translate(-50%, -50%);
   width: 80%;
   height: 80%;
-  border: 1px solid sandybrown;
 }
 footer .background-dowm .travel .pc .box .map {
   width: 100%;
@@ -3002,11 +3001,11 @@ footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .img1:
 footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .img2 {
   position: absolute;
   width: 45%;
-  height: 500px;
+  height: 50vh;
   left: 3%;
-  top: 25%;
-  background-size: cover;
-  border-radius: 40px;
+  top: 25vh;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-image: url("../img/travel/smile.jfif");
   opacity: 0.9;
 }
@@ -3054,9 +3053,12 @@ footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text 
   color: #fff;
   text-decoration: none;
 }
+footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .line :hover {
+  text-decoration: underline;
+}
 footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area {
   position: absolute;
-  width: 75%;
+  width: 60%;
   left: 115px;
   color: #fff;
   flex-wrap: wrap;
@@ -3147,6 +3149,9 @@ footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .line 
 footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .line a {
   color: #fff;
   text-decoration: none;
+}
+footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .line :hover {
+  text-decoration: underline;
 }
 footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text-area {
   position: absolute;
@@ -3370,6 +3375,9 @@ footer .background-dowm .travel .pad {
   footer .background-dowm .travel .pad .guide .line a {
     color: #fff;
     text-decoration: none;
+  }
+  footer .background-dowm .travel .pad .guide .line :hover {
+    text-decoration: underline;
   }
 }
 @media (max-width: 820px) and (max-width: 650px) {

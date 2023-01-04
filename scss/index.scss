@@ -3010,7 +3010,7 @@ footer {
                     transform: translate(-50%, -50%);
                     width: 80%;
                     height: 80%;
-                    border: 1px solid sandybrown;
+                    // border: 1px solid sandybrown;
     
                     // GOOGLE地圖
                     .map {
@@ -3084,11 +3084,12 @@ footer {
                                 .img2 {
                                     position: absolute;
                                     width: 45%;
-                                    height: 500px;
+                                    height: 50vh;
                                     left: 3%;
-                                    top: 25%;
-                                    background-size: cover;
-                                    border-radius: 40px;
+                                    top: 25vh;
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    // border-radius: 40px;
                                     background-image: url("../img/travel/smile.jfif");
                                     opacity: 0.9;
     
@@ -3140,10 +3141,13 @@ footer {
                                             color: #fff;
                                             text-decoration: none;
                                         }
+                                        :hover{
+                                            text-decoration: underline;
+                                        }
                                     }
                                     .text-area {
                                         position: absolute;
-                                        width: 75%;
+                                        width: 60%;
                                         left: 115px;
                                         color: #fff;
                                         flex-wrap: wrap;
@@ -3254,6 +3258,9 @@ footer {
                                     a{
                                         color: #fff;
                                         text-decoration: none;
+                                    }
+                                    :hover{
+                                        text-decoration: underline;
                                     }
                                 }
                                 .text-area {
@@ -3487,6 +3494,9 @@ footer {
                                 a{
                                     color: #fff;
                                     text-decoration: none;
+                                }
+                                :hover{
+                                    text-decoration: underline;
                                 }
                             }
                             @media (max-width:650px) {
