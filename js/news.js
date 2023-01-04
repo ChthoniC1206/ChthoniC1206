@@ -26,3 +26,4 @@ const swipers = new Swiper(".mySwipers-new", {
         prevEl: ".swiper-button-prev",
     },
     });
+

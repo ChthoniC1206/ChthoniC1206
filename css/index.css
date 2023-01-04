@@ -1156,6 +1156,8 @@ main .background-mid #wave-container .weather-box .weather-info .weather .temptu
 @media (max-width: 400px) {
   main .background-mid #wave-container .weather-box .weather-info .weather .tempture {
     font-size: 50px;
+    display: flex;
+    align-items: center;
   }
 }
 main .background-mid #wave-container .weather-box .weather-info .chance-of-rain {
@@ -1186,12 +1188,12 @@ main .background-mid #wave-container .weather-box .weather-info .chance-of-rain 
 }
 @media (max-width: 400px) {
   main .background-mid #wave-container .weather-box .weather-info .swiper-button-next {
-    top: 55%;
+    top: 50%;
   }
 }
 @media (max-width: 400px) {
   main .background-mid #wave-container .weather-box .weather-info .swiper-button-prev {
-    top: 55%;
+    top: 50%;
   }
 }
 main .background-mid #wave-container .weather-box .weather-info h3 {

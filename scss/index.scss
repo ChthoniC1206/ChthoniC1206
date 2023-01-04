@@ -1167,6 +1167,8 @@ main {
                             font-size: 90px;
                             @media (max-width:400px){
                                 font-size: 50px;
+                                display: flex;
+                                align-items: center;
                             }
                         }
                     } 
@@ -1196,12 +1198,12 @@ main {
                     }
                     .swiper-button-next{
                         @media (max-width:400px){
-                            top: 55%;
+                            top: 50%;
                         }
                     }
                     .swiper-button-prev{
                         @media (max-width:400px){
-                            top:55%;
+                            top:50%;
                         }
                     }
                     
@@ -1240,7 +1242,6 @@ main {
                     }
                 }
             }
-
 
             .wave {
                 position: absolute;
