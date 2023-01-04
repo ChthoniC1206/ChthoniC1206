@@ -2956,7 +2956,7 @@ footer {
                     transform: translate(-50%, -50%);
                     width: 80%;
                     height: 80%;
-                    border: 1px solid sandybrown;
+                    // border: 1px solid sandybrown;
     
                     // GOOGLE地圖
                     .map {
@@ -3395,13 +3395,21 @@ footer {
                             }
                             @media (max-width:650px) {
                                 .guide-content{
-                                    // background-color: beige;
                                     display: flex;
                                     flex-wrap: wrap;
+                                    .box1, .box2{
+                                        margin-top: 2rem;
+                                    }
                                     .guide-card{
                                         width: 95vw;
-                                        height: 30vh;
-                                        background-color: salmon;
+                                        height: 37vh;
+                                        // background-color: salmon;
+                                        .text-area{
+                                            width: 75vw;
+                                        }
+                                        .circle{
+                                            left: 35px;
+                                        }
                                     }
                                 }
                             }
