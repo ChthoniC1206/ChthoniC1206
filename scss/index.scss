@@ -3011,7 +3011,7 @@ footer {
                     transform: translate(-50%, -50%);
                     width: 80%;
                     height: 80%;
-                    // border: 1px solid sandybrown;
+                    border: 1px solid sandybrown;
     
                     // GOOGLE地圖
                     .map {
@@ -3128,7 +3128,20 @@ footer {
                                         height: 100%;
                                         background-color: #AFDCEA;
                                     }
-    
+                                    .line{
+                                        font-size: 24px;
+                                        position: absolute;
+                                        bottom: 5vh;
+                                        right: 0;
+                                        gap: 15px;
+                                        i{
+                                            color: #39CD00;
+                                        }
+                                        a{
+                                            color: #fff;
+                                            text-decoration: none;
+                                        }
+                                    }
                                     .text-area {
                                         position: absolute;
                                         width: 75%;
@@ -3230,7 +3243,20 @@ footer {
                                     height: 100%;
                                     background-color: #AFDCEA;
                                 }
-    
+                                .line{
+                                    font-size: 24px;
+                                    position: absolute;
+                                    bottom: 5vh;
+                                    right: 0;
+                                    gap: 15px;
+                                    i{
+                                        color: #39CD00;
+                                    }
+                                    a{
+                                        color: #fff;
+                                        text-decoration: none;
+                                    }
+                                }
                                 .text-area {
                                     position: absolute;
                                     width: 75%;
@@ -3448,6 +3474,22 @@ footer {
                                     }
                                 }
                             }
+                            .line{
+                                width: 100%;
+                                height: 120px;
+                                font-size: 20px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: flex-end;
+                                gap: 10px;
+                                i{
+                                    color: #39CD00;
+                                }
+                                a{
+                                    color: #fff;
+                                    text-decoration: none;
+                                }
+                            }
                             @media (max-width:650px) {
                                 .guide-content{
                                     display: flex;
@@ -3466,6 +3508,9 @@ footer {
                                             left: 35px;
                                         }
                                     }
+                                }
+                                .line{
+                                    height: 50px;
                                 }
                             }
                         }  
