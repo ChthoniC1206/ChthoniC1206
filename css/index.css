@@ -2799,7 +2799,6 @@ footer .background-dowm img {
 @media (max-width: 820px) {
   footer .background-dowm img {
     width: 100%;
-    overflow-x: hidden;
     transform: translateY(-4%);
   }
 }
