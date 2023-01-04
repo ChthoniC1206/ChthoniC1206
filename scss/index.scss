@@ -4751,9 +4751,9 @@ footer {
 // 人文歷史
 .text-secc {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: fixed;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
@@ -4775,7 +4775,7 @@ footer {
         left: 50%;
         background-color: rgb(0, 0, 0);
         transform: translate(-50%, -50%);
-        opacity: .7;
+        opacity: .75;
         width: 100%;
         height: 100vh;
         z-index: -1;
