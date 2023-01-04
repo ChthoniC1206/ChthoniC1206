@@ -1253,11 +1253,13 @@ main {
                     }
                     .swiper-button-next{
                         @media (max-width:400px){
+                            --swiper-navigation-size: 20px;
                             top: 50%;
                         }
                     }
                     .swiper-button-prev{
                         @media (max-width:400px){
+                            --swiper-navigation-size: 20px;
                             top:50%;
                         }
                     }
