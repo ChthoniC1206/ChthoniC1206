@@ -2125,6 +2125,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
   }
   main .wetlands {
     position: relative;
+    height: 50vh;
   }
   main .wetlands div.introduce {
     cursor: pointer;
@@ -2176,7 +2177,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
     height: 140px;
     border-radius: 50%;
     position: absolute;
-    top: 38%;
+    top: 54%;
     left: 10%;
     border-radius: 50%;
     background-color: white;
@@ -2215,7 +2216,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
     height: 140px;
     border-radius: 50%;
     position: absolute;
-    top: 38%;
+    top: 54%;
     left: 50%;
     background-color: white;
     display: flex;
@@ -2291,8 +2292,8 @@ main .background-mid #wave-container .wave:nth-child(4) {
     height: 53px;
     border-radius: 50%;
     position: absolute;
-    top: 52%;
-    left: 40%;
+    top: 47%;
+    left: 42%;
     z-index: 2;
     box-shadow: 2px 3px 5px gray;
   }
@@ -2306,8 +2307,8 @@ main .background-mid #wave-container .wave:nth-child(4) {
     height: 30px;
     border-radius: 50%;
     position: absolute;
-    top: 15%;
-    left: 50%;
+    top: 16%;
+    left: 84%;
     z-index: 2;
     box-shadow: 2px 3px 5px gray;
   }
