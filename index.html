@@ -3294,6 +3294,11 @@
         AOS.init({
             duration: 1000,
         });
+        fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-075?Authorization=CWB-5D5EDAAC-3681-4662-A366-44AF14D55F4A').then(function(response){
+            return response.json();
+        }).then(function(data){
+           console.log(data.records.locations[0]); 
+        });
     </script>
 </body>
 </html>
