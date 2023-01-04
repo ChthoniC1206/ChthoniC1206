@@ -1269,11 +1269,13 @@ main .background-mid #wave-container .weather-box .weather-info .chance-of-rain 
 }
 @media (max-width: 400px) {
   main .background-mid #wave-container .weather-box .weather-info .swiper-button-next {
+    --swiper-navigation-size: 20px;
     top: 50%;
   }
 }
 @media (max-width: 400px) {
   main .background-mid #wave-container .weather-box .weather-info .swiper-button-prev {
+    --swiper-navigation-size: 20px;
     top: 50%;
   }
 }
