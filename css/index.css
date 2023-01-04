@@ -2988,9 +2988,9 @@ footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .img1 
   width: 45%;
   height: 60%;
   left: 3%;
-  top: 25%;
-  background-size: cover;
-  border-radius: 40px;
+  top: 25vh;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-image: url("../img/travel/one-day.jpg");
   opacity: 0.9;
 }
@@ -3058,7 +3058,7 @@ footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text 
 }
 footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area {
   position: absolute;
-  width: 60%;
+  width: 75%;
   left: 115px;
   color: #fff;
   flex-wrap: wrap;
@@ -3081,6 +3081,19 @@ footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text 
   display: flex;
   justify-content: flex-start;
 }
+@media (max-width: 1400px) {
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area h3 {
+    font-size: 32px;
+  }
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area h5 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1200px) {
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area h3 {
+    padding-top: 8%;
+  }
+}
 footer .background-dowm .travel .pc .box .mini-box2 {
   width: 100%;
   height: 100%;
@@ -3101,14 +3114,24 @@ footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide {
   justify-content: center;
   align-items: center;
 }
-footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide img {
+footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .img {
   position: absolute;
   width: 45%;
   height: 60%;
   left: 3%;
-  top: 25%;
-  background-size: cover;
-  border-radius: 40px;
+  top: 25vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/travel/四人以下.jpg");
+}
+footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .sec {
+  background-image: url("../img/travel/木棧道.jpg");
+}
+footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .thi {
+  background-image: url("../img/travel/濕地體驗.jpg");
+}
+footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .fou {
+  background-image: url("../img/travel/淨灘活動.jpg");
 }
 footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text {
   position: absolute;
@@ -3177,6 +3200,28 @@ footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text-
   font-size: 1rem;
   display: flex;
   justify-content: flex-start;
+}
+@media (max-width: 1400px) {
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text-area h3 {
+    font-size: 32px;
+  }
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text-area h5 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1233px) {
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text-area h3 {
+    padding-top: 8%;
+    font-size: 28px;
+  }
+}
+@media (max-width: 1000px) {
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text-area h3 {
+    font-size: 24px;
+  }
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text-area h5 {
+    font-size: 20px;
+  }
 }
 footer .background-dowm .travel .pc .buttons {
   width: 800px;

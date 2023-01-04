@@ -3068,9 +3068,10 @@ footer {
                                     width: 45%;
                                     height: 60%;
                                     left: 3%;
-                                    top: 25%;
-                                    background-size: cover;
-                                    border-radius: 40px;
+                                    top: 25vh;
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    // border-radius: 40px;
                                     background-image: url("../img/travel/one-day.jpg");
                                     opacity: 0.9;
     
@@ -3106,7 +3107,6 @@ footer {
                                     width: 50%;
                                     height: 100%;
                                     border-radius: 40px;
-    
                                     // background-color: #fbbd9f;
                                     .circle {
                                         position: absolute;
@@ -3147,7 +3147,7 @@ footer {
                                     }
                                     .text-area {
                                         position: absolute;
-                                        width: 60%;
+                                        width: 75%;
                                         left: 115px;
                                         color: #fff;
                                         flex-wrap: wrap;
@@ -3171,6 +3171,23 @@ footer {
                                             font-size: 1rem;
                                             display: flex;
                                             justify-content: flex-start;
+                                        }
+                                    }
+                                    @media (max-width:1400px) {
+                                        .text-area{
+                                            h3{
+                                                font-size: 32px;
+                                            }
+                                            h5{
+                                                font-size: 22px;
+                                            }
+                                        }
+                                    }
+                                    @media (max-width:1200px) {
+                                        .text-area{
+                                            h3{
+                                                padding-top: 8%;
+                                            }
                                         }
                                     }
                                 }
@@ -3208,16 +3225,26 @@ footer {
                                 -webkit-align-items: center;
                                 align-items: center;
     
-                                img {
+                                .img {
                                     position: absolute;
                                     width: 45%;
                                     height: 60%;
                                     left: 3%;
-                                    top: 25%;
-                                    background-size: cover;
-                                    border-radius: 40px;
+                                    top: 25vh;
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    // border-radius: 40px;
+                                    background-image: url("../img/travel/四人以下.jpg");
                                 }
-    
+                                .sec{
+                                    background-image: url("../img/travel/木棧道.jpg");
+                                }
+                                .thi{
+                                    background-image: url("../img/travel/濕地體驗.jpg");
+                                }
+                                .fou{
+                                    background-image: url("../img/travel/淨灘活動.jpg");
+                                }
                                 .text {
                                     position: absolute;
                                     right: 3%;
@@ -3289,6 +3316,34 @@ footer {
                                         font-size: 1rem;
                                         display: flex;
                                         justify-content: flex-start;
+                                    }
+                                }
+                                @media (max-width:1400px) {
+                                    .text-area{
+                                        h3{
+                                            font-size: 32px;
+                                        }
+                                        h5{
+                                            font-size: 22px;
+                                        }
+                                    }
+                                }
+                                @media (max-width:1233px) {
+                                    .text-area{
+                                        h3{
+                                            padding-top: 8%;
+                                            font-size: 28px;
+                                        }
+                                    }
+                                }
+                                @media (max-width:1000px) {
+                                    .text-area{
+                                        h3{
+                                            font-size: 24px;
+                                        }
+                                        h5{
+                                            font-size: 20px;
+                                        }
                                     }
                                 }
                             }
