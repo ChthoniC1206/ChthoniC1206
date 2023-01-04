@@ -2853,7 +2853,6 @@ footer .background-dowm .travel .pc .box {
   transform: translate(-50%, -50%);
   width: 80%;
   height: 80%;
-  border: 1px solid sandybrown;
 }
 footer .background-dowm .travel .pc .box .map {
   width: 100%;
@@ -3242,10 +3241,18 @@ footer .background-dowm .travel .pad {
     display: flex;
     flex-wrap: wrap;
   }
+  footer .background-dowm .travel .pad .guide .guide-content .box1, footer .background-dowm .travel .pad .guide .guide-content .box2 {
+    margin-top: 2rem;
+  }
   footer .background-dowm .travel .pad .guide .guide-content .guide-card {
     width: 95vw;
-    height: 30vh;
-    background-color: salmon;
+    height: 37vh;
+  }
+  footer .background-dowm .travel .pad .guide .guide-content .guide-card .text-area {
+    width: 75vw;
+  }
+  footer .background-dowm .travel .pad .guide .guide-content .guide-card .circle {
+    left: 35px;
   }
 }
 @media (max-width: 820px) {
