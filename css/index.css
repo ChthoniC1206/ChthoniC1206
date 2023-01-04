@@ -2710,6 +2710,13 @@ footer .background-dowm img {
   position: absolute;
   transform: translateY(-7%);
 }
+@media (max-width: 820px) {
+  footer .background-dowm img {
+    width: 100%;
+    overflow-x: hidden;
+    transform: translateY(-7%);
+  }
+}
 footer .background-dowm .news {
   position: relative;
   padding-top: 50px;
