@@ -3875,6 +3875,7 @@ footer {
                                     width: 50%;
                                     height: 100%;
                                     border-radius: 40px;
+                                }
 
                                     // background-color: #fbbd9f;
                                     .circle {
@@ -3957,11 +3958,64 @@ footer {
                                             }
                                         }
                                     }
-                                    @media (max-width:1200px) {
+                                    @media (max-width:1233px) {
                                         .text-area{
                                             h3{
                                                 padding-top: 8%;
+                                                font-size: 28px;
                                             }
+                                        }
+                                    }
+                                    @media (max-width:1000px) {
+                                        .text-area{
+                                            h3{
+                                                font-size: 24px;
+                                            }
+                                            h5{
+                                                font-size: 20px;
+                                            }
+                                        }
+                                    }
+                            }
+                        }
+                    }
+                    @media (max-width:1200px) {
+                        .mini-box1{
+                            .swiper{
+                                .swiper-slide{
+                                    display: flex;
+                                    .img1, .img2{
+                                        width: 55vw;
+                                        transform: translate(25%,-40%);
+                                    }
+                                    .text{
+                                        width: 50%;
+                                        transform: translate(-90%,-3%);
+                                        display: flex;
+                                        align-items: flex-end;
+                                        .text-area{
+                                            width: 150%;
+                                            transform: translateX(20px);
+                                            .flex{
+                                                display: flex;
+                                                justify-content: space-between;
+                                                gap: 10%;
+                                                .top, .bottom{
+                                                    width: 40%;
+                                                    h5{
+                                                        padding-top: 5%;
+                                                    }
+                                                    p{
+                                                        text-align: start;
+                                                    }
+                                                }
+                                                .bottom{
+                                                    width: 60%;
+                                                }
+                                            }
+                                        }
+                                        .line{
+                                            transform: translate(40%,230%);
                                         }
                                     }
                                 }
@@ -4135,29 +4189,37 @@ footer {
                                 .swiper-slide{
                                     display: flex;
                                     .img{
-                                        width: 50vw;
-                                        transform: translate(30%,-18%);
+                                        width: 55vw;
+                                        transform: translate(25%,-40%);
                                     }
                                     .text{
                                         width: 50%;
-                                        transform: translate(-90%,10%);
+                                        transform: translate(-90%,-3%);
+                                        display: flex;
+                                        align-items: flex-end;
                                         .text-area{
                                             width: 150%;
-                                            // transform: translateY(75%);
-                                            h3 {
-                                                // transform: translateY(-370%);
-                                            }
+                                            transform: translateX(20px);
                                             .flex{
                                                 display: flex;
                                                 justify-content: space-between;
                                                 gap: 10%;
                                                 .top, .bottom{
-                                                    width: 50%;
+                                                    width: 40%;
+                                                    h5{
+                                                        padding-top: 5%;
+                                                    }
+                                                    p{
+                                                        text-align: start;
+                                                    }
+                                                }
+                                                .bottom{
+                                                    width: 60%;
                                                 }
                                             }
                                         }
                                         .line{
-                                            transform: translateY(-100%);
+                                            transform: translate(40%,230%);
                                         }
                                     }
                                 }

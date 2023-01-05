@@ -3678,7 +3678,7 @@ footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text 
   height: 100%;
   border-radius: 40px;
 }
-footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .circle {
+footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .circle {
   position: absolute;
   display: flex;
   align-items: center;
@@ -3690,66 +3690,114 @@ footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text 
   border-radius: 50%;
   background-color: #AFDCEA;
 }
-footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .progress {
+footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .progress {
   position: absolute;
   left: 55px;
   width: 10px;
   height: 100%;
   background-color: #AFDCEA;
 }
-footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .line {
+footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .line {
   font-size: 24px;
   position: absolute;
   bottom: 5vh;
   right: 0;
   gap: 15px;
 }
-footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .line i {
+footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .line i {
   color: #39CD00;
 }
-footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .line a {
+footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .line a {
   color: #fff;
   text-decoration: none;
 }
-footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .line :hover {
+footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .line :hover {
   text-decoration: underline;
 }
-footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area {
+footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text-area {
   position: absolute;
   width: 75%;
   left: 115px;
   color: #fff;
   flex-wrap: wrap;
 }
-footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area h3 {
+footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text-area h3 {
   padding-top: 20%;
   display: flex;
   justify-content: center;
   font-weight: bold;
 }
-footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area h5 {
+footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text-area h5 {
   margin-top: 20px;
   display: flex;
   justify-content: flex-start;
   font-weight: 800;
 }
-footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area p {
+footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text-area p {
   margin-top: 1rem;
   font-size: 1rem;
   display: flex;
   justify-content: flex-start;
 }
 @media (max-width: 1400px) {
-  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area h3 {
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text-area h3 {
     font-size: 32px;
   }
-  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area h5 {
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text-area h5 {
     font-size: 22px;
   }
 }
-@media (max-width: 1200px) {
-  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area h3 {
+@media (max-width: 1233px) {
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text-area h3 {
     padding-top: 8%;
+    font-size: 28px;
+  }
+}
+@media (max-width: 1000px) {
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text-area h3 {
+    font-size: 24px;
+  }
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text-area h5 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide {
+    display: flex;
+  }
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .img1, footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .img2 {
+    width: 55vw;
+    transform: translate(25%, -40%);
+  }
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text {
+    width: 50%;
+    transform: translate(-90%, -3%);
+    display: flex;
+    align-items: flex-end;
+  }
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area {
+    width: 150%;
+    transform: translateX(20px);
+  }
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+  }
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area .flex .top, footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area .flex .bottom {
+    width: 40%;
+  }
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area .flex .top h5, footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area .flex .bottom h5 {
+    padding-top: 5%;
+  }
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area .flex .top p, footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area .flex .bottom p {
+    text-align: start;
+  }
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .text-area .flex .bottom {
+    width: 60%;
+  }
+  footer .background-dowm .travel .pc .box .mini-box1 .swiper .swiper-slide .text .line {
+    transform: translate(40%, 230%);
   }
 }
 footer .background-dowm .travel .pc .box .mini-box2 {
@@ -3886,15 +3934,18 @@ footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text-
     display: flex;
   }
   footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .img {
-    width: 50vw;
-    transform: translate(30%, -18%);
+    width: 55vw;
+    transform: translate(25%, -40%);
   }
   footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text {
     width: 50%;
-    transform: translate(-90%, 10%);
+    transform: translate(-90%, -3%);
+    display: flex;
+    align-items: flex-end;
   }
   footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area {
     width: 150%;
+    transform: translateX(20px);
   }
   footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area .flex {
     display: flex;
@@ -3902,10 +3953,19 @@ footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text-
     gap: 10%;
   }
   footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area .flex .top, footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area .flex .bottom {
-    width: 50%;
+    width: 40%;
+  }
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area .flex .top h5, footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area .flex .bottom h5 {
+    padding-top: 5%;
+  }
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area .flex .top p, footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area .flex .bottom p {
+    text-align: start;
+  }
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area .flex .bottom {
+    width: 60%;
   }
   footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .line {
-    transform: translateY(-100%);
+    transform: translate(40%, 230%);
   }
 }
 footer .background-dowm .travel .pc .buttons {
