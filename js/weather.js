@@ -3,8 +3,8 @@ const swipers2 = new Swiper(".mySwipers-weather", {
     slidesPerView: 6,
     // 移動數量
     slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
+    // loop: true,
+    // loopFillGroupWithBlank: true,
     breakpoints:{
         spaceBetween: 6,
         // slidesPerView: 6,

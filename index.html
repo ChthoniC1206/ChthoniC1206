@@ -270,85 +270,85 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="text-word">
-                                                <h4>01/06(星期五)</h4>
+                                                <h4 class="date">01/06(星期五)</h4>
                                                 <h4>臘月十五</h4>
                                                 <div class="weather-infomation">
                                                     <div class="weather-image">
                                                         <img src="./img/04.素材/潮汐時間/晴天圖.png" alt="">
                                                     </div>
-                                                    <h4>20℃</h4>
+                                                    <h4 class="temp">20℃</h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="text-word">
-                                                <h4>01/07(星期六)</h4>
+                                                <h4 class="date">01/07(星期六)</h4>
                                                 <h4>臘月十六</h4>
                                                 <div class="weather-infomation">
                                                     <div class="weather-image">
                                                         <img src="./img/04.素材/潮汐時間/晴天圖.png" alt="">
                                                     </div>
-                                                    <h4>21℃</h4>
+                                                    <h4 class="temp">21℃</h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="text-word">
-                                                <h4>01/08(星期日)</h4>
+                                                <h4 class="date">01/08(星期日)</h4>
                                                 <h4>臘月十七</h4>
                                                 <div class="weather-infomation">
                                                     <div class="weather-image">
                                                         <img src="./img/04.素材/潮汐時間/晴天圖.png" alt="">
                                                     </div>
-                                                    <h4>21℃</h4>
+                                                    <h4 class="temp">21℃</h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="text-word">
-                                                <h4>01/09(星期一)</h4>
+                                                <h4 class="date">01/09(星期一)</h4>
                                                 <h4>臘月十八</h4>
                                                 <div class="weather-infomation">
                                                     <div class="weather-image">
                                                         <img src="./img/04.素材/潮汐時間/晴天圖.png" alt="">
                                                     </div>
-                                                    <h4>21℃</h4>
+                                                    <h4 class="temp">21℃</h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="text-word">
-                                                <h4>01/10(星期二)</h4>
+                                                <h4 class="date">01/10(星期二)</h4>
                                                 <h4>臘月十九</h4>
                                                 <div class="weather-infomation">
                                                     <div class="weather-image">
                                                         <img src="./img/04.素材/潮汐時間/晴天圖.png" alt="">
                                                     </div>
-                                                    <h4>21℃</h4>
+                                                    <h4 class="temp">21℃</h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="text-word">
-                                                <h4>01/11(星期三)</h4>
+                                                <h4 class="date">01/11(星期三)</h4>
                                                 <h4>臘月二十</h4>
                                                 <div class="weather-infomation">
                                                     <div class="weather-image">
                                                         <img src="./img/04.素材/潮汐時間/晴天圖.png" alt="">
                                                     </div>
-                                                    <h4>17℃</h4>
+                                                    <h4 class="temp">17℃</h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="swiper-slide">
                                             <div class="text-word">
-                                                <h4>01/12(星期四)</h4>
+                                                <h4 class="date">01/12(星期四)</h4>
                                                 <h4>臘月廿一</h4>
                                                 <div class="weather-infomation">
                                                     <div class="weather-image">
                                                         <img src="./img/04.素材/潮汐時間/晴天圖.png" alt="">
                                                     </div>
-                                                    <h4>17℃</h4>
+                                                    <h4 class="temp">17℃</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -365,13 +365,13 @@
                                     <p>乾潮  16：59</p>
                                     <p>滿潮  22：47</p>
                                 </div>
-                                <div class="info">
-                                    <p>日出  06：42</p>
-                                    <p>日落  17：24</p>
+                                <div>
+                                    <p class="sun-rise">日出  06：42</p>
+                                    <p class="sun-down">日落  17：24</p>
                                 </div>
-                                <div class="info">
-                                    <p>月出  16：43</p>
-                                    <p>月落  06：07</p>
+                                <div>
+                                    <p class="moon-rise">月出  16：43</p>
+                                    <p class="moon-down">月落  06：07</p>
                                 </div>
                             </div>
                         </div>
@@ -3290,20 +3290,70 @@
     <script src="./js/burger.js"></script>
     <!-- 天氣輪播 -->
     <script src="./js/weather.js"></script>
-    <!-- Aos -->
+    <!-- Aos js-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-
+    <!-- moment js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="./js/moment-tw.js"></script>
     <script>
         AOS.init();
         AOS.init({
             duration: 1000,
+        }); 
+
+        const boxCard = document.querySelectorAll('.text-word')
+        const date = document.querySelectorAll('.date')
+
+        date.forEach(function(data,i){
+            data.innerHTML = `${moment().add(i, 'days').format('MMM Do')}`;
         });
+        boxCard.forEach(function(data){
+            data.addEventListener('click', function(){ 
+                
+            });
+        });
+        // 溫度
         fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-075?Authorization=CWB-5D5EDAAC-3681-4662-A366-44AF14D55F4A').then(function(response){
             return response.json();
         }).then(function(data){
-           console.log(data.records.locations[0]); 
+            const textWord = document.querySelectorAll('.temp')
+            textWord.forEach(function(card, index){
+                card.innerHTML = `${data.records.locations[0].location[25].weatherElement[1].time[index * 2].elementValue[0].value}℃`   
+            });
         });
+        // 日升日落
+        fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/A-B0062-001?Authorization=CWB-5D5EDAAC-3681-4662-A366-44AF14D55F4A&locationName=%E8%87%BA%E4%B8%AD%E5%B8%82&timeFrom=2023-01-01').then(function(response){
+            return response.json();
+        }).then(function(data){
+            let todayIndex = data.records.locations.location[0].time.indexOf(data.records.locations.location[0].time.filter(obj => obj.dataTime == `${moment().format().slice(0, 10)}`)[0]) 
+            // 日出時間
+            let sunRise = data.records.locations.location[0].time[todayIndex].parameter[1].parameterValue
+            // 日落時間
+            let sunDown = data.records.locations.location[0].time[todayIndex].parameter[5].parameterValue
+
+            const infoSunRise = document.querySelector('.sun-rise')
+            const infoSunDown = document.querySelector('.sun-down')
+
+            infoSunRise.innerHTML = `日出時刻: ${sunRise}`
+            infoSunDown.innerHTML = `日落時刻: ${sunDown}`
+
+        });
+        // 月升月落
+        fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/A-B0063-001?Authorization=CWB-5D5EDAAC-3681-4662-A366-44AF14D55F4A&locationName=%E8%87%BA%E4%B8%AD%E5%B8%82&timeFrom=2023-01-01&timeTo=2023-01-20').then(function(response){
+            return response.json();
+        }).then(function(data){
+            let todayMoonIndex = data.records.locations.location[0].time.indexOf(data.records.locations.location[0].time.filter(obj => obj.dataTime == `${moment().format().slice(0, 10)}`)[0])
+            let moonRise = data.records.locations.location[0].time[todayMoonIndex].parameter[0].parameterValue
+            let moonDown = data.records.locations.location[0].time[todayMoonIndex].parameter[4].parameterValue
+            
+            const infoMoonRise = document.querySelector('.moon-rise')
+            const infoMoonDown = document.querySelector('.moon-down')
+
+            infoMoonRise.innerHTML = `月出時刻: ${moonRise}`
+            infoMoonDown.innerHTML = `月落時刻: ${moonDown}`
+        });
+        // 潮汐
+        fetch('')
     </script>
 </body>
 </html>
