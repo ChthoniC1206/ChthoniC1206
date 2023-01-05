@@ -4129,6 +4129,41 @@ footer {
                             }
                         }
                     }
+                    @media (max-width:1200px) {
+                        .mini-box2{
+                            .swiper{
+                                .swiper-slide{
+                                    display: flex;
+                                    .img{
+                                        width: 50vw;
+                                        transform: translate(30%,-18%);
+                                    }
+                                    .text{
+                                        width: 50%;
+                                        transform: translate(-90%,10%);
+                                        .text-area{
+                                            width: 150%;
+                                            // transform: translateY(75%);
+                                            h3{
+                                                // transform: translateY(-370%);
+                                            }
+                                            .flex{
+                                                display: flex;
+                                                justify-content: space-between;
+                                                gap: 10%;
+                                                .top, .bottom{
+                                                    width: 50%;
+                                                }
+                                            }
+                                        }
+                                        .line{
+                                            transform: translateY(-100%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .buttons {

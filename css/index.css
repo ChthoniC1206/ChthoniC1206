@@ -3881,6 +3881,33 @@ footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text-
     font-size: 20px;
   }
 }
+@media (max-width: 1200px) {
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide {
+    display: flex;
+  }
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .img {
+    width: 50vw;
+    transform: translate(30%, -18%);
+  }
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text {
+    width: 50%;
+    transform: translate(-90%, 10%);
+  }
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area {
+    width: 150%;
+  }
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+  }
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area .flex .top, footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .text-area .flex .bottom {
+    width: 50%;
+  }
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text .line {
+    transform: translateY(-100%);
+  }
+}
 footer .background-dowm .travel .pc .buttons {
   width: 800px;
   position: absolute;
