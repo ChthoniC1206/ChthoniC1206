@@ -322,7 +322,7 @@
                                                 <h4>臘月十九</h4>
                                                 <div class="weather-infomation">
                                                     <div class="weather-image">
-                                                        <img src="./img/04.素材/潮汐時間/晴天圖.png" alt="">
+                                                        <img class="image" src="./img/04.素材/潮汐時間/晴天圖.png" alt="">
                                                     </div>
                                                     <h4 class="temp">21℃</h4>
                                                 </div>
@@ -365,11 +365,11 @@
                                     <p>乾潮  16：59</p>
                                     <p>滿潮  22：47</p>
                                 </div>
-                                <div>
+                                <div class="info">
                                     <p class="sun-rise">日出  06：42</p>
                                     <p class="sun-down">日落  17：24</p>
                                 </div>
-                                <div>
+                                <div class="info">
                                     <p class="moon-rise">月出  16：43</p>
                                     <p class="moon-down">月落  06：07</p>
                                 </div>
@@ -3307,17 +3307,57 @@
         date.forEach(function(data,i){
             data.innerHTML = `${moment().add(i, 'days').format('MMM Do')}`;
         });
-        boxCard.forEach(function(data){
-            data.addEventListener('click', function(){ 
+        // boxCard.forEach(function(data){
+        //     data.addEventListener('click', function(){ 
                 
-            });
-        });
+        //     });
+        // });
         // 溫度
         fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-075?Authorization=CWB-5D5EDAAC-3681-4662-A366-44AF14D55F4A').then(function(response){
             return response.json();
         }).then(function(data){
+            console.log(data.records.locations[0].location[25].weatherElement[6].time);
+            console.log(data.records.locations[0].location[25].weatherElement[6].time[0].elementValue[1].value);
+            
+           
+
+            const weatherImage = document.querySelectorAll('.weather-image')
+           
+            
+            
+            // function內的data取名要注意,data到底是哪一個?
+            weatherImage.forEach(function(image, index){
+                console.log(index);
+                let weatherValue = parseInt(data.records.locations[0].location[25].weatherElement[6].time[index].elementValue[1].value)
+                console.log(weatherValue);
+                let img;
+                if(weatherValue > 0  && weatherValue <= 3){
+                img = './img/04.素材/潮汐時間/晴天圖.png'
+                }else if(weatherValue > 3  && weatherValue <= 5) {
+                img = './img/04.素材/潮汐時間/多雲圖.png'
+                }else {
+                img = './img/04.素材/潮汐時間/多雲圖.png'
+                }
+                image.innerHTML = `<img src="${img}" alt="">`
+            });
+            // 可以執行的
+            // weatherImage.forEach(function(image, index){
+            //     console.log(index);
+            //     let weatherValue = parseInt(data.records.locations[0].location[25].weatherElement[6].time[index*2].elementValue[1].value)
+            //     console.log(weatherValue);
+            //     let img;
+            //     if(weatherValue > 0  && weatherValue <= 3){
+            //     img = './img/04.素材/潮汐時間/晴天圖.png'
+            //     }else if(weatherValue > 3  && weatherValue <= 5) {
+            //     img = './img/04.素材/潮汐時間/多雲圖.png'
+            //     }else {
+            //     img = './img/04.素材/潮汐時間/多雲圖.png'
+            //     }
+            //     image.innerHTML = `<img src="${img}" alt="">`
+            // });
             const textWord = document.querySelectorAll('.temp')
             textWord.forEach(function(card, index){
+                
                 card.innerHTML = `${data.records.locations[0].location[25].weatherElement[1].time[index * 2].elementValue[0].value}℃`   
             });
         });
