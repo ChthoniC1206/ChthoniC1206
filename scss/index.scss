@@ -3840,7 +3840,7 @@ footer {
                                     background-size: contain;
                                     background-repeat: no-repeat;
                                     // border-radius: 40px;
-                                    background-image: url("../img/travel/one-day.jpg");
+                                    background-image: url("../img/travel/one-day1.jpg");
                                     opacity: 0.9;
 
                                     &:hover {
@@ -3859,7 +3859,7 @@ footer {
                                     background-size: contain;
                                     background-repeat: no-repeat;
                                     // border-radius: 40px;
-                                    background-image: url("../img/travel/smile.jfif");
+                                    background-image: url("../img/travel/smile1.jfif");
                                     opacity: 0.9;
 
                                     &:hover {
@@ -3985,7 +3985,7 @@ footer {
                                 .swiper-slide{
                                     display: flex;
                                     .img1, .img2{
-                                        width: 55vw;
+                                        width: 52vw;
                                         transform: translate(25%,-40%);
                                     }
                                     .text{
@@ -4022,6 +4022,17 @@ footer {
                             }
                         }
                     }
+                        @media (max-width:1020px) {
+                            .mini-box1{
+                                .swiper{
+                                    .swiper-slide{
+                                        .img1, .img2{
+                                            transform: translate(25%,-30%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
 
                     // 導覽解說
                     .mini-box2 {
@@ -4071,7 +4082,7 @@ footer {
                                     background-image: url("../img/travel/濕地體驗.jpg");
                                 }
                                 .fou{
-                                    background-image: url("../img/travel/淨灘活動.jpg");
+                                    background-image: url("../img/travel/淨灘活動1.jpg");
                                 }
 
                                 .text {
@@ -4189,7 +4200,7 @@ footer {
                                 .swiper-slide{
                                     display: flex;
                                     .img{
-                                        width: 55vw;
+                                        width: 52vw;
                                         transform: translate(25%,-40%);
                                     }
                                     .text{
