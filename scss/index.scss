@@ -4224,7 +4224,7 @@ footer {
 
                             .text {
                                 width: 40%;
-                                height: 40vh;
+                                // height: 40vh;
                                 left: 0;
 
                                 h3 {
@@ -4253,19 +4253,14 @@ footer {
 
                         // 手機板
                         @media (max-width: 650px) {
-
                             .oneday,
                             .halfday {
                                 display: flex;
                                 flex-wrap: wrap;
-
                                 .text {
                                     display: block;
                                     width: 100%;
-                                    height: 35vh;
-                                    // background-color: salmon;
                                 }
-
                                 .pic {
                                     display: block;
                                     width: 100%;
@@ -4281,14 +4276,12 @@ footer {
                                 }
                             }
                         }
-
                         @media (max-width:400px) {
                             .pic {
                                 margin-bottom: 0.5rem;
                             }
                         }
                     }
-
                     .parallax {
                         width: 100%;
                         height: 25vh;
@@ -4297,7 +4290,6 @@ footer {
                         background-position: center center;
                         background-size: cover;
                     }
-
                     .guide {
                         h1 {
                             display: flex;
@@ -4305,43 +4297,33 @@ footer {
                             margin-top: 2rem;
                             margin-bottom: 1rem;
                         }
-
                         .guide-content {
                             display: flex;
                             flex-wrap: wrap;
-
                             .box3,
                             .box4 {
                                 margin-top: 2rem;
                             }
-
                             .guide-card {
                                 width: 45vw;
-                                height: 40vh;
                                 gap: 3rem;
-                                position: relative;
-
                                 .text-area {
-                                    position: absolute;
                                     width: 37vw;
-                                    right: 0px;
+                                    transform: translate(60px,-37px);
                                 }
-
                                 h3 {
                                     margin-top: 10px;
                                     margin-bottom: 5px;
                                 }
-
                                 p {
                                     margin-left: 1rem;
                                     font-weight: 400;
                                 }
-
                                 .circle {
                                     color: #000000;
-                                    position: absolute;
-                                    width: 7vw;
-                                    height: 5vh;
+                                    // position: absolute;
+                                    width: 50px;
+                                    height: 50px;
                                     border-radius: 50%;
                                     background-color: #AFDCEA;
                                     top: 0px;
@@ -4349,6 +4331,7 @@ footer {
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
+                                    // transform: translate(3px,1px);
                                 }
                             }
                         }
@@ -4380,27 +4363,21 @@ footer {
                             .guide-content {
                                 display: flex;
                                 flex-wrap: wrap;
-
                                 .box1,
                                 .box2 {
                                     margin-top: 2rem;
                                 }
-
                                 .guide-card {
                                     width: 95vw;
-                                    height: 37vh;
-
                                     // background-color: salmon;
                                     .text-area {
                                         width: 75vw;
                                     }
-
                                     .circle {
                                         left: 35px;
                                     }
                                 }
                             }
-
                             .line {
                                 height: 50px;
                             }
