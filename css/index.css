@@ -1621,7 +1621,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
     height: 53px;
     border-radius: 50%;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 15%;
     z-index: 2;
     box-shadow: 2px 3px 5px gray;
@@ -1914,8 +1914,8 @@ main .background-mid #wave-container .wave:nth-child(4) {
   }
   main .background-mid .ecology .pic-fish {
     position: absolute;
-    top: 55%;
-    left: 70%;
+    top: 50%;
+    left: 75%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -1943,7 +1943,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
   main .background-mid .ecology .circle-orange {
     position: absolute;
     top: 60%;
-    left: 80%;
+    left: 83%;
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -1953,7 +1953,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
   main .background-mid .ecology .circle-orange-top {
     position: absolute;
     top: 65%;
-    left: 78%;
+    left: 80%;
     width: 13px;
     height: 13px;
     border-radius: 50%;
@@ -2089,6 +2089,663 @@ main .background-mid #wave-container .wave:nth-child(4) {
   }
 }
 @media (max-width: 820px) {
+  @-webkit-keyframes down {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 100%;
+      overflow: hidden;
+    }
+  }
+  @keyframes down {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 100%;
+      overflow: hidden;
+    }
+  }
+}
+@media (max-width: 580px) {
+  main .wetlands {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+  }
+  main .wetlands div.introduce {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  main .wetlands div.introduce .a {
+    z-index: 2;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 3px 5px gray;
+    opacity: 1;
+  }
+  main .wetlands div.introduce .a h2 {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .a hr {
+    width: 90px;
+  }
+  main .wetlands div.introduce .a p {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .a .more {
+    line-height: 25px;
+    font-size: 10px;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: skyblue;
+  }
+  main .wetlands div.introduce .b {
+    z-index: 2;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 3px 5px gray;
+    opacity: 1;
+  }
+  main .wetlands div.introduce .b h2 {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .b hr {
+    width: 90px;
+  }
+  main .wetlands div.introduce .b p {
+    width: 90%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .b .more {
+    line-height: 25px;
+    font-size: 10px;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: skyblue;
+  }
+  main .wetlands div.introduce .c {
+    z-index: 2;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 43%;
+    left: 55%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 3px 5px gray;
+    opacity: 1;
+  }
+  main .wetlands div.introduce .c h2 {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .c hr {
+    width: 90px;
+  }
+  main .wetlands div.introduce .c p {
+    width: 80%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .c .more {
+    line-height: 25px;
+    font-size: 10px;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: skyblue;
+  }
+  main .wetlands div.introduce .d {
+    z-index: 2;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 3px 5px gray;
+    opacity: 1;
+  }
+  main .wetlands div.introduce .d h2 {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .d hr {
+    width: 90px;
+  }
+  main .wetlands div.introduce .d p {
+    width: 80%;
+    font-size: 12px;
+    text-align: center;
+  }
+  main .wetlands div.introduce .d .more {
+    line-height: 25px;
+    font-size: 10px;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: skyblue;
+  }
+  main .wetlands .page-a {
+    overflow: hidden;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    z-index: 2;
+    box-shadow: 2px 3px 5px gray;
+  }
+  main .wetlands .page-a img {
+    width: 100%;
+    height: 100%;
+  }
+  main .wetlands .page-b {
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 2;
+    box-shadow: 2px 3px 5px gray;
+  }
+  main .wetlands .page-b img {
+    width: 100%;
+    height: 100%;
+  }
+  main .wetlands h1 {
+    position: absolute;
+    top: 10%;
+    left: 43%;
+    font-size: 32px;
+    color: white;
+    z-index: 1;
+    text-shadow: gray 2px 5px 8px;
+  }
+  main .wetlands .circle-a {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 53px;
+    height: 53px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  main .wetlands .circle-b {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  main .background-mid {
+    position: relative;
+  }
+  main .background-mid img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  main .background-mid .ecology::-webkit-scrollbar {
+    display: none;
+  }
+  main .background-mid .ecology {
+    position: relative;
+  }
+  main .background-mid .ecology h1 {
+    top: 5%;
+    left: 43%;
+    font-size: 32px;
+    position: absolute;
+    color: white;
+  }
+  main .background-mid .ecology .bird {
+    z-index: 1;
+    color: black;
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 200px;
+    height: 250px;
+    position: relative;
+  }
+  main .background-mid .ecology .bird .icon {
+    position: absolute;
+    overflow: hidden;
+    top: 0%;
+    left: 32%;
+    width: 51px;
+    height: 51px;
+  }
+  main .background-mid .ecology .bird .icon img {
+    width: 100%;
+    height: 100%;
+  }
+  main .background-mid .ecology .bird .image {
+    position: absolute;
+    top: 15%;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 2px 3px 5px gray;
+  }
+  main .background-mid .ecology .bird .image img {
+    width: 100%;
+    height: 100%;
+  }
+  main .background-mid .ecology .bird .text {
+    cursor: pointer;
+    font-size: 12px;
+    position: absolute;
+    bottom: 16%;
+    right: 8%;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fee4cd;
+    border: 7px outset #8495c7;
+    transform: rotate(-3deg);
+  }
+  main .background-mid .ecology .bird .text span {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    position: absolute;
+    left: 12px;
+    bottom: -10px;
+    transform: rotate(3deg);
+  }
+  main .background-mid .ecology .bird .text:hover {
+    background-color: #8495c7;
+    border: 7px solid #4c5673;
+    color: #FFF;
+    font-weight: bolder;
+  }
+  main .background-mid .ecology .plant {
+    z-index: 1;
+    color: black;
+    display: block;
+    position: absolute;
+    top: -10%;
+    left: 62%;
+    width: 200px;
+    height: 250px;
+    position: relative;
+  }
+  main .background-mid .ecology .plant .icon {
+    position: absolute;
+    overflow: hidden;
+    top: -1%;
+    left: 39%;
+    width: 45px;
+    height: 45px;
+  }
+  main .background-mid .ecology .plant .icon img {
+    width: 100%;
+    height: 100%;
+  }
+  main .background-mid .ecology .plant .image {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 2px 3px 5px gray;
+  }
+  main .background-mid .ecology .plant .image img {
+    width: 100%;
+    height: 100%;
+  }
+  main .background-mid .ecology .plant .text {
+    cursor: pointer;
+    font-size: 12px;
+    position: absolute;
+    bottom: 15%;
+    left: 67%;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fee4cd;
+    border: 7px outset #8495c7;
+    transform: rotate(-3deg);
+  }
+  main .background-mid .ecology .plant .text span {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    position: absolute;
+    left: 11px;
+    top: 15px;
+    transform: rotate(3deg);
+  }
+  main .background-mid .ecology .plant .text:hover {
+    background-color: #8495c7;
+    border: 7px solid #4c5673;
+    color: #FFF;
+    font-weight: bolder;
+  }
+  main .background-mid .ecology .crab {
+    z-index: 1;
+    color: black;
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    width: 200px;
+    height: 250px;
+    position: relative;
+  }
+  main .background-mid .ecology .crab .icon {
+    position: absolute;
+    overflow: hidden;
+    top: -54%;
+    left: 39%;
+    width: 47px;
+    height: 47px;
+  }
+  main .background-mid .ecology .crab .icon img {
+    width: 100%;
+    height: 100%;
+  }
+  main .background-mid .ecology .crab .image {
+    position: absolute;
+    top: -44%;
+    left: 5%;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 2px 3px 5px gray;
+  }
+  main .background-mid .ecology .crab .image img {
+    width: 100%;
+    height: 100%;
+  }
+  main .background-mid .ecology .crab .text {
+    cursor: pointer;
+    font-size: 12px;
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fee4cd;
+    border: 7px outset #8495c7;
+    transform: rotate(-4deg);
+  }
+  main .background-mid .ecology .crab .text span {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    position: absolute;
+    left: 11px;
+    bottom: 8px;
+    transform: rotate(4deg);
+  }
+  main .background-mid .ecology .crab .text:hover {
+    background-color: #8495c7;
+    border: 7px solid #4c5673;
+    color: #FFF;
+    font-weight: bolder;
+  }
+  main .background-mid .ecology .pic-bird {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: 2px 3px 5px gray;
+  }
+  main .background-mid .ecology .pic-bird img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transform: rotateY(180deg);
+  }
+  main .background-mid .ecology .pic-fish {
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: 2px 3px 5px gray;
+  }
+  main .background-mid .ecology .pic-fish img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transform: rotateY(180deg);
+  }
+  main .background-mid .ecology .circle-pink {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: #e59d81;
+    z-index: 2;
+  }
+  main .background-mid .ecology .circle-orange {
+    position: absolute;
+    top: 60%;
+    left: 83%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #e59d81;
+    z-index: 2;
+  }
+  main .background-mid .ecology .circle-orange-top {
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #e59d81;
+    z-index: 2;
+  }
+  main .background-mid .ecology .circle-orange-down {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #e59d81;
+    z-index: 2;
+  }
+}
+@media (max-width: 580px) and (max-width: 820px) {
+  main .background-mid .ecology #cloud-ecology {
+    display: none;
+  }
+}
+@media (max-width: 580px) {
+  main .background-mid .ecology .bgc-cloud-top {
+    position: absolute;
+    top: 5%;
+    left: -10%;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    filter: blur(15px) brightness(200%);
+    -webkit-animation: top 10s ease-in-out infinite;
+            animation: top 10s ease-in-out infinite;
+  }
+}
+@media (max-width: 580px) {
+  main .background-mid .ecology .bgc-cloud-right {
+    position: absolute;
+    top: 10%;
+    left: 82%;
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+    filter: blur(20px) brightness(300%);
+    -webkit-animation: right 40s ease-in-out infinite;
+            animation: right 40s ease-in-out infinite;
+  }
+}
+@media (max-width: 580px) {
+  main .background-mid .ecology .bgc-cloud-left {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    filter: blur(14px) brightness(400%);
+    -webkit-animation: left 36s ease-in-out infinite;
+            animation: left 36s ease-in-out infinite;
+  }
+}
+@media (max-width: 580px) {
+  main .background-mid .ecology .bgc-cloud-down {
+    position: absolute;
+    bottom: 3%;
+    left: 60%;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    filter: blur(10px) brightness(400%);
+    -webkit-animation: down 50s ease-in-out infinite;
+            animation: down 50s ease-in-out infinite;
+  }
+}
+@media (max-width: 580px) {
+  @-webkit-keyframes top {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 100%;
+      overflow: hidden;
+    }
+  }
+  @keyframes top {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 100%;
+      overflow: hidden;
+    }
+  }
+}
+@media (max-width: 580px) {
+  @-webkit-keyframes right {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 100%;
+      overflow: hidden;
+    }
+  }
+  @keyframes right {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 100%;
+      overflow: hidden;
+    }
+  }
+}
+@media (max-width: 580px) {
+  @-webkit-keyframes left {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 100%;
+      overflow: hidden;
+    }
+  }
+  @keyframes left {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 100%;
+      overflow: hidden;
+    }
+  }
+}
+@media (max-width: 580px) {
   @-webkit-keyframes down {
     from {
       left: -50%;
@@ -2294,7 +2951,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
     height: 53px;
     border-radius: 50%;
     position: absolute;
-    top: 47%;
+    top: 85%;
     left: 42%;
     z-index: 2;
     box-shadow: 2px 3px 5px gray;
@@ -2329,7 +2986,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
   }
   main .wetlands .circle-a {
     position: absolute;
-    top: 55%;
+    top: 80%;
     left: 10%;
     width: 24px;
     height: 24px;
@@ -2339,7 +2996,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
   }
   main .wetlands .circle-b {
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 45%;
     width: 22px;
     height: 22px;
@@ -2441,7 +3098,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
     display: block;
     position: absolute;
     top: 0%;
-    left: 48%;
+    left: 60%;
     width: 150px;
     height: 200px;
     position: relative;
@@ -2569,7 +3226,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
   }
   main .background-mid .ecology .pic-bird {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
     width: 50px;
     height: 50px;
@@ -2606,7 +3263,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
   main .background-mid .ecology .circle-pink {
     position: absolute;
     top: 35%;
-    left: 15%;
+    left: 10%;
     width: 37px;
     height: 37px;
     border-radius: 50%;
@@ -2636,7 +3293,7 @@ main .background-mid #wave-container .wave:nth-child(4) {
   main .background-mid .ecology .circle-orange-down {
     position: absolute;
     top: 45%;
-    left: 20%;
+    left: 15%;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -4135,6 +4792,10 @@ footer #end .text-word {
   }
 }
 
+.text-secb::-webkit-scrollbar {
+  display: none;
+}
+
 .text-secb {
   width: 100%;
   height: 80vh;
@@ -4196,14 +4857,13 @@ footer #end .text-word {
   left: 58%;
   color: white;
   transform: translate(20%, 0%);
-  width: 30%;
+  width: 30vw;
   height: 70vh;
   line-height: 200%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 200%;
   border: 5px groove rgba(0, 0, 0, 0.485);
   overflow: scroll;
   text-align: justify;
@@ -4222,14 +4882,13 @@ footer #end .text-word {
   left: 0%;
   color: white;
   transform: translate(20%, 0%);
-  width: 30%;
+  width: 30vw;
   height: 70vh;
   line-height: 200%;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 200%;
   border: 5px groove rgba(0, 0, 0, 0.485);
   overflow: scroll;
   text-align: justify;
@@ -4263,44 +4922,33 @@ footer #end .text-word {
 @media (max-width: 820px) {
   .text-secb {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    z-index: 3;
+    z-index: 2;
     -webkit-animation: secb 1.5s;
             animation: secb 1.5s;
     background-color: black;
+    overflow: scroll;
   }
   .text-secb .left {
-    height: 80vh;
+    width: 100%;
+    height: 150vh;
     position: absolute;
-    -webkit-clip-path: polygon(0 0%, 45% 0, 60% 100%, 0% 100%);
-            clip-path: polygon(0 0%, 45% 0, 60% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45%, 0 55%);
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 0 55%);
     opacity: 0.5;
   }
   .text-secb .right {
-    height: 80vh;
+    width: 100%;
+    height: 150vh;
     position: absolute;
-    -webkit-clip-path: polygon(45% 0, 100% 0, 100% 100%, 60% 100%);
-            clip-path: polygon(45% 0, 100% 0, 100% 100%, 60% 100%);
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 45%, 0 55%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 45%, 0 55%);
     opacity: 0.5;
-  }
-  .text-secb .h1-left {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-align: start;
-    text-shadow: -1px 0 black, 0 5px rgba(0, 0, 0, 0.425), 1px 0 black, 0 1px black;
-  }
-  .text-secb .h1-right {
-    font-size: 40px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    text-align: end;
-    text-shadow: -1px 0 black, 0 5px rgba(0, 0, 0, 0.425), 1px 0 black, 0 1px black;
   }
   .text-secb .bgcb {
     position: fixed;
@@ -4308,7 +4956,7 @@ footer #end .text-word {
     left: 50%;
     background-color: rgb(0, 0, 0);
     transform: translate(-50%, -50%);
-    opacity: 0.7;
+    opacity: 0.8;
     width: 100%;
     height: 100vh;
     z-index: -1;
@@ -4318,26 +4966,32 @@ footer #end .text-word {
   }
   .text-secb .word-right {
     position: fixed;
-    top: 10%;
-    left: 58%;
+    top: 80%;
+    left: 50%;
     color: white;
-    transform: translate(20%, 0%);
-    width: 30%;
+    transform: translate(-50%, 0%);
+    width: 70%;
     height: 70vh;
-    line-height: 200%;
+    line-height: 300%;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 200%;
-    border: 5px groove rgba(0, 0, 0, 0.485);
+    font-size: 12px;
+    border: none;
     overflow: scroll;
     text-align: justify;
     text-justify: inter-ideograph;
     padding: 20px;
   }
-  .text-secb span {
+  .text-secb .word-right .h1-right {
     font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 5px rgba(0, 0, 0, 0.425), 1px 0 black, 0 1px black;
+  }
+  .text-secb span {
+    font-size: 32px;
   }
   .text-secb .word-left::-webkit-scrollbar {
     display: none;
@@ -4345,30 +4999,148 @@ footer #end .text-word {
   .text-secb .word-left {
     position: fixed;
     top: 10%;
-    left: 0%;
+    left: 50%;
     color: white;
-    transform: translate(20%, 0%);
-    width: 30%;
-    height: 70vh;
-    line-height: 200%;
+    transform: translate(-50%, 0%);
+    width: 70%;
+    height: 60vh;
+    line-height: 300%;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 200%;
-    border: 5px groove rgba(0, 0, 0, 0.485);
+    font-size: 12px;
+    border: none;
     overflow: scroll;
     text-align: justify;
     text-justify: inter-ideograph;
     padding: 20px;
+  }
+  .text-secb .word-left .h1-left {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 5px rgba(0, 0, 0, 0.425), 1px 0 black, 0 1px black;
   }
   .text-secb .btnb {
     cursor: pointer;
     width: 40px;
     height: 40px;
     position: fixed;
-    top: 30px;
-    right: 30px;
+    top: 8%;
+    right: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .text-secb {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 2;
+    -webkit-animation: secb 1.5s;
+            animation: secb 1.5s;
+    background-color: black;
+    overflow: scroll;
+  }
+  .text-secb .left {
+    width: 100%;
+    height: 130vh;
+    position: absolute;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45%, 0 55%);
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 0 55%);
+    opacity: 0.5;
+  }
+  .text-secb .right {
+    width: 100%;
+    height: 130vh;
+    position: absolute;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 45%, 0 55%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 45%, 0 55%);
+    opacity: 0.5;
+  }
+  .text-secb .bgcb {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+  }
+  .text-secb .word-right::-webkit-scrollbar {
+    display: none;
+  }
+  .text-secb .word-right {
+    position: fixed;
+    top: 70%;
+    left: 0%;
+    color: white;
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 65vh;
+    line-height: 200%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    border: none;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    padding: 20px;
+  }
+  .text-secb .word-right .h1-right {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 5px rgba(0, 0, 0, 0.425), 1px 0 black, 0 1px black;
+  }
+  .text-secb span {
+    font-size: 20px;
+  }
+  .text-secb .word-left::-webkit-scrollbar {
+    display: none;
+  }
+  .text-secb .word-left {
+    position: fixed;
+    top: 8%;
+    left: 0%;
+    color: white;
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 50vh;
+    line-height: 200%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    border: none;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    padding: 20px;
+  }
+  .text-secb .word-left .h1-left {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 5px rgba(0, 0, 0, 0.425), 1px 0 black, 0 1px black;
+  }
+  .text-secb .btnb {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 5%;
+    right: 5px;
+    z-index: 1;
+    color: black;
   }
 }
 
