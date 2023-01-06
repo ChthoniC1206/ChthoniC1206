@@ -4244,6 +4244,18 @@ footer {
                             }
                         }
                     }
+                    @media (max-width:1020px) {
+                        .mini-box2{
+                            .swiper{
+                                .swiper-slide{
+                                    .img{
+                                        width: 52vw;
+                                        transform: translate(25%,-30%);
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .buttons {

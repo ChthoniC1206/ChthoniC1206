@@ -3984,6 +3984,12 @@ footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .text-
     transform: translate(40%, 230%);
   }
 }
+@media (max-width: 1020px) {
+  footer .background-dowm .travel .pc .box .mini-box2 .swiper .swiper-slide .img {
+    width: 52vw;
+    transform: translate(25%, -30%);
+  }
+}
 footer .background-dowm .travel .pc .buttons {
   width: 800px;
   position: absolute;
