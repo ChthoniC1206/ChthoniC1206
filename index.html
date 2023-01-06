@@ -3346,8 +3346,8 @@
         fetch('https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-075?Authorization=CWB-5D5EDAAC-3681-4662-A366-44AF14D55F4A').then(function(response){
             return response.json();
         }).then(function(data){
-            console.log(data.records.locations[0].location[25].weatherElement[6].time);
-            console.log(data.records.locations[0].location[25].weatherElement[6].time[0].elementValue[1].value);
+            // console.log(data.records.locations[0].location[25].weatherElement[6].time);
+            // console.log(data.records.locations[0].location[25].weatherElement[6].time[0].elementValue[1].value);
             
            
 
@@ -3357,9 +3357,9 @@
             
             // function內的data取名要注意,data到底是哪一個?
             weatherImage.forEach(function(image, index){
-                console.log(index);
+                // console.log(index);
                 let weatherValue = parseInt(data.records.locations[0].location[25].weatherElement[6].time[index].elementValue[1].value)
-                console.log(weatherValue);
+                // console.log(weatherValue);
                 let img;
                 if(weatherValue > 0  && weatherValue <= 3){
                 img = './img/04.素材/潮汐時間/晴天圖.png'
@@ -3423,7 +3423,7 @@
             infoMoonDown.innerHTML = `月落時刻: ${moonDown}`
         });
         // 潮汐
-        fetch('')
+        // fetch('')
     </script>
 </body>
 </html>
