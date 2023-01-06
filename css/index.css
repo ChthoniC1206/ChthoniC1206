@@ -4030,11 +4030,37 @@ footer .background-dowm .travel .pad {
   footer .background-dowm .travel .pad .titlePad {
     font-size: 32px;
   }
+}
+@media (max-width: 820px) and (max-width: 400px) {
+  footer .background-dowm .travel .pad .titlePad {
+    font-size: 24px;
+  }
+}
+@media (max-width: 820px) {
   footer .background-dowm .travel .pad h1 {
     font-size: 26px;
     display: flex;
     justify-content: center;
   }
+}
+@media (max-width: 820px) and (max-width: 400px) {
+  footer .background-dowm .travel .pad h1 {
+    font-size: 20px;
+  }
+  footer .background-dowm .travel .pad h2 {
+    font-size: 20px;
+  }
+  footer .background-dowm .travel .pad h3 {
+    font-size: 18px;
+  }
+  footer .background-dowm .travel .pad h5 {
+    font-size: 14px;
+  }
+  footer .background-dowm .travel .pad p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 820px) {
   footer .background-dowm .travel .pad .container {
     width: 95%;
     display: flex;
@@ -4043,6 +4069,8 @@ footer .background-dowm .travel .pad {
     transform: translateX(2.5%);
     color: #fff;
   }
+}
+@media (max-width: 820px) {
   footer .background-dowm .travel .pad .box {
     margin-top: 2rem;
   }
@@ -4055,6 +4083,8 @@ footer .background-dowm .travel .pad {
   footer .background-dowm .travel .pad .box .map iframe {
     width: 100%;
   }
+}
+@media (max-width: 820px) {
   footer .background-dowm .travel .pad .arrange {
     width: 100%;
   }
