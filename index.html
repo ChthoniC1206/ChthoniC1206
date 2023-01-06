@@ -3352,7 +3352,8 @@
            
 
             const weatherImage = document.querySelectorAll('.weather-image')
-           
+            const weatherImg = document.querySelector('.weather-img')
+            const temptureToday = document.querySelector('.tempture')
             
             
             // function內的data取名要注意,data到底是哪一個?
@@ -3368,7 +3369,9 @@
                 }else {
                 img = './img/04.素材/潮汐時間/多雲圖.png'
                 }
+
                 image.innerHTML = `<img src="${img}" alt="">`
+                weatherImg.innerHTML = `<img src="${img}" alt="">`
             });
             // 可以執行的
             // weatherImage.forEach(function(image, index){
@@ -3388,7 +3391,8 @@
             const textWord = document.querySelectorAll('.temp')
             textWord.forEach(function(card, index){
                 
-                card.innerHTML = `${data.records.locations[0].location[25].weatherElement[1].time[index * 2].elementValue[0].value}℃`   
+                card.innerHTML = `${data.records.locations[0].location[25].weatherElement[1].time[index * 2].elementValue[0].value}℃` 
+                temptureToday.innerHTML = `${data.records.locations[0].location[25].weatherElement[1].time[index * 2].elementValue[0].value}℃`   
             });
         });
         // 日升日落
